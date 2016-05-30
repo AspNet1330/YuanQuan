@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="yuanquanModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="yuanquanModelStoreContainer">
+          <EntitySet Name="admin" EntityType="yuanquanModel.Store.admin" store:Type="Tables" Schema="yuanquan" />
+          <EntitySet Name="cha_problems" EntityType="yuanquanModel.Store.cha_problems" store:Type="Tables" Schema="yuanquan" />
+          <EntitySet Name="challenge" EntityType="yuanquanModel.Store.challenge" store:Type="Tables" Schema="yuanquan" />
+          <EntitySet Name="coder" EntityType="yuanquanModel.Store.coder" store:Type="Tables" Schema="yuanquan" />
+          <EntitySet Name="coder_cha" EntityType="yuanquanModel.Store.coder_cha" store:Type="Tables" Schema="yuanquan" />
+          <EntitySet Name="combo" EntityType="yuanquanModel.Store.combo" store:Type="Tables" Schema="yuanquan" />
+          <EntitySet Name="enterprise" EntityType="yuanquanModel.Store.enterprise" store:Type="Tables" Schema="yuanquan" />
+          <EntitySet Name="problem" EntityType="yuanquanModel.Store.problem" store:Type="Tables" Schema="yuanquan" />
+        </EntityContainer>
+        <EntityType Name="admin">
+          <Key>
+            <PropertyRef Name="a_id" />
+          </Key>
+          <Property Name="a_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="a_account" Type="varchar" MaxLength="255" />
+          <Property Name="a_pwd" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="cha_problems">
+          <Key>
+            <PropertyRef Name="cha_id" />
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="cha_id" Type="int" Nullable="false" />
+          <Property Name="p_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="challenge">
+          <Key>
+            <PropertyRef Name="cha_id" />
+          </Key>
+          <Property Name="cha_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="e_id" Type="int" />
+          <Property Name="cha_type" Type="varchar" MaxLength="255" />
+          <Property Name="cha_level" Type="varchar" MaxLength="255" />
+          <Property Name="cha_public" Type="int" />
+          <Property Name="cha_date" Type="date" />
+        </EntityType>
+        <EntityType Name="coder">
+          <Key>
+            <PropertyRef Name="c_id" />
+          </Key>
+          <Property Name="c_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="c_account" Type="varchar" MaxLength="255" />
+          <Property Name="c_pwd" Type="varchar" MaxLength="255" />
+          <Property Name="c_name" Type="varchar" MaxLength="255" />
+          <Property Name="c_value" Type="int" />
+          <Property Name="c_speed" Type="double" />
+          <Property Name="c_accuracy" Type="double" />
+          <Property Name="c_quality" Type="double" />
+          <Property Name="c_standard" Type="double" />
+        </EntityType>
+        <EntityType Name="coder_cha">
+          <Key>
+            <PropertyRef Name="c_id" />
+            <PropertyRef Name="cha_id" />
+          </Key>
+          <Property Name="c_id" Type="int" Nullable="false" />
+          <Property Name="cha_id" Type="int" Nullable="false" />
+          <Property Name="grade" Type="int" />
+          <Property Name="usetime" Type="int" />
+        </EntityType>
+        <EntityType Name="combo">
+          <Key>
+            <PropertyRef Name="com_id" />
+          </Key>
+          <Property Name="com_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="com_price" Type="int" />
+          <Property Name="com_chanum" Type="int" />
+          <Property Name="com_currency" Type="int" />
+        </EntityType>
+        <EntityType Name="enterprise">
+          <Key>
+            <PropertyRef Name="e_id" />
+          </Key>
+          <Property Name="e_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="e_account" Type="varchar" MaxLength="255" />
+          <Property Name="e_pwd" Type="varchar" MaxLength="255" />
+          <Property Name="e_chanum" Type="int" />
+          <Property Name="e_currency" Type="int" />
+        </EntityType>
+        <EntityType Name="problem">
+          <Key>
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="p_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="p_title" Type="varchar" MaxLength="255" />
+          <Property Name="p_detail" Type="varchar" MaxLength="255" />
+          <Property Name="p_level" Type="varchar" MaxLength="255" />
+          <Property Name="p_answer" Type="varchar" MaxLength="255" />
+          <Property Name="p_type" Type="varchar" MaxLength="255" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="yuanquanModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="yuanquanEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="admin" EntityType="yuanquanModel.admin" />
+          <EntitySet Name="cha_problems" EntityType="yuanquanModel.cha_problems" />
+          <EntitySet Name="challenge" EntityType="yuanquanModel.challenge" />
+          <EntitySet Name="coder" EntityType="yuanquanModel.coder" />
+          <EntitySet Name="coder_cha" EntityType="yuanquanModel.coder_cha" />
+          <EntitySet Name="combo" EntityType="yuanquanModel.combo" />
+          <EntitySet Name="enterprise" EntityType="yuanquanModel.enterprise" />
+          <EntitySet Name="problem" EntityType="yuanquanModel.problem" />
+        </EntityContainer>
+        <EntityType Name="admin">
+          <Key>
+            <PropertyRef Name="a_id" />
+          </Key>
+          <Property Name="a_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="a_account" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="a_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="cha_problems">
+          <Key>
+            <PropertyRef Name="cha_id" />
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="cha_id" Type="Int32" Nullable="false" />
+          <Property Name="p_id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="challenge">
+          <Key>
+            <PropertyRef Name="cha_id" />
+          </Key>
+          <Property Name="cha_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="e_id" Type="Int32" />
+          <Property Name="cha_type" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="cha_level" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="cha_public" Type="Int32" />
+          <Property Name="cha_date" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="coder">
+          <Key>
+            <PropertyRef Name="c_id" />
+          </Key>
+          <Property Name="c_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="c_account" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="c_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="c_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="c_value" Type="Int32" />
+          <Property Name="c_speed" Type="Double" />
+          <Property Name="c_accuracy" Type="Double" />
+          <Property Name="c_quality" Type="Double" />
+          <Property Name="c_standard" Type="Double" />
+        </EntityType>
+        <EntityType Name="coder_cha">
+          <Key>
+            <PropertyRef Name="c_id" />
+            <PropertyRef Name="cha_id" />
+          </Key>
+          <Property Name="c_id" Type="Int32" Nullable="false" />
+          <Property Name="cha_id" Type="Int32" Nullable="false" />
+          <Property Name="grade" Type="Int32" />
+          <Property Name="usetime" Type="Int32" />
+        </EntityType>
+        <EntityType Name="combo">
+          <Key>
+            <PropertyRef Name="com_id" />
+          </Key>
+          <Property Name="com_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="com_price" Type="Int32" />
+          <Property Name="com_chanum" Type="Int32" />
+          <Property Name="com_currency" Type="Int32" />
+        </EntityType>
+        <EntityType Name="enterprise">
+          <Key>
+            <PropertyRef Name="e_id" />
+          </Key>
+          <Property Name="e_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="e_account" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="e_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="e_chanum" Type="Int32" />
+          <Property Name="e_currency" Type="Int32" />
+        </EntityType>
+        <EntityType Name="problem">
+          <Key>
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="p_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="p_title" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="p_detail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="p_level" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="p_answer" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="p_type" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="yuanquanModelStoreContainer" CdmEntityContainer="yuanquanEntities">
+          <EntitySetMapping Name="admin">
+            <EntityTypeMapping TypeName="yuanquanModel.admin">
+              <MappingFragment StoreEntitySet="admin">
+                <ScalarProperty Name="a_id" ColumnName="a_id" />
+                <ScalarProperty Name="a_account" ColumnName="a_account" />
+                <ScalarProperty Name="a_pwd" ColumnName="a_pwd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cha_problems">
+            <EntityTypeMapping TypeName="yuanquanModel.cha_problems">
+              <MappingFragment StoreEntitySet="cha_problems">
+                <ScalarProperty Name="cha_id" ColumnName="cha_id" />
+                <ScalarProperty Name="p_id" ColumnName="p_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="challenge">
+            <EntityTypeMapping TypeName="yuanquanModel.challenge">
+              <MappingFragment StoreEntitySet="challenge">
+                <ScalarProperty Name="cha_id" ColumnName="cha_id" />
+                <ScalarProperty Name="e_id" ColumnName="e_id" />
+                <ScalarProperty Name="cha_type" ColumnName="cha_type" />
+                <ScalarProperty Name="cha_level" ColumnName="cha_level" />
+                <ScalarProperty Name="cha_public" ColumnName="cha_public" />
+                <ScalarProperty Name="cha_date" ColumnName="cha_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="coder">
+            <EntityTypeMapping TypeName="yuanquanModel.coder">
+              <MappingFragment StoreEntitySet="coder">
+                <ScalarProperty Name="c_id" ColumnName="c_id" />
+                <ScalarProperty Name="c_account" ColumnName="c_account" />
+                <ScalarProperty Name="c_pwd" ColumnName="c_pwd" />
+                <ScalarProperty Name="c_name" ColumnName="c_name" />
+                <ScalarProperty Name="c_value" ColumnName="c_value" />
+                <ScalarProperty Name="c_speed" ColumnName="c_speed" />
+                <ScalarProperty Name="c_accuracy" ColumnName="c_accuracy" />
+                <ScalarProperty Name="c_quality" ColumnName="c_quality" />
+                <ScalarProperty Name="c_standard" ColumnName="c_standard" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="coder_cha">
+            <EntityTypeMapping TypeName="yuanquanModel.coder_cha">
+              <MappingFragment StoreEntitySet="coder_cha">
+                <ScalarProperty Name="c_id" ColumnName="c_id" />
+                <ScalarProperty Name="cha_id" ColumnName="cha_id" />
+                <ScalarProperty Name="grade" ColumnName="grade" />
+                <ScalarProperty Name="usetime" ColumnName="usetime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="combo">
+            <EntityTypeMapping TypeName="yuanquanModel.combo">
+              <MappingFragment StoreEntitySet="combo">
+                <ScalarProperty Name="com_id" ColumnName="com_id" />
+                <ScalarProperty Name="com_price" ColumnName="com_price" />
+                <ScalarProperty Name="com_chanum" ColumnName="com_chanum" />
+                <ScalarProperty Name="com_currency" ColumnName="com_currency" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="enterprise">
+            <EntityTypeMapping TypeName="yuanquanModel.enterprise">
+              <MappingFragment StoreEntitySet="enterprise">
+                <ScalarProperty Name="e_id" ColumnName="e_id" />
+                <ScalarProperty Name="e_account" ColumnName="e_account" />
+                <ScalarProperty Name="e_pwd" ColumnName="e_pwd" />
+                <ScalarProperty Name="e_chanum" ColumnName="e_chanum" />
+                <ScalarProperty Name="e_currency" ColumnName="e_currency" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="problem">
+            <EntityTypeMapping TypeName="yuanquanModel.problem">
+              <MappingFragment StoreEntitySet="problem">
+                <ScalarProperty Name="p_id" ColumnName="p_id" />
+                <ScalarProperty Name="p_title" ColumnName="p_title" />
+                <ScalarProperty Name="p_detail" ColumnName="p_detail" />
+                <ScalarProperty Name="p_level" ColumnName="p_level" />
+                <ScalarProperty Name="p_answer" ColumnName="p_answer" />
+                <ScalarProperty Name="p_type" ColumnName="p_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="默认值" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

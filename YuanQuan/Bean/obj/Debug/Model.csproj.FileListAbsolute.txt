@@ -1,0 +1,10 @@
+D:\VS projects\YuanQuan\Bean\bin\Debug\EntityFramework.dll
+D:\VS projects\YuanQuan\Bean\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\VS projects\YuanQuan\Bean\bin\Debug\EntityFramework.xml
+D:\VS projects\YuanQuan\Bean\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\VS projects\YuanQuan\Bean\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\VS projects\YuanQuan\Bean\bin\Debug\Model.dll.config
+D:\VS projects\YuanQuan\Bean\bin\Debug\Model.dll
+D:\VS projects\YuanQuan\Bean\bin\Debug\Model.pdb
+D:\VS projects\YuanQuan\Bean\obj\Debug\Model.dll
+D:\VS projects\YuanQuan\Bean\obj\Debug\Model.pdb

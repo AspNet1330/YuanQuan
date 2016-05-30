@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="yuanquanModelStoreContainer" CdmEntityContainer="yuanquanEntities">
+    <EntitySetMapping Name="admin">
+      <EntityTypeMapping TypeName="yuanquanModel.admin">
+        <MappingFragment StoreEntitySet="admin">
+          <ScalarProperty Name="a_id" ColumnName="a_id" />
+          <ScalarProperty Name="a_account" ColumnName="a_account" />
+          <ScalarProperty Name="a_pwd" ColumnName="a_pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cha_problems">
+      <EntityTypeMapping TypeName="yuanquanModel.cha_problems">
+        <MappingFragment StoreEntitySet="cha_problems">
+          <ScalarProperty Name="cha_id" ColumnName="cha_id" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="challenge">
+      <EntityTypeMapping TypeName="yuanquanModel.challenge">
+        <MappingFragment StoreEntitySet="challenge">
+          <ScalarProperty Name="cha_id" ColumnName="cha_id" />
+          <ScalarProperty Name="e_id" ColumnName="e_id" />
+          <ScalarProperty Name="cha_type" ColumnName="cha_type" />
+          <ScalarProperty Name="cha_level" ColumnName="cha_level" />
+          <ScalarProperty Name="cha_public" ColumnName="cha_public" />
+          <ScalarProperty Name="cha_date" ColumnName="cha_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coder">
+      <EntityTypeMapping TypeName="yuanquanModel.coder">
+        <MappingFragment StoreEntitySet="coder">
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+          <ScalarProperty Name="c_account" ColumnName="c_account" />
+          <ScalarProperty Name="c_pwd" ColumnName="c_pwd" />
+          <ScalarProperty Name="c_name" ColumnName="c_name" />
+          <ScalarProperty Name="c_value" ColumnName="c_value" />
+          <ScalarProperty Name="c_speed" ColumnName="c_speed" />
+          <ScalarProperty Name="c_accuracy" ColumnName="c_accuracy" />
+          <ScalarProperty Name="c_quality" ColumnName="c_quality" />
+          <ScalarProperty Name="c_standard" ColumnName="c_standard" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coder_cha">
+      <EntityTypeMapping TypeName="yuanquanModel.coder_cha">
+        <MappingFragment StoreEntitySet="coder_cha">
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+          <ScalarProperty Name="cha_id" ColumnName="cha_id" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="usetime" ColumnName="usetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="combo">
+      <EntityTypeMapping TypeName="yuanquanModel.combo">
+        <MappingFragment StoreEntitySet="combo">
+          <ScalarProperty Name="com_id" ColumnName="com_id" />
+          <ScalarProperty Name="com_price" ColumnName="com_price" />
+          <ScalarProperty Name="com_chanum" ColumnName="com_chanum" />
+          <ScalarProperty Name="com_currency" ColumnName="com_currency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="enterprise">
+      <EntityTypeMapping TypeName="yuanquanModel.enterprise">
+        <MappingFragment StoreEntitySet="enterprise">
+          <ScalarProperty Name="e_id" ColumnName="e_id" />
+          <ScalarProperty Name="e_account" ColumnName="e_account" />
+          <ScalarProperty Name="e_pwd" ColumnName="e_pwd" />
+          <ScalarProperty Name="e_chanum" ColumnName="e_chanum" />
+          <ScalarProperty Name="e_currency" ColumnName="e_currency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="problem">
+      <EntityTypeMapping TypeName="yuanquanModel.problem">
+        <MappingFragment StoreEntitySet="problem">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_title" ColumnName="p_title" />
+          <ScalarProperty Name="p_detail" ColumnName="p_detail" />
+          <ScalarProperty Name="p_level" ColumnName="p_level" />
+          <ScalarProperty Name="p_answer" ColumnName="p_answer" />
+          <ScalarProperty Name="p_type" ColumnName="p_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

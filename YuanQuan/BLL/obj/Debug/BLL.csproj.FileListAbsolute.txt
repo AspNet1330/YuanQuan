@@ -1,0 +1,4 @@
+D:\VS projects\YuanQuan\BLL\bin\Debug\BLL.dll
+D:\VS projects\YuanQuan\BLL\bin\Debug\BLL.pdb
+D:\VS projects\YuanQuan\BLL\obj\Debug\BLL.dll
+D:\VS projects\YuanQuan\BLL\obj\Debug\BLL.pdb

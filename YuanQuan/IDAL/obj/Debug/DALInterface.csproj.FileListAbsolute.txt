@@ -1,0 +1,7 @@
+D:\VS projects\YuanQuan\IDAL\obj\Debug\DALInterface.csprojResolveAssemblyReference.cache
+D:\VS projects\YuanQuan\IDAL\bin\Debug\IDAL.dll
+D:\VS projects\YuanQuan\IDAL\bin\Debug\IDAL.pdb
+D:\VS projects\YuanQuan\IDAL\bin\Debug\Model.dll
+D:\VS projects\YuanQuan\IDAL\bin\Debug\Model.pdb
+D:\VS projects\YuanQuan\IDAL\obj\Debug\IDAL.dll
+D:\VS projects\YuanQuan\IDAL\obj\Debug\IDAL.pdb

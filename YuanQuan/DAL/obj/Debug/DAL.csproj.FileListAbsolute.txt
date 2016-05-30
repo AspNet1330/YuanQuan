@@ -1,0 +1,9 @@
+D:\VS projects\YuanQuan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\VS projects\YuanQuan\DAL\bin\Debug\DAL.dll
+D:\VS projects\YuanQuan\DAL\bin\Debug\DAL.pdb
+D:\VS projects\YuanQuan\DAL\bin\Debug\IDAL.dll
+D:\VS projects\YuanQuan\DAL\bin\Debug\Model.dll
+D:\VS projects\YuanQuan\DAL\bin\Debug\Model.pdb
+D:\VS projects\YuanQuan\DAL\bin\Debug\IDAL.pdb
+D:\VS projects\YuanQuan\DAL\obj\Debug\DAL.dll
+D:\VS projects\YuanQuan\DAL\obj\Debug\DAL.pdb

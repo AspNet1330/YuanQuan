@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="yuanquanModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="yuanquanModelStoreContainer">
+    <EntitySet Name="admin" EntityType="yuanquanModel.Store.admin" store:Type="Tables" Schema="yuanquan" />
+    <EntitySet Name="cha_problems" EntityType="yuanquanModel.Store.cha_problems" store:Type="Tables" Schema="yuanquan" />
+    <EntitySet Name="challenge" EntityType="yuanquanModel.Store.challenge" store:Type="Tables" Schema="yuanquan" />
+    <EntitySet Name="coder" EntityType="yuanquanModel.Store.coder" store:Type="Tables" Schema="yuanquan" />
+    <EntitySet Name="coder_cha" EntityType="yuanquanModel.Store.coder_cha" store:Type="Tables" Schema="yuanquan" />
+    <EntitySet Name="combo" EntityType="yuanquanModel.Store.combo" store:Type="Tables" Schema="yuanquan" />
+    <EntitySet Name="enterprise" EntityType="yuanquanModel.Store.enterprise" store:Type="Tables" Schema="yuanquan" />
+    <EntitySet Name="problem" EntityType="yuanquanModel.Store.problem" store:Type="Tables" Schema="yuanquan" />
+  </EntityContainer>
+  <EntityType Name="admin">
+    <Key>
+      <PropertyRef Name="a_id" />
+    </Key>
+    <Property Name="a_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="a_account" Type="varchar" MaxLength="255" />
+    <Property Name="a_pwd" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="cha_problems">
+    <Key>
+      <PropertyRef Name="cha_id" />
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="cha_id" Type="int" Nullable="false" />
+    <Property Name="p_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="challenge">
+    <Key>
+      <PropertyRef Name="cha_id" />
+    </Key>
+    <Property Name="cha_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="e_id" Type="int" />
+    <Property Name="cha_type" Type="varchar" MaxLength="255" />
+    <Property Name="cha_level" Type="varchar" MaxLength="255" />
+    <Property Name="cha_public" Type="int" />
+    <Property Name="cha_date" Type="date" />
+  </EntityType>
+  <EntityType Name="coder">
+    <Key>
+      <PropertyRef Name="c_id" />
+    </Key>
+    <Property Name="c_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="c_account" Type="varchar" MaxLength="255" />
+    <Property Name="c_pwd" Type="varchar" MaxLength="255" />
+    <Property Name="c_name" Type="varchar" MaxLength="255" />
+    <Property Name="c_value" Type="int" />
+    <Property Name="c_speed" Type="double" />
+    <Property Name="c_accuracy" Type="double" />
+    <Property Name="c_quality" Type="double" />
+    <Property Name="c_standard" Type="double" />
+  </EntityType>
+  <EntityType Name="coder_cha">
+    <Key>
+      <PropertyRef Name="c_id" />
+      <PropertyRef Name="cha_id" />
+    </Key>
+    <Property Name="c_id" Type="int" Nullable="false" />
+    <Property Name="cha_id" Type="int" Nullable="false" />
+    <Property Name="grade" Type="int" />
+    <Property Name="usetime" Type="int" />
+  </EntityType>
+  <EntityType Name="combo">
+    <Key>
+      <PropertyRef Name="com_id" />
+    </Key>
+    <Property Name="com_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="com_price" Type="int" />
+    <Property Name="com_chanum" Type="int" />
+    <Property Name="com_currency" Type="int" />
+  </EntityType>
+  <EntityType Name="enterprise">
+    <Key>
+      <PropertyRef Name="e_id" />
+    </Key>
+    <Property Name="e_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="e_account" Type="varchar" MaxLength="255" />
+    <Property Name="e_pwd" Type="varchar" MaxLength="255" />
+    <Property Name="e_chanum" Type="int" />
+    <Property Name="e_currency" Type="int" />
+  </EntityType>
+  <EntityType Name="problem">
+    <Key>
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="p_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="p_title" Type="varchar" MaxLength="255" />
+    <Property Name="p_detail" Type="varchar" MaxLength="255" />
+    <Property Name="p_level" Type="varchar" MaxLength="255" />
+    <Property Name="p_answer" Type="varchar" MaxLength="255" />
+    <Property Name="p_type" Type="varchar" MaxLength="255" />
+  </EntityType>
+</Schema>

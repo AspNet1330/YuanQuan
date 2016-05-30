@@ -1,0 +1,4 @@
+D:\VS projects\YuanQuan\Bean\bin\Debug\Bean.dll
+D:\VS projects\YuanQuan\Bean\bin\Debug\Bean.pdb
+D:\VS projects\YuanQuan\Bean\obj\Debug\Bean.dll
+D:\VS projects\YuanQuan\Bean\obj\Debug\Bean.pdb

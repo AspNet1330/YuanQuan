@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="yuanquanModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="yuanquanEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="admin" EntityType="yuanquanModel.admin" />
+    <EntitySet Name="cha_problems" EntityType="yuanquanModel.cha_problems" />
+    <EntitySet Name="challenge" EntityType="yuanquanModel.challenge" />
+    <EntitySet Name="coder" EntityType="yuanquanModel.coder" />
+    <EntitySet Name="coder_cha" EntityType="yuanquanModel.coder_cha" />
+    <EntitySet Name="combo" EntityType="yuanquanModel.combo" />
+    <EntitySet Name="enterprise" EntityType="yuanquanModel.enterprise" />
+    <EntitySet Name="problem" EntityType="yuanquanModel.problem" />
+  </EntityContainer>
+  <EntityType Name="admin">
+    <Key>
+      <PropertyRef Name="a_id" />
+    </Key>
+    <Property Name="a_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="a_account" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="a_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cha_problems">
+    <Key>
+      <PropertyRef Name="cha_id" />
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="cha_id" Type="Int32" Nullable="false" />
+    <Property Name="p_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="challenge">
+    <Key>
+      <PropertyRef Name="cha_id" />
+    </Key>
+    <Property Name="cha_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="e_id" Type="Int32" />
+    <Property Name="cha_type" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="cha_level" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="cha_public" Type="Int32" />
+    <Property Name="cha_date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="coder">
+    <Key>
+      <PropertyRef Name="c_id" />
+    </Key>
+    <Property Name="c_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="c_account" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="c_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="c_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="c_value" Type="Int32" />
+    <Property Name="c_speed" Type="Double" />
+    <Property Name="c_accuracy" Type="Double" />
+    <Property Name="c_quality" Type="Double" />
+    <Property Name="c_standard" Type="Double" />
+  </EntityType>
+  <EntityType Name="coder_cha">
+    <Key>
+      <PropertyRef Name="c_id" />
+      <PropertyRef Name="cha_id" />
+    </Key>
+    <Property Name="c_id" Type="Int32" Nullable="false" />
+    <Property Name="cha_id" Type="Int32" Nullable="false" />
+    <Property Name="grade" Type="Int32" />
+    <Property Name="usetime" Type="Int32" />
+  </EntityType>
+  <EntityType Name="combo">
+    <Key>
+      <PropertyRef Name="com_id" />
+    </Key>
+    <Property Name="com_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="com_price" Type="Int32" />
+    <Property Name="com_chanum" Type="Int32" />
+    <Property Name="com_currency" Type="Int32" />
+  </EntityType>
+  <EntityType Name="enterprise">
+    <Key>
+      <PropertyRef Name="e_id" />
+    </Key>
+    <Property Name="e_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="e_account" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="e_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="e_chanum" Type="Int32" />
+    <Property Name="e_currency" Type="Int32" />
+  </EntityType>
+  <EntityType Name="problem">
+    <Key>
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="p_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="p_title" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="p_detail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="p_level" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="p_answer" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="p_type" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

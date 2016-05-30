@@ -1,0 +1,13 @@
+D:\VS projects\YuanQuan\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\VS projects\YuanQuan\Web\bin\Web.dll
+D:\VS projects\YuanQuan\Web\bin\Web.pdb
+D:\VS projects\YuanQuan\Web\bin\DAL.dll
+D:\VS projects\YuanQuan\Web\bin\Model.dll
+D:\VS projects\YuanQuan\Web\bin\IDAL.dll
+D:\VS projects\YuanQuan\Web\bin\Model.pdb
+D:\VS projects\YuanQuan\Web\bin\DAL.pdb
+D:\VS projects\YuanQuan\Web\bin\IDAL.pdb
+D:\VS projects\YuanQuan\Web\obj\Debug\Web.dll
+D:\VS projects\YuanQuan\Web\obj\Debug\Web.pdb
+D:\VS projects\YuanQuan\Web\bin\DALFactory.dll
+D:\VS projects\YuanQuan\Web\bin\DALFactory.pdb
