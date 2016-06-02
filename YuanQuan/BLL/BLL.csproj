@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,8 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CoderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bean\Model.csproj">
+      <Project>{df90736f-f641-4d48-b2b0-44dd0613771c}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{3b63efe0-d233-4e4c-b32e-fed37ec5cd50}</Project>
+      <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IBLL\BLLInterface.csproj">
+      <Project>{6beebfba-e7ec-402d-96dc-0e75e0e8919e}</Project>
+      <Name>BLLInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\DALInterface.csproj">
+      <Project>{9644cb57-a039-4a68-a64f-7efb8ed2cdb8}</Project>
+      <Name>DALInterface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,9 +10,15 @@ namespace DALFactory
 {
     public class DAFactory
     {
-        public static IAdminDA CreateAdminDA()
+        public static IAdminDA createAdminDA()
         {
             IAdminDA da = new AdminDA();
+            return da;
+        }
+
+        public static ICoderDA createCoderDA()
+        {
+            ICoderDA da = new CoderDA();
             return da;
         }
     }

@@ -2,3 +2,10 @@ D:\VS projects\YuanQuan\IBLL\bin\Debug\IBLL.dll
 D:\VS projects\YuanQuan\IBLL\bin\Debug\IBLL.pdb
 D:\VS projects\YuanQuan\IBLL\obj\Debug\IBLL.dll
 D:\VS projects\YuanQuan\IBLL\obj\Debug\IBLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\obj\Debug\BLLInterface.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Debug\IBLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Debug\IBLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Debug\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Debug\Model.pdb

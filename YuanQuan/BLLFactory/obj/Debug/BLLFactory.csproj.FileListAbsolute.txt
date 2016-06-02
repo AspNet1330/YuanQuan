@@ -2,3 +2,20 @@ D:\VS projects\YuanQuan\BLLFactory\bin\Debug\BLLFactory.dll
 D:\VS projects\YuanQuan\BLLFactory\bin\Debug\BLLFactory.pdb
 D:\VS projects\YuanQuan\BLLFactory\obj\Debug\BLLFactory.dll
 D:\VS projects\YuanQuan\BLLFactory\obj\Debug\BLLFactory.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLLFactory.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLLFactory.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\IBLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DALFactory.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\IDAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\IBLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\Model.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DALFactory.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\IDAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DAL.pdb

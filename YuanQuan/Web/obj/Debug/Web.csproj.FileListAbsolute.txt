@@ -11,3 +11,22 @@ D:\VS projects\YuanQuan\Web\obj\Debug\Web.dll
 D:\VS projects\YuanQuan\Web\obj\Debug\Web.pdb
 D:\VS projects\YuanQuan\Web\bin\DALFactory.dll
 D:\VS projects\YuanQuan\Web\bin\DALFactory.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\Web\obj\Debug\Web.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\Web.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\Web.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\BLLFactory.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\IBLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\BLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\DALFactory.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\IDAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\DAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\Model.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\BLLFactory.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\IBLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\BLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\DALFactory.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\IDAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\bin\DAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\obj\Debug\Web.pdb
