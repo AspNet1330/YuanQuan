@@ -25,11 +25,11 @@
         </EntityType>
         <EntityType Name="cha_problems">
           <Key>
-            <PropertyRef Name="cha_id" />
-            <PropertyRef Name="p_id" />
+            <PropertyRef Name="id" />
           </Key>
           <Property Name="cha_id" Type="int" Nullable="false" />
           <Property Name="p_id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="challenge">
           <Key>
@@ -55,16 +55,17 @@
           <Property Name="c_accuracy" Type="double" />
           <Property Name="c_quality" Type="double" />
           <Property Name="c_standard" Type="double" />
+          <Property Name="c_skill" Type="varchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="coder_cha">
           <Key>
-            <PropertyRef Name="c_id" />
-            <PropertyRef Name="cha_id" />
+            <PropertyRef Name="id" />
           </Key>
           <Property Name="c_id" Type="int" Nullable="false" />
           <Property Name="cha_id" Type="int" Nullable="false" />
           <Property Name="grade" Type="int" />
           <Property Name="usetime" Type="int" />
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="combo">
           <Key>
@@ -121,11 +122,11 @@
         </EntityType>
         <EntityType Name="cha_problems">
           <Key>
-            <PropertyRef Name="cha_id" />
-            <PropertyRef Name="p_id" />
+            <PropertyRef Name="id" />
           </Key>
           <Property Name="cha_id" Type="Int32" Nullable="false" />
           <Property Name="p_id" Type="Int32" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="challenge">
           <Key>
@@ -151,16 +152,17 @@
           <Property Name="c_accuracy" Type="Double" />
           <Property Name="c_quality" Type="Double" />
           <Property Name="c_standard" Type="Double" />
+          <Property Name="c_skill" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
         </EntityType>
         <EntityType Name="coder_cha">
           <Key>
-            <PropertyRef Name="c_id" />
-            <PropertyRef Name="cha_id" />
+            <PropertyRef Name="id" />
           </Key>
           <Property Name="c_id" Type="Int32" Nullable="false" />
           <Property Name="cha_id" Type="Int32" Nullable="false" />
           <Property Name="grade" Type="Int32" />
           <Property Name="usetime" Type="Int32" />
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="combo">
           <Key>
@@ -212,6 +214,7 @@
               <MappingFragment StoreEntitySet="cha_problems">
                 <ScalarProperty Name="cha_id" ColumnName="cha_id" />
                 <ScalarProperty Name="p_id" ColumnName="p_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -239,6 +242,7 @@
                 <ScalarProperty Name="c_accuracy" ColumnName="c_accuracy" />
                 <ScalarProperty Name="c_quality" ColumnName="c_quality" />
                 <ScalarProperty Name="c_standard" ColumnName="c_standard" />
+                <ScalarProperty Name="c_skill" ColumnName="c_skill" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -249,6 +253,7 @@
                 <ScalarProperty Name="cha_id" ColumnName="cha_id" />
                 <ScalarProperty Name="grade" ColumnName="grade" />
                 <ScalarProperty Name="usetime" ColumnName="usetime" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

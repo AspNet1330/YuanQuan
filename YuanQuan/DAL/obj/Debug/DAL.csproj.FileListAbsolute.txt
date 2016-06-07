@@ -7,12 +7,12 @@ D:\VS projects\YuanQuan\DAL\bin\Debug\Model.pdb
 D:\VS projects\YuanQuan\DAL\bin\Debug\IDAL.pdb
 D:\VS projects\YuanQuan\DAL\obj\Debug\DAL.dll
 D:\VS projects\YuanQuan\DAL\obj\Debug\DAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Debug\DAL.dll
 D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Debug\DAL.pdb
 D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Debug\IDAL.dll
 D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Debug\Model.dll
 D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Debug\Model.pdb
 D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Debug\IDAL.pdb
-D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.dll
 D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.pdb

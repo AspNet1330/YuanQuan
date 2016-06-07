@@ -226,7 +226,7 @@
                     <div class="panel panel-default resume-block-simple">
                         <div class="panel-body">
 
-                            <img src="./CoderRecommend/c.png" style="float: right;">
+                            <img src="./CoderRecommend/<%#((Model.coder)Container.DataItem).c_skill.ToLower()%>.png" style="float: right;">
                             <h3>
                                 <%#((Model.coder)Container.DataItem).c_name%>
                             </h3>

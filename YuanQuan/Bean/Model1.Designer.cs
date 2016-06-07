@@ -388,11 +388,13 @@ namespace Model
         /// </summary>
         /// <param name="cha_id">cha_id 属性的初始值。</param>
         /// <param name="p_id">p_id 属性的初始值。</param>
-        public static cha_problems Createcha_problems(global::System.Int32 cha_id, global::System.Int32 p_id)
+        /// <param name="id">id 属性的初始值。</param>
+        public static cha_problems Createcha_problems(global::System.Int32 cha_id, global::System.Int32 p_id, global::System.Int32 id)
         {
             cha_problems cha_problems = new cha_problems();
             cha_problems.cha_id = cha_id;
             cha_problems.p_id = p_id;
+            cha_problems.id = id;
             return cha_problems;
         }
 
@@ -403,7 +405,7 @@ namespace Model
         /// <summary>
         /// 没有元数据文档可用。
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.Int32 cha_id
         {
@@ -413,14 +415,11 @@ namespace Model
             }
             set
             {
-                if (_cha_id != value)
-                {
-                    Oncha_idChanging(value);
-                    ReportPropertyChanging("cha_id");
-                    _cha_id = StructuralObject.SetValidValue(value, "cha_id");
-                    ReportPropertyChanged("cha_id");
-                    Oncha_idChanged();
-                }
+                Oncha_idChanging(value);
+                ReportPropertyChanging("cha_id");
+                _cha_id = StructuralObject.SetValidValue(value, "cha_id");
+                ReportPropertyChanged("cha_id");
+                Oncha_idChanged();
             }
         }
         private global::System.Int32 _cha_id;
@@ -430,7 +429,7 @@ namespace Model
         /// <summary>
         /// 没有元数据文档可用。
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.Int32 p_id
         {
@@ -440,19 +439,43 @@ namespace Model
             }
             set
             {
-                if (_p_id != value)
-                {
-                    Onp_idChanging(value);
-                    ReportPropertyChanging("p_id");
-                    _p_id = StructuralObject.SetValidValue(value, "p_id");
-                    ReportPropertyChanged("p_id");
-                    Onp_idChanged();
-                }
+                Onp_idChanging(value);
+                ReportPropertyChanging("p_id");
+                _p_id = StructuralObject.SetValidValue(value, "p_id");
+                ReportPropertyChanged("p_id");
+                Onp_idChanged();
             }
         }
         private global::System.Int32 _p_id;
         partial void Onp_idChanging(global::System.Int32 value);
         partial void Onp_idChanged();
+    
+        /// <summary>
+        /// 没有元数据文档可用。
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 id
+        {
+            get
+            {
+                return _id;
+            }
+            set
+            {
+                if (_id != value)
+                {
+                    OnidChanging(value);
+                    ReportPropertyChanging("id");
+                    _id = StructuralObject.SetValidValue(value, "id");
+                    ReportPropertyChanged("id");
+                    OnidChanged();
+                }
+            }
+        }
+        private global::System.Int32 _id;
+        partial void OnidChanging(global::System.Int32 value);
+        partial void OnidChanged();
 
         #endregion
 
@@ -877,6 +900,30 @@ namespace Model
         private Nullable<global::System.Double> _c_standard;
         partial void Onc_standardChanging(Nullable<global::System.Double> value);
         partial void Onc_standardChanged();
+    
+        /// <summary>
+        /// 没有元数据文档可用。
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String c_skill
+        {
+            get
+            {
+                return _c_skill;
+            }
+            set
+            {
+                Onc_skillChanging(value);
+                ReportPropertyChanging("c_skill");
+                _c_skill = StructuralObject.SetValidValue(value, true, "c_skill");
+                ReportPropertyChanged("c_skill");
+                Onc_skillChanged();
+            }
+        }
+        private global::System.String _c_skill;
+        partial void Onc_skillChanging(global::System.String value);
+        partial void Onc_skillChanged();
 
         #endregion
 
@@ -897,11 +944,13 @@ namespace Model
         /// </summary>
         /// <param name="c_id">c_id 属性的初始值。</param>
         /// <param name="cha_id">cha_id 属性的初始值。</param>
-        public static coder_cha Createcoder_cha(global::System.Int32 c_id, global::System.Int32 cha_id)
+        /// <param name="id">id 属性的初始值。</param>
+        public static coder_cha Createcoder_cha(global::System.Int32 c_id, global::System.Int32 cha_id, global::System.Int32 id)
         {
             coder_cha coder_cha = new coder_cha();
             coder_cha.c_id = c_id;
             coder_cha.cha_id = cha_id;
+            coder_cha.id = id;
             return coder_cha;
         }
 
@@ -912,7 +961,7 @@ namespace Model
         /// <summary>
         /// 没有元数据文档可用。
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.Int32 c_id
         {
@@ -922,14 +971,11 @@ namespace Model
             }
             set
             {
-                if (_c_id != value)
-                {
-                    Onc_idChanging(value);
-                    ReportPropertyChanging("c_id");
-                    _c_id = StructuralObject.SetValidValue(value, "c_id");
-                    ReportPropertyChanged("c_id");
-                    Onc_idChanged();
-                }
+                Onc_idChanging(value);
+                ReportPropertyChanging("c_id");
+                _c_id = StructuralObject.SetValidValue(value, "c_id");
+                ReportPropertyChanged("c_id");
+                Onc_idChanged();
             }
         }
         private global::System.Int32 _c_id;
@@ -939,7 +985,7 @@ namespace Model
         /// <summary>
         /// 没有元数据文档可用。
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.Int32 cha_id
         {
@@ -949,14 +995,11 @@ namespace Model
             }
             set
             {
-                if (_cha_id != value)
-                {
-                    Oncha_idChanging(value);
-                    ReportPropertyChanging("cha_id");
-                    _cha_id = StructuralObject.SetValidValue(value, "cha_id");
-                    ReportPropertyChanged("cha_id");
-                    Oncha_idChanged();
-                }
+                Oncha_idChanging(value);
+                ReportPropertyChanging("cha_id");
+                _cha_id = StructuralObject.SetValidValue(value, "cha_id");
+                ReportPropertyChanged("cha_id");
+                Oncha_idChanged();
             }
         }
         private global::System.Int32 _cha_id;
@@ -1010,6 +1053,33 @@ namespace Model
         private Nullable<global::System.Int32> _usetime;
         partial void OnusetimeChanging(Nullable<global::System.Int32> value);
         partial void OnusetimeChanged();
+    
+        /// <summary>
+        /// 没有元数据文档可用。
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 id
+        {
+            get
+            {
+                return _id;
+            }
+            set
+            {
+                if (_id != value)
+                {
+                    OnidChanging(value);
+                    ReportPropertyChanging("id");
+                    _id = StructuralObject.SetValidValue(value, "id");
+                    ReportPropertyChanged("id");
+                    OnidChanged();
+                }
+            }
+        }
+        private global::System.Int32 _id;
+        partial void OnidChanging(global::System.Int32 value);
+        partial void OnidChanged();
 
         #endregion
 

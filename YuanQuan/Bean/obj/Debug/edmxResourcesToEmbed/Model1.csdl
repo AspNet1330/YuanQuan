@@ -20,11 +20,11 @@
   </EntityType>
   <EntityType Name="cha_problems">
     <Key>
-      <PropertyRef Name="cha_id" />
-      <PropertyRef Name="p_id" />
+      <PropertyRef Name="id" />
     </Key>
     <Property Name="cha_id" Type="Int32" Nullable="false" />
     <Property Name="p_id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="challenge">
     <Key>
@@ -50,16 +50,17 @@
     <Property Name="c_accuracy" Type="Double" />
     <Property Name="c_quality" Type="Double" />
     <Property Name="c_standard" Type="Double" />
+    <Property Name="c_skill" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="coder_cha">
     <Key>
-      <PropertyRef Name="c_id" />
-      <PropertyRef Name="cha_id" />
+      <PropertyRef Name="id" />
     </Key>
     <Property Name="c_id" Type="Int32" Nullable="false" />
     <Property Name="cha_id" Type="Int32" Nullable="false" />
     <Property Name="grade" Type="Int32" />
     <Property Name="usetime" Type="Int32" />
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="combo">
     <Key>

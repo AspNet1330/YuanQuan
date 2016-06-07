@@ -15,6 +15,7 @@
         <MappingFragment StoreEntitySet="cha_problems">
           <ScalarProperty Name="cha_id" ColumnName="cha_id" />
           <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -42,6 +43,7 @@
           <ScalarProperty Name="c_accuracy" ColumnName="c_accuracy" />
           <ScalarProperty Name="c_quality" ColumnName="c_quality" />
           <ScalarProperty Name="c_standard" ColumnName="c_standard" />
+          <ScalarProperty Name="c_skill" ColumnName="c_skill" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -52,6 +54,7 @@
           <ScalarProperty Name="cha_id" ColumnName="cha_id" />
           <ScalarProperty Name="grade" ColumnName="grade" />
           <ScalarProperty Name="usetime" ColumnName="usetime" />
+          <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
