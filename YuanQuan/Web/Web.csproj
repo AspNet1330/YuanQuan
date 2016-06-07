@@ -59,38 +59,38 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CoderRecommend.aspx" />
+    <Content Include="CSS\bootstrap-select.min.css" />
+    <Content Include="CSS\bootstrap-switch.min.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\font-awesome.min.css" />
+    <Content Include="CSS\style%281%29.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="CSS\style_new.css" />
+    <Content Include="CSS\summernote-bs3.css" />
+    <Content Include="CSS\summernote.css" />
+    <Content Include="JS\bootstrap-filestyle.js" />
+    <Content Include="JS\bootstrap-select.min.js" />
+    <Content Include="JS\bootstrap-switch.min.js" />
+    <Content Include="JS\bootstrap.min.js" />
+    <Content Include="JS\jquery-1.11.0.min.js" />
+    <Content Include="JS\jquery-1.4.2.flp.js" />
+    <Content Include="JS\jquery.sparkline.min.js" />
+    <Content Include="JS\script.js" />
+    <Content Include="JS\summernote.min.js" />
+    <Content Include="Picture\android.png" />
+    <Content Include="Picture\c.png" />
+    <Content Include="Picture\clickbtn_11.png" />
+    <Content Include="Picture\clickbtn_182.png" />
+    <Content Include="Picture\closebtn_3.png" />
+    <Content Include="Picture\commonbg_4.png" />
+    <Content Include="Picture\java.png" />
+    <Content Include="Picture\otherimg_6.png" />
+    <Content Include="Picture\pic.gif" />
+    <Content Include="Picture\wlogo_sm.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="WebForm1.aspx" />
-    <Content Include="CoderRecommend\android.png" />
-    <Content Include="CoderRecommend\bootstrap-filestyle.js" />
-    <Content Include="CoderRecommend\bootstrap-select.min.css" />
-    <Content Include="CoderRecommend\bootstrap-select.min.js" />
-    <Content Include="CoderRecommend\bootstrap-switch.min.css" />
-    <Content Include="CoderRecommend\bootstrap-switch.min.js" />
-    <Content Include="CoderRecommend\bootstrap.min.css" />
-    <Content Include="CoderRecommend\bootstrap.min.js" />
-    <Content Include="CoderRecommend\c.png" />
-    <Content Include="CoderRecommend\clickbtn_11.png" />
-    <Content Include="CoderRecommend\clickbtn_182.png" />
-    <Content Include="CoderRecommend\closebtn_3.png" />
-    <Content Include="CoderRecommend\commonbg_4.png" />
-    <Content Include="CoderRecommend\font-awesome.min.css" />
-    <Content Include="CoderRecommend\java.png" />
-    <Content Include="CoderRecommend\jquery-1.11.0.min.js" />
-    <Content Include="CoderRecommend\jquery-1.4.2.flp.js" />
-    <Content Include="CoderRecommend\jquery.sparkline.min.js" />
-    <Content Include="CoderRecommend\otherimg_6.png" />
-    <Content Include="CoderRecommend\pic.gif" />
-    <Content Include="CoderRecommend\script.js" />
-    <Content Include="CoderRecommend\style%281%29.css" />
-    <Content Include="CoderRecommend\style.css" />
-    <Content Include="CoderRecommend\style_new.css" />
-    <Content Include="CoderRecommend\summernote-bs3.css" />
-    <Content Include="CoderRecommend\summernote.css" />
-    <Content Include="CoderRecommend\summernote.min.js" />
-    <Content Include="CoderRecommend\wlogo_sm.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoderRecommend.aspx.cs">
@@ -116,12 +116,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="CoderRecommend\core.php" />
-    <Content Include="CoderRecommend\kf.php" />
-    <Content Include="CoderRecommend\kf_ivt_new.php" />
-    <Content Include="CoderRecommend\sendacc.jsp" />
-    <Content Include="CoderRecommend\stat.php" />
-    <Content Include="CoderRecommend\z_stat.php" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bean\Model.csproj">
@@ -137,6 +131,7 @@
       <Name>BLLInterface</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

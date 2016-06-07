@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script id="hz6d_send_acc" src="./CoderRecommend/sendacc.jsp" charset="utf-8"></script>
+    <script id="hz6d_send_acc" src="./JS/sendacc.jsp" charset="utf-8"></script>
     <script id="stat_script" src="./CoderRecommend/stat.php" charset="utf-8"></script>
     <script id="ivt_script" src="./CoderRecommend/kf_ivt_new.php" charset="utf-8"></script>
     <!--<base href="http://www.oxcoder.com:80/">-->
@@ -17,16 +17,16 @@
     <meta name="description" content="">
     <meta name="author" content="BootstrapStyler">
     <title>猿圈 人才推荐</title>
-    <link href="./CoderRecommend/bootstrap.min.css" rel="stylesheet">
-    <link href="./CoderRecommend/font-awesome.min.css" rel="stylesheet">
-    <link href="./CoderRecommend/bootstrap-switch.min.css" rel="stylesheet">
-    <link href="./CoderRecommend/bootstrap-select.min.css" rel="stylesheet">
-    <link href="./CoderRecommend/style.css" rel="stylesheet">
-    <link href="./CoderRecommend/summernote.css" rel="stylesheet">
-    <link href="./CoderRecommend/summernote-bs3.css" rel="stylesheet">
-    <link href="./CoderRecommend/style(1).css" rel="stylesheet" type="text/css">
+    <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="./CSS/font-awesome.min.css" rel="stylesheet">
+    <link href="./CSS/bootstrap-switch.min.css" rel="stylesheet">
+    <link href="./CSS/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./CSS/style.css" rel="stylesheet">
+    <link href="./CSS/summernote.css" rel="stylesheet">
+    <link href="./CSS/summernote-bs3.css" rel="stylesheet">
+    <link href="./CSS/style(1).css" rel="stylesheet" type="text/css">
     <!-- Max css -->
-    <link href="./CoderRecommend/style_new.css" rel="stylesheet" type="text/css">
+    <link href="./CSS/style_new.css" rel="stylesheet" type="text/css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -74,20 +74,20 @@
         <div id="kfivtwin" style="display: none; overflow: visible;">
             <div id="acc_title" class="Lelem" minheight="100" minwidth="100" maxheight="400" maxwidth="400" style="position: relative; z-index: 10000; overflow: visible;">
                 <div class="Lelem" type="img" style="display: block; cursor: default; position: absolute; top: 51px; left: 3px; z-index: 10001; width: 394px; height: 196px;">
-                    <img style="width: 394px; height: 196px;" src="./CoderRecommend/commonbg_4.png">
+                    <img style="width: 394px; height: 196px;" src="./Picture/commonbg_4.png">
                 </div>
                 <div style="display: block; cursor: default; position: absolute; top: 60px; left: 15px; z-index: 10002; width: 97px; height: 20px;" type="text" class="Lelem"><span style="vertical-align: top; font-size: 14px; line-height: 20px; font-family: 宋体;" iseditable="1">53KF在线客服</span></div>
                 <div style="display: block; cursor: pointer; position: absolute; top: 70px; left: 371px; z-index: 10003; width: 10px; height: 8px;" onclick="onliner_zdfq=3;hidden_ivt();;" type="img" class="Lelem">
-                    <img src="./CoderRecommend/closebtn_3.png" style="width: 10px; height: 8px;">
+                    <img src="./Picture/closebtn_3.png" style="width: 10px; height: 8px;">
                 </div>
                 <div style="display: block; cursor: default; position: absolute; top: 97px; left: 13px; z-index: 10004; width: 127px; height: 120px;" type="img" class="Lelem">
-                    <img src="./CoderRecommend/otherimg_6.png" style="width: 127px; height: 120px;">
+                    <img src="./Picture/otherimg_6.png" style="width: 127px; height: 120px;">
                 </div>
                 <div style="display: block; cursor: default; position: absolute; top: 94px; left: 160px; z-index: 10005; width: 140px; height: 42px;" type="text" class="Lelem"><span style="vertical-align: top; font-size: 29.4px; line-height: 42px; font-family: 黑体;" iseditable="1">欢迎咨询</span></div>
                 <div class="Lelem" type="text" style="display: block; cursor: default; position: absolute; top: 136px; left: 164px; z-index: 10006; width: 233px; height: 18px;"><span iseditable="1" style="vertical-align: top; font-size: 12.6px; line-height: 20px; font-family: 宋体;">53KF.com，感谢大家的支持！</span></div>
                 <div style="display: block; cursor: default; position: absolute; top: 157px; left: 166px; z-index: 10007; width: 190px; height: 17px;" type="text" class="Lelem"><span style="vertical-align: top; font-size: 12px; line-height: 17px;" iseditable="1">请问有什么可以帮您？</span></div>
                 <div class="Lelem" type="img" onclick="onliner_zdfq=2;hz6d_is_exist(&quot;window.open(%22http%3A%2F%2Fwww15.53kf.com%2FwebCompany.php%3Farg%3D10124917%26style%3D1%26kflist%3Doff%26kf%3D%26zdkf_type%3D1%26language%3Dzh-cn%26charset%3Dgbk%26username%3D%26userinfo%3D%26introurl%3D%26lyurl%3D%26lytype%3D0%26copartner%3D%26referer%3Dhttp%253A%252F%252Fwww.oxcoder.com%252Fcooper%252Frecommended%252Ftalent%252Findex.html%26keyword%3Dhttps%253A%252F%252Fwww.baidu.com%252Flink%253Furl%253DT1OPBNEKlZ6nlg_AT5UiEAltFSAE1K1fP3PWTuGhf_ZRMtBtOO8UWIV5Y0bxjVEL%2526wd%253D%2526eqid%253Dcc3117f0001d28d2000000035719850b%26brief%3D%26logo%3D%26question%3D%26tfrom%3D2%22%2C%22_blank%22%2C%22height%3D473%2Cwidth%3D703%2Ctop%3D200%2Cleft%3D200%2Cstatus%3Dyes%2Ctoolbar%3Dno%2Cmenubar%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dno%2Clocation%3Dno%2Ctitlebar%3Dno%22)&quot;);hidden_ivt();;" style="display: block; cursor: pointer; position: absolute; top: 180px; left: 165px; z-index: 10008; width: 128px; height: 39px;">
-                    <img style="width: 128px; height: 39px;" src="./CoderRecommend/clickbtn_11.png">
+                    <img style="width: 128px; height: 39px;" src="./Picture/clickbtn_11.png">
                 </div>
                 <div style="display: block; cursor: pointer; position: absolute; top: 222px; left: 18px; z-index: 10009; width: 110px; height: 17px; color: rgb(153, 153, 153);" type="text" class="Lelem"><a href="http://www.53kf.com/" target="_blank" style="text-decoration: none; cursor: pointer;"><span style="vertical-align: top; font-size: 10px; color: #666; line-height: 17px; font-family: 宋体;" iseditable="1">这是什么工具？</span></a></div>
                 <div style="display: block; cursor: pointer; position: absolute; top: 224px; left: 294px; z-index: 100010; width: 106px; height: 17px; color: rgb(153, 153, 153);" type="text" class="Lelem"><a href="http://www.53kf.com/" target="_blank" style="text-decoration: none; cursor: pointer;"><span style="vertical-align: top; font-size: 10px; line-height: 17px; color: #666; font-family: 宋体;" iseditable="1">Powered by 53KF</span></a></div>
@@ -101,7 +101,7 @@
                 <div id="kf_hidden1" onclick="set_auto_hidden(1)" onmouseover="show_kf_icons(1);" onmouseout="hidden_kf_icon(1);" style="position: absolute; top: 0; right: 0; z-index: 9000; display: none;">
                     <div id="KFLOGO" class="Lelem" maxwidth="400" maxheight="400" minwidth="100" minheight="100" style="width: 151px; height: 106px; position: relative; z-index: 10000; cursor: pointer;">
                         <div class="Lelem" type="img" onclick="hz6d_is_exist(&#39;setIsinvited()%3Bwindow.open(#liyc#http%3A%2F%2Fwww15.53kf.com%2FwebCompany.php%3Farg%3D10124917%26style%3D1%26language%3Dzh-cn%26lytype%3D0%26charset%3Dgbk%26kflist%3Doff%26kf%3D%26zdkf_type%3D1%26referer%3Dhttp%253A%252F%252Fwww.oxcoder.com%252Fcooper%252Frecommended%252Ftalent%252Findex.html%26keyword%3Dhttps%253A%252F%252Fwww.baidu.com%252Flink%253Furl%253DT1OPBNEKlZ6nlg_AT5UiEAltFSAE1K1fP3PWTuGhf_ZRMtBtOO8UWIV5Y0bxjVEL%2526wd%253D%2526eqid%253Dcc3117f0001d28d2000000035719850b%26tfrom%3D1%26tpl%3Dcrystal_blue#liyc#%2C%20#liyc#_blank#liyc#%2C%20#liyc#height%3D473%2Cwidth%3D703%2Ctop%3D200%2Cleft%3D200%2Cstatus%3Dyes%2Ctoolbar%3Dno%2Cmenubar%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dno%2Clocation%3Dno%2Ctitlebar%3Dno#liyc#)&#39;);" style="display: block; cursor: pointer; position: absolute; top: 33px; left: 11px; z-index: 10001; width: 134px; height: 36px;">
-                            <img src="./CoderRecommend/clickbtn_182.png" style="width: 134px; height: 36px;">
+                            <img src="./Picture/clickbtn_182.png" style="width: 134px; height: 36px;">
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand hidden-sm" href="http://www.oxcoder.com/cooper/index.html" style="padding: 0;">
-                        <img src="./CoderRecommend/wlogo_sm.png" style="max-height: 35px; margin: 7px;">
+                        <img src="./Picture/wlogo_sm.png" style="max-height: 35px; margin: 7px;">
                     </a>
                 </div>
                 <div class="navbar-collapse collapse" role="navigation">
@@ -226,7 +226,7 @@
                     <div class="panel panel-default resume-block-simple">
                         <div class="panel-body">
 
-                            <img src="./CoderRecommend/<%#((Model.coder)Container.DataItem).c_skill.ToLower()%>.png" style="float: right;">
+                            <img src="./Picture/<%#((Model.coder)Container.DataItem).c_skill.ToLower()%>.png" style="float: right;">
                             <h3>
                                 <%#((Model.coder)Container.DataItem).c_name%>
                             </h3>
@@ -266,14 +266,14 @@
     </form>
 
     <!-- /.container -->
-    <script src="./CoderRecommend/jquery-1.11.0.min.js"></script>
-    <script src="./CoderRecommend/bootstrap.min.js"></script>
-    <script src="./CoderRecommend/jquery.sparkline.min.js"></script>
-    <script src="./CoderRecommend/bootstrap-switch.min.js"></script>
-    <script src="./CoderRecommend/bootstrap-select.min.js"></script>
-    <script src="./CoderRecommend/bootstrap-filestyle.js"></script>
-    <script src="./CoderRecommend/summernote.min.js"></script>
-    <script src="./CoderRecommend/script.js"></script>
+    <script src="./JS/jquery-1.11.0.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/jquery.sparkline.min.js"></script>
+    <script src="./JS/bootstrap-switch.min.js"></script>
+    <script src="./JS/bootstrap-select.min.js"></script>
+    <script src="./JS/bootstrap-filestyle.js"></script>
+    <script src="./JS/summernote.min.js"></script>
+    <script src="./JS/script.js"></script>
 
 
 
@@ -300,7 +300,7 @@
                         );
                     </script>
                     <span id="cnzz_stat_icon_1253509620"><a href="http://www.cnzz.com/stat/website.php?web_id=1253509620" target="_blank" title="站长统计">
-                        <img border="0" hspace="0" vspace="0" src="./CoderRecommend/pic.gif"></a></span><script src="./CoderRecommend/z_stat.php" type="text/javascript"></script><script src="./CoderRecommend/core.php" charset="utf-8" type="text/javascript"></script>
+                        <img border="0" hspace="0" vspace="0" src="./Picture/pic.gif"></a></span><script src="./CoderRecommend/z_stat.php" type="text/javascript"></script><script src="./CoderRecommend/core.php" charset="utf-8" type="text/javascript"></script>
                 </div>
             </div>
         </div>
@@ -317,7 +317,7 @@
 
 
 
-    <script id="hz6d_flp_jquery" src="./CoderRecommend/jquery-1.4.2.flp.js" charset="utf-8" type="text/javascript"></script>
+    <script id="hz6d_flp_jquery" src="./JS/jquery-1.4.2.flp.js" charset="utf-8" type="text/javascript"></script>
 </body>
 
 </html>
