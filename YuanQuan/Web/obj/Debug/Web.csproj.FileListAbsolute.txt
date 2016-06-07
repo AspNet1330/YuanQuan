@@ -11,8 +11,6 @@ D:\VS projects\YuanQuan\Web\obj\Debug\Web.dll
 D:\VS projects\YuanQuan\Web\obj\Debug\Web.pdb
 D:\VS projects\YuanQuan\Web\bin\DALFactory.dll
 D:\VS projects\YuanQuan\Web\bin\DALFactory.pdb
-D:\GitRepo\YuanQuan\YuanQuan\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
-D:\GitRepo\YuanQuan\YuanQuan\Web\obj\Debug\Web.dll
 D:\GitRepo\YuanQuan\YuanQuan\Web\bin\Web.dll
 D:\GitRepo\YuanQuan\YuanQuan\Web\bin\Web.pdb
 D:\GitRepo\YuanQuan\YuanQuan\Web\bin\BLLFactory.dll
@@ -29,4 +27,6 @@ D:\GitRepo\YuanQuan\YuanQuan\Web\bin\BLL.pdb
 D:\GitRepo\YuanQuan\YuanQuan\Web\bin\DALFactory.pdb
 D:\GitRepo\YuanQuan\YuanQuan\Web\bin\IDAL.pdb
 D:\GitRepo\YuanQuan\YuanQuan\Web\bin\DAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\Web\obj\Debug\Web.dll
 D:\GitRepo\YuanQuan\YuanQuan\Web\obj\Debug\Web.pdb

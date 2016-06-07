@@ -2,9 +2,6 @@ D:\VS projects\YuanQuan\BLL\bin\Debug\BLL.dll
 D:\VS projects\YuanQuan\BLL\bin\Debug\BLL.pdb
 D:\VS projects\YuanQuan\BLL\obj\Debug\BLL.dll
 D:\VS projects\YuanQuan\BLL\obj\Debug\BLL.pdb
-D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.dll
-D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.pdb
 D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Debug\BLL.dll
 D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Debug\BLL.pdb
 D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Debug\DALFactory.dll
@@ -17,3 +14,6 @@ D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Debug\DALFactory.pdb
 D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Debug\IBLL.pdb
 D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Debug\IDAL.pdb
 D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Debug\DAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.pdb
