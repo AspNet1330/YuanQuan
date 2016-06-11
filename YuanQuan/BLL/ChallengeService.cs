@@ -10,7 +10,7 @@ using DALFactory;
 
 namespace BLL
 {
-    class ChallengeService:IChallenge
+    public class ChallengeService:IChallengeService
     {
         public void saveChallenge(challenge challenge)
         {

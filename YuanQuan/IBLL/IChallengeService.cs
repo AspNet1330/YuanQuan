@@ -7,7 +7,7 @@ using Model;
 
 namespace BLLInterface
 {
-    public interface IChallenge
+    public interface IChallengeService
     {
         public void saveChallenge(challenge challenge);
 

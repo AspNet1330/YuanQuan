@@ -10,7 +10,7 @@ using DALFactory;
 
 namespace BLL
 {
-    class CoderChallengeService:ICoderChallenge
+    public class CoderChallengeService:ICoderChallengeService
     {
         public void saveCoderChallenge(coder_cha coderChallenge)
         {
