@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IChallenge.cs" />
+    <Compile Include="IChallengeProblem.cs" />
+    <Compile Include="ICoderChallenge.cs" />
     <Compile Include="ICoderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
