@@ -16,3 +16,12 @@ D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Debug\Model.pdb
 D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Debug\IDAL.pdb
 D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.dll
 D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.pdb
+F:\code\yuanquan\YuanQuan\DAL\bin\Debug\DAL.dll
+F:\code\yuanquan\YuanQuan\DAL\bin\Debug\DAL.pdb
+F:\code\yuanquan\YuanQuan\DAL\bin\Debug\IDAL.dll
+F:\code\yuanquan\YuanQuan\DAL\bin\Debug\Model.dll
+F:\code\yuanquan\YuanQuan\DAL\bin\Debug\Model.pdb
+F:\code\yuanquan\YuanQuan\DAL\bin\Debug\IDAL.pdb
+F:\code\yuanquan\YuanQuan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\code\yuanquan\YuanQuan\DAL\obj\Debug\DAL.dll
+F:\code\yuanquan\YuanQuan\DAL\obj\Debug\DAL.pdb

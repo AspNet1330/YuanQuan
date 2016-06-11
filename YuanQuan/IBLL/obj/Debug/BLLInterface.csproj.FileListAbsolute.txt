@@ -9,3 +9,10 @@ D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Debug\Model.dll
 D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Debug\Model.pdb
 D:\GitRepo\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.dll
 D:\GitRepo\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.pdb
+F:\code\yuanquan\YuanQuan\IBLL\bin\Debug\IBLL.dll
+F:\code\yuanquan\YuanQuan\IBLL\bin\Debug\IBLL.pdb
+F:\code\yuanquan\YuanQuan\IBLL\bin\Debug\Model.dll
+F:\code\yuanquan\YuanQuan\IBLL\bin\Debug\Model.pdb
+F:\code\yuanquan\YuanQuan\IBLL\obj\Debug\BLLInterface.csprojResolveAssemblyReference.cache
+F:\code\yuanquan\YuanQuan\IBLL\obj\Debug\IBLL.dll
+F:\code\yuanquan\YuanQuan\IBLL\obj\Debug\IBLL.pdb

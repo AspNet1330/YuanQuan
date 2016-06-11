@@ -35,7 +35,7 @@ namespace Web
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            this.Label2.Text = this.TextBox1.Text;
+            Server.Transfer("Invite.aspx"); 
         }
     }
 }

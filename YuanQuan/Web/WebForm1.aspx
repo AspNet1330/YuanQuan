@@ -14,7 +14,7 @@
         <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Button" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Button" style="height: 21px" />
      </form>
 </body>
 </html>
