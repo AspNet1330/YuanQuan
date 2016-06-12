@@ -9,14 +9,14 @@ namespace BLLInterface
 {
     public interface IChallengeService
     {
-        public void saveChallenge(challenge challenge);
+        void saveChallenge(challenge challenge);
 
-        public void updateChallenge(challenge challenge);
+        void updateChallenge(challenge challenge);
 
-        public void deleteChallenge(int challengeId);
+        void deleteChallenge(int challengeId);
 
-        public List<challenge> getChallengesByEnterprise(int enterpeiseId);
+        List<challenge> getChallengesByEnterprise(int enterpeiseId);
 
-        public challenge getChallengeByChallengeId(int challengeId);
+        challenge getChallengeByChallengeId(int challengeId);
     }
 }

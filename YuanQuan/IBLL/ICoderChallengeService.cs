@@ -9,11 +9,11 @@ namespace BLLInterface
 {
     public interface ICoderChallengeService
     {
-        public void saveCoderChallenge(coder_cha coderChallenge);
+        void saveCoderChallenge(coder_cha coderChallenge);
 
-        public coder_cha getCoderChaById(int coderChallengeId);
+        coder_cha getCoderChaById(int coderChallengeId);
 
-        public List<coder_cha> getCodersByChallengeId(int challengeId);
+        List<coder_cha> getCodersByChallengeId(int challengeId);
 
     }
 }

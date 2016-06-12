@@ -16,14 +16,14 @@ namespace DAL
         SqlConnection connect = new SqlConnection("metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=120.27.102.55;user id=team;persistsecurityinfo=True;password=123456;database=yuanquan&quot;\" providerName=\"System.Data.EntityClient");
         String sql = "";
 
-        cha_problems getChaProblemById(int id)
+        public cha_problems getChaProblemById(int id)
         {
             yuanquanEntities yq = new yuanquanEntities();
             var cha_problems = yq.cha_problems.Single(c => c.id == id);
             return cha_problems;
         }
 
-        List<cha_problems> getProblemsByChallengeId(int challengeId)
+        public List<cha_problems> getProblemsByChallengeId(int challengeId)
         {
             List<cha_problems> challengeProblems = new List<cha_problems>();
             using (yuanquanEntities yq = new yuanquanEntities())
@@ -37,7 +37,7 @@ namespace DAL
             return challengeProblems;
         }
 
-        void saveChaPro(cha_problems chaPro)
+        public void saveChaPro(cha_problems chaPro)
         {
             connect.Open();
 
@@ -47,7 +47,7 @@ namespace DAL
             connect.Close();
         }
 
-        void updateChaPro(cha_problems chaPro)
+        public void updateChaPro(cha_problems chaPro)
         {
             connect.Open();
 
@@ -57,7 +57,7 @@ namespace DAL
             connect.Close();
         }
 
-        void deleteChaProByChallengeId(int challengeId)
+        public void deleteChaProByChallengeId(int challengeId)
         {
             connect.Open();
 

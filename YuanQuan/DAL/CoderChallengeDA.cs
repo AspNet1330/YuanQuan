@@ -16,7 +16,7 @@ namespace DAL
         SqlConnection connect = new SqlConnection("metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=120.27.102.55;user id=team;persistsecurityinfo=True;password=123456;database=yuanquan&quot;\" providerName=\"System.Data.EntityClient");
         String sql = "";
 
-        List<coder_cha> getCoderByChallengeId(int challengeId)
+        public List<coder_cha> getCoderByChallengeId(int challengeId)
         {
             List<coder_cha> coderChas = new List<coder_cha>();
             using (yuanquanEntities yq = new yuanquanEntities())
@@ -30,14 +30,14 @@ namespace DAL
             return coderChas;
         }
 
-        coder_cha getCoderChallengeById(int id)
+        public coder_cha getCoderChallengeById(int id)
         {
             yuanquanEntities yq = new yuanquanEntities();
             var coderChallenge = yq.coder_cha.Single(c => c.id== id);
             return coderChallenge;
         }
 
-        void saveCoderChallenge(coder_cha coderChallenge)
+        public void saveCoderChallenge(coder_cha coderChallenge)
         {
             connect.Open();
 
@@ -47,7 +47,7 @@ namespace DAL
             connect.Close();
         }
 
-        void updateCoderChallenge(coder_cha coderChallenge)
+        public void updateCoderChallenge(coder_cha coderChallenge)
         {
             connect.Open();
 
@@ -57,7 +57,7 @@ namespace DAL
             connect.Close();
         }
 
-        void deleteCoderChallengeById(int coderChallengeId)
+        public void deleteCoderChallengeById(int coderChallengeId)
         {
             connect.Open();
 

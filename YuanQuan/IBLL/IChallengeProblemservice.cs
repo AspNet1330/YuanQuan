@@ -9,13 +9,13 @@ namespace BLLInterface
 {
     public interface IChallengeProblemService
     {
-        public void saveChallengeProblem(cha_problems challengeProblem);
+        void saveChallengeProblem(cha_problems challengeProblem);
 
-        public void deleteChaProByChallengeId(int challengeId);
+        void deleteChaProByChallengeId(int challengeId);
 
-        public List<cha_problems> getProblemByChallengeId(int challengeId);
+        List<cha_problems> getProblemByChallengeId(int challengeId);
 
-        public cha_problems getProblemById(int chaProblemId);
+        cha_problems getProblemById(int chaProblemId);
 
 
     }
