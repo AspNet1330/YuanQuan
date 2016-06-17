@@ -13,8 +13,6 @@ namespace DAL
 {
     public class ChallengeDA:IChallengeDA
     {
-        SqlConnection connect = new SqlConnection("metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=120.27.102.55;user id=team;persistsecurityinfo=True;password=123456;database=yuanquan&quot;\" providerName=\"System.Data.EntityClient");
-        String sql = "";
         public List<challenge> getChallengeByEnterpriseId(int enterpriseId)
         {
             List<challenge> challenge = new List<challenge>();
@@ -38,32 +36,30 @@ namespace DAL
 
         public void saveChallenge(challenge challenge)
         {
-            connect.Open();
-
-            sql = "insert into challenge (e_id,cha_type,cha_level,cha_public,cha_date)values("+challenge.e_id+",'"+challenge.cha_type+"','"+challenge.cha_level+"',"+challenge.cha_public+","+challenge.cha_date+")";
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+            yuanquanEntities yq = new yuanquanEntities();
+            yq.challenge.AddObject(challenge);
+            yq.SaveChanges();
         }
 
         public void updateChallenge(challenge challenge)
         {
-            connect.Open();
-
-            sql = "update challenge set e_id="+challenge.e_id+",cha_type='"+challenge.cha_type +"',cha_level='"+challenge.cha_level+"',cha_public = "+challenge.cha_public+"where cha_id="+challenge.cha_id;
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+            yuanquanEntities yq = new yuanquanEntities();
+            challenge cha = yq.challenge.Single(c => c.cha_id == challenge.cha_id);
+            cha.cha_type = challenge.cha_type;
+            cha.e_id = challenge.e_id;
+            cha.cha_level = challenge.cha_level;
+            cha.cha_public = challenge.cha_public;
+            yq.SaveChanges();
         }
 
         public void deleteChallengeById(int challengeId)
         {
-            connect.Open();
-
-            sql = "delete from challenge where cha_id="+challengeId;
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+            yuanquanEntities yq = new yuanquanEntities();
+            var challenge = yq.challenge.Single(c=>c.cha_id==challengeId);
+            if(challenge==null)
+                return; 
+            yq.challenge.DeleteObject(challenge);
+            yq.SaveChanges();
         }
     }
 }

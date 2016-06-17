@@ -13,8 +13,7 @@ namespace DAL
 {
     public class CoderChallengeDA : ICoder_chaDA
     {
-        SqlConnection connect = new SqlConnection("metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=120.27.102.55;user id=team;persistsecurityinfo=True;password=123456;database=yuanquan&quot;\" providerName=\"System.Data.EntityClient");
-        String sql = "";
+       
 
         public List<coder_cha> getCoderByChallengeId(int challengeId)
         {
@@ -39,32 +38,32 @@ namespace DAL
 
         public void saveCoderChallenge(coder_cha coderChallenge)
         {
-            connect.Open();
-
-            sql = "insert into coder_cha (c_id,cha_id,grade,usetime)values(" + coderChallenge.c_id + "," + coderChallenge.cha_id + "," + coderChallenge.grade + "," + coderChallenge.usetime+")";
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+           
+            yuanquanEntities yq = new yuanquanEntities();
+            yq.coder_cha.AddObject(coderChallenge);
+            yq.SaveChanges();
+      
         }
 
         public void updateCoderChallenge(coder_cha coderChallenge)
         {
-            connect.Open();
-
-            sql = "update coder_cha set c_id=" + coderChallenge.c_id + ",cha_id=" + coderChallenge.cha_id + ",grade=" + coderChallenge.grade + ",usetime = " + coderChallenge.usetime + "where id=" + coderChallenge.id;
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+            yuanquanEntities yq = new yuanquanEntities();
+            var cha = yq.coder_cha.Single(c => c.id == coderChallenge.id);
+            cha.c_id = coderChallenge.c_id;
+            cha.cha_id = coderChallenge.cha_id;
+            cha.grade = coderChallenge.grade;
+            cha.usetime = coderChallenge.usetime;
+            yq.SaveChanges();
         }
 
         public void deleteCoderChallengeById(int coderChallengeId)
         {
-            connect.Open();
-
-            sql = "delete from coder_cha where id=" + coderChallengeId;
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+            yuanquanEntities yq = new yuanquanEntities();
+            var cha = yq.coder_cha.Single(c => c.id == coderChallengeId);
+            if (cha == null)
+                return;
+            yq.coder_cha.DeleteObject(cha);
+            yq.SaveChanges();
         }
     }
 }

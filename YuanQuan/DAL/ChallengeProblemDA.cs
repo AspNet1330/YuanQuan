@@ -13,8 +13,6 @@ namespace DAL
 {
     public class ChallengeProblemDA : ICha_problemDA
     {
-        SqlConnection connect = new SqlConnection("metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=120.27.102.55;user id=team;persistsecurityinfo=True;password=123456;database=yuanquan&quot;\" providerName=\"System.Data.EntityClient");
-        String sql = "";
 
         public cha_problems getChaProblemById(int id)
         {
@@ -39,32 +37,28 @@ namespace DAL
 
         public void saveChaPro(cha_problems chaPro)
         {
-            connect.Open();
-
-            sql = "insert into cha_problems (cha_id,p_id)values(" + chaPro.cha_id + "," + chaPro.p_id+")";
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+            yuanquanEntities yq = new yuanquanEntities();
+            yq.cha_problems.AddObject(chaPro);
+            yq.SaveChanges();
         }
 
         public void updateChaPro(cha_problems chaPro)
         {
-            connect.Open();
-
-            sql = "update cha_problems set cha_id=" + chaPro.cha_id + ",p_id=" + chaPro.p_id + "where id=" + chaPro.id;
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+            yuanquanEntities yq = new yuanquanEntities();
+            cha_problems cha = yq.cha_problems.Single(c => c.id == chaPro.id);
+            cha.cha_id = chaPro.cha_id;
+            cha.p_id = chaPro.p_id;
+            yq.SaveChanges();
         }
 
         public void deleteChaProByChallengeId(int challengeId)
         {
-            connect.Open();
-
-            sql = "delete from cha_problems where cha_id=" + challengeId;
-            SqlCommand command = new SqlCommand(sql, connect);
-            command.ExecuteNonQuery();
-            connect.Close();
+            yuanquanEntities yq = new yuanquanEntities();
+            var challenge = yq.cha_problems.Single(c => c.cha_id == challengeId);
+            if (challenge == null)
+                return;
+            yq.cha_problems.DeleteObject(challenge);
+            yq.SaveChanges();
         }
     }
 }

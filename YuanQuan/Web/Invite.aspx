@@ -157,8 +157,8 @@
 										<div style="text-align:center;margin-bottom:20px;">
 											<img src="./猿圈 新增挑战邀请_files/nc1.png">
                                         </div>
-										<form runat="server" class="form-horizontal bv-form"  id="new_challenge_form" action="./Invite2.aspx" method="post">
-										<asp:Button  type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;" runat="server"/>
+										<form  class="form-horizontal bv-form"  id="new_challenge_form" action="?Action=next" method="post">
+									
 											<input name="direction" id="directions_id" value="2" type="hidden">
 											<input name="level" id="level_id" value="" type="hidden">
 											<h4 class="col-md-12 col-no-left-padding">请选择挑战类型</h4>
@@ -318,7 +318,7 @@
 													<small style="margin-left: 20px; display: none;" id="hint1" class="help-block">请选择挑战类型及等级</small>
 												</span>
 												<div class="align-center">
-													<button  type="submit" ID="new_challenge_btn_1" class="btn btn-new1" >保存&下一步</button>
+													<button  ID="new_challenge_btn_1" class="btn btn-new1"  type="submit">保存&下一步</button>
 												</div>
 											</div>
 										</form>
@@ -448,7 +448,7 @@
 	                $("#hint1").show();
 	                return false;
 	            }
-	            return true；
+	            return true;
 	        });
 	    });
 	    function selectDirection(obj) {
