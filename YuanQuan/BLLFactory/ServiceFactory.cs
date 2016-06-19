@@ -33,5 +33,11 @@ namespace BLLFactory
             IChallengeProblemService cps = new ChallengeProblemService();
             return cps;
         }
+
+        public static IProblemService createProblemService()
+        {
+            IProblemService ps = new ProblemService();
+            return ps;
+        }
     }
 }

@@ -10,6 +10,6 @@
 namespace Web {
     
     
-    public partial class Invite {
+    public partial class ManageChallenge {
     }
 }

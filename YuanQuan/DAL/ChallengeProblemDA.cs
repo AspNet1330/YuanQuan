@@ -54,9 +54,9 @@ namespace DAL
         public void deleteChaProByChallengeId(int challengeId)
         {
             yuanquanEntities yq = new yuanquanEntities();
-            var challenge = yq.cha_problems.Single(c => c.cha_id == challengeId);
-            if (challenge == null)
+            if (!yq.cha_problems.Any(c => c.cha_id == challengeId))
                 return;
+            var challenge = yq.cha_problems.Single(c => c.cha_id == challengeId);
             yq.cha_problems.DeleteObject(challenge);
             yq.SaveChanges();
         }

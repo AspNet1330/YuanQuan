@@ -1,323 +1,538 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Invite2.aspx.cs" Inherits="Web.Invite2" %>
 <!DOCTYPE html>
-<!-- saved from url=(0062)http://www.oxcoder.com/cooper/new/recruit/new_recruit_2_0.html -->
-<html lang="en">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!--<base href="http://www.oxcoder.com:80/">-->
-    <base href=".">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="BootstrapStyler">
-    <title>猿圈 新增挑战邀请</title>
-    <link href="./猿圈 新增挑战邀请2_files/bootstrap.min.css" rel="stylesheet">
-    <link href="./猿圈 新增挑战邀请2_files/font-awesome.min.css" rel="stylesheet">
-    <link href="./猿圈 新增挑战邀请2_files/bootstrap-switch.min.css" rel="stylesheet">
-    <link href="./猿圈 新增挑战邀请2_files/bootstrap-select.min.css" rel="stylesheet">
-    <link href="./猿圈 新增挑战邀请2_files/style.css" rel="stylesheet">
-    <link href="./猿圈 新增挑战邀请2_files/summernote.css" rel="stylesheet">
-    <link href="./猿圈 新增挑战邀请2_files/summernote-bs3.css" rel="stylesheet">
-    <link href="./猿圈 新增挑战邀请2_files/style(1).css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./猿圈 新增挑战邀请2_files/jquery-confirm.min.css">
-    <!-- Max css -->
-    <link href="./猿圈 新增挑战邀请2_files/style_new.css" rel="stylesheet" type="text/css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-    <style type="text/css">
-        .companyTags li {
-            margin: 5px 5px 0 0;
-        }
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://oxcoder.com:80/">--><base href=".">
 
-        .footer-log {
-            margin-bottom: 20px;
-            color: #4A90E2;
-        }
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="BootstrapStyler">
+<title>猿圈 新增挑战邀请</title>
+<link href="./猿圈 新增挑战邀请2_files/bootstrap.min.css" rel="stylesheet">
+<link href="./猿圈 新增挑战邀请2_files/font-awesome.min.css" rel="stylesheet">
+<link href="./猿圈 新增挑战邀请2_files/bootstrap-switch.min.css" rel="stylesheet">
+<link href="./猿圈 新增挑战邀请2_files/bootstrap-select.min.css" rel="stylesheet">
+<link href="./猿圈 新增挑战邀请2_files/style.css" rel="stylesheet">
+<link href="./猿圈 新增挑战邀请2_files/summernote.css" rel="stylesheet">
+<link href="./猿圈 新增挑战邀请2_files/summernote-bs3.css" rel="stylesheet">
+<link href="./猿圈 新增挑战邀请2_files/style(1).css" rel="stylesheet" type="text/css">
 
-            .footer-log a {
-                color: #4A90E2;
-                padding-left: 10px;
-                margin-left: 10px;
-                border-left: 1.5px solid #fff;
-            }
-
-                .footer-log a:visited {
-                    color: #4A90E2;
-                }
-    </style>
-    <style type="text/css">
-        .jqstooltip {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            visibility: hidden;
-            background: rgb(0, 0, 0) transparent;
-            background-color: rgba(0,0,0,0.6);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-            color: white;
-            font: 10px arial, san serif;
-            text-align: left;
-            white-space: nowrap;
-            padding: 5px;
-            border: 1px solid white;
-            z-index: 10000;
-        }
-
-        .jqsfield {
-            color: white;
-            font: 10px arial, san serif;
-            text-align: left;
-        }
-    </style>
-</head>
+<link rel="stylesheet" href="./猿圈 新增挑战邀请2_files/jquery-confirm.min.css">
+<!-- Max css -->
+<link href="./猿圈 新增挑战邀请2_files/style_new.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+.companyTags li {
+	margin: 5px 5px 0 0;
+}
+</style>
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
 <body>
+	
+	
 
 
 
 
 
-    <div class="navbar navbar-default navbar-fixed-top" onload="validateSession()">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand hidden-sm" href="http://www.oxcoder.com/cooper/index.html" style="padding: 0;">
-                    <img src="./猿圈 新增挑战邀请2_files/wlogo_sm.png" style="max-height: 35px;margin:7px;">
-                </a>
-            </div>
-            <div class="navbar-collapse collapse" role="navigation">
-                <ul class="nav navbar-nav">
-                    <li class="">
-                        <a href="http://www.oxcoder.com/cooper/oxcoder_corp_index.html">首页</a>
-                    </li>
-                    <li class="">
-                        <a href="http://www.oxcoder.com/cooper/recommended/talent/index.html">人才推荐</a>
-                    </li>
-                    <li class="active">
-                        <a href="http://www.oxcoder.com/cooper/index.html">挑战管理</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-                            <span class="text">
+
+
+    <form id="form1" runat="server">
+	
+	
 
 
 
 
-                                北京交通大学信息安全科技公司
 
 
-                            </span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="http://www.oxcoder.com/cooper/pay/view_balance.html">去打赏</a>
-                            </li>
-                            <li>
-                                <a href="http://www.oxcoder.com/cooper/cooperInfo/view_cooper_info.html">企业信息</a>
-                            </li>
-                            <li>
-                                <a href="http://www.oxcoder.com/cooper/cooperInfo/account_binding.html">帐号设置</a>
-                            </li>
-                            <li>
-                                <a href="http://www.oxcoder.com/security_logout">注销</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+<div class="navbar navbar-default navbar-fixed-top" onload="validateSession()">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand hidden-sm" href="http://oxcoder.com/cooper/index.html" style="padding: 0;">
+				<img src="./猿圈 新增挑战邀请2_files/wlogo_sm.png" style="max-height: 35px;margin:7px;">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" role="navigation">
+			<ul class="nav navbar-nav">
+				<li class="">
+					<a href="http://oxcoder.com/cooper/oxcoder_corp_index.html">首页</a>
+				</li>
+				<li class="">
+					<a href="http://oxcoder.com/cooper/recommended/talent/index.html">人才推荐</a>
+				</li>
+				<li class="active">
+					<a href="./ManageChallenge.aspx">挑战管理</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="text">
+							
+								
+								
+								
+									123
+								
+							
+						</span>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="http://oxcoder.com/cooper/pay/view_balance.html">去打赏</a>
+						</li>
+						<li>
+							<a href="http://oxcoder.com/cooper/cooperInfo/view_cooper_info.html">企业信息</a>
+						</li>
+						<li>
+							<a href="http://oxcoder.com/cooper/cooperInfo/account_binding.html">帐号设置</a>
+						</li>
+						<li>
+							<a href="http://oxcoder.com/security_logout">注销</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="content">
+					<div class="row">
+						<div class="col-md-9 profile-stream">
+							<div class="page-header row">
+								<div class="col-md-8">
+									<h3>新增挑战邀请</h3>
+								</div>
+								<div class="col-md-4">
+									<div class="row">
+										<div class="col-md-5"></div>
+										<div class="col-md-7"></div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="page-body">
+								<div class="row">
+									<div style="text-align: center; margin-bottom: 20px;">
+										<img src="./猿圈 新增挑战邀请2_files/nc2.png">
+									</div>
+									<div class="row col-md-12">
+										<h4>已选择挑战题目</h4>
+										
+	    <asp:ScriptManager ID="ScriptManager1" runat="server">
+      </asp:ScriptManager>
+<asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="True">	
+    <ContentTemplate>											
+											
+												<div class="row col-md-12 col-no-left-padding" style="background-color: #d9edf7">
+													<!-- 循环企业已经存在的数据 -->
+											
+                                             <div class="row col-md-12 col-no-left-padding" style="background-color: #d9edf7">
+ 
+
+<asp:Repeater ID="ProblemRepeater" runat="server" OnItemCommand="ProblemRepeater_ItemCommand">
+
+<ItemTemplate>
+    <%  
+        if(ProblemRepeater.DataSource==null){
+         %>
+
+        <div class="alert alert-info" style="text-align: center" role="alert">
+        <asp:LinkButton CommandName="GetRandomProblem" style="margin-left: 20px;" runat="server">一键出题</asp:LinkButton>
+		</div>
+    <%}else{%>
+														<div class="col-md-4" style="padding-top: 20px">
+															<div class="panel panel-default project">
+																<div class="panel-body" style="padding-bottom: 0;">
+																	<div class="row">
+																		<div class="col-xs-12">
+																			<div class="pull-left">
+																				<h4>
+																					<a href="javascript:;"><%# Eval("p_title")%></a>
+																				</h4>
+																			</div>
+																			<div class="pull-right client-info">
+                                                                                <asp:Button CommandName="Delete" CommandArgument='<%#Eval("p_id") %>'  runat="server" style="color: white"  class="btn btn-primary btn-sm" Text="删除"></asp:Button>
+																				
+																			</div>
+																		</div>
+																		
+                                                                       
+																		<div class="col-md-12" style="min-height: 68px;">
+																			<ul class="companyTags">
+																				
+																				
+																					
+														
+																					
+																						<li><%# Eval("p_detail")%></li>
+																					
+																				
+																			</ul>
+																			<div class="row">
+																				<div class="col-sm-4">
+																					<span class="small muted">项目难度</span>
+																				</div>
+																				<div class="col-sm-8">
+																					<p>
+																						<%#(Eval("p_level").ToString()=="5"?"★★★★★":"")%>
+																						<%#(Eval("p_level").ToString()=="4"?"★★★★":"")%>
+																						<%#(Eval("p_level").ToString()=="3"?"★★★":"")%>
+                                                                                        <%#(Eval("p_level").ToString()=="2"?"★★":"")%>
+                                                                                        <%#(Eval("p_level").ToString()=="1"?"★":"")%>
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+                                                                     
+																<div class="panel-footer">
+																	<img src="./猿圈 新增挑战邀请2_files/504bb688-cf8b-431d-804a-eee5f7b9f5f7.png" style="max-height: 29px">
+																	<label> 猿圈团队 提供</label>
+
+																</div>
+															</div>
+														</div>
+        <%} %>
+</ItemTemplate>		
+    	
+</asp:Repeater>
+
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <section>
-                    <div id="content">
-                        <div class="row">
-                            <div class="col-md-9 profile-stream">
-                                <div class="page-header row">
-                                    <div class="col-md-8">
-                                        <h3>新增挑战邀请</h3>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="row">
-                                            <div class="col-md-5"></div>
-                                            <div class="col-md-7"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="page-body">
-                                    <div class="row">
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./猿圈 新增挑战邀请2_files/nc2.png">
-                                        </div>
-                                        <div class="row col-md-12">
-                                            <h4>选择招聘需求</h4>
-                                            <p class="text-muted">
-                                                <span>选择对应的招聘需求后，我们会智能匹配最合适的挑战项目，如需选择特定的挑战项目或挑战项目数量，您也可以选择</span>
-                                                <a href="http://www.oxcoder.com/cooper/new/recruit/new_recruit_2.html" class="btn btn-primary" style="background-color:#fff;color:#3498db;">高级设置<i class="fa fa-chevron-right"></i></a>
-                                            </p>
-                                            <!-- <div class="alert alert-info" style="text-align: center" role="alert">还没有选择招聘需求<a href="#" style="margin-left:20px;">智能生成</a></div> -->
-                                        </div>
-
-                                        <form id="new_challenge_form_2" runat="server">
-                                        <div class="row col-md-12">
-
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="对Android UI、Framework深入理解">
-                                                对Android&nbsp;UI、Framework深入理解
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="有音频/视频录制和播放相关项目经验">
-                                                有音频/视频录制和播放相关项目经验
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="熟悉主流机型的页面兼容和版本适配">
-                                                熟悉主流机型的页面兼容和版本适配
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="熟悉Android网络编程">
-                                                熟悉Android网络编程
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="对手机软件性能优化、内存优化有一定经验">
-                                                对手机软件性能优化、内存优化有一定经验
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="有电商、LBS 相关经验">
-                                                有电商、LBS 相关经验
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="有推送、实时通信系统相关经验">
-                                                有推送、实时通信系统相关经验
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="有蓝牙开发经验或者视频开发经验">
-                                                有蓝牙开发经验或者视频开发经验
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="有Xmpp，短信接口，支付接口，地图接口开发经验">
-                                                有Xmpp，短信接口，支付接口，地图接口开发经验
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="掌握图形图像处理方法">
-                                                掌握图形图像处理方法
-                                            </label>
-
-                                            <label class="checkbox" for="example-inline-checkbox1" style="font-weight:300;">
-                                                <input type="checkbox" name="checkbox" value="有多线程处理经验">
-                                                有多线程处理经验
-                                            </label>
-
-                                        </div>
-                                        <div class="row col-md-12" style="margin-bottom: 20px;">
-                                            <span class="help-block has-error">
-                                                <small style="margin-left: 20px;display:none" id="hint_new" class="help-block">请选择适合您的招聘需求</small>
-                                            </span>
-                                            <a href="javascript:gotoNext()">
-                                                <asp:Button ID="Button1" runat="server" Text="保存&amp;发布挑战" class="btn btn-new1 pull-right" OnClick="Button1_Click" />
-                                            </a>
-                                        </div></form>
-                                    </div>
-                                    
-                                    <!--/.row  -->
-                                </div>
-                            </div>
-                            <div class="col-md-3 profile-info" id="profile_info_div">
-
-
-                                <div class="panel-user">
-                                    <div class="panel-heading">
-                                        <div class="panel-title">
-                                            <div class="media">
-                                                <a class="pull-left">
-                                                    <img src="./猿圈 新增挑战邀请2_files/8ab6cf45-aaab-4bfe-9891-f27285ad902b.jpg" class="media-object">
-                                                </a>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">
-                                                        <!-- <span class="welcome">Hello</span> -->
-                                                        <span>北京交通大学信息安全科技公司</span>
-                                                    </h4>
-                                                    <span class="text-muted">
-                                                        <small>
-                                                            上次登录日期:
-                                                            <br>
-                                                            2016-04-22 10:16:54
-                                                        </small>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-outline panel-no-padding hidden-xs">
-                                    <div class="panel-body">
-                                        <div class="stat-block stat-danger">
-                                            <div class="icon">
-                                                <b class="icon-cover"></b>
-                                                <i class="fa fa-bell"></i>
-                                            </div>
-                                            <div class="details">
-                                                <div class="number">0</div>
-                                                <div class="description">今日接受挑战人数</div>
-                                            </div>
-                                        </div>
-                                        <div class="stat-block stat-success">
-                                            <div class="icon">
-                                                <b class="icon-cover"></b>
-                                                <i class="fa fa-bar-chart-o"></i>
-                                            </div>
-                                            <div class="details">
-                                                <div class="number">0</div>
-                                                <div class="description">今日通过挑战人数</div>
-                                            </div>
-                                        </div>
-                                        <div class="stat-block stat-primary">
-                                            <div class="icon">
-                                                <b class="icon-cover"></b>
-                                                <i class="fa fa-tachometer"></i>
-                                            </div>
-                                            <div class="details">
-                                                <div class="number">0</div>
-                                                <div class="description">共帮您找到的人才</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /.panel-body -->
-                                </div>
-                                <!-- /.panel -->
-                            </div>
-                        </div>
-                        <!-- /.row -->
-                    </div>
-                    <!-- /#content -->
-                </section>
-            </div>
-        </div>
-        <!-- /.row -->
     </div>
-    <!-- /.container -->
-    <footer id="footer">
-        <!-- <div class="container">
+												<!-- 挑战预计时间和保存按钮 -->
+												<div class="col-md-12" style="margin-bottom: 20px;">
+                                                <span class="text-info">挑战预计耗时40分钟，超过3个项目会吓跑好多程序猿呦~
+													</span> 
+                                                    <asp:LinkButton ID="LinkButton1" runat="server" style="margin-left: 20px;" OnClick="LinkButton1_Click">重新一键出题</asp:LinkButton>
+											
+													<asp:Button runat="server" ID="SaveNxtButton" class="btn btn-new1 pull-right" Text="保存&amp;发布挑战" OnClick="SaveNxtButton_Click1"></asp:Button>
+												</div>
+    </ContentTemplate>
+    </asp:UpdatePanel>
+											
+										
+								</div>
+
+                                               
+
+									<div class="row col-md-12">
+										<h4 class="pull-left">挑战题目</h4>
+										<div class="pull-right">
+											<div style="display: inline-block; vertical-align: top;">
+												<div class="input-group" style="width: 200px;">
+													<input id="challenges_word_id" name="" value="" class="form-control" placeholder="请输入试题关键词"> <span class="input-group-addon" style="cursor: pointer;" onclick="searchChallenges()"> <i class="fa fa-search"></i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="row col-md-12">
+											<p class="text-muted">选择一键出题后，我们会将您所选行业的试题自动生成</p>
+										</div> -->
+									<div class="row col-md-12">
+										<p class="text-muted">我们会根据你选的行业自动匹配最匹配的挑战项目</p>
+									</div>
+									<!-- edit by heming start -->
+
+									<div class="page-header row">
+
+
+										<div class="col-md-12" id="inDiv">
+											<div>
+												<label style="font-weight: 300;"><input type="checkbox" id="all" name="content" value="ALL" data-age="20">不限</label>
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="1" checked="" data-age="20">教育</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="2" data-age="20">金融</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="3" data-age="20">汽车交通</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="4" data-age="20">房产服务</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="5" data-age="20">医疗健康</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="6" data-age="20">本地生活</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="7" data-age="20">游戏</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="8" data-age="20">广告营销</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="9" data-age="20">文化娱乐体育</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="10" data-age="20">企业服务</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="11" data-age="20">SNS社交网络</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="12" data-age="20">电子商务</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="13" data-age="20">工具软件</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="14" data-age="20">移动互联网</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="15" data-age="20">数据服务</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="16" data-age="20">社交网络</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="17" data-age="20">分类信息</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="18" data-age="20">招聘</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="19" data-age="20">信息安全</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="20" data-age="20">硬件</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="21" data-age="20">O2O</label>
+
+											
+												
+													
+													<label style="font-weight: 300;"><input type="checkbox" name="content" value="22" data-age="20">旅游</label>
+
+											
+												
+												<label style="font-weight: 300;"><input type="checkbox" name="content" value="3" data-age="20">其他
+												</label>
+
+												<div class="col-md-7"></div>
+											</div>
+										</div>
+									</div>
+									<!-- edit by heming  end-->
+									<div class="row col-md-12">
+										<span class="help-block has-error"> <small style="margin-left: 20px; display: none;" id="hint1" class="help-block"></small>
+										</span>
+									</div>
+
+<asp:UpdatePanel ID="UpdatePanel2" runat="server" ChildrenAsTriggers="True">	
+    <ContentTemplate>	
+									<div class="row col-md-12 col-no-left-padding" id="chDiv">
+										<div class="panel-body" style="padding-bottom: 0;">
+											<div class="row">
+												  <asp:Repeater ID="AllProblemRepeater" runat="server" OnItemCommand="AllProblemRepeater_ItemCommand">
+                                                        <ItemTemplate>
+														<div class="col-md-4" style="padding-top: 20px">
+															<div class="panel panel-default project">
+																<div class="panel-body" style="padding-bottom: 0;">
+																	<div class="row">
+																		<div class="col-xs-12">
+																			<div class="pull-left">
+																				<h4>
+																					<a href="javascript:;"><%# Eval("p_title")%></a>
+																				</h4>
+																			</div>
+																			<div class="pull-right client-info">
+                                                                                <asp:Button class="btn btn-primary btn-sm" style="color: white" CommandName="Insert" CommandArgument='<%#Eval("p_id") %>' runat="server" Text="添加"></asp:Button>
+																				
+																			</div>
+																		</div>
+																		
+                                                                       
+																		<div class="col-md-12" style="min-height: 68px;">
+																			<ul class="companyTags">
+																				
+																				
+																					
+														
+																					
+																						<li><%# Eval("p_detail")%></li>
+																					
+																				
+																			</ul>
+																			<div class="row">
+																				<div class="col-sm-4">
+																					<span class="small muted">项目难度</span>
+																				</div>
+																				<div class="col-sm-8">
+																					<p>
+											
+																						<%#(Eval("p_level").ToString()=="5"?"★★★★★":"")%>
+																						<%#(Eval("p_level").ToString()=="4"?"★★★★":"")%>
+																						<%#(Eval("p_level").ToString()=="3"?"★★★":"")%>
+                                                                                        <%#(Eval("p_level").ToString()=="2"?"★★":"")%>
+                                                                                        <%#(Eval("p_level").ToString()=="1"?"★":"")%>
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+                                                                     
+																<div class="panel-footer">
+																	<img src="./猿圈 新增挑战邀请2_files/504bb688-cf8b-431d-804a-eee5f7b9f5f7.png" style="max-height: 29px">
+																	<label> 猿圈团队 提供</label>
+
+																</div>
+															</div>
+														</div>
+										</ItemTemplate>			
+								</asp:Repeater>
+												
+											</div>
+										</div>
+									</div>
+			</ContentTemplate>
+    </asp:UpdatePanel>					
+        </div>
+								<!--/.row   -->
+							</div>
+						</div>
+						<div class="col-md-3 profile-info" id="profile_info_div">
+
+
+
+
+<div class="panel-user">
+	<div class="panel-heading">
+		<div class="panel-title">
+			<div class="media">
+				<a class="pull-left">
+					<img src="./猿圈 新增挑战邀请_files/d36f528c-e62f-41c8-b2b9-8240e46a098f.jpg" class="media-object">
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">
+						<!-- <span class="welcome">Hello</span> -->
+						<span>123			</h4>
+					<span class="text-muted">
+						<small>
+							上次登录日期:
+							<br>
+							2016-06-18 21:11:37
+						</small>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="panel panel-outline panel-no-padding hidden-xs">
+	<div class="panel-body">
+		<div class="stat-block stat-danger">
+			<div class="icon">
+				<b class="icon-cover"></b>
+				<i class="fa fa-bell"></i>
+			</div>
+			<div class="details">
+				<div class="number">0</div>
+				<div class="description">今日接受挑战人数</div>
+			</div>
+		</div>
+		<div class="stat-block stat-success">
+			<div class="icon">
+				<b class="icon-cover"></b>
+				<i class="fa fa-bar-chart-o"></i>
+			</div>
+			<div class="details">
+				<div class="number">0</div>
+				<div class="description">今日通过挑战人数</div>
+			</div>
+		</div>
+		<div class="stat-block stat-primary">
+			<div class="icon">
+				<b class="icon-cover"></b>
+				<i class="fa fa-tachometer"></i>
+			</div>
+			<div class="details">
+				<div class="number">0</div>
+				<div class="description">共帮您找到的人才</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.panel-body -->
+</div>
+<!-- /.panel -->
+</div>
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /#content -->
+			</div>
+		</div>
+	</div>
+	<!-- /.row -->
+	<!-- /.container -->
+	<footer id="footer">
+		<!-- <div class="container">
                 <div class="row">
                     <div class="col-xs-6">
                         <ul class="list-inline">
@@ -333,103 +548,190 @@
                         </ul>
                     </div>
                 </div><!-- /.row -->
-        <!-- </div> -->
-        <!-- /.container -->
-    </footer>
-    <script src="./猿圈 新增挑战邀请2_files/jquery-1.11.0.min.js"></script>
-    <script src="./猿圈 新增挑战邀请2_files/bootstrap.min.js"></script>
-    <script src="./猿圈 新增挑战邀请2_files/jquery.sparkline.min.js"></script>
-    <script src="./猿圈 新增挑战邀请2_files/bootstrap-switch.min.js"></script>
-    <script src="./猿圈 新增挑战邀请2_files/bootstrap-select.min.js"></script>
-    <script src="./猿圈 新增挑战邀请2_files/bootstrap-filestyle.js"></script>
-    <script src="./猿圈 新增挑战邀请2_files/summernote.min.js"></script>
-    <script src="./猿圈 新增挑战邀请2_files/script.js"></script>
+		<!-- </div> -->
+		<!-- /.container -->
+	</footer>
+	<script src="./猿圈 新增挑战邀请_files/jquery-1.11.0.min.js"></script>
+	<script src="./猿圈 新增挑战邀请_files/bootstrap.min.js"></script>
+	<script src="./猿圈 新增挑战邀请_files/jquery.sparkline.min.js"></script>
+	<script src="./猿圈 新增挑战邀请_files/bootstrap-switch.min.js"></script>
+	<script src="./猿圈 新增挑战邀请_files/bootstrap-select.min.js"></script>
+	<script src="./猿圈 新增挑战邀请_files/bootstrap-filestyle.js"></script>
+	<script src="./猿圈 新增挑战邀请_files/summernote.min.js"></script>
+	<script src="./猿圈 新增挑战邀请_files/script.js"></script>
+	
+	<script type="text/javascript" src="./猿圈 新增挑战邀请_files/jquery-confirm.min.js"></script>
+	
+	<script src="./猿圈 新增挑战邀请_files/zmUtil.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        $("#profile_info_div").load("cooper/cooper_left_info.html");
+	    });
+	    // 智能生成
+	    function smartGenerator() {
+	        $("#hint1").html("");
+	        $("#hint1").hide();
+	        $.ajax({
+	            cache: false,
+	            type: "post",
+	            url: "cooper/new/recruit/smart_generator.html",
+	            success: function (data) {
+	                data = eval('(' + data + ')');
+	                if (data.su) {
+	                    location.href = data.url;
+	                } else if (data.error) {
+	                    $.alert({
+	                        title: "网络错误!",
+	                        content: data.msg,
+	                        confirm: function () {
+	                            location.href = data.url;
+	                        }
+	                    });
+	                } else {
+	                    $("#hint1").html(data.msg);
+	                    $("#hint1").show();
+	                }
+	            },
+	            error: function (request) {
+	                $("#hint1").html(data.msg);
+	                $("#hint1").show();
+	            }
+	        });
+	    }
+	    function addChallenge(obj) {
 
-    <script type="text/javascript" src="./猿圈 新增挑战邀请2_files/jquery-confirm.min.js"></script>
+	        $("#a_addbtn_" + obj).attr("href", "javascript:void(0)");
 
-    <script src="./猿圈 新增挑战邀请2_files/zmUtil.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#profile_info_div").load("cooper/cooper_left_info.html");
-        });
+	        $("#hint1").html("");
+	        $("#hint1").hide();
+	        var url = "cooper/new/recruit/save_new_recruit_2.html";
+	        if (!$Util.isEmpty($("#challenges_word_id").val())) {
+	            url += "?challengeKeyWord=" + $("#challenges_word_id").val();
+	        }
+	        $.ajax({
+	            cache: false,
+	            type: "post",
+	            url: url,
+	            data: {
+	                "challengeId": obj
+	            },
+	            success: function (data) {
+	                data = eval('(' + data + ')');
+	                if (data.su) {
+	                    location.href = data.url;
+	                } else if (data.error) {
+	                    $.alert({
+	                        title: "网络错误!",
+	                        content: data.msg,
+	                        confirm: function () {
+	                            location.href = data.url;
+	                        }
+	                    });
+	                } else {
+	                    $("#hint1").html(data.msg);
+	                    $("#hint1").show();
+	                    $("#a_addbtn_" + obj).attr("href",
+								"javascript:addChallenge(" + obj + ")");
+	                }
+	            },
+	            error: function (request) {
+	                $("#hint1").html(data.msg);
+	                $("#hint1").show();
+	            }
+	        });
+	    }
+	    function delChallenge(obj) {
+	        var url = "cooper/new/recruit/delete_challenge.html";
+	        if (!$Util.isEmpty($("#challenges_word_id").val())) {
+	            url += "?challengeKeyWord=" + $("#challenges_word_id").val();
+	        }
+	        $.ajax({
+	            cache: false,
+	            type: "post",
+	            url: url,
+	            data: {
+	                "challengeId": obj
+	            },
+	            success: function (data) {
+	                data = eval('(' + data + ')');
+	                if (data.su) {
+	                    location.href = data.url;
+	                } else if (data.error) {
+	                    $.alert({
+	                        title: "网络错误!",
+	                        content: data.msg,
+	                        confirm: function () {
+	                            location.href = data.url;
+	                        }
+	                    });
+	                } else {
+	                    $("#hint1").html(data.msg);
+	                    $("#hint1").show();
+	                }
+	            },
+	            error: function (request) {
+	                $("#hint1").html(data.msg);
+	                $("#hint1").show();
+	            }
+	        });
+	    }
+	    function saveRecruitBtn() {
+	        $.ajax({
+	            cache: false,
+	            type: "post",
+	            url: "cooper/new/recruit/create_release.html",
+	            success: function (data) {
+	                data = eval('(' + data + ')');
+	                if (data.su) {
+	                    location.href = data.url;
+	                } else if (data.error) {
+	                    $.alert({
+	                        title: "网络错误!",
+	                        content: data.msg,
+	                        confirm: function () {
+	                            location.href = data.url;
+	                        }
+	                    });
+	                } else {
+	                    $("#hint1").html(data.msg);
+	                    $("#hint1").show();
+	                }
+	            },
+	            error: function (request) {
+	                $("#hint1").html(data.msg);
+	                $("#hint1").show();
+	            }
+	        });
+	    }
 
-        var str = ""
-        function gotoNext() {
-            $("input:checkbox:checked").each(function () {
-                str += $(this).val() + "#";
-            })
-            console.log($("#hint_new"))
-            if (str == "") {
-                $("#hint_new").css("display", "block");
-            } else {
-                $("#hint_new").css("display", "none");
-                smartGenerator(str);
-            }
+	    $(function () {
+	        $('[name="content"]').click(function () {
+	            if (this.value == "ALL") {
+	                $("[name='content']:checked").each(function () {
+	                    if (this.value != "ALL")
+	                        $(this).removeAttr("checked");
+	                })
+	            } else {
+	                $("#all").removeAttr("checked");
+	            }
+	            if ($("input[name='content']:checked").serialize() == null || $("input[name='content']:checked").serialize() == "")
+	                $("#all").prop("checked", true);
+	            var content = $("input[name='content']:checked").serialize();
+	            $.ajax({
+	                type: "POST",
+	                url: "cooper/new/recruit/new_recruit_2.html",
+	                data: content,
+	                dataType: "text",
+	                success: function (data) {
+	                    $("#chDiv").html(jQuery('#chDiv', data).html());
+	                }
+	            })
+	        });
+	    });
+	</script>
 
-        }
 
-        // 智能生成
-        function smartGenerator(str) {
-            $("#hint1").html("");
-            $("#hint1").hide();
-            $.ajax({
-                cache: false,
-                type: "post",
-                data: { "keyword": str },
-                url: "cooper/new/recruit/smart_generator.html",
-                success: function (data) {
-                    data = eval('(' + data + ')');
-                    if (data.su) {
-                        saveRecruitBtn();
-                        //location.href = data.url;
-                    } else if (data.error) {
-                        $.alert({
-                            title: "网络错误!",
-                            content: data.msg,
-                            confirm: function () {
-                                location.href = data.url;
-                            }
-                        });
-                    } else {
-                        $("#hint1").html(data.msg);
-                        $("#hint1").show();
-                    }
-                },
-                error: function (request) {
-                    $("#hint1").html(data.msg);
-                    $("#hint1").show();
-                }
-            });
-        }
-        function saveRecruitBtn() {
-            $.ajax({
-                cache: false,
-                type: "post",
-                url: "cooper/new/recruit/create_release.html",
-                success: function (data) {
-                    data = eval('(' + data + ')');
-                    if (data.su) {
-                        location.href = data.url;
-                    } else if (data.error) {
-                        $.alert({
-                            title: "网络错误!",
-                            content: data.msg,
-                            confirm: function () {
-                                location.href = data.url;
-                            }
-                        });
-                    } else {
-                        $("#hint1").html(data.msg);
-                        $("#hint1").show();
-                    }
-                },
-                error: function (request) {
-                    $("#hint1").html(data.msg);
-                    $("#hint1").show();
-                }
-            });
-        }
-    </script>
-    
-</body>
-</html>
+    </form>
+
+
+</body></html>

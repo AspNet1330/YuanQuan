@@ -48,6 +48,7 @@
     <Compile Include="ChallengeProblemDA.cs" />
     <Compile Include="CoderChallengeDA.cs" />
     <Compile Include="CoderDA.cs" />
+    <Compile Include="ProblemDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

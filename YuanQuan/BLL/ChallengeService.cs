@@ -12,10 +12,10 @@ namespace BLL
 {
     public class ChallengeService:IChallengeService
     {
-        public void saveChallenge(challenge challenge)
+        public int saveChallenge(challenge challenge)
         {
             IChallengeDA cda = DAFactory.createChallengeDA();
-            cda.saveChallenge(challenge);
+            return cda.saveChallenge(challenge);
         }
 
         public void updateChallenge(challenge challenge)

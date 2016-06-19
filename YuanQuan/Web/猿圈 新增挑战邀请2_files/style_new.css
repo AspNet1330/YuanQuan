@@ -151,6 +151,13 @@ text-decoration:underline;
   color: #ffffff;
   border: 1px solid #6496be;
 }
+a.btn.btn-new1:visited,a.btn.btn-new5:visited{
+  color: #fff;
+}
+
+a.btn.btn-lg:visited{
+    color: #fff;
+}
 
 .shadow-effect {
   /*-moz-box-shadow: 1px 2px 5px #dddddd; 

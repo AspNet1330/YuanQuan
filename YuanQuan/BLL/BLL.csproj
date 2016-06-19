@@ -44,6 +44,7 @@
     <Compile Include="ChallengeProblemService.cs" />
     <Compile Include="CoderChallengeService.cs" />
     <Compile Include="CoderService.cs" />
+    <Compile Include="ProblemService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

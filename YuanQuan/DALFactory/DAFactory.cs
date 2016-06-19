@@ -40,5 +40,10 @@ namespace DALFactory
             return coderChallenge;
         }
 
+        public static IProblemDA createProblemDA()
+        {
+            IProblemDA problemDA = new ProblemDA();
+            return problemDA;
+        }
     }
 }

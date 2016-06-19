@@ -1,0 +1,228 @@
+.note-editor {
+	border: 1px solid rgb(169, 169, 169); border-image: none;
+}
+.note-editor .note-dropzone {
+	border: 2px dashed rgb(135, 206, 250); border-image: none; color: rgb(135, 206, 250); display: none; position: absolute; z-index: 1; opacity: 0.95; background-color: white; pointer-event: none;
+}
+.note-editor .note-dropzone .note-dropzone-message {
+	text-align: center; font-size: 28px; font-weight: bold; vertical-align: middle; display: table-cell;
+}
+.note-editor .note-dropzone.hover {
+	border: 2px dashed rgb(9, 141, 223); border-image: none; color: rgb(9, 141, 223);
+}
+.note-editor.dragover .note-dropzone {
+	display: table;
+}
+.note-editor.fullscreen {
+	left: 0px; top: 0px; width: 100%; position: fixed; z-index: 1050;
+}
+.note-editor.fullscreen .note-editable {
+	background-color: white;
+}
+.note-editor.fullscreen .note-resizebar {
+	display: none;
+}
+.note-editor.codeview .note-editable {
+	display: none;
+}
+.note-editor.codeview .note-codable {
+	display: block;
+}
+.note-editor .note-toolbar {
+	margin: 0px; padding-bottom: 5px; padding-left: 5px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(245, 245, 245);
+}
+.note-editor .note-toolbar > .btn-group {
+	margin-top: 5px; margin-right: 5px; margin-left: 0px;
+}
+.note-editor .note-toolbar .note-table .dropdown-menu {
+	padding: 5px; min-width: 0px;
+}
+.note-editor .note-toolbar .note-table .dropdown-menu .note-dimension-picker {
+	font-size: 18px;
+}
+.note-editor .note-toolbar .note-table .dropdown-menu .note-dimension-picker .note-dimension-picker-mousecatcher {
+	width: 10em; height: 10em; position: absolute !important; z-index: 3; cursor: pointer;
+}
+.note-editor .note-toolbar .note-table .dropdown-menu .note-dimension-picker .note-dimension-picker-unhighlighted {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAACVBMVEUAAIj4+Pjp6ekKlAqjAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfYAR0BKhmnaJzPAAAAG0lEQVQI12NgAAOtVatWMTCohoaGUY+EmIkEAEruEzK2J7tvAAAAAElFTkSuQmCC"); width: 5em; height: 5em; position: relative !important; z-index: 1;
+}
+.note-editor .note-toolbar .note-table .dropdown-menu .note-dimension-picker .note-dimension-picker-highlighted {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAACVBMVEUAAIjd6vvD2f9LKLW+AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfYAR0BKwNDEVT0AAAAG0lEQVQI12NgAAOtVatWMTCohoaGUY+EmIkEAEruEzK2J7tvAAAAAElFTkSuQmCC"); width: 1em; height: 1em; position: absolute !important; z-index: 2;
+}
+.note-editor .note-toolbar .note-style h1 {
+	margin: 0px;
+}
+.note-editor .note-toolbar .note-style h2 {
+	margin: 0px;
+}
+.note-editor .note-toolbar .note-style h3 {
+	margin: 0px;
+}
+.note-editor .note-toolbar .note-style h4 {
+	margin: 0px;
+}
+.note-editor .note-toolbar .note-style h5 {
+	margin: 0px;
+}
+.note-editor .note-toolbar .note-style h6 {
+	margin: 0px;
+}
+.note-editor .note-toolbar .note-style blockquote {
+	margin: 0px;
+}
+.note-editor .note-toolbar .note-color .dropdown-toggle {
+	width: 20px; padding-left: 5px;
+}
+.note-editor .note-toolbar .note-color .dropdown-menu {
+	min-width: 290px;
+}
+.note-editor .note-toolbar .note-color .dropdown-menu .btn-group {
+	margin: 0px;
+}
+.note-editor .note-toolbar .note-color .dropdown-menu :first-child.btn-group {
+	margin: 0px 5px;
+}
+.note-editor .note-toolbar .note-color .dropdown-menu .btn-group .note-palette-title {
+	margin: 2px 7px; text-align: center; font-size: 12px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.note-editor .note-toolbar .note-color .dropdown-menu .btn-group .note-color-reset {
+	margin: 5px; padding: 0px 3px; border-radius: 5px; font-size: 12px; cursor: pointer; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+.note-editor .note-toolbar .note-color .dropdown-menu .btn-group .note-color-reset:hover {
+	background: rgb(238, 238, 238);
+}
+.note-editor .note-toolbar .note-para .dropdown-menu {
+	padding: 5px; min-width: 216px;
+}
+.note-editor .note-toolbar .note-para .dropdown-menu > div:first-child {
+	margin-right: 5px;
+}
+.note-editor .note-statusbar {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .note-statusbar .note-resizebar {
+	width: 100%; height: 8px; border-top-color: rgb(169, 169, 169); border-top-width: 1px; border-top-style: solid; cursor: s-resize;
+}
+.note-editor .note-statusbar .note-resizebar .note-icon-bar {
+	margin: 1px auto; width: 20px; border-top-color: rgb(169, 169, 169); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .note-popover .popover {
+	max-width: none;
+}
+.note-editor .note-popover .popover .popover-content {
+	padding: 5px;
+}
+.note-editor .note-popover .popover .popover-content a {
+	overflow: hidden; vertical-align: middle; display: inline-block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 200px;
+}
+.note-editor .note-popover .popover .popover-content .btn-group + .btn-group {
+	margin-left: 5px;
+}
+.note-editor .note-popover .popover .arrow {
+	left: 20px;
+}
+.note-editor .note-handle .note-control-selection {
+	border: 1px solid black; border-image: none; display: none; position: absolute;
+}
+.note-editor .note-handle .note-control-selection > div {
+	position: absolute;
+}
+.note-editor .note-handle .note-control-selection .note-control-selection-bg {
+	width: 100%; height: 100%; opacity: 0.3; background-color: black; -webkit-opacity: .3; -khtml-opacity: .3; -moz-opacity: .3;
+}
+.note-editor .note-handle .note-control-selection .note-control-handle {
+	border: 1px solid black; border-image: none; width: 7px; height: 7px;
+}
+.note-editor .note-handle .note-control-selection .note-control-holder {
+	border: 1px solid black; border-image: none; width: 7px; height: 7px;
+}
+.note-editor .note-handle .note-control-selection .note-control-sizing {
+	border: 1px solid black; border-image: none; width: 7px; height: 7px; background-color: white;
+}
+.note-editor .note-handle .note-control-selection .note-control-nw {
+	left: -5px; top: -5px; border-right-color: currentColor; border-bottom-color: currentColor; border-right-width: 0px; border-bottom-width: 0px; border-right-style: none; border-bottom-style: none;
+}
+.note-editor .note-handle .note-control-selection .note-control-ne {
+	top: -5px; right: -5px; border-bottom-color: currentColor; border-left-color: currentColor; border-bottom-width: 0px; border-left-width: medium; border-bottom-style: none; border-left-style: none;
+}
+.note-editor .note-handle .note-control-selection .note-control-sw {
+	left: -5px; bottom: -5px; border-top-color: currentColor; border-right-color: currentColor; border-top-width: 0px; border-right-width: 0px; border-top-style: none; border-right-style: none;
+}
+.note-editor .note-handle .note-control-selection .note-control-se {
+	right: -5px; bottom: -5px; cursor: se-resize;
+}
+.note-editor .note-handle .note-control-selection .note-control-selection-info {
+	margin: 5px; padding: 5px; border-radius: 5px; right: 0px; bottom: 0px; color: white; font-size: 12px; opacity: 0.7; background-color: black; -webkit-border-radius: 5px; -moz-border-radius: 5px; -webkit-opacity: .7; -khtml-opacity: .7; -moz-opacity: .7;
+}
+.note-editor .note-dialog > div {
+	display: none;
+}
+.note-editor .note-dialog .note-image-dialog .note-dropzone {
+	border: 4px dashed lightgray; border-image: none; text-align: center; color: lightgray; line-height: 4; font-size: 30px; margin-bottom: 10px; min-height: 100px;
+}
+.note-editor .note-dialog .note-help-dialog {
+	background-position: 0% 0%; border: 0px currentColor; border-image: none; color: rgb(204, 204, 204); font-size: 12px; opacity: 0.9; background-image: none; background-attachment: scroll; background-repeat: repeat; background-size: auto; background-origin: padding-box; background-clip: border-box; background-color: rgb(34, 34, 34) !important; -webkit-opacity: .9; -khtml-opacity: .9; -moz-opacity: .9;
+}
+.note-editor .note-dialog .note-help-dialog .modal-content {
+	background: none; border-radius: 5px; border: 1px solid white; border-image: none; box-shadow: none; -webkit-box-shadow: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; -moz-box-shadow: none;
+}
+.note-editor .note-dialog .note-help-dialog a {
+	color: white; font-size: 12px;
+}
+.note-editor .note-dialog .note-help-dialog .title {
+	color: white; padding-bottom: 5px; font-size: 14px; font-weight: bold; border-bottom-color: white; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.note-editor .note-dialog .note-help-dialog .modal-close {
+	color: rgb(221, 221, 0); font-size: 14px; cursor: pointer;
+}
+.note-editor .note-dialog .note-help-dialog .note-shortcut-layout {
+	width: 100%;
+}
+.note-editor .note-dialog .note-help-dialog .note-shortcut-layout td {
+	vertical-align: top;
+}
+.note-editor .note-dialog .note-help-dialog .note-shortcut {
+	margin-top: 8px;
+}
+.note-editor .note-dialog .note-help-dialog .note-shortcut th {
+	text-align: left; color: rgb(221, 221, 0); font-size: 13px;
+}
+.note-editor .note-dialog .note-help-dialog .note-shortcut td:first-child {
+	text-align: right; color: rgb(221, 221, 0); padding-right: 10px; font-family: "Courier New"; min-width: 110px;
+}
+.note-editor .note-editable {
+	padding: 10px; outline: 0px; overflow: auto;
+}
+.note-editor .note-codable {
+	padding: 10px; border-radius: 0px; border: 0px currentColor; border-image: none; width: 100%; color: rgb(204, 204, 204); font-family: Menlo,Monaco,monospace,sans-serif; font-size: 14px; margin-bottom: 0px; display: none; box-sizing: border-box; box-shadow: none; background-color: rgb(34, 34, 34); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-box-sizing: border-box; resize: none;
+}
+.note-editor .dropdown-menu {
+	min-width: 90px;
+}
+.note-editor .dropdown-menu.right {
+	left: auto; right: 0px;
+}
+.note-editor .dropdown-menu.right::before {
+	left: auto !important; right: 9px;
+}
+.note-editor .dropdown-menu.right::after {
+	left: auto !important; right: 10px;
+}
+.note-editor .dropdown-menu li a i {
+	color: deepskyblue; visibility: hidden;
+}
+.note-editor .dropdown-menu li a.checked i {
+	visibility: visible;
+}
+.note-editor .note-fontsize-10 {
+	font-size: 10px;
+}
+.note-editor .note-color-palette {
+	line-height: 1;
+}
+.note-editor .note-color-palette div .note-color-btn {
+	margin: 0px; padding: 0px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 17px; height: 17px;
+}
+.note-editor .note-color-palette div .note-color-btn:hover {
+	border: 1px solid rgb(0, 0, 0); border-image: none;
+}

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Invite.aspx.cs" Inherits="Web.Invite" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Invite1.aspx.cs" Inherits="Web.Invite" %>
 <!-- saved from url=(0060)http://www.oxcoder.com/cooper/new/recruit/new_recruit_1.html -->
 <html lang="en">
     <head runat="server">
@@ -103,7 +103,7 @@
 					<a href="http://www.oxcoder.com/cooper/recommended/talent/index.html">人才推荐</a>
 				</li>
 				<li class="active">
-					<a href="http://www.oxcoder.com/cooper/index.html">挑战管理</a>
+					<a href="./ManageChallenge.aspx">挑战管理</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -157,10 +157,10 @@
 										<div style="text-align:center;margin-bottom:20px;">
 											<img src="./猿圈 新增挑战邀请_files/nc1.png">
                                         </div>
-										<form  class="form-horizontal bv-form"  id="new_challenge_form" action="?Action=next" method="post">
+										<form id="new_challenge_form" runat="server" onsubmit="return checkForm()" method="post">
 									
-											<input name="direction" id="directions_id" value="2" type="hidden">
-											<input name="level" id="level_id" value="" type="hidden">
+											<input name="direction" id="directions_id" value="2" type="hidden" runat="server">
+											<input name="level" id="level_id" value="" type="hidden" runat="server">
 											<h4 class="col-md-12 col-no-left-padding">请选择挑战类型</h4>
 											<div class="fivecolumns">
 												
@@ -308,7 +308,7 @@
 											
 											<h4 class="col-md-12 col-no-left-padding">
 												<label style="font-weight: 100;">
-													<input name="is_public" value="1" type="checkbox" checked="checked"> 设为公开挑战
+													<input id="public_id" name="is_public" value="1" type="checkbox" checked="checked" runat="server" onClick="selectPublic(this)"> 设为公开挑战
 												</label>
 											</h4>
 											<span class="col-md-12 col-no-left-padding text-muted">选择公开挑战，您发布的挑战将在首页显示，猿圈用户的可自由开始挑战；若不选择，用户只有您邀请后才可开始挑战。</span>
@@ -318,7 +318,7 @@
 													<small style="margin-left: 20px; display: none;" id="hint1" class="help-block">请选择挑战类型及等级</small>
 												</span>
 												<div class="align-center">
-													<button  ID="new_challenge_btn_1" class="btn btn-new1"  type="submit">保存&下一步</button>
+												    <asp:Button ID="Next" runat="server" class="btn btn-new1" Text="保存&下一步" OnClick="Next_Click" />
 												</div>
 											</div>
 										</form>
@@ -431,26 +431,23 @@
 	                $("#new_challenge_btn_1").attr("disabled", "true");
 	                $("#hint1").show();
 	            }
-	        });
-
-	        $("#new_challenge_form").bootstrapValidator({
-	        }).on("success.form.bv", function (e) {
-	            e.preventDefault();
-	            var $form = $(e.target);
-	            $form.data("bootstrapValidator");
-	            if ($Util.isEmpty($("#directions_id").val())) {
-	                $("#hint1").html("请选择挑战类型");
-	                $("#hint1").show();
-	                return false;
-	            }
-	            if ($Util.isEmpty($("#level_id").val())) {
-	                $("#hint1").html("请选择挑战等级");
-	                $("#hint1").show();
-	                return false;
-	            }
-	            return true;
-	        });
+	        })
 	    });
+
+	    function checkForm() {
+	        if ($Util.isEmpty($("#directions_id").val())) {
+	            $("#hint1").html("请选择挑战类型");
+	            $("#hint1").show();
+	            return false;
+	        }
+	        if ($Util.isEmpty($("#level_id").val())) {
+	            $("#hint1").html("请选择挑战等级");
+	            $("#hint1").show();
+	            return false;
+	        }
+	        return true;
+	    }
+
 	    function selectDirection(obj) {
 	        $("#directions_id").val(obj);
 	        $("#hint1").hide();
@@ -460,6 +457,14 @@
 	        $("#level_id").val(obj);
 	        $("#hint1").hide();
 	        $("#new_challenge_btn_1").removeAttr("disabled");
+	    };
+
+	    function selectPublic(obj) {
+	        if ($("#public_id").val() == "1") {
+	            $("#public_id").val("0");
+	        } else {
+	            $("#public_id").val("1");
+	        }
 	    };
 	    
 	</script>

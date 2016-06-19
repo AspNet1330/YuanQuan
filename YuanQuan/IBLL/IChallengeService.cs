@@ -9,7 +9,7 @@ namespace BLLInterface
 {
     public interface IChallengeService
     {
-        void saveChallenge(challenge challenge);
+        int saveChallenge(challenge challenge);
 
         void updateChallenge(challenge challenge);
 

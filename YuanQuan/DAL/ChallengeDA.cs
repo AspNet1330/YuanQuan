@@ -34,11 +34,12 @@ namespace DAL
             return challenge;
         }
 
-        public void saveChallenge(challenge challenge)
+        public int saveChallenge(challenge challenge)
         {
             yuanquanEntities yq = new yuanquanEntities();
             yq.challenge.AddObject(challenge);
             yq.SaveChanges();
+            return challenge.cha_id;
         }
 
         public void updateChallenge(challenge challenge)

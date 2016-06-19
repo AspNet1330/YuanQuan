@@ -13,7 +13,7 @@ namespace DALInterface
 
         challenge getChallengeById(int challengeId);
 
-        void saveChallenge(challenge challenge);
+        int saveChallenge(challenge challenge);
 
         void updateChallenge(challenge challenge);
 
