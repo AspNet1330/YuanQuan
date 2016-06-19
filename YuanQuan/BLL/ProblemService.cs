@@ -25,5 +25,11 @@ namespace BLL
             List<problem> problems = problemDA.getProblemsByType(type);
             return problems;
         }
+
+        public problem getProblemById(int id)
+        {
+            IProblemDA problemDA = DAFactory.createProblemDA();
+            return problemDA.getProblemById(id);
+        }
     }
 }

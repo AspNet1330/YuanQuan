@@ -12,5 +12,7 @@ namespace DALInterface
        List<problem> getProblems();
 
        List<problem> getProblemsByType(string Type);
+
+       problem getProblemById(int id);
     }
 }

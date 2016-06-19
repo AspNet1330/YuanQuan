@@ -50,3 +50,5 @@ F:\code\yuanquan\YuanQuan\Web\bin\DAL.pdb
 F:\code\yuanquan\YuanQuan\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
 F:\code\yuanquan\YuanQuan\Web\obj\Debug\Web.dll
 F:\code\yuanquan\YuanQuan\Web\obj\Debug\Web.pdb
+F:\code\yuanquan\YuanQuan\Web\bin\PublicHelp.dll
+F:\code\yuanquan\YuanQuan\Web\bin\PublicHelp.pdb

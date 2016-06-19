@@ -37,5 +37,12 @@ namespace DAL
             }
             return problem;
         }
+
+        public problem getProblemById(int id)
+        {
+            yuanquanEntities yq = new yuanquanEntities();
+            var problem = yq.problem.Single(c => c.p_id == id);
+            return problem;
+        }
     }
 }

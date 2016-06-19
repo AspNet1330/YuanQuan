@@ -12,5 +12,7 @@ namespace BLLInterface
         List<problem> getProblems();
 
         List<problem> getProblemsByType(string type);
+
+        problem getProblemById(int id);
     }
 }

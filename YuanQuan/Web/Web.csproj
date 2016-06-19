@@ -299,8 +299,14 @@
       <Project>{6beebfba-e7ec-402d-96dc-0e75e0e8919e}</Project>
       <Name>BLLInterface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PublicHelp\PublicHelp.csproj">
+      <Project>{c55640c6-5d2b-41a7-88ee-09421e793e75}</Project>
+      <Name>PublicHelp</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

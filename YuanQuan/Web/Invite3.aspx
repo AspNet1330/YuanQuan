@@ -130,7 +130,7 @@
 					<a href="http://www.oxcoder.com/cooper/recommended/talent/index.html">人才推荐</a>
 				</li>
 				<li class="active">
-					<a href="http://www.oxcoder.com/cooper/index.html">挑战管理</a>
+					<a href="./ManageChallenge.aspx">挑战管理</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">

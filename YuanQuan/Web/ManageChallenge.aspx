@@ -40,8 +40,9 @@ href="http://www.oxcoder.com/cooper/oxcoder_corp_index.html">首页</A></LI>
   href="http://www.oxcoder.com/cooper/index.html">挑战管理</A></LI></UL>
 <UL class="nav navbar-nav navbar-right">
   <LI class="dropdown"><A class="dropdown-toggle" href="javascript:;" 
-  data-toggle="dropdown"><SPAN class="text">123																					 </SPAN>
-  						 <B class="caret"></B>					 </A>
+  data-toggle="dropdown"><SPAN class="text">																															
+  									北京交通大学																					 </SPAN>						 <B class="caret"></B>
+  					 </A>
   <UL class="dropdown-menu">
     <LI><A 
     href="http://www.oxcoder.com/cooper/pay/view_balance.html">去打赏</A></LI>
@@ -67,15 +68,50 @@ href="./Invite1.aspx">
 												新增挑战邀请											 </A>										 </SECTION><!-- /.page-header -->
 										 
 <DIV id="content">
+<asp:Repeater ID="ChallengesRepeater" runat="server">
+    <ItemTemplate>
 <DIV class="row">
-<DIV class="alert alert-info" role="alert">您还没有创建挑战，赶快创建挑战吧!</DIV></DIV><!-- /.row -->
-											     
+<DIV class="col-md-12">
+<DIV class="panel panel-default project ">
+<DIV class="panel-body">
+<DIV class="row"><!-- new start-->																	 
+<DIV class="col-md-5">
+<H2 style="margin: 12px 0px 2px;"><A href="./Filter.aspx">[初级]Java工程师</A>
+																		 </H2>
+<DIV style="width: 280px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><SMALL 
+class="text-muted">[2016.05.10]																																								
+																					 二分查找算法&nbsp;																				
+																					汉诺塔问题&nbsp;																				
+																					工厂模式&nbsp;																																							</SMALL>
+																		 </DIV><!-- <p class="text-muted" style="padding: 0;margin: 0;">2015/01/12</p> -->
+																	 </DIV>
+<DIV class="col-md-2">
+<UL class="list-unstyled" style="margin: 7px 0px;">
+  <LI><SPAN class="badge badge-info">19</SPAN>																				 个新接受
+  																			 </LI>
+  <LI><SPAN class="badge badge-danger">0</SPAN>																				 个新完成
+  																			 </LI></UL></DIV>
+<DIV class="col-md-2">
+<UL class="list-unstyled" style="margin: 20px 0px;">
+  <LI><SPAN class="red">0.0</SPAN>																				%已合格
+  																			 </LI></UL></DIV>
+<DIV class="col-md-3"><A class="btn btn-new1" href="Filter.aspx">
+																			去筛选																		 </A>																		
+																			 <A class="btn btn-new1" style="margin: 16px 5px;" href="./Invite3.aspx">
+																				邀请																			 </A>																		
+																	 </DIV><!-- new end-->																 </DIV><!-- /.row -->
+															 </DIV><!-- /.panel-footer -->														 </DIV><!-- /.panel -->
+													 </DIV></DIV>
+    </ItemTemplate>
+</asp:Repeater>
+<!-- /.row -->											     
 <UL class="pagination">
   <LI class="disabled"><A aria-label="Previous"><SPAN 
-  aria-hidden="true">«</SPAN>		       </A>		     </LI>															 
+  aria-hidden="true">«</SPAN>		       </A>		     </LI>																 
+  <LI class="active"><A>1</A></LI>																	 
   <LI class="disabled"><A aria-label="Next"><SPAN aria-hidden="true">»</SPAN>		  
        </A>		     </LI>									 
-  <LI class="disabled"><A>共0条 0页</A></LI> </UL></DIV><!-- /#content -->
+  <LI class="disabled"><A>共1条 1页</A></LI> </UL></DIV><!-- /#content -->
 									 </SECTION></DIV><!-- /.container-fluid  -->							 </DIV>
 <DIV class="col-md-3 profile-info" id="profile_info_div"></DIV></DIV><!-- /.row -->
 					 </DIV><!-- /#content -->				 </SECTION></DIV></DIV><!-- /.row -->	 </DIV><!-- /.container -->
@@ -107,25 +143,7 @@ href="./Invite1.aspx">
         location.href = "/cooper/index.html?pageCode=" + pCode + "&isHistory=" + $("#isHistory_id").val();
     }
 	</SCRIPT>
-	 <!-- 引入footer 必须在下边否则js出错 -->	 
-<DIV class="afooter">
-<DIV class="container">
-<DIV class="row">
-<DIV class="col-md-12">© 2016 oxcoder.com				 <A href="http://www.oxcoder.com/contactus.html">联系我们</A>
-				 <A href="http://jq.qq.com/?_wv=1027&amp;k=eeKvVb" 
-target="_blank">QQ交流群:77590762</A>				 <A href="http://form.mikecrm.com/f.php?t=rJmyZe" 
-target="_blank">意见反馈</A>				 
-<SCRIPT type="text/javascript">
-    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    document.write(
-            unescape(
-                    "%3Cspan id='cnzz_stat_icon_1253509620'%3E%3C/span%3E%3Cscript src='"
-                    + cnzz_protocol
-                    + "s23.cnzz.com/z_stat.php%3Fid%3D1253509620%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"
-            )
-    );
-				</SCRIPT>
-			 </DIV></DIV></DIV></DIV>
+
 <SCRIPT type="text/javascript">
     //如果页面内容高度小于屏幕高度，div#footer将绝对定位到屏幕底部，否则div#footer保留它的正常静态定位
     window.onload = function () {
