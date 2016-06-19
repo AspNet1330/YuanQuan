@@ -10,5 +10,7 @@ namespace BLLInterface
     public interface IProblemService
     {
         List<problem> getProblems();
+
+        List<problem> getProblemsByType(string type);
     }
 }

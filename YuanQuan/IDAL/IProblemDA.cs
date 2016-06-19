@@ -11,6 +11,6 @@ namespace DALInterface
     {
        List<problem> getProblems();
 
-       //List<problem> getProblemsRamdomly(int num);
+       List<problem> getProblemsByType(string Type);
     }
 }

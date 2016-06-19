@@ -18,20 +18,18 @@ namespace Web
         private static List<problem> chooseProblems = new List<problem>();
         IProblemService ps = ServiceFactory.createProblemService();
         int rdnum = 0;
-        private static int challengeId;
+        private static challenge challenge;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                String cids = Session["cId"].ToString();
-                if (cids == null)
+                challenge= (challenge)Session["challenge"];
+                if (challenge == null)
                 {
                     Response.Redirect("./Invite1.aspx", false);
                     return;
                 }
-                    
-                challengeId = int.Parse(cids);
                 IProblemService ps = ServiceFactory.createProblemService();
                 getRandomProblem();  
             }
@@ -47,7 +45,7 @@ namespace Web
         protected void getRandomProblem()
         {
             chooseProblems.Clear();
-            problems = ps.getProblems();
+            problems = ps.getProblemsByType(challenge.cha_type);
             int problemNum = problems.Count;
             Random rd = new Random();
 
@@ -62,9 +60,10 @@ namespace Web
             }
             else
             {
-                for (int i = 0; i < problemNum; i++)
+                while (problems.Count>0)
                 {
-                    chooseProblems.Add(problems.ElementAt(i));
+                    chooseProblems.Add(problems.ElementAt(problems.Count-1));
+                    problems.Remove(problems.ElementAt(problems.Count - 1));
                 }
             }
             ProblemRepeater.DataSource = chooseProblems;
@@ -137,12 +136,15 @@ namespace Web
 
         void saveChaPro()
         {
+            IChallengeService challengeService = ServiceFactory.createChallengeService();
+            int cID = challengeService.saveChallenge(challenge);
+
             IChallengeProblemService cps = ServiceFactory.createChallengeProblemService();
-            cps.deleteChaProByChallengeId(challengeId);
+            cps.deleteChaProByChallengeId(cID);
             for (int i = 0; i < chooseProblems.Count; i++)
             {
                 cha_problems chaPro = new cha_problems();
-                chaPro.cha_id = challengeId;
+                chaPro.cha_id = cID;
                 chaPro.p_id = chooseProblems.ElementAt(i).p_id;
                 cps.saveChallengeProblem(chaPro);
             }

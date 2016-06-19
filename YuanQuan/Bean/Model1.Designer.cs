@@ -26,7 +26,6 @@ namespace Model
     /// </summary>
     public partial class yuanquanEntities : ObjectContext
     {
- 
         #region 构造函数
     
         /// <summary>
@@ -278,7 +277,6 @@ namespace Model
     [DataContractAttribute(IsReference=true)]
     public partial class admin : EntityObject
     {
-     
         #region 工厂方法
     
         /// <summary>

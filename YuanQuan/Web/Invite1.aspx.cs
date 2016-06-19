@@ -25,10 +25,7 @@ namespace Web
             c.cha_type = directions_id.Value;
             c.cha_date = DateTime.Now;
 
-            IChallengeService challengeService = ServiceFactory.createChallengeService();
-            int cID=challengeService.saveChallenge(c);
-
-            Session["cId"] = cID;
+            Session["challenge"] = c;
 
             Response.Redirect("./Invite2.aspx", false);//防止Response.End 方法终止页的执行
         }
