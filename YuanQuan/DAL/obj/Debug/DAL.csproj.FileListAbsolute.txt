@@ -25,3 +25,12 @@ F:\code\yuanquan\YuanQuan\DAL\bin\Debug\IDAL.pdb
 F:\code\yuanquan\YuanQuan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 F:\code\yuanquan\YuanQuan\DAL\obj\Debug\DAL.dll
 F:\code\yuanquan\YuanQuan\DAL\obj\Debug\DAL.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debug\DAL.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debug\DAL.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debug\IDAL.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debug\Model.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debug\Model.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debug\IDAL.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.pdb
