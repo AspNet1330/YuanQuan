@@ -1,0 +1,1623 @@
+.align-center {
+	text-align: center;
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.background-cover {
+	background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
+}
+.valign-center {
+	vertical-align: middle; display: inline-block;
+}
+.valign-bottom {
+	vertical-align: bottom; display: inline-block;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.container {
+	
+}
+.col-no-left-padding {
+	padding-left: 0px;
+}
+.box {
+	padding: 30px 25px 15px; border-radius: 2px; border: 1px solid rgb(153, 153, 153); transition:background 0.2s linear; border-image: none; margin-bottom: 15px; background-color: rgb(255, 255, 255); -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-border-radius: 2px;
+}
+.box:hover {
+	transition:background 0.2s linear; background-color: rgba(0, 0, 0, 0.01); -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear;
+}
+.label.label-default {
+	background-color: rgb(209, 218, 222);
+}
+.label.label-primary {
+	background-color: rgb(52, 153, 218);
+}
+.label.label-success {
+	background-color: rgb(86, 195, 42);
+}
+.label.label-info {
+	background-color: rgb(48, 210, 204);
+}
+.label.label-warning {
+	background-color: rgb(251, 176, 94);
+}
+.label.label-danger {
+	background-color: rgb(243, 89, 88);
+}
+.breadcrumb {
+	border-bottom-color: rgb(217, 217, 217); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+.carousel .item img {
+	width: 100%;
+}
+body {
+	color: rgb(51, 51, 51); line-height: 26px; font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.4em; background-color: rgb(255, 255, 255);
+}
+h1 {
+	letter-spacing: -1px; font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 2em;
+}
+h2 {
+	letter-spacing: -1px; font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.7em;
+}
+h3 {
+	letter-spacing: -1px; font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.5em;
+}
+h4 {
+	letter-spacing: -1px; font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.2em;
+}
+h5 {
+	letter-spacing: -1px; font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em;
+}
+h6 {
+	letter-spacing: -1px; font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 0.8em;
+}
+.heading-alt {
+	font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+}
+.sub-header {
+	padding-bottom: 10px; margin-bottom: 15px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.muted {
+	color: rgb(153, 153, 153);
+}
+a {
+	color: rgb(52, 152, 219);
+}
+a:hover {
+	color: rgb(9, 80, 111); text-decoration: none;
+}
+a:visited {
+	color: rgb(52, 152, 219);
+}
+.input-group-addon {
+	border-radius: 2px; background-color: rgb(248, 248, 248); -webkit-border-radius: 2px;
+}
+.form-control {
+	border-radius: 2px; -webkit-border-radius: 2px;
+}
+.form-control:focus {
+	border-color: rgb(52, 153, 218); box-shadow: 0px 0px 0px #ffffff; -webkit-box-shadow: 0 0 0 #ffffff; -moz-box-shadow: 0 0 0 #ffffff;
+}
+.form-control:hover {
+	border-color: rgb(52, 153, 218); box-shadow: 0px 0px 0px #ffffff; -webkit-box-shadow: 0 0 0 #ffffff; -moz-box-shadow: 0 0 0 #ffffff;
+}
+.form-control:active {
+	border-color: rgb(52, 153, 218); box-shadow: 0px 0px 0px #ffffff; -webkit-box-shadow: 0 0 0 #ffffff; -moz-box-shadow: 0 0 0 #ffffff;
+}
+.panel-user .panel-title .media {
+	margin-top: 0px;
+}
+.panel-user .panel-title .media-object {
+	border-radius: 100%; max-width: 40px; -webkit-border-radius: 100%;
+}
+.panel-user .panel-title .media-heading .welcome {
+	font-size: 0.6em;
+}
+.panel-user .panel-title .media-heading > span {
+	font-size: 1em; display: block;
+}
+.panel-user .panel-body {
+	padding: 20px 0px !important;
+}
+.panel-article .panel-heading {
+	background: url("../../img/samples/slide-5.jpg") no-repeat 0px 0px rgb(153, 153, 153); padding: 100px 100px 20px !important; color: rgb(255, 255, 255);
+}
+.panel-article .panel-heading .panel-title {
+	color: rgb(255, 255, 255); padding-bottom: 10px; font-size: 2.8em;
+}
+.panel-article .panel-heading a:link {
+	color: rgb(255, 255, 255);
+}
+.panel-article .panel-heading a:visited {
+	color: rgb(255, 255, 255);
+}
+.panel-article .panel-body {
+	padding: 30px 100px 60px;
+}
+.panel-article .panel-body .content {
+	padding-bottom: 30px; font-size: 1.2em; margin-bottom: 45px; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.panel-article .panel-body .content p {
+	line-height: 2; margin-bottom: 20px;
+}
+.panel {
+	border-radius: 2px; -webkit-border-radius: 2px;
+}
+.panel .panel-heading {
+	padding: 15px; position: relative; border-top-left-radius: 2px; border-top-right-radius: 2px;
+}
+.panel .panel-heading .panel-title > a {
+	display: block;
+}
+.panel .panel-heading .panel-title > a:hover {
+	text-decoration: none;
+}
+.panel .panel-heading .panel-title i {
+	margin-right: 10px;
+}
+.panel .panel-heading .panel-title .collapse-trigger {
+	transition:0.3s linear; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear;
+}
+.panel .panel-heading .panel-title .collapse-trigger.in {
+	transition:0.3s linear; transform: rotate(180deg); -webkit-transition: all 0.3s linear; -webkit-transform: rotate(180deg); -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; -moz-transform: rotate(180deg); -o-transform: rotate(180deg);
+}
+.panel .panel-heading .nav {
+	top: 0px; right: 0px; position: absolute;
+}
+.panel .panel-heading .nav.nav-pills > li > a {
+	border-radius: 0px; min-height: 47px; -webkit-border-radius: 0;
+}
+.panel .panel-heading .nav.nav-tabs {
+	border: 0px currentColor; border-image: none; top: auto; bottom: 0px;
+}
+.panel .panel-heading .nav.nav-tabs > li {
+	margin-bottom: 0px;
+}
+.panel .panel-heading .nav.nav-tabs > li > a {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.panel .panel-heading > .panel-toolbar {
+	top: 7px; right: 5px; position: absolute;
+}
+.panel .panel-toolbar {
+	top: 0px; right: 10px; position: absolute;
+}
+.panel .panel-toolbar > a[data-toggle='collapse'] > i {
+	margin-top: 10px; margin-right: 10px;
+}
+.panel .panel-toolbar .btn-group + .btn-group {
+	margin-left: 10px;
+}
+.panel.panel-calendar {
+	position: relative;
+}
+.panel.panel-calendar .fc-header {
+	top: 9px; right: 7px; position: absolute;
+}
+.panel.panel-calendar .fc-header .fc-header-left {
+	padding-top: 60px; padding-left: 25px;
+}
+.panel.panel-calendar .fc-header .fc-header-left h2 {
+	font-size: 1.6em;
+}
+.panel.panel-calendar .fc-header .fc-button {
+	padding: 6px 12px; border-radius: 4px; line-height: 1; font-size: 1em; margin-bottom: 0px; margin-left: 5px; -webkit-border-radius: 4px;
+}
+.panel.panel-calendar .fc-header .fc-header-space {
+	padding: 0px;
+}
+.panel.panel-calendar .fc-header .fc-button-prev .fc-text-arrow {
+	font-family: "FontAwesome"; font-size: 1em; content: "\f104";
+}
+.panel.panel-calendar .fc-header .fc-button-next .fc-text-arrow {
+	font-family: "FontAwesome"; font-size: 1em; content: "\f105";
+}
+.panel.panel-calendar .fc-content {
+	margin-top: 40px;
+}
+.panel.panel-no-padding .panel-body {
+	padding: 0px;
+}
+.panel-group .panel {
+	border-radius: 2px; -webkit-border-radius: 2px;
+}
+.panel-footer .progress {
+	margin-bottom: 0px;
+}
+.panel {
+	background-color: rgb(255, 255, 255);
+}
+.panel.panel-default {
+	border-color: rgb(209, 218, 222);
+}
+.panel.panel-default .panel-heading {
+	background-color: rgb(255, 255, 255);
+}
+.panel.panel-default .panel-heading .nav > li > a {
+	color: rgb(153, 153, 153);
+}
+.panel.panel-default .panel-heading .nav > li > a:hover {
+	background-color: rgb(227, 232, 235);
+}
+.panel.panel-default .panel-heading .nav > li > a:active {
+	background-color: rgb(227, 232, 235);
+}
+.panel.panel-default .panel-heading .nav > li.active a {
+	color: rgb(255, 255, 255); background-color: rgb(191, 204, 209);
+}
+.panel.panel-default .panel-heading .nav.nav-tabs > li.active > a {
+	border-color: rgb(191, 204, 209);
+}
+.panel.panel-default .panel-heading .nav.nav-tabs > li > a:hover {
+	border-color: rgb(218, 225, 228);
+}
+.panel.panel-primary {
+	border-color: rgb(52, 153, 218);
+}
+.panel.panel-primary .panel-heading {
+	color: rgb(255, 255, 255); background-color: rgb(52, 153, 218);
+}
+.panel.panel-primary .panel-heading .nav > li > a {
+	color: rgb(255, 255, 255);
+}
+.panel.panel-primary .panel-heading .nav > li > a:hover {
+	background-color: rgb(30, 182, 239);
+}
+.panel.panel-primary .panel-heading .nav > li > a:active {
+	background-color: rgb(30, 182, 239);
+}
+.panel.panel-primary .panel-heading .nav > li.active a {
+	background-color: rgb(14, 148, 198);
+}
+.panel.panel-primary .panel-heading .nav.nav-tabs > li.active > a {
+	border-color: rgb(14, 145, 193);
+}
+.panel.panel-primary .panel-heading .nav.nav-tabs > li > a:hover {
+	border-color: rgb(15, 159, 212);
+}
+.panel.panel-primary .panel-heading > .panel-toolbar .btn.btn-primary {
+	border-color: rgb(14, 148, 198);
+}
+.panel.panel-success {
+	border-color: rgb(86, 195, 42);
+}
+.panel.panel-success .panel-heading {
+	color: rgb(255, 255, 255); background-color: rgb(86, 195, 42);
+}
+.panel.panel-success .panel-heading .nav > li > a {
+	color: rgb(255, 255, 255);
+}
+.panel.panel-success .panel-heading .nav > li > a:hover {
+	background-color: rgb(101, 212, 56);
+}
+.panel.panel-success .panel-heading .nav > li > a:active {
+	background-color: rgb(101, 212, 56);
+}
+.panel.panel-success .panel-heading .nav > li.active a {
+	background-color: rgb(77, 174, 37);
+}
+.panel.panel-success .panel-heading .nav.nav-tabs > li.active > a {
+	border-color: rgb(75, 170, 37);
+}
+.panel.panel-success .panel-heading .nav.nav-tabs > li > a:hover {
+	border-color: rgb(82, 187, 40);
+}
+.panel.panel-success .panel-heading > .panel-toolbar .btn.btn-success {
+	border-color: rgb(77, 174, 37);
+}
+.panel.panel-info {
+	border-color: rgb(48, 210, 204);
+}
+.panel.panel-info .panel-heading {
+	color: rgb(255, 255, 255); background-color: rgb(48, 210, 204);
+}
+.panel.panel-info .panel-heading .nav > li > a {
+	color: rgb(255, 255, 255);
+}
+.panel.panel-info .panel-heading .nav > li > a:hover {
+	background-color: rgb(73, 215, 210);
+}
+.panel.panel-info .panel-heading .nav > li > a:active {
+	background-color: rgb(73, 215, 210);
+}
+.panel.panel-info .panel-heading .nav > li.active a {
+	background-color: rgb(42, 191, 185);
+}
+.panel.panel-info .panel-heading .nav.nav-tabs > li.active > a {
+	border-color: rgb(41, 187, 181);
+}
+.panel.panel-info .panel-heading .nav.nav-tabs > li > a:hover {
+	border-color: rgb(44, 204, 198);
+}
+.panel.panel-info .panel-heading > .panel-toolbar .btn.btn-info {
+	border-color: rgb(42, 191, 185);
+}
+.panel.panel-warning {
+	border-color: rgb(251, 176, 94);
+}
+.panel.panel-warning .panel-heading {
+	color: rgb(255, 255, 255); background-color: rgb(251, 176, 94);
+}
+.panel.panel-warning .panel-heading .nav > li > a {
+	color: rgb(255, 255, 255);
+}
+.panel.panel-warning .panel-heading .nav > li > a:hover {
+	background-color: rgb(252, 188, 119);
+}
+.panel.panel-warning .panel-heading .nav > li > a:active {
+	background-color: rgb(252, 188, 119);
+}
+.panel.panel-warning .panel-heading .nav > li.active a {
+	background-color: rgb(249, 139, 19);
+}
+.panel.panel-warning .panel-heading .nav.nav-tabs > li.active > a {
+	border-color: rgb(250, 161, 64);
+}
+.panel.panel-warning .panel-heading .nav.nav-tabs > li > a:hover {
+	border-color: rgb(251, 171, 84);
+}
+.panel.panel-warning .panel-heading > .panel-toolbar .btn.btn-warning {
+	border-color: rgb(250, 152, 44);
+}
+.panel.panel-danger {
+	border-color: rgb(243, 89, 88);
+}
+.panel.panel-danger .panel-heading {
+	color: rgb(255, 255, 255); background-color: rgb(243, 89, 88);
+}
+.panel.panel-danger .panel-heading .nav > li > a {
+	color: rgb(255, 255, 255);
+}
+.panel.panel-danger .panel-heading .nav > li > a:hover {
+	background-color: rgb(245, 113, 112);
+}
+.panel.panel-danger .panel-heading .nav > li > a:active {
+	background-color: rgb(245, 113, 112);
+}
+.panel.panel-danger .panel-heading .nav > li.active a {
+	background-color: rgb(237, 18, 17);
+}
+.panel.panel-danger .panel-heading .nav.nav-tabs > li.active > a {
+	border-color: rgb(241, 61, 59);
+}
+.panel.panel-danger .panel-heading .nav.nav-tabs > li > a:hover {
+	border-color: rgb(242, 80, 78);
+}
+.panel.panel-danger .panel-heading > .panel-toolbar .btn.btn-danger {
+	border-color: rgb(240, 42, 40);
+}
+.panel.panel-inverse {
+	border-color: rgb(21, 38, 57);
+}
+.panel.panel-inverse .panel-heading {
+	color: rgb(255, 255, 255); background-color: rgb(21, 38, 57);
+}
+.panel.panel-inverse .panel-heading .nav > li > a {
+	color: rgb(255, 255, 255);
+}
+.panel.panel-inverse .panel-heading .nav > li > a:hover {
+	background-color: rgb(28, 50, 76);
+}
+.panel.panel-inverse .panel-heading .nav > li > a:active {
+	background-color: rgb(28, 50, 76);
+}
+.panel.panel-inverse .panel-heading .nav > li.active a {
+	background-color: rgb(0, 1, 1);
+}
+.panel.panel-inverse .panel-heading .nav.nav-tabs > li.active > a {
+	border-color: rgb(13, 23, 35);
+}
+.panel.panel-inverse .panel-heading .nav.nav-tabs > li > a:hover {
+	border-color: rgb(18, 33, 50);
+}
+.panel.panel-inverse .panel-heading > .panel-toolbar .btn.btn-inverse {
+	border-color: rgb(7, 13, 20);
+}
+.panel.panel-outline {
+	border: 0px currentColor; border-image: none; box-shadow: 0px 0px 0px rgba(0,0,0,0); background-color: transparent; -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0); -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.panel.panel-outline .panel-heading {
+	border-bottom-color: rgb(229, 229, 229); border-bottom-width: 1px; border-bottom-style: solid; background-color: transparent;
+}
+.panel.panel-outline .panel-heading .nav > li > a {
+	color: rgb(153, 153, 153);
+}
+.panel.panel-outline .panel-heading .nav > li > a:hover {
+	background-color: rgb(227, 232, 235);
+}
+.panel.panel-outline .panel-heading .nav > li > a:active {
+	background-color: rgb(227, 232, 235);
+}
+.panel.panel-outline .panel-heading .nav > li.active a {
+	color: rgb(255, 255, 255); background-color: rgb(191, 204, 209);
+}
+.panel.panel-outline .panel-heading .nav.nav-tabs > li.active > a {
+	border-color: rgb(191, 204, 209);
+}
+.panel.panel-outline .panel-heading .nav.nav-tabs > li > a:hover {
+	border-color: rgb(218, 225, 228);
+}
+.panel.panel-outline .panel-footer {
+	border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid; background-color: transparent;
+}
+.panel .panel-footer {
+	background-color: rgb(251, 251, 252);
+}
+.nav li a {
+	transition:0.3s linear; position: relative; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear;
+}
+.nav li a:hover {
+	transition:0.3s linear; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear;
+}
+.nav.nav-pills > li > a {
+	border-radius: 2px; -webkit-border-radius: 2px;
+}
+.nav.nav-pills > li > a > .badge {
+	margin-top: 4px;
+}
+.imoon::before {
+	z-index: 100;
+}
+.nav-stacked li.list-default {
+	padding-left: 2px; border-left-color: rgb(153, 153, 153); border-left-width: 5px; border-left-style: solid;
+}
+.nav-stacked li.list-default > a {
+	border-radius: 0px 2px 2px 0px; -webkit-border-radius: 0 2px 2px 0;
+}
+.nav-stacked li.list-primary {
+	padding-left: 2px; border-left-color: rgb(52, 153, 218); border-left-width: 5px; border-left-style: solid;
+}
+.nav-stacked li.list-primary > a {
+	border-radius: 0px 2px 2px 0px; -webkit-border-radius: 0 2px 2px 0;
+}
+.nav-stacked li.list-success {
+	padding-left: 2px; border-left-color: rgb(86, 195, 42); border-left-width: 5px; border-left-style: solid;
+}
+.nav-stacked li.list-success > a {
+	border-radius: 0px 2px 2px 0px; -webkit-border-radius: 0 2px 2px 0;
+}
+.nav-stacked li.list-info {
+	padding-left: 2px; border-left-color: rgb(48, 210, 204); border-left-width: 5px; border-left-style: solid;
+}
+.nav-stacked li.list-info > a {
+	border-radius: 0px 2px 2px 0px; -webkit-border-radius: 0 2px 2px 0;
+}
+.nav-stacked li.list-warning {
+	padding-left: 2px; border-left-color: rgb(251, 176, 94); border-left-width: 5px; border-left-style: solid;
+}
+.nav-stacked li.list-warning > a {
+	border-radius: 0px 2px 2px 0px; -webkit-border-radius: 0 2px 2px 0;
+}
+.nav-stacked li.list-danger {
+	padding-left: 2px; border-left-color: rgb(243, 89, 88); border-left-width: 5px; border-left-style: solid;
+}
+.nav-stacked li.list-danger > a {
+	border-radius: 0px 2px 2px 0px; -webkit-border-radius: 0 2px 2px 0;
+}
+.nav-stacked li.list-inverse {
+	padding-left: 2px; border-left-color: rgb(21, 38, 57); border-left-width: 5px; border-left-style: solid;
+}
+.nav-stacked li.list-inverse > a {
+	border-radius: 0px 2px 2px 0px; -webkit-border-radius: 0 2px 2px 0;
+}
+.nav-pills > li.active > a {
+	background-color: rgb(59, 185, 239);
+}
+.nav-pills > li.active > a:hover {
+	background-color: rgb(106, 202, 243);
+}
+.nav-pills > li.active > a:focus {
+	background-color: rgb(106, 202, 243);
+}
+.nav-pills > li.active > a > .text-muted {
+	color: rgba(255, 255, 255, 0.4);
+}
+.nav-pills > li.active > a > .muted {
+	color: rgba(255, 255, 255, 0.4);
+}
+.panel-no-padding .nav-pills > li > a {
+	border-radius: 0px; -webkit-border-radius: 0;
+}
+.panel-no-padding .nav-pills > li + li {
+	margin-top: 0px;
+}
+.navbar {
+	border-radius: 2px; -webkit-border-radius: 2px;
+}
+.navbar.navbar-inverse {
+	
+}
+.navbar .nav > li > a {
+	position: relative;
+}
+.navbar .nav > li > a:hover {
+	background-color: rgb(255, 255, 255);
+}
+.navbar .nav > li > a i {
+	margin-right: 5px;
+}
+.navbar .navbar-brand {
+	position: relative;
+}
+.navbar .navbar-brand img {
+	max-height: 16px;
+}
+.navbar .navbar-brand .icon-cover {
+	left: -200px; top: 0px; width: 100%; height: 100%; right: 0px; bottom: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.1);
+}
+.table-adminlist tr td.icon {
+	width: 20px;
+}
+.table .progress {
+	margin-bottom: 0px;
+}
+.btn {
+	border-radius: 2px; transition:0.3s linear; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; -webkit-border-radius: 2px;
+}
+.btn:hover {
+	transition:0.3s linear; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear;
+}
+.btn.btn-lg {
+	padding-bottom: 11px;
+}
+.btn.btn-primary {
+	border-color: rgb(52, 153, 218); background-color: rgb(52, 153, 218);
+}
+.btn.btn-primary:hover {
+	border-color: rgb(9, 95, 127); background-color: rgb(13, 130, 174);
+}
+.btn.btn-info {
+	border-color: rgb(48, 210, 204); background-color: rgb(48, 210, 204);
+}
+.btn.btn-info:hover {
+	border-color: rgb(37, 170, 165); background-color: rgb(40, 183, 177);
+}
+.btn.btn-success {
+	border-color: rgb(86, 195, 42); background-color: rgb(86, 195, 42);
+}
+.btn.btn-success:hover {
+	border-color: rgb(49, 111, 24); background-color: rgb(67, 153, 33);
+}
+.btn.btn-warning {
+	border-color: rgb(251, 176, 94); background-color: rgb(251, 176, 94);
+}
+.btn.btn-warning:hover {
+	border-color: rgb(237, 127, 6); background-color: rgb(250, 152, 44);
+}
+.btn.btn-danger {
+	border-color: rgb(243, 89, 88); background-color: rgb(243, 89, 88);
+}
+.btn.btn-danger:hover {
+	border-color: rgb(214, 17, 15); background-color: rgb(240, 42, 40);
+}
+.btn.btn-inverse {
+	border-color: rgb(21, 38, 57); color: rgb(209, 218, 222); background-color: rgb(21, 38, 57);
+}
+.btn.btn-inverse:hover {
+	border-color: rgb(0, 0, 0); background-color: rgb(42, 75, 113);
+}
+.btn.btn-alt.btn-default {
+	border-left-width: 5px;
+}
+.btn.btn-alt.btn-primary {
+	border-left-width: 5px;
+}
+.btn.btn-alt.btn-info {
+	border-left-width: 5px;
+}
+.btn.btn-alt.btn-success {
+	border-left-width: 5px;
+}
+.btn.btn-alt.btn-warning {
+	border-left-width: 5px;
+}
+.btn.btn-alt.btn-danger {
+	border-left-width: 5px;
+}
+.btn.btn-alt.btn-inverse {
+	border-left-width: 5px;
+}
+.btn.btn-alt.btn-primary {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-info {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-success {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-warning {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-danger {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-inverse {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-primary {
+	color: rgb(52, 153, 218);
+}
+.btn.btn-alt.btn-primary:hover {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-primary:active {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-success {
+	color: rgb(86, 195, 42);
+}
+.btn.btn-alt.btn-success:hover {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-success:active {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-info {
+	color: rgb(48, 210, 204);
+}
+.btn.btn-alt.btn-info:hover {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-info:active {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-warning {
+	color: rgb(251, 176, 94);
+}
+.btn.btn-alt.btn-warning:hover {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-warning:active {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-danger {
+	color: rgb(243, 89, 88);
+}
+.btn.btn-alt.btn-danger:hover {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-danger:active {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-inverse {
+	color: rgb(21, 38, 57);
+}
+.btn.btn-alt.btn-inverse:hover {
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-alt.btn-inverse:active {
+	background-color: rgb(255, 255, 255);
+}
+.btn-demo-space {
+	margin-bottom: 10px;
+}
+a.btn.btn-primary:visited {
+	color: rgb(255, 255, 255);
+}
+a.btn.btn-info:visited {
+	color: rgb(255, 255, 255);
+}
+a.btn.btn-success:visited {
+	color: rgb(255, 255, 255);
+}
+a.btn.btn-warning:visited {
+	color: rgb(255, 255, 255);
+}
+a.btn.btn-danger:visited {
+	color: rgb(255, 255, 255);
+}
+.bootstrap-select .btn {
+	padding: 7px 12px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(255, 255, 255);
+}
+.bootstrap-select .btn:focus {
+	
+}
+.bootstrap-switch {
+	border-radius: 2px; -webkit-border-radius: 2px;
+}
+.bootstrap-switch.bootstrap-switch-focused {
+	box-shadow: 0px 0px 0px #ffffff; -webkit-box-shadow: 0 0 0 #ffffff; -moz-box-shadow: 0 0 0 #ffffff;
+}
+.bootstrap-switch > div > span.bootstrap-switch-handle-on {
+	border-top-left-radius: 2px; border-bottom-left-radius: 2px;
+}
+.bootstrap-switch > div > span.bootstrap-switch-handle-off {
+	border-top-right-radius: 2px; border-bottom-right-radius: 2px;
+}
+.bootstrap-switch span.switch-primary {
+	background: rgb(52, 153, 218);
+}
+.bootstrap-switch span.switch-left {
+	background: rgb(52, 153, 218);
+}
+.bootstrap-switch span.switch-left {
+	border-radius: 3px 0px 0px 3px; -webkit-border-radius: 3px 0 0 3px;
+}
+.bootstrap-switch span.switch-left.switch-primary {
+	background: rgb(52, 153, 218);
+}
+.bootstrap-switch span.switch-left.switch-success {
+	background: rgb(86, 195, 42);
+}
+.bootstrap-switch span.switch-left.switch-info {
+	background: rgb(48, 210, 204);
+}
+.bootstrap-switch span.switch-left.switch-warning {
+	background: rgb(251, 176, 94);
+}
+.bootstrap-switch span.switch-left.switch-danger {
+	background: rgb(243, 89, 88);
+}
+.bootstrap-switch span.switch-left.switch-inverse {
+	background: rgb(21, 38, 57);
+}
+.bootstrap-switch span.switch-right {
+	background: rgb(209, 218, 222); border-radius: 0px 3px 3px 0px; -webkit-border-radius: 0 3px 3px 0;
+}
+.bootstrap-switch span.switch-right.switch-primary {
+	background: rgb(52, 153, 218);
+}
+.bootstrap-switch span.switch-right.switch-success {
+	background: rgb(86, 195, 42);
+}
+.bootstrap-switch span.switch-right.switch-info {
+	background: rgb(48, 210, 204);
+}
+.bootstrap-switch span.switch-right.switch-warning {
+	background: rgb(251, 176, 94);
+}
+.bootstrap-switch span.switch-right.switch-danger {
+	background: rgb(243, 89, 88);
+}
+.bootstrap-switch span.switch-right.switch-inverse {
+	background: rgb(21, 38, 57);
+}
+.timeline {
+	list-style: none; margin: 30px 0px 0px; padding: 0px; position: relative;
+}
+.timeline::before {
+	background: rgb(209, 218, 222); left: 20%; top: 0px; width: 6px; bottom: 0px; margin-left: -2px; position: absolute; content: "";
+}
+.timeline > li {
+	position: relative;
+}
+.timeline > li .timeline-time {
+	width: 25%; padding-right: 100px; display: block; position: absolute;
+}
+.timeline > li .timeline-time span {
+	text-align: right; display: block;
+}
+.timeline > li .timeline-time span:first-child {
+	color: rgb(153, 153, 153); font-size: 0.9em;
+}
+.timeline > li .timeline-time span:last-child {
+	color: rgb(166, 166, 166); font-size: 1.8em;
+}
+.timeline > li .timeline-label {
+	background: rgb(209, 218, 222); margin: 0px 0px 15px 25%; padding: 1px 1px 1px 10px; border-radius: 2px; line-height: 1.4; font-size: 1.2em; font-weight: 300; position: relative;
+}
+.timeline > li .timeline-label .media {
+	padding: 10px; background-color: rgb(255, 255, 255);
+}
+.timeline > li .timeline-label .media .media-object {
+	border-radius: 100%; max-width: 48px; -webkit-border-radius: 100%;
+}
+.timeline > li .timeline-label .title {
+	padding: 0px 0px 10px; margin-top: 0px; border-bottom-color: rgba(255, 255, 255, 0.4); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.timeline > li .timeline-label::after {
+	border-width: 10px; border-style: solid; border-color: transparent rgb(209, 218, 222) transparent transparent; border-image: none; top: 20px; width: 0px; height: 0px; right: 100%; position: absolute; content: " "; pointer-events: none;
+}
+.timeline > li .timeline-icon {
+	margin: 0px 0px 0px -25px; border-radius: 50%; left: 20%; top: 0px; text-align: center; text-transform: none; line-height: 40px; font-size: 1.4em; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; -webkit-font-smoothing: antialiased; speak: none;
+}
+.timeline > li .timeline-icon .fa-stack i:first-child {
+	color: rgb(209, 218, 222);
+}
+.timeline > li:nth-child(2n+1) .timeline-time span:last-child {
+	color: rgb(204, 204, 204);
+}
+.timeline > li.info .timeline-label {
+	background-color: rgb(48, 210, 204);
+}
+.timeline > li.info .timeline-label::after {
+	border-right-color: rgb(48, 210, 204);
+}
+.timeline > li.info .timeline-icon .fa-stack :first-child.fa {
+	color: rgb(48, 210, 204);
+}
+.timeline > li.success .timeline-label {
+	background-color: rgb(86, 195, 42);
+}
+.timeline > li.success .timeline-label::after {
+	border-right-color: rgb(86, 195, 42);
+}
+.timeline > li.success .timeline-icon .fa-stack :first-child.fa {
+	color: rgb(86, 195, 42);
+}
+.timeline > li.warning .timeline-label {
+	background-color: rgb(251, 176, 94);
+}
+.timeline > li.warning .timeline-label::after {
+	border-right-color: rgb(251, 176, 94);
+}
+.timeline > li.warning .timeline-icon .fa-stack :first-child.fa {
+	color: rgb(251, 176, 94);
+}
+.timeline > li.danger .timeline-label {
+	background-color: rgb(243, 89, 88);
+}
+.timeline > li.danger .timeline-label::after {
+	border-right-color: rgb(243, 89, 88);
+}
+.timeline > li.danger .timeline-icon .fa-stack :first-child.fa {
+	color: rgb(243, 89, 88);
+}
+.timeline > li.primary .timeline-label {
+	background-color: rgb(52, 153, 218);
+}
+.timeline > li.primary .timeline-label::after {
+	border-right-color: rgb(52, 153, 218);
+}
+.timeline > li.primary .timeline-icon .fa-stack :first-child.fa {
+	color: rgb(52, 153, 218);
+}
+@media all and (max-width:991px)
+{
+.timeline > li .timeline-time {
+	width: auto; position: relative;
+}
+.timeline > li .timeline-time span {
+	text-align: left; display: inline-block;
+}
+.timeline > li .timeline-time span:first-child {
+	padding: 0px 0px 0px 80px; font-size: 1.2em;
+}
+.timeline > li .timeline-time span:last-child {
+	padding: 0px 0px 0px 10px; font-size: 1em; font-weight: normal;
+}
+.timeline > li .timeline-icon {
+	left: 40px; top: 30px;
+}
+.timeline > li .timeline-label {
+	margin-left: 80px;
+}
+.timeline > li .timeline-label .title {
+	padding-bottom: 0px; margin-bottom: 0px;
+}
+.timeline::before {
+	left: 40px;
+}
+}
+.badge {
+	padding: 3px 6px; border-radius: 2px; -webkit-border-radius: 2px;
+}
+.badge.badge-danger {
+	background-color: rgb(243, 89, 88);
+}
+.badge.badge-primary {
+	background-color: rgb(52, 153, 218);
+}
+.badge.badge-info {
+	background-color: rgb(48, 210, 204);
+}
+.badge.badge-success {
+	background-color: rgb(86, 195, 42);
+}
+.badge.badge-warning {
+	background-color: rgb(251, 176, 94);
+}
+.badge.badge-inverse {
+	background-color: rgb(21, 38, 57);
+}
+.navbar .badge {
+	padding: 3px 4px; top: 7px; right: 5px; font-size: 0.6em; position: absolute;
+}
+.progress {
+	border-radius: 10px; height: 20px; margin-top: 5px; -webkit-border-radius: 10px;
+}
+.progress .progress-bar-default {
+	background-color: rgb(209, 218, 222);
+}
+.progress .progress-bar-primary {
+	background-color: rgb(52, 153, 218);
+}
+.progress .progress-bar-success {
+	background-color: rgb(86, 195, 42);
+}
+.progress .progress-bar-info {
+	background-color: rgb(48, 210, 204);
+}
+.progress .progress-bar-warning {
+	background-color: rgb(251, 176, 94);
+}
+.progress .progress-bar-danger {
+	background-color: rgb(243, 89, 88);
+}
+body {
+	padding-top: 70px; padding-bottom: 60px;
+}
+.media .media-object {
+	border-radius: 100%; max-height: 48px; max-width: 48px; -webkit-border-radius: 100%;
+}
+#sidebar .panel {
+	border: 0px currentColor; border-image: none;
+}
+#sidebar .panel.panel-outline {
+	color: rgb(255, 255, 255);
+}
+#sidebar .statistic-list-chart li {
+	color: rgb(255, 255, 255);
+}
+#sidebar .statistic-list-chart li h4 {
+	color: rgb(255, 255, 255);
+}
+#sidebar .statistic-list-chart li .sub {
+	color: rgb(238, 238, 238);
+}
+#sidebar .nav-stacked > li a {
+	text-decoration: none;
+}
+#sidebar .nav-stacked > li > a {
+	padding: 5px 10px 5px 40px; transition:0.2s linear; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear;
+}
+#sidebar .nav-stacked > li > a > i {
+	left: 8px; top: 12px; width: 20px; margin-right: 5px; position: absolute;
+}
+#sidebar .nav-stacked > li > a > i.pull-right {
+	left: auto; right: 0px;
+}
+#sidebar .nav-stacked > li > a > .icon-cover::after {
+	transition:left 0.2s linear; left: -35px; top: 0px; width: 35px; height: 100%; position: absolute; content: " "; background-color: rgb(106, 202, 243); -webkit-transition: left 0.2s linear; -moz-transition: left 0.2s linear; -o-transition: left 0.2s linear;
+}
+#sidebar .nav-stacked > li > a:hover {
+	transition:0.2s linear; padding-left: 45px; background-color: rgb(224, 244, 253); -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear;
+}
+#sidebar .nav-stacked > li > a:hover > i {
+	color: rgb(255, 255, 255);
+}
+#sidebar .nav-stacked > li > a:hover > i.pull-right {
+	color: inherit;
+}
+#sidebar .nav-stacked > li > a:hover > .icon-cover::after {
+	transition:left 0.2s linear; left: 0px; -webkit-transition: left 0.2s linear; -moz-transition: left 0.2s linear; -o-transition: left 0.2s linear;
+}
+#sidebar .nav-stacked > li.active > a {
+	background-color: rgb(82, 194, 241);
+}
+#sidebar .nav-stacked > li.active > a > .icon-cover::after {
+	background-color: rgb(35, 177, 237);
+}
+#sidebar .nav-stacked > li.active > a:hover {
+	background-color: rgb(68, 189, 240);
+}
+#sidebar .nav-stacked > li > ul {
+	background-color: rgb(233, 247, 253);
+}
+#sidebar .nav-stacked > li > ul > li > a {
+	padding: 5px 10px 5px 20px; transition:0.2s linear; width: 100%; display: inline-block; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear;
+}
+#sidebar .nav-stacked > li > ul > li > a:hover {
+	transition:0.2s linear; color: rgb(255, 255, 255); padding-left: 25px; background-color: rgb(177, 227, 249); -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear;
+}
+#sidebar .nav-stacked > li > ul > li > a i {
+	color: rgb(51, 51, 51);
+}
+#sidebar .nav-stacked > li > ul > li.active > a {
+	background-color: rgb(153, 219, 247);
+}
+#sidebar .nav-stacked > li > ul > li.active > a:hover {
+	background-color: rgb(177, 227, 249);
+}
+#middle {
+	border-radius: 2px; background-color: rgb(255, 255, 255); -webkit-border-radius: 2px;
+}
+#middle .navbar {
+	margin-bottom: 0px;
+}
+#middle .breadcrumb {
+	margin: 0px; padding: 10px 25px; border-radius: 2px 2px 0px 0px; -webkit-border-radius: 2px 2px 0 0;
+}
+#middle .breadcrumb > li + li::before {
+	content: "\203a";
+}
+#middle .page-header {
+	margin: 0px; padding: 15px 25px 10px; border-right-color: currentColor; border-bottom-color: rgb(217, 217, 217); border-left-color: currentColor; border-right-width: 0px; border-bottom-width: 3px; border-left-width: 0px; border-right-style: none; border-bottom-style: solid; border-left-style: none; background-color: rgb(255, 255, 255);
+}
+#middle .page-header h1 {
+	font-size: 1.8em;
+}
+#middle .page-header p {
+	color: rgb(153, 153, 153);
+}
+#middle .page-sub-header {
+	margin: 20px -25px 10px; padding: 15px 25px 10px;
+}
+#middle .page-sub-header h2 {
+	padding-bottom: 15px; font-size: 1.6em; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#middle #content {
+	padding: 25px; background-color: rgb(248, 248, 248);
+}
+#right {
+	min-height: 500px;
+}
+#mainnav {
+	border-radius: 2px 2px 0px 0px; background-color: rgb(52, 152, 219); -webkit-border-radius: 2px 2px 0 0;
+}
+#mainnav .navbar-brand {
+	height: auto; color: rgb(255, 255, 255);
+}
+#mainnav #top-nav .nav > li > a {
+	color: rgb(255, 255, 255);
+}
+#mainnav #top-nav .nav > li > a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(18, 166, 229);
+}
+#mainnav #top-nav .nav > li.active > a {
+	color: rgb(255, 255, 255); background-color: rgb(59, 185, 239);
+}
+#mainnav #top-nav .nav .open > a {
+	background-color: rgb(59, 185, 239);
+}
+#mainnav #top-nav .nav .open > a:hover {
+	background-color: rgb(59, 185, 239);
+}
+#mainnav #top-nav .nav .open > a:focus {
+	background-color: rgb(59, 185, 239);
+}
+#mainnav .navbar-form .form-control {
+	border: 0px currentColor; transition:width 0.2s linear; border-image: none; width: 100px; color: rgb(255, 255, 255); box-shadow: 0px 0px 0px #ffffff; background-color: transparent; -webkit-transition: width 0.2s linear; -webkit-box-shadow: 0 0 0 #ffffff; -moz-transition: width 0.2s linear; -o-transition: width 0.2s linear; -moz-box-shadow: 0 0 0 #ffffff;
+}
+#mainnav .navbar-form .form-control:focus {
+	transition:width 0.2s linear; width: 150px; -webkit-transition: width 0.2s linear; -moz-transition: width 0.2s linear; -o-transition: width 0.2s linear;
+}
+#footer {
+	padding: 5px 10px 0px; left: 0px; right: 0px; bottom: 0px; color: rgb(255, 255, 255); position: fixed; background-color: rgba(0, 0, 0, 0.2);
+}
+#footer .list-inline {
+	margin-bottom: 0px;
+}
+#footer .list-inline li a {
+	color: rgb(52, 153, 218); font-size: 12px;
+}
+#footer .list-inline.social-network {
+	text-align: right;
+}
+#footer .list-inline.social-network li a {
+	transition:0.3s linear; color: rgba(255, 255, 255, 0.4); font-size: 1.8em; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear;
+}
+#footer .list-inline.social-network li a:hover {
+	transition:0.3s linear; color: rgba(255, 255, 255, 0.8); -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear;
+}
+.message .message-detail .media-object {
+	border-radius: 100%; max-width: 48px; -webkit-border-radius: 100%;
+}
+.message .message-detail .media-body {
+	padding: 15px;
+}
+.message .message-detail .bubble {
+	background: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); border-image: none; margin-left: 65px; position: relative;
+}
+.message .message-detail .bubble.alt {
+	border-width: 2px; border-color: rgb(35, 177, 237);
+}
+.message .message-detail .bubble.alt::before {
+	border-width: 13px; margin-top: -13px; border-right-color: rgb(35, 177, 237);
+}
+.message .message-detail .bubble::after {
+	border: solid transparent; border-image: none; top: 24px; width: 0px; height: 0px; right: 100%; position: absolute; content: " "; pointer-events: none;
+}
+.message .message-detail .bubble::before {
+	border: solid transparent; border-image: none; top: 24px; width: 0px; height: 0px; right: 100%; position: absolute; content: " "; pointer-events: none;
+}
+.message .message-detail .bubble::after {
+	border-width: 10px; border-color: rgba(255, 255, 255, 0) rgb(255, 255, 255) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0); margin-top: -10px;
+}
+.message .message-detail .bubble::before {
+	border-width: 11px; border-color: rgba(204, 204, 204, 0) rgb(204, 204, 204) rgba(204, 204, 204, 0) rgba(204, 204, 204, 0); margin-top: -11px;
+}
+.project .media .media-object {
+	max-width: 80px;
+}
+.task-list h3 {
+	padding-bottom: 10px; font-size: 1.4em; margin-bottom: 10px;
+}
+.task-list .tasks > li {
+	border-left-width: 5px;
+}
+.task-list .tasks > li .switch {
+	width: 30px; float: left;
+}
+.task-list .tasks > li .title {
+	clear: both;
+}
+.task-list .tasks > li .user {
+	margin-right: 25px;
+}
+.task-list .tasks > li.completed .title {
+	color: rgb(153, 153, 153); text-decoration: line-through;
+}
+.task-list .tasks > li.item-primary {
+	border-left-color: rgb(52, 153, 218);
+}
+.task-list .tasks > li.item-success {
+	border-left-color: rgb(86, 195, 42);
+}
+.task-list .tasks > li.item-info {
+	border-left-color: rgb(48, 210, 204);
+}
+.task-list .tasks > li.item-warning {
+	border-left-color: rgb(251, 176, 94);
+}
+.task-list .tasks > li.item-danger {
+	border-left-color: rgb(243, 89, 88);
+}
+.panel-no-padding .task-list .list-group {
+	margin-bottom: 0px;
+}
+.panel-no-padding .task-list .list-group > li {
+	border-radius: 0px; border-right-color: currentColor; border-right-width: 0px; border-right-style: none; -webkit-border-radius: 0;
+}
+.panel-no-padding .task-list .list-group > li:first-child {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.panel-no-padding .task-list .list-group > li:last-child {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.client-info .percent {
+	line-height: 1; font-size: 4em;
+}
+.client-info .donut-graph {
+	margin: 0px auto; max-width: 70%;
+}
+.section {
+	margin: -15px -15px 15px; padding: 15px;
+}
+.section.primary {
+	color: rgb(255, 255, 255); background-color: rgb(52, 153, 218);
+}
+.section.success {
+	color: rgb(255, 255, 255); background-color: rgb(86, 195, 42);
+}
+.section.warning {
+	color: rgb(255, 255, 255); background-color: rgb(251, 176, 94);
+}
+.section.info {
+	color: rgb(255, 255, 255); background-color: rgb(48, 210, 204);
+}
+.section.danger {
+	color: rgb(255, 255, 255); background-color: rgb(243, 89, 88);
+}
+.well.well-inverse {
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.25); background-color: rgb(255, 255, 255); -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+.invoice {
+	margin-right: 40px; margin-left: 40px; position: relative; min-height: 900px;
+}
+.invoice.invoice-layout {
+	border-color: rgb(170, 170, 170); padding: 50px 90px; border-radius: 0px; -webkit-border-radius: 0;
+}
+.invoice .dl-horizontal dt {
+	width: 90px;
+}
+.invoice .dl-horizontal dd {
+	margin-left: 110px;
+}
+.invoice .invoice-heading {
+	padding-bottom: 40px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.invoice .invoice-heading::before {
+	display: table; content: " ";
+}
+.invoice .invoice-heading::after {
+	display: table; content: " ";
+}
+.invoice .invoice-client {
+	margin: 50px 0px;
+}
+.invoice .invoice-client::before {
+	display: table; content: " ";
+}
+.invoice .invoice-client::after {
+	display: table; content: " ";
+}
+.invoice .invoice-footer {
+	left: 90px; text-align: center; right: 90px; bottom: 50px; font-size: 90%; position: absolute;
+}
+.invoice .table td {
+	width: 150px;
+}
+.invoice .table td:first-child {
+	width: auto;
+}
+.list-user-app {
+	margin-bottom: 0px;
+}
+.list-user-app li {
+	padding: 0px;
+}
+.list-user-app li a {
+	padding: 10px 5px; transition:0.3s linear; text-decoration: none; position: relative; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear;
+}
+.list-user-app li a > .badge {
+	top: 0px; right: 0px; font-size: 0.6em; position: absolute;
+}
+.list-user-app li a > i {
+	margin: 0px 5px; font-size: 1.2em;
+}
+.list-user-app li a .text {
+	display: none;
+}
+.list-user-app li a:hover {
+	border-radius: 3px; background-color: rgb(106, 202, 243); -webkit-border-radius: 3px;
+}
+.list-user-app li a:hover i {
+	transition:0.3s linear; color: rgb(255, 255, 255); -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear;
+}
+.stat-block {
+	padding: 20px; border-radius: 2px; overflow: hidden; margin-bottom: 15px; position: relative; min-height: 100px; -webkit-border-radius: 2px;
+}
+.stat-block .icon {
+	width: 80px; margin-bottom: 10px; float: left; display: block;
+}
+.stat-block .icon i {
+	left: 0px; top: 15px; color: rgb(255, 255, 255); line-height: 65px; padding-left: 20px; font-size: 65px; position: absolute;
+}
+.stat-block .icon .icon-cover {
+	transition:left 0.1s linear; left: -110px; top: 0px; width: 110px; height: 100%; bottom: 0px; position: absolute; content: " "; background-color: rgb(106, 202, 243); -webkit-transition: left 0.1s linear; -moz-transition: left 0.1s linear; -o-transition: left 0.1s linear;
+}
+.stat-block:hover .icon-cover {
+	transition:left 0.1s linear; left: 0px; -webkit-transition: left 0.1s linear; -moz-transition: left 0.1s linear; -o-transition: left 0.1s linear;
+}
+.stat-block:hover a {
+	text-decoration: none;
+}
+.stat-block .details .number {
+	text-align: right; color: rgb(255, 255, 255); line-height: 34px; font-size: 34px; font-weight: 300; margin-bottom: 5px;
+}
+.stat-block .details .description {
+	text-align: right; color: rgb(255, 255, 255); font-size: 16px; font-weight: 300;
+}
+.stat-block .readmore i {
+	margin-top: 1px; float: right; display: inline-block;
+}
+.stat-block.stat-default {
+	background-color: rgb(238, 238, 238);
+}
+.stat-block.stat-default .icon-cover {
+	background-color: rgb(179, 194, 201);
+}
+.stat-block.stat-primary {
+	background-color: rgb(52, 153, 218);
+}
+.stat-block.stat-primary .icon-cover {
+	background-color: rgb(13, 130, 174);
+}
+.stat-block.stat-info {
+	background-color: rgb(48, 210, 204);
+}
+.stat-block.stat-info .icon-cover {
+	background-color: rgb(37, 170, 165);
+}
+.stat-block.stat-success {
+	background-color: rgb(86, 195, 42);
+}
+.stat-block.stat-success .icon-cover {
+	background-color: rgb(67, 153, 33);
+}
+.stat-block.stat-warning {
+	background-color: rgb(251, 176, 94);
+}
+.stat-block.stat-warning .icon-cover {
+	background-color: rgb(250, 152, 44);
+}
+.stat-block.stat-danger {
+	background-color: rgb(243, 89, 88);
+}
+.stat-block.stat-danger .icon-cover {
+	background-color: rgb(240, 42, 40);
+}
+.stat-block.stat-inverse {
+	background-color: rgb(21, 38, 57);
+}
+.stat-block.stat-inverse .icon-cover {
+	background-color: rgb(7, 13, 20);
+}
+.demo-section {
+	padding: 0px 20px;
+}
+.demo-section h4 {
+	margin: 30px 0px 20px; padding-bottom: 10px; border-bottom-color: rgb(170, 170, 170); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.demo-section .icon-demo {
+	padding-top: 5px; padding-bottom: 5px;
+}
+.demo-section .icon-demo .fa {
+	width: 25px;
+}
+.demo-section .icon-demo:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.item-listing > li {
+	padding: 10px 0px; border-top-color: rgb(238, 238, 238); border-top-width: 1px; border-top-style: dotted;
+}
+.item-listing > li:first-child {
+	border: 0px currentColor; border-image: none; padding-top: 0px;
+}
+.item-listing > li .media .pull-left .media-object {
+	max-width: 64px;
+}
+.item-listing > li .media .media-body p {
+	margin-bottom: 0px;
+}
+.item-listing.item-listing-small > li .media .pull-left .media-object {
+	max-width: 32px;
+}
+.statistic-list-chart .listing li {
+	margin-bottom: 10px;
+}
+.statistic-list-icon .listing li {
+	margin-bottom: 10px;
+}
+.statistic-list-chart .listing li span {
+	margin-right: 5px;
+}
+.statistic-list-icon .listing li span {
+	margin-right: 5px;
+}
+.statistic-list-chart .listing li label {
+	padding: 8px; border-radius: 3px; margin-right: 5px; margin-bottom: 0px; -webkit-border-radius: 3px;
+}
+.statistic-list-icon .listing li label {
+	padding: 8px; border-radius: 3px; margin-right: 5px; margin-bottom: 0px; -webkit-border-radius: 3px;
+}
+.statistic-list-chart .listing li label i {
+	width: 18px; text-align: center; color: rgb(255, 255, 255);
+}
+.statistic-list-icon .listing li label i {
+	width: 18px; text-align: center; color: rgb(255, 255, 255);
+}
+.statistic-list-chart .listing li h4 {
+	margin: 0px; color: rgb(51, 51, 51); font-size: 18px; font-weight: 600; display: inline-block;
+}
+.statistic-list-icon .listing li h4 {
+	margin: 0px; color: rgb(51, 51, 51); font-size: 18px; font-weight: 600; display: inline-block;
+}
+.statistic-list-chart .listing li p.sub {
+	margin: 0px 0px 0px 3px; color: rgb(153, 153, 153); font-size: 0.9em; font-weight: 300; display: inline-block;
+}
+.statistic-list-icon .listing li p.sub {
+	margin: 0px 0px 0px 3px; color: rgb(153, 153, 153); font-size: 0.9em; font-weight: 300; display: inline-block;
+}
+.friend-list {
+	margin-bottom: 0px;
+}
+.friend-list li {
+	padding-bottom: 5px; margin-bottom: 5px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.friend-list li a {
+	display: block;
+}
+.friend-list li a img {
+	width: 30px; height: 30px; margin-right: 10px;
+}
+.friend-list li a .label {
+	font-size: 10px; margin-top: 8px; float: right;
+}
+.friend-list li:last-child {
+	border: 0px currentColor; border-image: none; padding-bottom: 0px; margin-bottom: 0px;
+}
+.progress-list li .progress {
+	margin-bottom: 10px;
+}
+.progress-list li:last-child .progress {
+	margin-bottom: 0px;
+}
+.status-form {
+	margin: 0px 0px 15px; border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.status-form .form-body {
+	padding: 10px;
+}
+.status-form .form-body .form-group {
+	margin-bottom: 0px;
+}
+.status-form .form-body::after {
+	display: table; content: " ";
+}
+.status-form .form-body::before {
+	display: table; content: " ";
+}
+.status-form .form-footer {
+	padding: 10px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid; background-color: rgb(249, 249, 249);
+}
+.status-form .form-footer .actions .form-group {
+	margin-bottom: 0px; display: inline-block;
+}
+.status-form .form-footer .actions .bootstrap-select {
+	width: 120px !important; margin-bottom: 0px;
+}
+.status-form .form-footer::after {
+	clear: both; display: table; content: " ";
+}
+.status-form .form-footer::before {
+	clear: both; display: table; content: " ";
+}
+.status-form .control-label {
+	padding-top: 0px; padding-right: 10px; font-weight: normal;
+}
+.activity-stream .media {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.activity-stream .media .media-object {
+	width: 60px; height: 60px;
+}
+.activity-stream .media .media-body .media-heading {
+	font-size: 14px; font-weight: 300;
+}
+.activity-stream .media .media-body a {
+	color: rgb(52, 153, 218); font-weight: 500;
+}
+.activity-stream .media .media-body a:hover {
+	color: rgb(9, 95, 127);
+}
+.activity-stream .media .form-comment {
+	padding: 5px; margin-bottom: 10px; background-color: rgb(239, 242, 243);
+}
+.activity-stream .media .form-comment .form-group {
+	width: 100%; margin-bottom: 0px;
+}
+.activity-stream :last-child.media {
+	border: 0px currentColor; border-image: none;
+}
+.activity-stream .media .media .media-object {
+	width: 40px; height: 40px;
+}
+.user-profile .profile-info .thumbnail {
+	background: rgb(255, 255, 255); margin: 20px 0px 0px; padding: 0px; border-radius: 100%; border: 0px currentColor; border-image: none; width: 150px; display: inline-block; -webkit-border-radius: 100%;
+}
+.user-profile .profile-info .thumbnail img {
+	border-radius: 100%; -webkit-border-radius: 100%;
+}
+.user-profile .details {
+	margin: 10px 0px 0px; display: inline-block;
+}
+.user-profile .details .profile-name {
+	font-size: 2.2em; font-weight: 300;
+}
+.user-profile .details .profile-details {
+	text-align: left;
+}
+.user-profile .details .profile-details li {
+	font-size: 14px;
+}
+.user-profile .details .profile-details li i {
+	width: 20px;
+}
+.user-profile .profile-stats {
+	padding: 20px 0px;
+}
+.user-profile .profile-stats li {
+	margin: 3px 5px; padding: 3px; text-align: left; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.user-profile .profile-stats li i {
+	width: 20px;
+}
+.user-profile .profile-stats li .badge {
+	float: right;
+}
+.user-profile .profile-stats li:last-child {
+	border: 0px currentColor; border-image: none;
+}
+.user-profile .shout {
+	padding-bottom: 10px; font-size: 20px; font-weight: 300; margin-bottom: 15px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.user-profile .profile-stream {
+	min-height: 900px;
+}
+.morris-hover {
+	padding: 5px 10px; position: absolute; z-index: 1000;
+}
+.morris-hover.morris-default-style {
+	background: rgba(255, 255, 255, 0.95); padding: 10px 15px; border-radius: 2px; border: 2px solid rgb(209, 218, 222); border-image: none; text-align: left; color: rgb(102, 102, 102); font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em; -webkit-border-radius: 2px;
+}
+.morris-hover.morris-default-style .morris-hover-row-label {
+	margin: 0.25em 0px; font-weight: bold;
+}
+.morris-hover.morris-default-style .morris-hover-point {
+	margin: 0.1em 0px; white-space: nowrap;
+}
+@media all and (max-width:768px)
+{
+.col-no-left-padding {
+	padding-left: 15px;
+}
+#middle {
+	margin-bottom: 15px;
+}
+.panel-user .panel-body {
+	padding: 5px 0px !important;
+}
+.panel-user .panel-heading {
+	padding: 10px 15px 0px;
+}
+.panel-user .panel-heading .media > .pull-left {
+	margin: 0px; text-align: center; float: none !important; display: block;
+}
+.panel-user .panel-heading .media > .pull-left .media-object {
+	display: inline-block;
+}
+.panel-user .panel-heading .media-body .media-heading {
+	text-align: center;
+}
+.panel-user .panel-heading .media-body .media-heading .welcome {
+	display: none;
+}
+.panel-user .panel-heading .media-body .media-heading > span {
+	font-size: 0.8em;
+}
+.navbar-toggle {
+	padding: 3px 10px; color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-toggle .icon-bar {
+	color: rgb(255, 255, 255);
+}
+#top-nav {
+	margin-right: 15px; margin-bottom: 15px; margin-left: 15px; background-color: rgba(0, 0, 0, 0.2);
+}
+#top-nav > ul {
+	margin-top: 0px; margin-bottom: 0px;
+}
+#top-nav > ul > li .divider {
+	height: 1px; margin-top: 10px; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.2);
+}
+#mainnav .navbar-form {
+	box-shadow: 0px 0px 0px #ffffff; -webkit-box-shadow: 0 0 0 #ffffff; -moz-box-shadow: 0 0 0 #ffffff;
+}
+#mainnav .navbar-form .form-control {
+	width: 100%; background-color: rgb(255, 255, 255);
+}
+.user-profile .profile-info .thumbnail {
+	width: 120px; margin-right: 30px;
+}
+}
+@media all and (max-width:480px)
+{
+#mainnav {
+	border-radius: 2px 2px 0px 0px; background-color: rgb(52, 152, 219); -webkit-border-radius: 2px 2px 0 0;
+}
+#mainnav .navbar-brand {
+	height: auto; color: rgb(255, 255, 255);
+}
+#mainnav #top-nav .open .dropdown-menu > li > a {
+	color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.1);
+}
+#mainnav #top-nav .open .dropdown-menu > li > a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+#top-nav .nav > li > a {
+	padding-bottom: 10px;
+}
+#top-nav .nav > li > a .text {
+	display: none;
+}
+#top-nav .nav > li > a i {
+	font-size: 1.5em;
+}
+.list-user-app > li > a {
+	padding: 5px 0px;
+}
+.list-user-app > li > a .badge {
+	display: none;
+}
+}

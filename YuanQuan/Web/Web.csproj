@@ -75,6 +75,7 @@
     <Content Include="CSS\style_new.css" />
     <Content Include="CSS\summernote-bs3.css" />
     <Content Include="CSS\summernote.css" />
+<<<<<<< HEAD
     <Content Include="c在线编译器,c语言在线解释器,在线编程网站.html" />
     <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\ace.js" />
     <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\adapter.min.js" />
@@ -138,6 +139,12 @@
     <Content Include="JS\avalon.min.js" />
     <Content Include="JS\avalon.resizable.js" />
     <Content Include="JS\avalon.store.js" />
+=======
+    <Content Include="Filter.aspx" />
+    <Content Include="Invite1.aspx" />
+    <Content Include="Invite2.aspx" />
+    <Content Include="Invite3.aspx" />
+>>>>>>> origin/master
     <Content Include="JS\bootstrap-filestyle.js" />
     <Content Include="JS\bootstrap-select.min.js" />
     <Content Include="JS\bootstrap-switch.min.js" />
@@ -168,9 +175,14 @@
     <Content Include="JS\script.js" />
     <Content Include="JS\scrollpagination.js" />
     <Content Include="JS\summernote.min.js" />
+<<<<<<< HEAD
     <Content Include="JS\theme-idle_fingers.js" />
     <Content Include="JS\user_center.js" />
     <Content Include="JS\zmUtil.js" />
+=======
+    <Content Include="JS\zmUtil.js" />
+    <Content Include="ManageChallenge.aspx" />
+>>>>>>> origin/master
     <Content Include="Picture\android.png" />
     <Content Include="Picture\c.png" />
     <Content Include="Picture\clickbtn_11.png" />
@@ -190,6 +202,134 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="WebForm1.aspx" />
+    <Content Include="企业 挑战管理_files\bootstrap-select.min.css" />
+    <Content Include="企业 挑战管理_files\bootstrap-switch.min.css" />
+    <Content Include="企业 挑战管理_files\bootstrap.min.css" />
+    <Content Include="企业 挑战管理_files\bootstrapValidator.min.css" />
+    <Content Include="企业 挑战管理_files\font-awesome.min.css" />
+    <Content Include="企业 挑战管理_files\style%281%29.css" />
+    <Content Include="企业 挑战管理_files\style.css" />
+    <Content Include="企业 挑战管理_files\style_new.css" />
+    <Content Include="企业 挑战管理_files\summernote-bs3.css" />
+    <Content Include="企业 挑战管理_files\summernote.css" />
+    <Content Include="企业 挑战管理_files\wlogo_sm.png" />
+    <Content Include="猿圈 去筛选_files\bootstrap-filestyle.js" />
+    <Content Include="猿圈 去筛选_files\bootstrap-select.min.css" />
+    <Content Include="猿圈 去筛选_files\bootstrap-select.min.js" />
+    <Content Include="猿圈 去筛选_files\bootstrap-switch.min.css" />
+    <Content Include="猿圈 去筛选_files\bootstrap-switch.min.js" />
+    <Content Include="猿圈 去筛选_files\bootstrap.min.css" />
+    <Content Include="猿圈 去筛选_files\bootstrap.min.js" />
+    <Content Include="猿圈 去筛选_files\bootstrapValidator.min.js" />
+    <Content Include="猿圈 去筛选_files\font-awesome.min.css" />
+    <Content Include="猿圈 去筛选_files\jquery-1.11.0.min.js" />
+    <Content Include="猿圈 去筛选_files\jquery.sparkline.min.js" />
+    <Content Include="猿圈 去筛选_files\pagination.js" />
+    <Content Include="猿圈 去筛选_files\script.js" />
+    <Content Include="猿圈 去筛选_files\style%281%29.css" />
+    <Content Include="猿圈 去筛选_files\style.css" />
+    <Content Include="猿圈 去筛选_files\style_new.css" />
+    <Content Include="猿圈 去筛选_files\summernote-bs3.css" />
+    <Content Include="猿圈 去筛选_files\summernote.css" />
+    <Content Include="猿圈 去筛选_files\summernote.min.js" />
+    <Content Include="猿圈 去筛选_files\wlogo_sm.png" />
+    <Content Include="猿圈 新增挑战邀请2_files\504bb688-cf8b-431d-804a-eee5f7b9f5f7.png" />
+    <Content Include="猿圈 新增挑战邀请2_files\bootstrap-filestyle.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\bootstrap-select.min.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\bootstrap-select.min.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\bootstrap-switch.min.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\bootstrap-switch.min.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\bootstrap.min.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\bootstrap.min.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\font-awesome.min.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\jquery-1.11.0.min.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\jquery-confirm.min.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\jquery-confirm.min.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\jquery.sparkline.min.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\nc2.png" />
+    <Content Include="猿圈 新增挑战邀请2_files\script.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\style%281%29.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\style.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\style_new.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\summernote-bs3.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\summernote.css" />
+    <Content Include="猿圈 新增挑战邀请2_files\summernote.min.js" />
+    <Content Include="猿圈 新增挑战邀请2_files\wlogo_sm.png" />
+    <Content Include="猿圈 新增挑战邀请2_files\zmUtil.js" />
+    <Content Include="猿圈 新增挑战邀请_files\8ab6cf45-aaab-4bfe-9891-f27285ad902b.jpg" />
+    <Content Include="猿圈 新增挑战邀请_files\android.png" />
+    <Content Include="猿圈 新增挑战邀请_files\apple.png" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrap-filestyle.js" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrap-select.min.css" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrap-select.min.js" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrap-switch.min.css" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrap-switch.min.js" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrap.min.css" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrap.min.js" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrapValidator.min.css" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrapValidator.min.js" />
+    <Content Include="猿圈 新增挑战邀请_files\bootstrapValidator_zh_CN.js" />
+    <Content Include="猿圈 新增挑战邀请_files\c.png" />
+    <Content Include="猿圈 新增挑战邀请_files\cpp.png" />
+    <Content Include="猿圈 新增挑战邀请_files\font-awesome.min.css" />
+    <Content Include="猿圈 新增挑战邀请_files\java.png" />
+    <Content Include="猿圈 新增挑战邀请_files\jquery-1.11.0.min.js" />
+    <Content Include="猿圈 新增挑战邀请_files\jquery-confirm.min.css" />
+    <Content Include="猿圈 新增挑战邀请_files\jquery-confirm.min.js" />
+    <Content Include="猿圈 新增挑战邀请_files\jquery.sparkline.min.js" />
+    <Content Include="猿圈 新增挑战邀请_files\nc1.png" />
+    <Content Include="猿圈 新增挑战邀请_files\php.png" />
+    <Content Include="猿圈 新增挑战邀请_files\python.png" />
+    <Content Include="猿圈 新增挑战邀请_files\script.js" />
+    <Content Include="猿圈 新增挑战邀请_files\style%281%29.css" />
+    <Content Include="猿圈 新增挑战邀请_files\style.css" />
+    <Content Include="猿圈 新增挑战邀请_files\style_new.css" />
+    <Content Include="猿圈 新增挑战邀请_files\summernote-bs3.css" />
+    <Content Include="猿圈 新增挑战邀请_files\summernote.css" />
+    <Content Include="猿圈 新增挑战邀请_files\summernote.min.js" />
+    <Content Include="猿圈 新增挑战邀请_files\WdatePicker.css" />
+    <Content Include="猿圈 新增挑战邀请_files\WdatePicker.js" />
+    <Content Include="猿圈 新增挑战邀请_files\wlogo_sm.png" />
+    <Content Include="猿圈 新增挑战邀请_files\zmUtil.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\8ab6cf45-aaab-4bfe-9891-f27285ad902b.jpg" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrap-filestyle.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrap-select.min.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrap-select.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrap-switch.min.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrap-switch.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrap.min.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrap.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrapValidator.min.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrapValidator.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\bootstrapValidator_zh_CN.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\fileinput.min.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\fileinput.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\fileinput_locale_zh.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\font-awesome.min.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\jquery-1.11.0.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\jquery-confirm.min.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\jquery-confirm.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\jquery.form.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\jquery.sparkline.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\style%281%29.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\style.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\style_new.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\summernote-bs3.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\summernote.css" />
+    <Content Include="猿圈 新建挑战邀请3_files\summernote.min.js" />
+    <Content Include="猿圈 新建挑战邀请3_files\wlogo_sm.png" />
+    <Content Include="猿圈 新建挑战邀请3_files\zmUtil.js" />
+    <Content Include="404.html" />
+    <Content Include="页面找不到了_files\bootstrap-select.min.css" />
+    <Content Include="页面找不到了_files\bootstrap-switch.min.css" />
+    <Content Include="页面找不到了_files\bootstrap.min.css" />
+    <Content Include="页面找不到了_files\font-awesome.min.css" />
+    <Content Include="页面找不到了_files\style%281%29.css" />
+    <Content Include="页面找不到了_files\style.css" />
+    <Content Include="页面找不到了_files\style_new.css" />
+    <Content Include="页面找不到了_files\summernote-bs3.css" />
+    <Content Include="页面找不到了_files\summernote.css" />
+    <Content Include="页面找不到了_files\wlogo_sm.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoderFirst.aspx.cs">
@@ -206,12 +346,49 @@
     <Compile Include="CoderRecommend.aspx.designer.cs">
       <DependentUpon>CoderRecommend.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Coding.aspx.cs">
       <DependentUpon>Coding.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Coding.aspx.designer.cs">
       <DependentUpon>Coding.aspx</DependentUpon>
+=======
+    <Compile Include="Filter.aspx.cs">
+      <DependentUpon>Filter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filter.aspx.designer.cs">
+      <DependentUpon>Filter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invite1.aspx.cs">
+      <DependentUpon>Invite1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invite1.aspx.designer.cs">
+      <DependentUpon>Invite1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invite2.aspx.cs">
+      <DependentUpon>Invite2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invite2.aspx.designer.cs">
+      <DependentUpon>Invite2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invite3.aspx.cs">
+      <DependentUpon>Invite3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invite3.aspx.designer.cs">
+      <DependentUpon>Invite3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageChallenge.aspx.cs">
+      <DependentUpon>ManageChallenge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageChallenge.aspx.designer.cs">
+      <DependentUpon>ManageChallenge.aspx</DependentUpon>
+>>>>>>> origin/master
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report.aspx.cs">
@@ -270,8 +447,14 @@
       <Project>{6beebfba-e7ec-402d-96dc-0e75e0e8919e}</Project>
       <Name>BLLInterface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PublicHelp\PublicHelp.csproj">
+      <Project>{c55640c6-5d2b-41a7-88ee-09421e793e75}</Project>
+      <Name>PublicHelp</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

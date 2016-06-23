@@ -1,0 +1,357 @@
+body {
+	color: rgb(51, 51, 51); line-height: 26px; padding-bottom: 0px; font-family: "Î¢ÈíÑÅºÚ","ËÎÌå",Arial; font-size: 1.4em; background-color: rgb(255, 255, 255);
+}
+h1 {
+	font-family: "Î¢ÈíÑÅºÚ","ËÎÌå",Arial;
+}
+h2 {
+	font-family: "Î¢ÈíÑÅºÚ","ËÎÌå",Arial;
+}
+h3 {
+	font-family: "Î¢ÈíÑÅºÚ","ËÎÌå",Arial;
+}
+h4 {
+	font-family: "Î¢ÈíÑÅºÚ","ËÎÌå",Arial;
+}
+.study-type .panel:hover {
+	border: 1px solid rgb(52, 152, 219); border-image: none; background-color: rgb(254, 254, 254);
+}
+.afooter {
+	padding: 10px 0px; color: rgb(255, 255, 255); margin-top: 34px; background-color: rgb(74, 144, 226);
+}
+.afooter a {
+	color: rgb(255, 255, 255); padding-left: 10px; margin-left: 10px; border-left-color: rgb(255, 255, 255); border-left-width: 1.5px; border-left-style: solid;
+}
+.afooter a:visited {
+	color: rgb(255, 255, 255);
+}
+.afooter a:hover {
+	color: rgb(238, 238, 238); text-decoration: underline;
+}
+.line-control {
+	width: 160px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.study-block:hover .panel-body {
+	-webkit-filter: blur(2px);
+}
+.companyTags {
+	list-style: none; padding: 0px; display: inline-block;
+}
+.companyTags li {
+	background: rgb(255, 255, 255); margin: 5px 15px 0px 0px; padding: 0px 5px; border: 1px solid rgb(169, 169, 169); border-image: none; color: rgb(169, 169, 169); line-height: 18px; font-size: 12px; float: left;
+}
+.list-unstyled li i {
+	margin-right: 5px;
+}
+.btn-new1 {
+	border: 1px solid rgb(74, 144, 226); border-image: none; color: rgb(255, 255, 255); font-weight: 300; background-color: rgb(74, 144, 226);
+}
+.btn-new1:hover {
+	border: 1px solid rgb(100, 150, 190); border-image: none; color: rgb(255, 255, 255); background-color: rgb(100, 150, 190);
+}
+.btn-new2 {
+	border: 1px solid rgb(192, 192, 192); border-image: none; color: rgb(192, 192, 192); background-color: rgb(255, 255, 255);
+}
+.btn-new2:hover {
+	border: 1px solid rgb(56, 114, 164); border-image: none; color: rgb(255, 255, 255); background-color: rgb(56, 114, 164);
+}
+.btn-new5 {
+	border: 1px solid rgb(74, 144, 226); border-image: none; color: rgb(255, 255, 255); background-color: rgb(74, 144, 226);
+}
+.btn-new5:hover {
+	border: 1px solid rgb(56, 114, 164); border-image: none; color: rgb(255, 255, 255); background-color: rgb(56, 114, 164);
+}
+.btn-order {
+	padding: 4px 12px; border: 1px solid rgb(192, 192, 192); border-image: none; color: rgb(192, 192, 192); margin-right: 10px; background-color: rgb(255, 255, 255);
+}
+#btn-order-on {
+	border: 1px solid rgb(56, 114, 164); border-image: none; color: rgb(255, 255, 255); background-color: rgb(56, 114, 164);
+}
+.btn-order.active {
+	border: 1px solid rgb(56, 114, 164); border-image: none; color: rgb(255, 255, 255); background-color: rgb(56, 114, 164);
+}
+.btn-order:hover {
+	border: 1px solid rgb(100, 150, 190); border-image: none; color: rgb(255, 255, 255); background-color: rgb(100, 150, 190);
+}
+a.btn.btn-new1:visited {
+	color: rgb(255, 255, 255);
+}
+a.btn.btn-new5:visited {
+	color: rgb(255, 255, 255);
+}
+a.btn.btn-lg:visited {
+	color: rgb(255, 255, 255);
+}
+.shadow-effect {
+	box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+}
+.top-search {
+	margin-right: 10px;
+}
+img .corp-img {
+	width: 40px; height: 40px;
+}
+.panel .panel-header {
+	margin: 8px 0px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.hot-tag {
+	background: rgb(255, 68, 0); padding: 0px 10px; right: 0px; color: rgb(255, 255, 255); line-height: 18px; font-size: 13px; position: absolute; cursor: pointer;
+}
+.progress {
+	margin: 10px 0px;
+}
+.status-block {
+	height: 237px; text-align: center;
+}
+.status-block .status-info {
+	vertical-align: middle;
+}
+.progress-info {
+	padding-top: 4px;
+}
+.progress-info .success {
+	color: rgb(86, 195, 42);
+}
+.progress-info .ongoing {
+	color: rgb(251, 176, 94);
+}
+.progress-info .fail {
+	color: rgb(243, 89, 88);
+}
+.h2-tab {
+	margin-right: 20px; margin-bottom: 20px; display: inline-block;
+}
+.h2-tab .off {
+	color: rgb(192, 192, 192);
+}
+.h2-tab .off:hover {
+	color: rgb(15, 131, 181);
+}
+.page-header {
+	margin-top: 0px;
+}
+.red {
+	color: rgb(255, 68, 0);
+}
+.col-xs-2 .btn {
+	margin: 16px;
+}
+.col-xs-4 h2 {
+	margin: 20px;
+}
+.resume-block {
+	border: currentColor; border-image: none;
+}
+.resume-block .resume-label {
+	margin-right: 20px;
+}
+.resume-block .resume-action {
+	color: rgb(192, 192, 192); margin-left: 15px;
+}
+.resume-corp-action {
+	top: 120px; width: 50px; height: 75px; position: fixed; z-index: 11;
+}
+.resume-corp-switch {
+	width: 50px; height: 75px; bottom: 120px; position: fixed; z-index: 11;
+}
+.resume-block-simple {
+	margin-bottom: 0px;
+}
+.resume-block-simple h3 {
+	margin: 10px;
+}
+.resume-block-simple .resume-label {
+	margin-right: 10px;
+}
+.corp-simple-action {
+	padding: 10px; border: 1px solid rgb(221, 221, 221); border-image: none; text-align: center; margin-top: -1px;
+}
+.resume-block-simple .panel-body {
+	padding-bottom: 0px;
+}
+.resume-block-simple .resume-score {
+	font-size: 13px;
+}
+.resume-block-simple .resume-score .red-score {
+	color: rgb(255, 68, 0); font-size: 15px; margin-left: 10px;
+}
+.challenge-simple-desc {
+	margin: 15px 0px; padding: 15px; border: 1px dotted rgb(221, 221, 221); border-image: none;
+}
+.challenge-simple-desc .desc-label {
+	margin-right: 20px;
+}
+.user-select-block {
+	margin: 10px; width: 48px; text-align: center; display: inline-block;
+}
+.timeline-time .resume-title {
+	margin-top: 12px;
+}
+.form-label {
+	font-size: 15px; margin-right: 10px;
+}
+.form-input {
+	width: 120px; display: inline-block;
+}
+.new-form {
+	margin-right: 60px; display: inline-block;
+}
+.media-body label {
+	margin-top: 6px;
+}
+.navbar {
+	border-radius: 0px; border: currentColor; border-image: none; background-image: none; background-size: cover; background-color: rgb(74, 144, 226); -webkit-border-radius: 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav > li > a:visited {
+	color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-brand {
+	color: rgb(255, 255, 255); font-size: 20px;
+}
+.navbar-default .navbar-brand:hover {
+	color: rgb(255, 255, 255);
+}
+a {
+	color: rgb(82, 104, 126);
+}
+a:visited {
+	color: rgb(82, 104, 126);
+}
+body {
+	color: rgb(51, 51, 51);
+}
+.grey {
+	color: rgb(102, 102, 102);
+}
+.tag-group {
+	margin-top: 20px;
+}
+.tag-group .btn-order {
+	margin-bottom: 10px;
+}
+.navbar-default .navbar-nav > .active > a {
+	color: rgb(255, 255, 255); background-color: rgb(56, 114, 164);
+}
+.navbar-default .navbar-nav > .active > a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(56, 114, 164);
+}
+.navbar-default .navbar-nav > .active > a:focus {
+	color: rgb(255, 255, 255); background-color: rgb(56, 114, 164);
+}
+.score-success {
+	color: rgb(86, 195, 42);
+}
+.score-pass {
+	color: rgb(251, 176, 94);
+}
+.score-fail {
+	color: rgb(243, 89, 88);
+}
+.nav-pills > li.active > a {
+	border-radius: 0px; color: rgb(255, 255, 255); background-color: rgb(100, 150, 190);
+}
+.nav-pills > li.active > a:hover {
+	border-radius: 0px; color: rgb(255, 255, 255); background-color: rgb(100, 150, 190);
+}
+.nav-pills > li.active > a:focus {
+	border-radius: 0px; color: rgb(255, 255, 255); background-color: rgb(100, 150, 190);
+}
+#footer {
+	color: rgb(115, 115, 115); background-color: rgb(255, 255, 255);
+}
+.form-horizontal .answer {
+	padding: 10px 12px; border-radius: 5px; border: 2px solid rgb(239, 239, 239); border-image: none; font-size: 16px; font-weight: 400; margin-bottom: 20px;
+}
+.form-horizontal .answer:hover {
+	border: 2px solid rgb(52, 152, 219); border-image: none; background-color: rgb(254, 254, 254);
+}
+.question {
+	font-size: 18px; margin-bottom: 20px;
+}
+.progress-label {
+	font-size: 30px;
+}
+.question-type {
+	font-size: 18px;
+}
+.time {
+	font-size: 18px;
+}
+.question-card {
+	padding: 12px 20px; color: rgb(192, 192, 192); line-height: 50px; font-size: 20px;
+}
+.question-card:hover {
+	border-radius: 3px; color: rgb(255, 255, 255); background-color: rgb(52, 152, 219);
+}
+.question-card.on {
+	border-radius: 3px; color: rgb(255, 255, 255); background-color: rgb(52, 152, 219);
+}
+.question-card.done {
+	color: rgb(52, 152, 219);
+}
+.question-card.done:hover {
+	color: rgb(255, 255, 255);
+}
+.question-select {
+	padding: 5px 0px; border-top-color: rgb(192, 192, 192); border-top-width: 1px; border-top-style: dotted;
+}
+.jumbotron {
+	padding: 30px; text-align: center; margin-top: 50px; background-color: rgb(74, 144, 226);
+}
+.jumbotron h1 {
+	color: rgb(255, 255, 255); font-size: 30px;
+}
+.jumbotron p {
+	color: rgba(255, 255, 255, 0.9); font-size: 18px;
+}
+.featurette-heading {
+	margin: 60px 40px; text-align: center; color: rgb(74, 144, 226);
+}
+.site-intro {
+	margin-top: 30px;
+}
+.featurette .col-md-7 img {
+	box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+}
+.featurette-divider {
+	margin-top: 0px;
+}
+.logowall {
+	margin-bottom: 80px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: rgb(255, 255, 255);
+}
+@media all and (max-width:767px)
+{
+.nav-justified > li {
+	float: left;
+}
+}
+.panel.panel-primary {
+	border-color: rgb(74, 144, 226);
+}
+.panel.panel-primary .panel-heading {
+	color: rgb(255, 255, 255); background-color: rgb(74, 144, 226);
+}
+.course-name {
+	margin: 5px 0px; font-size: 15px;
+}
+.course-type {
+	color: rgb(74, 144, 226);
+}
+.course-block {
+	margin: 10px 0px; border: 1px solid rgb(238, 238, 238); border-image: none;
+}
+.course-state-success {
+	color: rgb(86, 195, 42); font-size: 18px; margin-right: 8px;
+}
+.course-state-primary {
+	color: rgb(74, 144, 226); font-size: 18px; margin-right: 8px;
+}

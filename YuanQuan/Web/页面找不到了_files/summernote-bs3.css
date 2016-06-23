@@ -1,0 +1,6508 @@
+@font-face {
+	font-family: Glyphicons Halflings;
+	src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
+}
+.note-editor {
+	
+}
+.note-editor article {
+	display: block;
+}
+.note-editor aside {
+	display: block;
+}
+.note-editor details {
+	display: block;
+}
+.note-editor figcaption {
+	display: block;
+}
+.note-editor figure {
+	display: block;
+}
+.note-editor footer {
+	display: block;
+}
+.note-editor header {
+	display: block;
+}
+.note-editor hgroup {
+	display: block;
+}
+.note-editor main {
+	display: block;
+}
+.note-editor nav {
+	display: block;
+}
+.note-editor section {
+	display: block;
+}
+.note-editor summary {
+	display: block;
+}
+.note-editor audio {
+	display: inline-block;
+}
+.note-editor canvas {
+	display: inline-block;
+}
+.note-editor video {
+	display: inline-block;
+}
+.note-editor audio:not([controls]) {
+	height: 0px; display: none;
+}
+.note-editor [hidden] {
+	display: none;
+}
+.note-editor template {
+	display: none;
+}
+.note-editor html {
+	font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;
+}
+.note-editor body {
+	margin: 0px;
+}
+.note-editor a {
+	background: none;
+}
+.note-editor a:focus {
+	outline: dotted thin;
+}
+.note-editor a:active {
+	outline: 0px;
+}
+.note-editor a:hover {
+	outline: 0px;
+}
+.note-editor h1 {
+	margin: 0.67em 0px; font-size: 2em;
+}
+.note-editor abbr[title] {
+	border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.note-editor b {
+	font-weight: bold;
+}
+.note-editor strong {
+	font-weight: bold;
+}
+.note-editor dfn {
+	font-style: italic;
+}
+.note-editor hr {
+	height: 0px; box-sizing: content-box; -moz-box-sizing: content-box;
+}
+.note-editor mark {
+	background: rgb(255, 255, 0); color: rgb(0, 0, 0);
+}
+.note-editor code {
+	font-family: monospace, serif; font-size: 1em;
+}
+.note-editor kbd {
+	font-family: monospace, serif; font-size: 1em;
+}
+.note-editor pre {
+	font-family: monospace, serif; font-size: 1em;
+}
+.note-editor samp {
+	font-family: monospace, serif; font-size: 1em;
+}
+.note-editor pre {
+	white-space: pre-wrap;
+}
+.note-editor q {
+	quotes: "¡°" "¡±" "¡®" "¡¯";
+}
+.note-editor small {
+	font-size: 80%;
+}
+.note-editor sub {
+	line-height: 0; font-size: 75%; vertical-align: baseline; position: relative;
+}
+.note-editor sup {
+	line-height: 0; font-size: 75%; vertical-align: baseline; position: relative;
+}
+.note-editor sup {
+	top: -0.5em;
+}
+.note-editor sub {
+	bottom: -0.25em;
+}
+.note-editor img {
+	border: 0px currentColor; border-image: none;
+}
+.note-editor svg:not(:root) {
+	overflow: hidden;
+}
+.note-editor figure {
+	margin: 0px;
+}
+.note-editor fieldset {
+	margin: 0px 2px; padding: 0.35em 0.62em 0.75em; border: 1px solid rgb(192, 192, 192); border-image: none;
+}
+.note-editor legend {
+	padding: 0px; border: 0px currentColor; border-image: none;
+}
+.note-editor button {
+	margin: 0px; font-family: inherit; font-size: 100%;
+}
+.note-editor input {
+	margin: 0px; font-family: inherit; font-size: 100%;
+}
+.note-editor select {
+	margin: 0px; font-family: inherit; font-size: 100%;
+}
+.note-editor textarea {
+	margin: 0px; font-family: inherit; font-size: 100%;
+}
+.note-editor button {
+	line-height: normal;
+}
+.note-editor input {
+	line-height: normal;
+}
+.note-editor button {
+	text-transform: none;
+}
+.note-editor select {
+	text-transform: none;
+}
+.note-editor button {
+	cursor: pointer; -webkit-appearance: button;
+}
+.note-editor html input[type='button'] {
+	cursor: pointer; -webkit-appearance: button;
+}
+.note-editor input[type='reset'] {
+	cursor: pointer; -webkit-appearance: button;
+}
+.note-editor input[type='submit'] {
+	cursor: pointer; -webkit-appearance: button;
+}
+.note-editor button[disabled] {
+	cursor: default;
+}
+.note-editor html input[disabled] {
+	cursor: default;
+}
+.note-editor input[type='checkbox'] {
+	padding: 0px; box-sizing: border-box;
+}
+.note-editor input[type='radio'] {
+	padding: 0px; box-sizing: border-box;
+}
+.note-editor input[type='search'] {
+	box-sizing: content-box; -moz-box-sizing: content-box; -webkit-appearance: textfield; -webkit-box-sizing: content-box;
+}
+.note-editor textarea {
+	overflow: auto; vertical-align: top;
+}
+.note-editor table {
+	border-collapse: collapse; border-spacing: 0;
+}
+@media print
+{
+.note-editor * {
+	background: none !important; color: rgb(0, 0, 0) !important; box-shadow: none !important; text-shadow: none !important;
+}
+.note-editor a {
+	text-decoration: underline;
+}
+.note-editor a:visited {
+	text-decoration: underline;
+}
+.note-editor a[href]::after {
+	content: " (" attr(href) ")";
+}
+.note-editor abbr[title]::after {
+	content: " (" attr(title) ")";
+}
+.note-editor .ir a::after {
+	content: "";
+}
+.note-editor a[href^='javascript:']::after {
+	content: "";
+}
+.note-editor a[href^='#']::after {
+	content: "";
+}
+.note-editor pre {
+	border: 1px solid rgb(153, 153, 153); border-image: none; page-break-inside: avoid;
+}
+.note-editor blockquote {
+	border: 1px solid rgb(153, 153, 153); border-image: none; page-break-inside: avoid;
+}
+.note-editor thead {
+	display: table-header-group;
+}
+.note-editor tr {
+	page-break-inside: avoid;
+}
+.note-editor img {
+	page-break-inside: avoid;
+}
+.note-editor img {
+	max-width: 100% !important;
+}
+.note-editor p {
+	orphans: 3; widows: 3;
+}
+.note-editor h2 {
+	orphans: 3; widows: 3;
+}
+.note-editor h3 {
+	orphans: 3; widows: 3;
+}
+.note-editor h2 {
+	page-break-after: avoid;
+}
+.note-editor h3 {
+	page-break-after: avoid;
+}
+.note-editor .navbar {
+	display: none;
+}
+.note-editor .table td {
+	background-color: rgb(255, 255, 255) !important;
+}
+.note-editor .table th {
+	background-color: rgb(255, 255, 255) !important;
+}
+.note-editor .btn > .caret {
+	border-top-color: rgb(0, 0, 0) !important;
+}
+.note-editor .dropup > .btn > .caret {
+	border-top-color: rgb(0, 0, 0) !important;
+}
+.note-editor .label {
+	border: 1px solid rgb(0, 0, 0); border-image: none;
+}
+.note-editor .table {
+	border-collapse: collapse !important;
+}
+.note-editor .table-bordered th {
+	border: 1px solid rgb(221, 221, 221) !important; border-image: none !important;
+}
+.note-editor .table-bordered td {
+	border: 1px solid rgb(221, 221, 221) !important; border-image: none !important;
+}
+}
+.note-editor * {
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.note-editor *::before {
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.note-editor *::after {
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.note-editor html {
+	font-size: 62.5%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.note-editor body {
+	color: rgb(51, 51, 51); line-height: 1.4285; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);
+}
+.note-editor input {
+	line-height: inherit; font-family: inherit; font-size: inherit;
+}
+.note-editor button {
+	line-height: inherit; font-family: inherit; font-size: inherit;
+}
+.note-editor select {
+	line-height: inherit; font-family: inherit; font-size: inherit;
+}
+.note-editor textarea {
+	line-height: inherit; font-family: inherit; font-size: inherit;
+}
+.note-editor a {
+	color: rgb(66, 139, 202); text-decoration: none;
+}
+.note-editor a:hover {
+	color: rgb(42, 100, 150); text-decoration: underline;
+}
+.note-editor a:focus {
+	color: rgb(42, 100, 150); text-decoration: underline;
+}
+.note-editor a:focus {
+	outline: rgb(51, 51, 51) dotted thin; outline-offset: -2px;
+}
+.note-editor img {
+	vertical-align: middle;
+}
+.note-editor .img-responsive {
+	height: auto; display: block; max-width: 100%;
+}
+.note-editor .img-rounded {
+	border-radius: 6px;
+}
+.note-editor .img-thumbnail {
+	padding: 4px; border-radius: 4px; border: 1px solid rgb(221, 221, 221); transition:0.2s ease-in-out; border-image: none; height: auto; line-height: 1.4285; display: inline-block; max-width: 100%; background-color: rgb(255, 255, 255); -webkit-transition: all 0.2s ease-in-out;
+}
+.note-editor .img-circle {
+	border-radius: 50%;
+}
+.note-editor hr {
+	border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(238, 238, 238) currentColor currentColor; border-image: none; margin-top: 20px; margin-bottom: 20px;
+}
+.note-editor .sr-only {
+	margin: -1px; padding: 0px; border: 0px currentColor; border-image: none; width: 1px; height: 1px; overflow: hidden; position: absolute; clip: rect(0px, 0px, 0px, 0px);
+}
+.note-editor p {
+	margin: 0px 0px 10px;
+}
+.note-editor .lead {
+	line-height: 1.4; font-size: 16px; font-weight: 200; margin-bottom: 20px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .lead {
+	font-size: 21px;
+}
+}
+.note-editor small {
+	font-size: 85%;
+}
+.note-editor .small {
+	font-size: 85%;
+}
+.note-editor cite {
+	font-style: normal;
+}
+.note-editor .text-muted {
+	color: rgb(153, 153, 153);
+}
+.note-editor .text-primary {
+	color: rgb(66, 139, 202);
+}
+.note-editor .text-primary:hover {
+	color: rgb(48, 113, 169);
+}
+.note-editor .text-warning {
+	color: rgb(192, 152, 83);
+}
+.note-editor .text-warning:hover {
+	color: rgb(164, 126, 60);
+}
+.note-editor .text-danger {
+	color: rgb(185, 74, 72);
+}
+.note-editor .text-danger:hover {
+	color: rgb(149, 59, 57);
+}
+.note-editor .text-success {
+	color: rgb(70, 136, 71);
+}
+.note-editor .text-success:hover {
+	color: rgb(53, 102, 53);
+}
+.note-editor .text-info {
+	color: rgb(58, 135, 173);
+}
+.note-editor .text-info:hover {
+	color: rgb(45, 105, 135);
+}
+.note-editor .text-left {
+	text-align: left;
+}
+.note-editor .text-right {
+	text-align: right;
+}
+.note-editor .text-center {
+	text-align: center;
+}
+.note-editor h1 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor h2 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor h3 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor h4 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor h5 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor h6 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor .h1 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor .h2 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor .h3 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor .h4 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor .h5 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor .h6 {
+	color: inherit; line-height: 1.1; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500;
+}
+.note-editor h1 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h2 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h3 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h4 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h5 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h6 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h1 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h2 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h3 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h4 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h5 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h6 small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h1 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h2 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h3 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h4 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h5 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h6 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h1 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h2 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h3 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h4 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h5 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor .h6 .small {
+	color: rgb(153, 153, 153); line-height: 1; font-weight: normal;
+}
+.note-editor h1 {
+	margin-top: 20px; margin-bottom: 10px;
+}
+.note-editor h2 {
+	margin-top: 20px; margin-bottom: 10px;
+}
+.note-editor h3 {
+	margin-top: 20px; margin-bottom: 10px;
+}
+.note-editor h1 small {
+	font-size: 65%;
+}
+.note-editor h2 small {
+	font-size: 65%;
+}
+.note-editor h3 small {
+	font-size: 65%;
+}
+.note-editor h1 .small {
+	font-size: 65%;
+}
+.note-editor h2 .small {
+	font-size: 65%;
+}
+.note-editor h3 .small {
+	font-size: 65%;
+}
+.note-editor h4 {
+	margin-top: 10px; margin-bottom: 10px;
+}
+.note-editor h5 {
+	margin-top: 10px; margin-bottom: 10px;
+}
+.note-editor h6 {
+	margin-top: 10px; margin-bottom: 10px;
+}
+.note-editor h4 small {
+	font-size: 75%;
+}
+.note-editor h5 small {
+	font-size: 75%;
+}
+.note-editor h6 small {
+	font-size: 75%;
+}
+.note-editor h4 .small {
+	font-size: 75%;
+}
+.note-editor h5 .small {
+	font-size: 75%;
+}
+.note-editor h6 .small {
+	font-size: 75%;
+}
+.note-editor h1 {
+	font-size: 36px;
+}
+.note-editor .h1 {
+	font-size: 36px;
+}
+.note-editor h2 {
+	font-size: 30px;
+}
+.note-editor .h2 {
+	font-size: 30px;
+}
+.note-editor h3 {
+	font-size: 24px;
+}
+.note-editor .h3 {
+	font-size: 24px;
+}
+.note-editor h4 {
+	font-size: 18px;
+}
+.note-editor .h4 {
+	font-size: 18px;
+}
+.note-editor h5 {
+	font-size: 14px;
+}
+.note-editor .h5 {
+	font-size: 14px;
+}
+.note-editor h6 {
+	font-size: 12px;
+}
+.note-editor .h6 {
+	font-size: 12px;
+}
+.note-editor .page-header {
+	margin: 40px 0px 20px; padding-bottom: 9px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.note-editor ul {
+	margin-top: 0px; margin-bottom: 10px;
+}
+.note-editor ol {
+	margin-top: 0px; margin-bottom: 10px;
+}
+.note-editor ul ul {
+	margin-bottom: 0px;
+}
+.note-editor ol ul {
+	margin-bottom: 0px;
+}
+.note-editor ul ol {
+	margin-bottom: 0px;
+}
+.note-editor ol ol {
+	margin-bottom: 0px;
+}
+.note-editor .list-unstyled {
+	list-style: none; padding-left: 0px;
+}
+.note-editor .list-inline {
+	list-style: none; padding-left: 0px;
+}
+.note-editor .list-inline > li {
+	padding-right: 5px; padding-left: 5px; display: inline-block;
+}
+.note-editor dl {
+	margin-bottom: 20px;
+}
+.note-editor dt {
+	line-height: 1.4285;
+}
+.note-editor dd {
+	line-height: 1.4285;
+}
+.note-editor dt {
+	font-weight: bold;
+}
+.note-editor dd {
+	margin-left: 0px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .dl-horizontal dt {
+	width: 160px; text-align: right; overflow: hidden; clear: left; float: left; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.note-editor .dl-horizontal dd {
+	margin-left: 180px;
+}
+.note-editor .dl-horizontal dd::before {
+	display: table; content: " ";
+}
+.note-editor .dl-horizontal dd::after {
+	display: table; content: " ";
+}
+.note-editor .dl-horizontal dd::after {
+	clear: both;
+}
+.note-editor .dl-horizontal dd::before {
+	display: table; content: " ";
+}
+.note-editor .dl-horizontal dd::after {
+	display: table; content: " ";
+}
+.note-editor .dl-horizontal dd::after {
+	clear: both;
+}
+}
+.note-editor abbr[title] {
+	border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dotted; cursor: help;
+}
+.note-editor abbr[data-original-title] {
+	border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dotted; cursor: help;
+}
+.note-editor abbr.initialism {
+	text-transform: uppercase; font-size: 90%;
+}
+.note-editor blockquote {
+	margin: 0px 0px 20px; padding: 10px 20px; border-left-color: rgb(238, 238, 238); border-left-width: 5px; border-left-style: solid;
+}
+.note-editor blockquote p {
+	line-height: 1.25; font-size: 17.5px; font-weight: 300;
+}
+.note-editor blockquote p:last-child {
+	margin-bottom: 0px;
+}
+.note-editor blockquote small {
+	color: rgb(153, 153, 153); line-height: 1.4285; display: block;
+}
+.note-editor blockquote small::before {
+	content: "\2014 \00A0";
+}
+.note-editor blockquote.pull-right {
+	padding-right: 15px; padding-left: 0px; border-right-color: rgb(238, 238, 238); border-left-color: currentColor; border-right-width: 5px; border-left-width: 0px; border-right-style: solid; border-left-style: none;
+}
+.note-editor blockquote.pull-right p {
+	text-align: right;
+}
+.note-editor blockquote.pull-right small {
+	text-align: right;
+}
+.note-editor blockquote.pull-right .small {
+	text-align: right;
+}
+.note-editor blockquote.pull-right small::before {
+	content: "";
+}
+.note-editor blockquote.pull-right .small::before {
+	content: "";
+}
+.note-editor blockquote.pull-right small::after {
+	content: "\00A0 \2014";
+}
+.note-editor blockquote.pull-right .small::after {
+	content: "\00A0 \2014";
+}
+.note-editor blockquote::before {
+	content: "";
+}
+.note-editor blockquote::after {
+	content: "";
+}
+.note-editor address {
+	line-height: 1.4285; font-style: normal; margin-bottom: 20px;
+}
+.note-editor code {
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.note-editor kdb {
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.note-editor pre {
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.note-editor samp {
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.note-editor code {
+	padding: 2px 4px; border-radius: 4px; color: rgb(199, 37, 78); font-size: 90%; white-space: nowrap; background-color: rgb(249, 242, 244);
+}
+.note-editor pre {
+	margin: 0px 0px 10px; padding: 9.5px; border-radius: 4px; border: 1px solid rgb(204, 204, 204); border-image: none; color: rgb(51, 51, 51); line-height: 1.4285; font-size: 13px; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; background-color: rgb(245, 245, 245);
+}
+.note-editor pre code {
+	padding: 0px; border-radius: 0px; color: inherit; font-size: inherit; white-space: pre-wrap; background-color: transparent;
+}
+.note-editor .pre-scrollable {
+	-ms-overflow-y: scroll; max-height: 340px;
+}
+.note-editor .container {
+	padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;
+}
+.note-editor .container::before {
+	display: table; content: " ";
+}
+.note-editor .container::after {
+	display: table; content: " ";
+}
+.note-editor .container::after {
+	clear: both;
+}
+.note-editor .container::before {
+	display: table; content: " ";
+}
+.note-editor .container::after {
+	display: table; content: " ";
+}
+.note-editor .container::after {
+	clear: both;
+}
+.note-editor .row {
+	margin-right: -15px; margin-left: -15px;
+}
+.note-editor .row::before {
+	display: table; content: " ";
+}
+.note-editor .row::after {
+	display: table; content: " ";
+}
+.note-editor .row::after {
+	clear: both;
+}
+.note-editor .row::before {
+	display: table; content: " ";
+}
+.note-editor .row::after {
+	display: table; content: " ";
+}
+.note-editor .row::after {
+	clear: both;
+}
+.note-editor .col-xs-1 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-1 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-1 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-1 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-2 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-2 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-2 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-2 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-3 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-3 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-3 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-3 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-4 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-4 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-4 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-4 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-5 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-5 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-5 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-5 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-6 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-6 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-6 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-6 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-7 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-7 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-7 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-7 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-8 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-8 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-8 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-8 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-9 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-9 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-9 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-9 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-10 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-10 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-10 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-10 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-11 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-11 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-11 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-11 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-xs-12 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-sm-12 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-md-12 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.col-lg-12 {
+	padding-right: 15px; padding-left: 15px; position: relative; min-height: 1px;
+}
+.note-editor .col-xs-1 {
+	float: left;
+}
+.col-xs-2 {
+	float: left;
+}
+.col-xs-3 {
+	float: left;
+}
+.col-xs-4 {
+	float: left;
+}
+.col-xs-5 {
+	float: left;
+}
+.col-xs-6 {
+	float: left;
+}
+.col-xs-7 {
+	float: left;
+}
+.col-xs-8 {
+	float: left;
+}
+.col-xs-9 {
+	float: left;
+}
+.col-xs-10 {
+	float: left;
+}
+.col-xs-11 {
+	float: left;
+}
+.note-editor .col-xs-12 {
+	width: 100%;
+}
+.note-editor .col-xs-11 {
+	width: 91.66%;
+}
+.note-editor .col-xs-10 {
+	width: 83.33%;
+}
+.note-editor .col-xs-9 {
+	width: 75%;
+}
+.note-editor .col-xs-8 {
+	width: 66.66%;
+}
+.note-editor .col-xs-7 {
+	width: 58.33%;
+}
+.note-editor .col-xs-6 {
+	width: 50%;
+}
+.note-editor .col-xs-5 {
+	width: 41.66%;
+}
+.note-editor .col-xs-4 {
+	width: 33.33%;
+}
+.note-editor .col-xs-3 {
+	width: 25%;
+}
+.note-editor .col-xs-2 {
+	width: 16.66%;
+}
+.note-editor .col-xs-1 {
+	width: 8.33%;
+}
+.note-editor .col-xs-pull-12 {
+	right: 100%;
+}
+.note-editor .col-xs-pull-11 {
+	right: 91.66%;
+}
+.note-editor .col-xs-pull-10 {
+	right: 83.33%;
+}
+.note-editor .col-xs-pull-9 {
+	right: 75%;
+}
+.note-editor .col-xs-pull-8 {
+	right: 66.66%;
+}
+.note-editor .col-xs-pull-7 {
+	right: 58.33%;
+}
+.note-editor .col-xs-pull-6 {
+	right: 50%;
+}
+.note-editor .col-xs-pull-5 {
+	right: 41.66%;
+}
+.note-editor .col-xs-pull-4 {
+	right: 33.33%;
+}
+.note-editor .col-xs-pull-3 {
+	right: 25%;
+}
+.note-editor .col-xs-pull-2 {
+	right: 16.66%;
+}
+.note-editor .col-xs-pull-1 {
+	right: 8.33%;
+}
+.note-editor .col-xs-push-12 {
+	left: 100%;
+}
+.note-editor .col-xs-push-11 {
+	left: 91.66%;
+}
+.note-editor .col-xs-push-10 {
+	left: 83.33%;
+}
+.note-editor .col-xs-push-9 {
+	left: 75%;
+}
+.note-editor .col-xs-push-8 {
+	left: 66.66%;
+}
+.note-editor .col-xs-push-7 {
+	left: 58.33%;
+}
+.note-editor .col-xs-push-6 {
+	left: 50%;
+}
+.note-editor .col-xs-push-5 {
+	left: 41.66%;
+}
+.note-editor .col-xs-push-4 {
+	left: 33.33%;
+}
+.note-editor .col-xs-push-3 {
+	left: 25%;
+}
+.note-editor .col-xs-push-2 {
+	left: 16.66%;
+}
+.note-editor .col-xs-push-1 {
+	left: 8.33%;
+}
+.note-editor .col-xs-offset-12 {
+	margin-left: 100%;
+}
+.note-editor .col-xs-offset-11 {
+	margin-left: 91.66%;
+}
+.note-editor .col-xs-offset-10 {
+	margin-left: 83.33%;
+}
+.note-editor .col-xs-offset-9 {
+	margin-left: 75%;
+}
+.note-editor .col-xs-offset-8 {
+	margin-left: 66.66%;
+}
+.note-editor .col-xs-offset-7 {
+	margin-left: 58.33%;
+}
+.note-editor .col-xs-offset-6 {
+	margin-left: 50%;
+}
+.note-editor .col-xs-offset-5 {
+	margin-left: 41.66%;
+}
+.note-editor .col-xs-offset-4 {
+	margin-left: 33.33%;
+}
+.note-editor .col-xs-offset-3 {
+	margin-left: 25%;
+}
+.note-editor .col-xs-offset-2 {
+	margin-left: 16.66%;
+}
+.note-editor .col-xs-offset-1 {
+	margin-left: 8.33%;
+}
+@media all and (min-width:768px)
+{
+.note-editor .container {
+	width: 750px;
+}
+.note-editor .col-sm-1 {
+	float: left;
+}
+.col-sm-2 {
+	float: left;
+}
+.col-sm-3 {
+	float: left;
+}
+.col-sm-4 {
+	float: left;
+}
+.col-sm-5 {
+	float: left;
+}
+.col-sm-6 {
+	float: left;
+}
+.col-sm-7 {
+	float: left;
+}
+.col-sm-8 {
+	float: left;
+}
+.col-sm-9 {
+	float: left;
+}
+.col-sm-10 {
+	float: left;
+}
+.col-sm-11 {
+	float: left;
+}
+.note-editor .col-sm-12 {
+	width: 100%;
+}
+.note-editor .col-sm-11 {
+	width: 91.66%;
+}
+.note-editor .col-sm-10 {
+	width: 83.33%;
+}
+.note-editor .col-sm-9 {
+	width: 75%;
+}
+.note-editor .col-sm-8 {
+	width: 66.66%;
+}
+.note-editor .col-sm-7 {
+	width: 58.33%;
+}
+.note-editor .col-sm-6 {
+	width: 50%;
+}
+.note-editor .col-sm-5 {
+	width: 41.66%;
+}
+.note-editor .col-sm-4 {
+	width: 33.33%;
+}
+.note-editor .col-sm-3 {
+	width: 25%;
+}
+.note-editor .col-sm-2 {
+	width: 16.66%;
+}
+.note-editor .col-sm-1 {
+	width: 8.33%;
+}
+.note-editor .col-sm-pull-12 {
+	right: 100%;
+}
+.note-editor .col-sm-pull-11 {
+	right: 91.66%;
+}
+.note-editor .col-sm-pull-10 {
+	right: 83.33%;
+}
+.note-editor .col-sm-pull-9 {
+	right: 75%;
+}
+.note-editor .col-sm-pull-8 {
+	right: 66.66%;
+}
+.note-editor .col-sm-pull-7 {
+	right: 58.33%;
+}
+.note-editor .col-sm-pull-6 {
+	right: 50%;
+}
+.note-editor .col-sm-pull-5 {
+	right: 41.66%;
+}
+.note-editor .col-sm-pull-4 {
+	right: 33.33%;
+}
+.note-editor .col-sm-pull-3 {
+	right: 25%;
+}
+.note-editor .col-sm-pull-2 {
+	right: 16.66%;
+}
+.note-editor .col-sm-pull-1 {
+	right: 8.33%;
+}
+.note-editor .col-sm-push-12 {
+	left: 100%;
+}
+.note-editor .col-sm-push-11 {
+	left: 91.66%;
+}
+.note-editor .col-sm-push-10 {
+	left: 83.33%;
+}
+.note-editor .col-sm-push-9 {
+	left: 75%;
+}
+.note-editor .col-sm-push-8 {
+	left: 66.66%;
+}
+.note-editor .col-sm-push-7 {
+	left: 58.33%;
+}
+.note-editor .col-sm-push-6 {
+	left: 50%;
+}
+.note-editor .col-sm-push-5 {
+	left: 41.66%;
+}
+.note-editor .col-sm-push-4 {
+	left: 33.33%;
+}
+.note-editor .col-sm-push-3 {
+	left: 25%;
+}
+.note-editor .col-sm-push-2 {
+	left: 16.66%;
+}
+.note-editor .col-sm-push-1 {
+	left: 8.33%;
+}
+.note-editor .col-sm-offset-12 {
+	margin-left: 100%;
+}
+.note-editor .col-sm-offset-11 {
+	margin-left: 91.66%;
+}
+.note-editor .col-sm-offset-10 {
+	margin-left: 83.33%;
+}
+.note-editor .col-sm-offset-9 {
+	margin-left: 75%;
+}
+.note-editor .col-sm-offset-8 {
+	margin-left: 66.66%;
+}
+.note-editor .col-sm-offset-7 {
+	margin-left: 58.33%;
+}
+.note-editor .col-sm-offset-6 {
+	margin-left: 50%;
+}
+.note-editor .col-sm-offset-5 {
+	margin-left: 41.66%;
+}
+.note-editor .col-sm-offset-4 {
+	margin-left: 33.33%;
+}
+.note-editor .col-sm-offset-3 {
+	margin-left: 25%;
+}
+.note-editor .col-sm-offset-2 {
+	margin-left: 16.66%;
+}
+.note-editor .col-sm-offset-1 {
+	margin-left: 8.33%;
+}
+}
+@media all and (min-width:992px)
+{
+.note-editor .container {
+	width: 970px;
+}
+.note-editor .col-md-1 {
+	float: left;
+}
+.col-md-2 {
+	float: left;
+}
+.col-md-3 {
+	float: left;
+}
+.col-md-4 {
+	float: left;
+}
+.col-md-5 {
+	float: left;
+}
+.col-md-6 {
+	float: left;
+}
+.col-md-7 {
+	float: left;
+}
+.col-md-8 {
+	float: left;
+}
+.col-md-9 {
+	float: left;
+}
+.col-md-10 {
+	float: left;
+}
+.col-md-11 {
+	float: left;
+}
+.note-editor .col-md-12 {
+	width: 100%;
+}
+.note-editor .col-md-11 {
+	width: 91.66%;
+}
+.note-editor .col-md-10 {
+	width: 83.33%;
+}
+.note-editor .col-md-9 {
+	width: 75%;
+}
+.note-editor .col-md-8 {
+	width: 66.66%;
+}
+.note-editor .col-md-7 {
+	width: 58.33%;
+}
+.note-editor .col-md-6 {
+	width: 50%;
+}
+.note-editor .col-md-5 {
+	width: 41.66%;
+}
+.note-editor .col-md-4 {
+	width: 33.33%;
+}
+.note-editor .col-md-3 {
+	width: 25%;
+}
+.note-editor .col-md-2 {
+	width: 16.66%;
+}
+.note-editor .col-md-1 {
+	width: 8.33%;
+}
+.note-editor .col-md-pull-12 {
+	right: 100%;
+}
+.note-editor .col-md-pull-11 {
+	right: 91.66%;
+}
+.note-editor .col-md-pull-10 {
+	right: 83.33%;
+}
+.note-editor .col-md-pull-9 {
+	right: 75%;
+}
+.note-editor .col-md-pull-8 {
+	right: 66.66%;
+}
+.note-editor .col-md-pull-7 {
+	right: 58.33%;
+}
+.note-editor .col-md-pull-6 {
+	right: 50%;
+}
+.note-editor .col-md-pull-5 {
+	right: 41.66%;
+}
+.note-editor .col-md-pull-4 {
+	right: 33.33%;
+}
+.note-editor .col-md-pull-3 {
+	right: 25%;
+}
+.note-editor .col-md-pull-2 {
+	right: 16.66%;
+}
+.note-editor .col-md-pull-1 {
+	right: 8.33%;
+}
+.note-editor .col-md-push-12 {
+	left: 100%;
+}
+.note-editor .col-md-push-11 {
+	left: 91.66%;
+}
+.note-editor .col-md-push-10 {
+	left: 83.33%;
+}
+.note-editor .col-md-push-9 {
+	left: 75%;
+}
+.note-editor .col-md-push-8 {
+	left: 66.66%;
+}
+.note-editor .col-md-push-7 {
+	left: 58.33%;
+}
+.note-editor .col-md-push-6 {
+	left: 50%;
+}
+.note-editor .col-md-push-5 {
+	left: 41.66%;
+}
+.note-editor .col-md-push-4 {
+	left: 33.33%;
+}
+.note-editor .col-md-push-3 {
+	left: 25%;
+}
+.note-editor .col-md-push-2 {
+	left: 16.66%;
+}
+.note-editor .col-md-push-1 {
+	left: 8.33%;
+}
+.note-editor .col-md-offset-12 {
+	margin-left: 100%;
+}
+.note-editor .col-md-offset-11 {
+	margin-left: 91.66%;
+}
+.note-editor .col-md-offset-10 {
+	margin-left: 83.33%;
+}
+.note-editor .col-md-offset-9 {
+	margin-left: 75%;
+}
+.note-editor .col-md-offset-8 {
+	margin-left: 66.66%;
+}
+.note-editor .col-md-offset-7 {
+	margin-left: 58.33%;
+}
+.note-editor .col-md-offset-6 {
+	margin-left: 50%;
+}
+.note-editor .col-md-offset-5 {
+	margin-left: 41.66%;
+}
+.note-editor .col-md-offset-4 {
+	margin-left: 33.33%;
+}
+.note-editor .col-md-offset-3 {
+	margin-left: 25%;
+}
+.note-editor .col-md-offset-2 {
+	margin-left: 16.66%;
+}
+.note-editor .col-md-offset-1 {
+	margin-left: 8.33%;
+}
+}
+@media all and (min-width:1200px)
+{
+.note-editor .container {
+	width: 1170px;
+}
+.note-editor .col-lg-1 {
+	float: left;
+}
+.col-lg-2 {
+	float: left;
+}
+.col-lg-3 {
+	float: left;
+}
+.col-lg-4 {
+	float: left;
+}
+.col-lg-5 {
+	float: left;
+}
+.col-lg-6 {
+	float: left;
+}
+.col-lg-7 {
+	float: left;
+}
+.col-lg-8 {
+	float: left;
+}
+.col-lg-9 {
+	float: left;
+}
+.col-lg-10 {
+	float: left;
+}
+.col-lg-11 {
+	float: left;
+}
+.note-editor .col-lg-12 {
+	width: 100%;
+}
+.note-editor .col-lg-11 {
+	width: 91.66%;
+}
+.note-editor .col-lg-10 {
+	width: 83.33%;
+}
+.note-editor .col-lg-9 {
+	width: 75%;
+}
+.note-editor .col-lg-8 {
+	width: 66.66%;
+}
+.note-editor .col-lg-7 {
+	width: 58.33%;
+}
+.note-editor .col-lg-6 {
+	width: 50%;
+}
+.note-editor .col-lg-5 {
+	width: 41.66%;
+}
+.note-editor .col-lg-4 {
+	width: 33.33%;
+}
+.note-editor .col-lg-3 {
+	width: 25%;
+}
+.note-editor .col-lg-2 {
+	width: 16.66%;
+}
+.note-editor .col-lg-1 {
+	width: 8.33%;
+}
+.note-editor .col-lg-pull-12 {
+	right: 100%;
+}
+.note-editor .col-lg-pull-11 {
+	right: 91.66%;
+}
+.note-editor .col-lg-pull-10 {
+	right: 83.33%;
+}
+.note-editor .col-lg-pull-9 {
+	right: 75%;
+}
+.note-editor .col-lg-pull-8 {
+	right: 66.66%;
+}
+.note-editor .col-lg-pull-7 {
+	right: 58.33%;
+}
+.note-editor .col-lg-pull-6 {
+	right: 50%;
+}
+.note-editor .col-lg-pull-5 {
+	right: 41.66%;
+}
+.note-editor .col-lg-pull-4 {
+	right: 33.33%;
+}
+.note-editor .col-lg-pull-3 {
+	right: 25%;
+}
+.note-editor .col-lg-pull-2 {
+	right: 16.66%;
+}
+.note-editor .col-lg-pull-1 {
+	right: 8.33%;
+}
+.note-editor .col-lg-push-12 {
+	left: 100%;
+}
+.note-editor .col-lg-push-11 {
+	left: 91.66%;
+}
+.note-editor .col-lg-push-10 {
+	left: 83.33%;
+}
+.note-editor .col-lg-push-9 {
+	left: 75%;
+}
+.note-editor .col-lg-push-8 {
+	left: 66.66%;
+}
+.note-editor .col-lg-push-7 {
+	left: 58.33%;
+}
+.note-editor .col-lg-push-6 {
+	left: 50%;
+}
+.note-editor .col-lg-push-5 {
+	left: 41.66%;
+}
+.note-editor .col-lg-push-4 {
+	left: 33.33%;
+}
+.note-editor .col-lg-push-3 {
+	left: 25%;
+}
+.note-editor .col-lg-push-2 {
+	left: 16.66%;
+}
+.note-editor .col-lg-push-1 {
+	left: 8.33%;
+}
+.note-editor .col-lg-offset-12 {
+	margin-left: 100%;
+}
+.note-editor .col-lg-offset-11 {
+	margin-left: 91.66%;
+}
+.note-editor .col-lg-offset-10 {
+	margin-left: 83.33%;
+}
+.note-editor .col-lg-offset-9 {
+	margin-left: 75%;
+}
+.note-editor .col-lg-offset-8 {
+	margin-left: 66.66%;
+}
+.note-editor .col-lg-offset-7 {
+	margin-left: 58.33%;
+}
+.note-editor .col-lg-offset-6 {
+	margin-left: 50%;
+}
+.note-editor .col-lg-offset-5 {
+	margin-left: 41.66%;
+}
+.note-editor .col-lg-offset-4 {
+	margin-left: 33.33%;
+}
+.note-editor .col-lg-offset-3 {
+	margin-left: 25%;
+}
+.note-editor .col-lg-offset-2 {
+	margin-left: 16.66%;
+}
+.note-editor .col-lg-offset-1 {
+	margin-left: 8.33%;
+}
+}
+.note-editor table {
+	max-width: 100%; background-color: transparent;
+}
+.note-editor th {
+	text-align: left;
+}
+.note-editor .table {
+	width: 100%; margin-bottom: 20px;
+}
+.note-editor .table > thead > tr > th {
+	padding: 8px; line-height: 1.4285; vertical-align: top; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .table > tbody > tr > th {
+	padding: 8px; line-height: 1.4285; vertical-align: top; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .table > tfoot > tr > th {
+	padding: 8px; line-height: 1.4285; vertical-align: top; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .table > thead > tr > td {
+	padding: 8px; line-height: 1.4285; vertical-align: top; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .table > tbody > tr > td {
+	padding: 8px; line-height: 1.4285; vertical-align: top; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .table > tfoot > tr > td {
+	padding: 8px; line-height: 1.4285; vertical-align: top; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .table > thead > tr > th {
+	vertical-align: bottom; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.note-editor .table > caption + thead > tr:first-child > th {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.note-editor .table > colgroup + thead > tr:first-child > th {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.note-editor .table > thead:first-child > tr:first-child > th {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.note-editor .table > caption + thead > tr:first-child > td {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.note-editor .table > colgroup + thead > tr:first-child > td {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.note-editor .table > thead:first-child > tr:first-child > td {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.note-editor .table > tbody + tbody {
+	border-top-color: rgb(221, 221, 221); border-top-width: 2px; border-top-style: solid;
+}
+.note-editor .table .table {
+	background-color: rgb(255, 255, 255);
+}
+.note-editor .table-condensed > thead > tr > th {
+	padding: 5px;
+}
+.note-editor .table-condensed > tbody > tr > th {
+	padding: 5px;
+}
+.note-editor .table-condensed > tfoot > tr > th {
+	padding: 5px;
+}
+.note-editor .table-condensed > thead > tr > td {
+	padding: 5px;
+}
+.note-editor .table-condensed > tbody > tr > td {
+	padding: 5px;
+}
+.note-editor .table-condensed > tfoot > tr > td {
+	padding: 5px;
+}
+.note-editor .table-bordered {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .table-bordered > thead > tr > th {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .table-bordered > tbody > tr > th {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .table-bordered > tfoot > tr > th {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .table-bordered > thead > tr > td {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .table-bordered > tbody > tr > td {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .table-bordered > tfoot > tr > td {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .table-bordered > thead > tr > th {
+	border-bottom-width: 2px;
+}
+.note-editor .table-bordered > thead > tr > td {
+	border-bottom-width: 2px;
+}
+.note-editor .table-striped > tbody > tr:nth-child(2n+1) > td {
+	background-color: rgb(249, 249, 249);
+}
+.note-editor .table-striped > tbody > tr:nth-child(2n+1) > th {
+	background-color: rgb(249, 249, 249);
+}
+.note-editor .table-hover > tbody > tr:hover > td {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table-hover > tbody > tr:hover > th {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor table col[class*='col-'] {
+	float: none; display: table-column;
+}
+.note-editor table td[class*='col-'] {
+	float: none; display: table-cell;
+}
+.note-editor table th[class*='col-'] {
+	float: none; display: table-cell;
+}
+.note-editor .table > thead > tr > td.active {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > tbody > tr > td.active {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > tfoot > tr > td.active {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > thead > tr > th.active {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > tbody > tr > th.active {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > tfoot > tr > th.active {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > thead > tr.active > td {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > tbody > tr.active > td {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > tfoot > tr.active > td {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > thead > tr.active > th {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > tbody > tr.active > th {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > tfoot > tr.active > th {
+	background-color: rgb(245, 245, 245);
+}
+.note-editor .table > thead > tr > td.success {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > tbody > tr > td.success {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > tfoot > tr > td.success {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > thead > tr > th.success {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > tbody > tr > th.success {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > tfoot > tr > th.success {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > thead > tr.success > td {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > tbody > tr.success > td {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > tfoot > tr.success > td {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > thead > tr.success > th {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > tbody > tr.success > th {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table > tfoot > tr.success > th {
+	border-color: rgb(214, 233, 198); background-color: rgb(223, 240, 216);
+}
+.note-editor .table-hover > tbody > tr > td.success:hover {
+	border-color: rgb(201, 226, 179); background-color: rgb(208, 233, 198);
+}
+.note-editor .table-hover > tbody > tr > th.success:hover {
+	border-color: rgb(201, 226, 179); background-color: rgb(208, 233, 198);
+}
+.note-editor .table-hover > tbody > tr.success:hover > td {
+	border-color: rgb(201, 226, 179); background-color: rgb(208, 233, 198);
+}
+.note-editor .table-hover > tbody > tr.success:hover > th {
+	border-color: rgb(201, 226, 179); background-color: rgb(208, 233, 198);
+}
+.note-editor .table > thead > tr > td.danger {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > tbody > tr > td.danger {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > tfoot > tr > td.danger {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > thead > tr > th.danger {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > tbody > tr > th.danger {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > tfoot > tr > th.danger {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > thead > tr.danger > td {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > tbody > tr.danger > td {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > tfoot > tr.danger > td {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > thead > tr.danger > th {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > tbody > tr.danger > th {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table > tfoot > tr.danger > th {
+	border-color: rgb(235, 204, 209); background-color: rgb(242, 222, 222);
+}
+.note-editor .table-hover > tbody > tr > td.danger:hover {
+	border-color: rgb(228, 185, 192); background-color: rgb(235, 204, 204);
+}
+.note-editor .table-hover > tbody > tr > th.danger:hover {
+	border-color: rgb(228, 185, 192); background-color: rgb(235, 204, 204);
+}
+.note-editor .table-hover > tbody > tr.danger:hover > td {
+	border-color: rgb(228, 185, 192); background-color: rgb(235, 204, 204);
+}
+.note-editor .table-hover > tbody > tr.danger:hover > th {
+	border-color: rgb(228, 185, 192); background-color: rgb(235, 204, 204);
+}
+.note-editor .table > thead > tr > td.warning {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > tbody > tr > td.warning {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > tfoot > tr > td.warning {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > thead > tr > th.warning {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > tbody > tr > th.warning {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > tfoot > tr > th.warning {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > thead > tr.warning > td {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > tbody > tr.warning > td {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > tfoot > tr.warning > td {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > thead > tr.warning > th {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > tbody > tr.warning > th {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table > tfoot > tr.warning > th {
+	border-color: rgb(250, 235, 204); background-color: rgb(252, 248, 227);
+}
+.note-editor .table-hover > tbody > tr > td.warning:hover {
+	border-color: rgb(247, 225, 181); background-color: rgb(250, 242, 204);
+}
+.note-editor .table-hover > tbody > tr > th.warning:hover {
+	border-color: rgb(247, 225, 181); background-color: rgb(250, 242, 204);
+}
+.note-editor .table-hover > tbody > tr.warning:hover > td {
+	border-color: rgb(247, 225, 181); background-color: rgb(250, 242, 204);
+}
+.note-editor .table-hover > tbody > tr.warning:hover > th {
+	border-color: rgb(247, 225, 181); background-color: rgb(250, 242, 204);
+}
+@media all and (max-width:767px)
+{
+.note-editor .table-responsive {
+	border: 1px solid rgb(221, 221, 221); border-image: none; width: 100%; margin-bottom: 15px; -ms-overflow-x: scroll; -ms-overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar; -webkit-overflow-scrolling: touch;
+}
+.note-editor .table-responsive > .table {
+	margin-bottom: 0px;
+}
+.note-editor .table-responsive > .table > thead > tr > th {
+	white-space: nowrap;
+}
+.note-editor .table-responsive > .table > tbody > tr > th {
+	white-space: nowrap;
+}
+.note-editor .table-responsive > .table > tfoot > tr > th {
+	white-space: nowrap;
+}
+.note-editor .table-responsive > .table > thead > tr > td {
+	white-space: nowrap;
+}
+.note-editor .table-responsive > .table > tbody > tr > td {
+	white-space: nowrap;
+}
+.note-editor .table-responsive > .table > tfoot > tr > td {
+	white-space: nowrap;
+}
+.note-editor .table-responsive > .table-bordered {
+	border: 0px currentColor; border-image: none;
+}
+.note-editor .table-responsive > .table-bordered > thead > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tbody > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tfoot > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .table-responsive > .table-bordered > thead > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tbody > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .table-responsive > .table-bordered > thead > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tbody > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tfoot > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .table-responsive > .table-bordered > thead > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tbody > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tbody > tr:last-child > th {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tbody > tr:last-child > td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+}
+.note-editor fieldset {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none;
+}
+.note-editor legend {
+	border-width: 0px 0px 1px; border-style: none none solid; border-color: currentColor currentColor rgb(229, 229, 229); padding: 0px; border-image: none; width: 100%; color: rgb(51, 51, 51); line-height: inherit; font-size: 21px; margin-bottom: 20px; display: block;
+}
+.note-editor label {
+	font-weight: bold; margin-bottom: 5px; display: inline-block;
+}
+.note-editor input[type='search'] {
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.note-editor input[type='radio'] {
+	margin: 4px 0px 0px; line-height: normal;
+}
+.note-editor input[type='checkbox'] {
+	margin: 4px 0px 0px; line-height: normal;
+}
+.note-editor input[type='file'] {
+	display: block;
+}
+.note-editor select[multiple] {
+	height: auto;
+}
+.note-editor select[size] {
+	height: auto;
+}
+.note-editor select optgroup {
+	font-family: inherit; font-size: inherit; font-style: inherit;
+}
+.note-editor input[type='file']:focus {
+	outline: rgb(51, 51, 51) dotted thin; outline-offset: -2px;
+}
+.note-editor input[type='radio']:focus {
+	outline: rgb(51, 51, 51) dotted thin; outline-offset: -2px;
+}
+.note-editor input[type='checkbox']:focus {
+	outline: rgb(51, 51, 51) dotted thin; outline-offset: -2px;
+}
+.note-editor output {
+	color: rgb(85, 85, 85); line-height: 1.4285; padding-top: 7px; font-size: 14px; vertical-align: middle; display: block;
+}
+.note-editor :-ms-input-placeholder.form-control {
+	color: rgb(153, 153, 153);
+}
+.note-editor .form-control {
+	padding: 6px 12px; border-radius: 4px; border: 1px solid rgb(204, 204, 204); transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; border-image: none; width: 100%; height: 34px; color: rgb(85, 85, 85); line-height: 1.4285; font-size: 14px; vertical-align: middle; display: block; box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075); background-image: none; background-color: rgb(255, 255, 255); -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.note-editor .form-control:focus {
+	border-color: rgb(102, 175, 233); outline: 0px; box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.6); -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.note-editor [disabled].form-control {
+	cursor: not-allowed; background-color: rgb(238, 238, 238);
+}
+.note-editor [readonly].form-control {
+	cursor: not-allowed; background-color: rgb(238, 238, 238);
+}
+fieldset[disabled] .note-editor .form-control {
+	cursor: not-allowed; background-color: rgb(238, 238, 238);
+}
+textarea.note-editor .form-control {
+	height: auto;
+}
+.note-editor .form-group {
+	margin-bottom: 15px;
+}
+.note-editor .radio {
+	padding-left: 20px; margin-top: 10px; margin-bottom: 10px; vertical-align: middle; display: block; min-height: 20px;
+}
+.note-editor .checkbox {
+	padding-left: 20px; margin-top: 10px; margin-bottom: 10px; vertical-align: middle; display: block; min-height: 20px;
+}
+.note-editor .radio label {
+	font-weight: normal; margin-bottom: 0px; display: inline; cursor: pointer;
+}
+.note-editor .checkbox label {
+	font-weight: normal; margin-bottom: 0px; display: inline; cursor: pointer;
+}
+.note-editor .radio input[type='radio'] {
+	margin-left: -20px; float: left;
+}
+.note-editor .radio-inline input[type='radio'] {
+	margin-left: -20px; float: left;
+}
+.note-editor .checkbox input[type='checkbox'] {
+	margin-left: -20px; float: left;
+}
+.note-editor .checkbox-inline input[type='checkbox'] {
+	margin-left: -20px; float: left;
+}
+.note-editor .radio + .radio {
+	margin-top: -5px;
+}
+.note-editor .checkbox + .checkbox {
+	margin-top: -5px;
+}
+.note-editor .radio-inline {
+	padding-left: 20px; font-weight: normal; margin-bottom: 0px; vertical-align: middle; display: inline-block; cursor: pointer;
+}
+.note-editor .checkbox-inline {
+	padding-left: 20px; font-weight: normal; margin-bottom: 0px; vertical-align: middle; display: inline-block; cursor: pointer;
+}
+.note-editor .radio-inline + .radio-inline {
+	margin-top: 0px; margin-left: 10px;
+}
+.note-editor .checkbox-inline + .checkbox-inline {
+	margin-top: 0px; margin-left: 10px;
+}
+.note-editor input[type='radio'][disabled] {
+	cursor: not-allowed;
+}
+.note-editor input[type='checkbox'][disabled] {
+	cursor: not-allowed;
+}
+.note-editor [disabled].radio {
+	cursor: not-allowed;
+}
+.note-editor [disabled].radio-inline {
+	cursor: not-allowed;
+}
+.note-editor [disabled].checkbox {
+	cursor: not-allowed;
+}
+.note-editor [disabled].checkbox-inline {
+	cursor: not-allowed;
+}
+fieldset[disabled] .note-editor input[type='radio'] {
+	cursor: not-allowed;
+}
+fieldset[disabled] .note-editor input[type='checkbox'] {
+	cursor: not-allowed;
+}
+fieldset[disabled] .note-editor .radio {
+	cursor: not-allowed;
+}
+fieldset[disabled] .note-editor .radio-inline {
+	cursor: not-allowed;
+}
+fieldset[disabled] .note-editor .checkbox {
+	cursor: not-allowed;
+}
+fieldset[disabled] .note-editor .checkbox-inline {
+	cursor: not-allowed;
+}
+.note-editor .input-sm {
+	padding: 5px 10px; border-radius: 3px; height: 30px; line-height: 1.5; font-size: 12px;
+}
+select.note-editor .input-sm {
+	height: 30px; line-height: 30px;
+}
+textarea.note-editor .input-sm {
+	height: auto;
+}
+.note-editor .input-lg {
+	padding: 10px 16px; border-radius: 6px; height: 45px; line-height: 1.33; font-size: 18px;
+}
+select.note-editor .input-lg {
+	height: 45px; line-height: 45px;
+}
+textarea.note-editor .input-lg {
+	height: auto;
+}
+.note-editor .has-warning .help-block {
+	color: rgb(192, 152, 83);
+}
+.note-editor .has-warning .control-label {
+	color: rgb(192, 152, 83);
+}
+.note-editor .has-warning .form-control {
+	border-color: rgb(192, 152, 83); box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075); -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.note-editor .has-warning .form-control:focus {
+	border-color: rgb(164, 126, 60); box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 6px #dbc59e; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+}
+.note-editor .has-warning .input-group-addon {
+	border-color: rgb(192, 152, 83); color: rgb(192, 152, 83); background-color: rgb(252, 248, 227);
+}
+.note-editor .has-error .help-block {
+	color: rgb(185, 74, 72);
+}
+.note-editor .has-error .control-label {
+	color: rgb(185, 74, 72);
+}
+.note-editor .has-error .form-control {
+	border-color: rgb(185, 74, 72); box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075); -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.note-editor .has-error .form-control:focus {
+	border-color: rgb(149, 59, 57); box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 6px #d59392; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+.note-editor .has-error .input-group-addon {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72); background-color: rgb(242, 222, 222);
+}
+.note-editor .has-success .help-block {
+	color: rgb(70, 136, 71);
+}
+.note-editor .has-success .control-label {
+	color: rgb(70, 136, 71);
+}
+.note-editor .has-success .form-control {
+	border-color: rgb(70, 136, 71); box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075); -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.note-editor .has-success .form-control:focus {
+	border-color: rgb(53, 102, 53); box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 6px #7aba7b; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+}
+.note-editor .has-success .input-group-addon {
+	border-color: rgb(70, 136, 71); color: rgb(70, 136, 71); background-color: rgb(223, 240, 216);
+}
+.note-editor .form-control-static {
+	margin-bottom: 0px;
+}
+.note-editor .help-block {
+	color: rgb(115, 115, 115); margin-top: 5px; margin-bottom: 10px; display: block;
+}
+@media all and (min-width:768px)
+{
+.note-editor .form-inline .form-group {
+	margin-bottom: 0px; vertical-align: middle; display: inline-block;
+}
+.note-editor .form-inline .form-control {
+	display: inline-block;
+}
+.note-editor .form-inline .radio {
+	padding-left: 0px; margin-top: 0px; margin-bottom: 0px; display: inline-block;
+}
+.note-editor .form-inline .checkbox {
+	padding-left: 0px; margin-top: 0px; margin-bottom: 0px; display: inline-block;
+}
+.note-editor .form-inline .radio input[type='radio'] {
+	margin-left: 0px; float: none;
+}
+.note-editor .form-inline .checkbox input[type='checkbox'] {
+	margin-left: 0px; float: none;
+}
+}
+.note-editor .form-horizontal .control-label {
+	padding-top: 7px; margin-top: 0px; margin-bottom: 0px;
+}
+.note-editor .form-horizontal .radio {
+	padding-top: 7px; margin-top: 0px; margin-bottom: 0px;
+}
+.note-editor .form-horizontal .checkbox {
+	padding-top: 7px; margin-top: 0px; margin-bottom: 0px;
+}
+.note-editor .form-horizontal .radio-inline {
+	padding-top: 7px; margin-top: 0px; margin-bottom: 0px;
+}
+.note-editor .form-horizontal .checkbox-inline {
+	padding-top: 7px; margin-top: 0px; margin-bottom: 0px;
+}
+.note-editor .form-horizontal .form-group {
+	margin-right: -15px; margin-left: -15px;
+}
+.note-editor .form-horizontal .form-group::before {
+	display: table; content: " ";
+}
+.note-editor .form-horizontal .form-group::after {
+	display: table; content: " ";
+}
+.note-editor .form-horizontal .form-group::after {
+	clear: both;
+}
+.note-editor .form-horizontal .form-group::before {
+	display: table; content: " ";
+}
+.note-editor .form-horizontal .form-group::after {
+	display: table; content: " ";
+}
+.note-editor .form-horizontal .form-group::after {
+	clear: both;
+}
+.note-editor .form-horizontal .form-control-static {
+	padding-top: 7px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .form-horizontal .control-label {
+	text-align: right;
+}
+}
+.note-editor .btn {
+	padding: 6px 12px; border-radius: 4px; border: 1px solid transparent; border-image: none; text-align: center; line-height: 1.4285; font-size: 14px; font-weight: normal; margin-bottom: 0px; vertical-align: middle; display: inline-block; white-space: nowrap; cursor: pointer; -ms-user-select: none; background-image: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; -o-user-select: none;
+}
+.note-editor .btn:focus {
+	outline: rgb(51, 51, 51) dotted thin; outline-offset: -2px;
+}
+.note-editor .btn:hover {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+.note-editor .btn:focus {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+.note-editor .btn:active {
+	outline: 0px; box-shadow: inset 0px 3px 5px rgba(0,0,0,0.125); background-image: none; -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.note-editor .btn.active {
+	outline: 0px; box-shadow: inset 0px 3px 5px rgba(0,0,0,0.125); background-image: none; -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.note-editor .btn.disabled {
+	cursor: not-allowed; opacity: 0.65; pointer-events: none; box-shadow: none; -webkit-box-shadow: none;
+}
+.note-editor [disabled].btn {
+	cursor: not-allowed; opacity: 0.65; pointer-events: none; box-shadow: none; -webkit-box-shadow: none;
+}
+fieldset[disabled] .note-editor .btn {
+	cursor: not-allowed; opacity: 0.65; pointer-events: none; box-shadow: none; -webkit-box-shadow: none;
+}
+.note-editor .btn-default {
+	border-color: rgb(204, 204, 204); color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);
+}
+.note-editor .btn-default:hover {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.note-editor .btn-default:focus {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.note-editor .btn-default:active {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.note-editor .btn-default.active {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.open .dropdown-toggle.note-editor .btn-default {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.note-editor .btn-default:active {
+	background-image: none;
+}
+.note-editor .btn-default.active {
+	background-image: none;
+}
+.open .dropdown-toggle.note-editor .btn-default {
+	background-image: none;
+}
+.note-editor .btn-default.disabled {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor [disabled].btn-default {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+fieldset[disabled] .note-editor .btn-default {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor .btn-default.disabled:hover {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor [disabled].btn-default:hover {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+fieldset[disabled] .note-editor .btn-default:hover {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor .btn-default.disabled:focus {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor [disabled].btn-default:focus {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+fieldset[disabled] .note-editor .btn-default:focus {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor .btn-default.disabled:active {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor [disabled].btn-default:active {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+fieldset[disabled] .note-editor .btn-default:active {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor .btn-default.disabled.active {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor [disabled].btn-default.active {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+fieldset[disabled] .note-editor .btn-default.active {
+	border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);
+}
+.note-editor .btn-primary {
+	border-color: rgb(53, 126, 189); color: rgb(255, 255, 255); background-color: rgb(66, 139, 202);
+}
+.note-editor .btn-primary:hover {
+	border-color: rgb(40, 94, 142); color: rgb(255, 255, 255); background-color: rgb(50, 118, 177);
+}
+.note-editor .btn-primary:focus {
+	border-color: rgb(40, 94, 142); color: rgb(255, 255, 255); background-color: rgb(50, 118, 177);
+}
+.note-editor .btn-primary:active {
+	border-color: rgb(40, 94, 142); color: rgb(255, 255, 255); background-color: rgb(50, 118, 177);
+}
+.note-editor .btn-primary.active {
+	border-color: rgb(40, 94, 142); color: rgb(255, 255, 255); background-color: rgb(50, 118, 177);
+}
+.open .dropdown-toggle.note-editor .btn-primary {
+	border-color: rgb(40, 94, 142); color: rgb(255, 255, 255); background-color: rgb(50, 118, 177);
+}
+.note-editor .btn-primary:active {
+	background-image: none;
+}
+.note-editor .btn-primary.active {
+	background-image: none;
+}
+.open .dropdown-toggle.note-editor .btn-primary {
+	background-image: none;
+}
+.note-editor .btn-primary.disabled {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor [disabled].btn-primary {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+fieldset[disabled] .note-editor .btn-primary {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor .btn-primary.disabled:hover {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor [disabled].btn-primary:hover {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+fieldset[disabled] .note-editor .btn-primary:hover {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor .btn-primary.disabled:focus {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor [disabled].btn-primary:focus {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+fieldset[disabled] .note-editor .btn-primary:focus {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor .btn-primary.disabled:active {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor [disabled].btn-primary:active {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+fieldset[disabled] .note-editor .btn-primary:active {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor .btn-primary.disabled.active {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor [disabled].btn-primary.active {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+fieldset[disabled] .note-editor .btn-primary.active {
+	border-color: rgb(53, 126, 189); background-color: rgb(66, 139, 202);
+}
+.note-editor .btn-warning {
+	border-color: rgb(238, 162, 54); color: rgb(255, 255, 255); background-color: rgb(240, 173, 78);
+}
+.note-editor .btn-warning:hover {
+	border-color: rgb(213, 133, 18); color: rgb(255, 255, 255); background-color: rgb(237, 156, 40);
+}
+.note-editor .btn-warning:focus {
+	border-color: rgb(213, 133, 18); color: rgb(255, 255, 255); background-color: rgb(237, 156, 40);
+}
+.note-editor .btn-warning:active {
+	border-color: rgb(213, 133, 18); color: rgb(255, 255, 255); background-color: rgb(237, 156, 40);
+}
+.note-editor .btn-warning.active {
+	border-color: rgb(213, 133, 18); color: rgb(255, 255, 255); background-color: rgb(237, 156, 40);
+}
+.open .dropdown-toggle.note-editor .btn-warning {
+	border-color: rgb(213, 133, 18); color: rgb(255, 255, 255); background-color: rgb(237, 156, 40);
+}
+.note-editor .btn-warning:active {
+	background-image: none;
+}
+.note-editor .btn-warning.active {
+	background-image: none;
+}
+.open .dropdown-toggle.note-editor .btn-warning {
+	background-image: none;
+}
+.note-editor .btn-warning.disabled {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor [disabled].btn-warning {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+fieldset[disabled] .note-editor .btn-warning {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor .btn-warning.disabled:hover {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor [disabled].btn-warning:hover {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+fieldset[disabled] .note-editor .btn-warning:hover {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor .btn-warning.disabled:focus {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor [disabled].btn-warning:focus {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+fieldset[disabled] .note-editor .btn-warning:focus {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor .btn-warning.disabled:active {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor [disabled].btn-warning:active {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+fieldset[disabled] .note-editor .btn-warning:active {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor .btn-warning.disabled.active {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor [disabled].btn-warning.active {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+fieldset[disabled] .note-editor .btn-warning.active {
+	border-color: rgb(238, 162, 54); background-color: rgb(240, 173, 78);
+}
+.note-editor .btn-danger {
+	border-color: rgb(212, 63, 58); color: rgb(255, 255, 255); background-color: rgb(217, 83, 79);
+}
+.note-editor .btn-danger:hover {
+	border-color: rgb(172, 41, 37); color: rgb(255, 255, 255); background-color: rgb(210, 50, 45);
+}
+.note-editor .btn-danger:focus {
+	border-color: rgb(172, 41, 37); color: rgb(255, 255, 255); background-color: rgb(210, 50, 45);
+}
+.note-editor .btn-danger:active {
+	border-color: rgb(172, 41, 37); color: rgb(255, 255, 255); background-color: rgb(210, 50, 45);
+}
+.note-editor .btn-danger.active {
+	border-color: rgb(172, 41, 37); color: rgb(255, 255, 255); background-color: rgb(210, 50, 45);
+}
+.open .dropdown-toggle.note-editor .btn-danger {
+	border-color: rgb(172, 41, 37); color: rgb(255, 255, 255); background-color: rgb(210, 50, 45);
+}
+.note-editor .btn-danger:active {
+	background-image: none;
+}
+.note-editor .btn-danger.active {
+	background-image: none;
+}
+.open .dropdown-toggle.note-editor .btn-danger {
+	background-image: none;
+}
+.note-editor .btn-danger.disabled {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor [disabled].btn-danger {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+fieldset[disabled] .note-editor .btn-danger {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor .btn-danger.disabled:hover {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor [disabled].btn-danger:hover {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+fieldset[disabled] .note-editor .btn-danger:hover {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor .btn-danger.disabled:focus {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor [disabled].btn-danger:focus {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+fieldset[disabled] .note-editor .btn-danger:focus {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor .btn-danger.disabled:active {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor [disabled].btn-danger:active {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+fieldset[disabled] .note-editor .btn-danger:active {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor .btn-danger.disabled.active {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor [disabled].btn-danger.active {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+fieldset[disabled] .note-editor .btn-danger.active {
+	border-color: rgb(212, 63, 58); background-color: rgb(217, 83, 79);
+}
+.note-editor .btn-success {
+	border-color: rgb(76, 174, 76); color: rgb(255, 255, 255); background-color: rgb(92, 184, 92);
+}
+.note-editor .btn-success:hover {
+	border-color: rgb(57, 132, 57); color: rgb(255, 255, 255); background-color: rgb(71, 164, 71);
+}
+.note-editor .btn-success:focus {
+	border-color: rgb(57, 132, 57); color: rgb(255, 255, 255); background-color: rgb(71, 164, 71);
+}
+.note-editor .btn-success:active {
+	border-color: rgb(57, 132, 57); color: rgb(255, 255, 255); background-color: rgb(71, 164, 71);
+}
+.note-editor .btn-success.active {
+	border-color: rgb(57, 132, 57); color: rgb(255, 255, 255); background-color: rgb(71, 164, 71);
+}
+.open .dropdown-toggle.note-editor .btn-success {
+	border-color: rgb(57, 132, 57); color: rgb(255, 255, 255); background-color: rgb(71, 164, 71);
+}
+.note-editor .btn-success:active {
+	background-image: none;
+}
+.note-editor .btn-success.active {
+	background-image: none;
+}
+.open .dropdown-toggle.note-editor .btn-success {
+	background-image: none;
+}
+.note-editor .btn-success.disabled {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor [disabled].btn-success {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+fieldset[disabled] .note-editor .btn-success {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor .btn-success.disabled:hover {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor [disabled].btn-success:hover {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+fieldset[disabled] .note-editor .btn-success:hover {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor .btn-success.disabled:focus {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor [disabled].btn-success:focus {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+fieldset[disabled] .note-editor .btn-success:focus {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor .btn-success.disabled:active {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor [disabled].btn-success:active {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+fieldset[disabled] .note-editor .btn-success:active {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor .btn-success.disabled.active {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor [disabled].btn-success.active {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+fieldset[disabled] .note-editor .btn-success.active {
+	border-color: rgb(76, 174, 76); background-color: rgb(92, 184, 92);
+}
+.note-editor .btn-info {
+	border-color: rgb(70, 184, 218); color: rgb(255, 255, 255); background-color: rgb(91, 192, 222);
+}
+.note-editor .btn-info:hover {
+	border-color: rgb(38, 154, 188); color: rgb(255, 255, 255); background-color: rgb(57, 179, 215);
+}
+.note-editor .btn-info:focus {
+	border-color: rgb(38, 154, 188); color: rgb(255, 255, 255); background-color: rgb(57, 179, 215);
+}
+.note-editor .btn-info:active {
+	border-color: rgb(38, 154, 188); color: rgb(255, 255, 255); background-color: rgb(57, 179, 215);
+}
+.note-editor .btn-info.active {
+	border-color: rgb(38, 154, 188); color: rgb(255, 255, 255); background-color: rgb(57, 179, 215);
+}
+.open .dropdown-toggle.note-editor .btn-info {
+	border-color: rgb(38, 154, 188); color: rgb(255, 255, 255); background-color: rgb(57, 179, 215);
+}
+.note-editor .btn-info:active {
+	background-image: none;
+}
+.note-editor .btn-info.active {
+	background-image: none;
+}
+.open .dropdown-toggle.note-editor .btn-info {
+	background-image: none;
+}
+.note-editor .btn-info.disabled {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor [disabled].btn-info {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+fieldset[disabled] .note-editor .btn-info {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor .btn-info.disabled:hover {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor [disabled].btn-info:hover {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+fieldset[disabled] .note-editor .btn-info:hover {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor .btn-info.disabled:focus {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor [disabled].btn-info:focus {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+fieldset[disabled] .note-editor .btn-info:focus {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor .btn-info.disabled:active {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor [disabled].btn-info:active {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+fieldset[disabled] .note-editor .btn-info:active {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor .btn-info.disabled.active {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor [disabled].btn-info.active {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+fieldset[disabled] .note-editor .btn-info.active {
+	border-color: rgb(70, 184, 218); background-color: rgb(91, 192, 222);
+}
+.note-editor .btn-link {
+	border-radius: 0px; color: rgb(66, 139, 202); font-weight: normal; cursor: pointer;
+}
+.note-editor .btn-link {
+	box-shadow: none; background-color: transparent; -webkit-box-shadow: none;
+}
+.note-editor .btn-link:active {
+	box-shadow: none; background-color: transparent; -webkit-box-shadow: none;
+}
+.note-editor [disabled].btn-link {
+	box-shadow: none; background-color: transparent; -webkit-box-shadow: none;
+}
+fieldset[disabled] .note-editor .btn-link {
+	box-shadow: none; background-color: transparent; -webkit-box-shadow: none;
+}
+.note-editor .btn-link {
+	border-color: transparent;
+}
+.note-editor .btn-link:hover {
+	border-color: transparent;
+}
+.note-editor .btn-link:focus {
+	border-color: transparent;
+}
+.note-editor .btn-link:active {
+	border-color: transparent;
+}
+.note-editor .btn-link:hover {
+	color: rgb(42, 100, 150); text-decoration: underline; background-color: transparent;
+}
+.note-editor .btn-link:focus {
+	color: rgb(42, 100, 150); text-decoration: underline; background-color: transparent;
+}
+.note-editor [disabled].btn-link:hover {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+fieldset[disabled] .note-editor .btn-link:hover {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+.note-editor [disabled].btn-link:focus {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+fieldset[disabled] .note-editor .btn-link:focus {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+.note-editor .btn-lg {
+	padding: 10px 16px; border-radius: 6px; line-height: 1.33; font-size: 18px;
+}
+.note-editor .btn-sm {
+	padding: 5px 10px; border-radius: 3px; line-height: 1.5; font-size: 12px;
+}
+.note-editor .btn-xs {
+	padding: 5px 10px; border-radius: 3px; line-height: 1.5; font-size: 12px;
+}
+.note-editor .btn-xs {
+	padding: 1px 5px;
+}
+.note-editor .btn-block {
+	width: 100%; padding-right: 0px; padding-left: 0px; display: block;
+}
+.note-editor .btn-block + .btn-block {
+	margin-top: 5px;
+}
+.note-editor input[type='submit'].btn-block {
+	width: 100%;
+}
+.note-editor input[type='reset'].btn-block {
+	width: 100%;
+}
+.note-editor input[type='button'].btn-block {
+	width: 100%;
+}
+.note-editor .fade {
+	transition:opacity 0.15s linear; opacity: 0; -webkit-transition: opacity 0.15s linear;
+}
+.note-editor .fade.in {
+	opacity: 1;
+}
+.note-editor .collapse {
+	display: none;
+}
+.note-editor .collapse.in {
+	display: block;
+}
+.note-editor .collapsing {
+	transition:height 0.35s; height: 0px; overflow: hidden; position: relative; -webkit-transition: height 0.35s ease;
+}
+.note-editor .glyphicon {
+	top: 1px; line-height: 1; font-family: "Glyphicons Halflings"; font-style: normal; font-weight: normal; display: inline-block; position: relative; -webkit-font-smoothing: antialiased;
+}
+.note-editor :empty.glyphicon {
+	width: 1em;
+}
+.note-editor .glyphicon-asterisk::before {
+	content: "\2a";
+}
+.note-editor .glyphicon-plus::before {
+	content: "\2b";
+}
+.note-editor .glyphicon-euro::before {
+	content: "\20ac";
+}
+.note-editor .glyphicon-minus::before {
+	content: "\2212";
+}
+.note-editor .glyphicon-cloud::before {
+	content: "\2601";
+}
+.note-editor .glyphicon-envelope::before {
+	content: "\2709";
+}
+.note-editor .glyphicon-pencil::before {
+	content: "\270f";
+}
+.note-editor .glyphicon-glass::before {
+	content: "\e001";
+}
+.note-editor .glyphicon-music::before {
+	content: "\e002";
+}
+.note-editor .glyphicon-search::before {
+	content: "\e003";
+}
+.note-editor .glyphicon-heart::before {
+	content: "\e005";
+}
+.note-editor .glyphicon-star::before {
+	content: "\e006";
+}
+.note-editor .glyphicon-star-empty::before {
+	content: "\e007";
+}
+.note-editor .glyphicon-user::before {
+	content: "\e008";
+}
+.note-editor .glyphicon-film::before {
+	content: "\e009";
+}
+.note-editor .glyphicon-th-large::before {
+	content: "\e010";
+}
+.note-editor .glyphicon-th::before {
+	content: "\e011";
+}
+.note-editor .glyphicon-th-list::before {
+	content: "\e012";
+}
+.note-editor .glyphicon-ok::before {
+	content: "\e013";
+}
+.note-editor .glyphicon-remove::before {
+	content: "\e014";
+}
+.note-editor .glyphicon-zoom-in::before {
+	content: "\e015";
+}
+.note-editor .glyphicon-zoom-out::before {
+	content: "\e016";
+}
+.note-editor .glyphicon-off::before {
+	content: "\e017";
+}
+.note-editor .glyphicon-signal::before {
+	content: "\e018";
+}
+.note-editor .glyphicon-cog::before {
+	content: "\e019";
+}
+.note-editor .glyphicon-trash::before {
+	content: "\e020";
+}
+.note-editor .glyphicon-home::before {
+	content: "\e021";
+}
+.note-editor .glyphicon-file::before {
+	content: "\e022";
+}
+.note-editor .glyphicon-time::before {
+	content: "\e023";
+}
+.note-editor .glyphicon-road::before {
+	content: "\e024";
+}
+.note-editor .glyphicon-download-alt::before {
+	content: "\e025";
+}
+.note-editor .glyphicon-download::before {
+	content: "\e026";
+}
+.note-editor .glyphicon-upload::before {
+	content: "\e027";
+}
+.note-editor .glyphicon-inbox::before {
+	content: "\e028";
+}
+.note-editor .glyphicon-play-circle::before {
+	content: "\e029";
+}
+.note-editor .glyphicon-repeat::before {
+	content: "\e030";
+}
+.note-editor .glyphicon-refresh::before {
+	content: "\e031";
+}
+.note-editor .glyphicon-list-alt::before {
+	content: "\e032";
+}
+.note-editor .glyphicon-lock::before {
+	content: "\e033";
+}
+.note-editor .glyphicon-flag::before {
+	content: "\e034";
+}
+.note-editor .glyphicon-headphones::before {
+	content: "\e035";
+}
+.note-editor .glyphicon-volume-off::before {
+	content: "\e036";
+}
+.note-editor .glyphicon-volume-down::before {
+	content: "\e037";
+}
+.note-editor .glyphicon-volume-up::before {
+	content: "\e038";
+}
+.note-editor .glyphicon-qrcode::before {
+	content: "\e039";
+}
+.note-editor .glyphicon-barcode::before {
+	content: "\e040";
+}
+.note-editor .glyphicon-tag::before {
+	content: "\e041";
+}
+.note-editor .glyphicon-tags::before {
+	content: "\e042";
+}
+.note-editor .glyphicon-book::before {
+	content: "\e043";
+}
+.note-editor .glyphicon-bookmark::before {
+	content: "\e044";
+}
+.note-editor .glyphicon-print::before {
+	content: "\e045";
+}
+.note-editor .glyphicon-camera::before {
+	content: "\e046";
+}
+.note-editor .glyphicon-font::before {
+	content: "\e047";
+}
+.note-editor .glyphicon-bold::before {
+	content: "\e048";
+}
+.note-editor .glyphicon-italic::before {
+	content: "\e049";
+}
+.note-editor .glyphicon-text-height::before {
+	content: "\e050";
+}
+.note-editor .glyphicon-text-width::before {
+	content: "\e051";
+}
+.note-editor .glyphicon-align-left::before {
+	content: "\e052";
+}
+.note-editor .glyphicon-align-center::before {
+	content: "\e053";
+}
+.note-editor .glyphicon-align-right::before {
+	content: "\e054";
+}
+.note-editor .glyphicon-align-justify::before {
+	content: "\e055";
+}
+.note-editor .glyphicon-list::before {
+	content: "\e056";
+}
+.note-editor .glyphicon-indent-left::before {
+	content: "\e057";
+}
+.note-editor .glyphicon-indent-right::before {
+	content: "\e058";
+}
+.note-editor .glyphicon-facetime-video::before {
+	content: "\e059";
+}
+.note-editor .glyphicon-picture::before {
+	content: "\e060";
+}
+.note-editor .glyphicon-map-marker::before {
+	content: "\e062";
+}
+.note-editor .glyphicon-adjust::before {
+	content: "\e063";
+}
+.note-editor .glyphicon-tint::before {
+	content: "\e064";
+}
+.note-editor .glyphicon-edit::before {
+	content: "\e065";
+}
+.note-editor .glyphicon-share::before {
+	content: "\e066";
+}
+.note-editor .glyphicon-check::before {
+	content: "\e067";
+}
+.note-editor .glyphicon-move::before {
+	content: "\e068";
+}
+.note-editor .glyphicon-step-backward::before {
+	content: "\e069";
+}
+.note-editor .glyphicon-fast-backward::before {
+	content: "\e070";
+}
+.note-editor .glyphicon-backward::before {
+	content: "\e071";
+}
+.note-editor .glyphicon-play::before {
+	content: "\e072";
+}
+.note-editor .glyphicon-pause::before {
+	content: "\e073";
+}
+.note-editor .glyphicon-stop::before {
+	content: "\e074";
+}
+.note-editor .glyphicon-forward::before {
+	content: "\e075";
+}
+.note-editor .glyphicon-fast-forward::before {
+	content: "\e076";
+}
+.note-editor .glyphicon-step-forward::before {
+	content: "\e077";
+}
+.note-editor .glyphicon-eject::before {
+	content: "\e078";
+}
+.note-editor .glyphicon-chevron-left::before {
+	content: "\e079";
+}
+.note-editor .glyphicon-chevron-right::before {
+	content: "\e080";
+}
+.note-editor .glyphicon-plus-sign::before {
+	content: "\e081";
+}
+.note-editor .glyphicon-minus-sign::before {
+	content: "\e082";
+}
+.note-editor .glyphicon-remove-sign::before {
+	content: "\e083";
+}
+.note-editor .glyphicon-ok-sign::before {
+	content: "\e084";
+}
+.note-editor .glyphicon-question-sign::before {
+	content: "\e085";
+}
+.note-editor .glyphicon-info-sign::before {
+	content: "\e086";
+}
+.note-editor .glyphicon-screenshot::before {
+	content: "\e087";
+}
+.note-editor .glyphicon-remove-circle::before {
+	content: "\e088";
+}
+.note-editor .glyphicon-ok-circle::before {
+	content: "\e089";
+}
+.note-editor .glyphicon-ban-circle::before {
+	content: "\e090";
+}
+.note-editor .glyphicon-arrow-left::before {
+	content: "\e091";
+}
+.note-editor .glyphicon-arrow-right::before {
+	content: "\e092";
+}
+.note-editor .glyphicon-arrow-up::before {
+	content: "\e093";
+}
+.note-editor .glyphicon-arrow-down::before {
+	content: "\e094";
+}
+.note-editor .glyphicon-share-alt::before {
+	content: "\e095";
+}
+.note-editor .glyphicon-resize-full::before {
+	content: "\e096";
+}
+.note-editor .glyphicon-resize-small::before {
+	content: "\e097";
+}
+.note-editor .glyphicon-exclamation-sign::before {
+	content: "\e101";
+}
+.note-editor .glyphicon-gift::before {
+	content: "\e102";
+}
+.note-editor .glyphicon-leaf::before {
+	content: "\e103";
+}
+.note-editor .glyphicon-fire::before {
+	content: "\e104";
+}
+.note-editor .glyphicon-eye-open::before {
+	content: "\e105";
+}
+.note-editor .glyphicon-eye-close::before {
+	content: "\e106";
+}
+.note-editor .glyphicon-warning-sign::before {
+	content: "\e107";
+}
+.note-editor .glyphicon-plane::before {
+	content: "\e108";
+}
+.note-editor .glyphicon-calendar::before {
+	content: "\e109";
+}
+.note-editor .glyphicon-random::before {
+	content: "\e110";
+}
+.note-editor .glyphicon-comment::before {
+	content: "\e111";
+}
+.note-editor .glyphicon-magnet::before {
+	content: "\e112";
+}
+.note-editor .glyphicon-chevron-up::before {
+	content: "\e113";
+}
+.note-editor .glyphicon-chevron-down::before {
+	content: "\e114";
+}
+.note-editor .glyphicon-retweet::before {
+	content: "\e115";
+}
+.note-editor .glyphicon-shopping-cart::before {
+	content: "\e116";
+}
+.note-editor .glyphicon-folder-close::before {
+	content: "\e117";
+}
+.note-editor .glyphicon-folder-open::before {
+	content: "\e118";
+}
+.note-editor .glyphicon-resize-vertical::before {
+	content: "\e119";
+}
+.note-editor .glyphicon-resize-horizontal::before {
+	content: "\e120";
+}
+.note-editor .glyphicon-hdd::before {
+	content: "\e121";
+}
+.note-editor .glyphicon-bullhorn::before {
+	content: "\e122";
+}
+.note-editor .glyphicon-bell::before {
+	content: "\e123";
+}
+.note-editor .glyphicon-certificate::before {
+	content: "\e124";
+}
+.note-editor .glyphicon-thumbs-up::before {
+	content: "\e125";
+}
+.note-editor .glyphicon-thumbs-down::before {
+	content: "\e126";
+}
+.note-editor .glyphicon-hand-right::before {
+	content: "\e127";
+}
+.note-editor .glyphicon-hand-left::before {
+	content: "\e128";
+}
+.note-editor .glyphicon-hand-up::before {
+	content: "\e129";
+}
+.note-editor .glyphicon-hand-down::before {
+	content: "\e130";
+}
+.note-editor .glyphicon-circle-arrow-right::before {
+	content: "\e131";
+}
+.note-editor .glyphicon-circle-arrow-left::before {
+	content: "\e132";
+}
+.note-editor .glyphicon-circle-arrow-up::before {
+	content: "\e133";
+}
+.note-editor .glyphicon-circle-arrow-down::before {
+	content: "\e134";
+}
+.note-editor .glyphicon-globe::before {
+	content: "\e135";
+}
+.note-editor .glyphicon-wrench::before {
+	content: "\e136";
+}
+.note-editor .glyphicon-tasks::before {
+	content: "\e137";
+}
+.note-editor .glyphicon-filter::before {
+	content: "\e138";
+}
+.note-editor .glyphicon-briefcase::before {
+	content: "\e139";
+}
+.note-editor .glyphicon-fullscreen::before {
+	content: "\e140";
+}
+.note-editor .glyphicon-dashboard::before {
+	content: "\e141";
+}
+.note-editor .glyphicon-paperclip::before {
+	content: "\e142";
+}
+.note-editor .glyphicon-heart-empty::before {
+	content: "\e143";
+}
+.note-editor .glyphicon-link::before {
+	content: "\e144";
+}
+.note-editor .glyphicon-phone::before {
+	content: "\e145";
+}
+.note-editor .glyphicon-pushpin::before {
+	content: "\e146";
+}
+.note-editor .glyphicon-usd::before {
+	content: "\e148";
+}
+.note-editor .glyphicon-gbp::before {
+	content: "\e149";
+}
+.note-editor .glyphicon-sort::before {
+	content: "\e150";
+}
+.note-editor .glyphicon-sort-by-alphabet::before {
+	content: "\e151";
+}
+.note-editor .glyphicon-sort-by-alphabet-alt::before {
+	content: "\e152";
+}
+.note-editor .glyphicon-sort-by-order::before {
+	content: "\e153";
+}
+.note-editor .glyphicon-sort-by-order-alt::before {
+	content: "\e154";
+}
+.note-editor .glyphicon-sort-by-attributes::before {
+	content: "\e155";
+}
+.note-editor .glyphicon-sort-by-attributes-alt::before {
+	content: "\e156";
+}
+.note-editor .glyphicon-unchecked::before {
+	content: "\e157";
+}
+.note-editor .glyphicon-expand::before {
+	content: "\e158";
+}
+.note-editor .glyphicon-collapse-down::before {
+	content: "\e159";
+}
+.note-editor .glyphicon-collapse-up::before {
+	content: "\e160";
+}
+.note-editor .glyphicon-log-in::before {
+	content: "\e161";
+}
+.note-editor .glyphicon-flash::before {
+	content: "\e162";
+}
+.note-editor .glyphicon-log-out::before {
+	content: "\e163";
+}
+.note-editor .glyphicon-new-window::before {
+	content: "\e164";
+}
+.note-editor .glyphicon-record::before {
+	content: "\e165";
+}
+.note-editor .glyphicon-save::before {
+	content: "\e166";
+}
+.note-editor .glyphicon-open::before {
+	content: "\e167";
+}
+.note-editor .glyphicon-saved::before {
+	content: "\e168";
+}
+.note-editor .glyphicon-import::before {
+	content: "\e169";
+}
+.note-editor .glyphicon-export::before {
+	content: "\e170";
+}
+.note-editor .glyphicon-send::before {
+	content: "\e171";
+}
+.note-editor .glyphicon-floppy-disk::before {
+	content: "\e172";
+}
+.note-editor .glyphicon-floppy-saved::before {
+	content: "\e173";
+}
+.note-editor .glyphicon-floppy-remove::before {
+	content: "\e174";
+}
+.note-editor .glyphicon-floppy-save::before {
+	content: "\e175";
+}
+.note-editor .glyphicon-floppy-open::before {
+	content: "\e176";
+}
+.note-editor .glyphicon-credit-card::before {
+	content: "\e177";
+}
+.note-editor .glyphicon-transfer::before {
+	content: "\e178";
+}
+.note-editor .glyphicon-cutlery::before {
+	content: "\e179";
+}
+.note-editor .glyphicon-header::before {
+	content: "\e180";
+}
+.note-editor .glyphicon-compressed::before {
+	content: "\e181";
+}
+.note-editor .glyphicon-earphone::before {
+	content: "\e182";
+}
+.note-editor .glyphicon-phone-alt::before {
+	content: "\e183";
+}
+.note-editor .glyphicon-tower::before {
+	content: "\e184";
+}
+.note-editor .glyphicon-stats::before {
+	content: "\e185";
+}
+.note-editor .glyphicon-sd-video::before {
+	content: "\e186";
+}
+.note-editor .glyphicon-hd-video::before {
+	content: "\e187";
+}
+.note-editor .glyphicon-subtitles::before {
+	content: "\e188";
+}
+.note-editor .glyphicon-sound-stereo::before {
+	content: "\e189";
+}
+.note-editor .glyphicon-sound-dolby::before {
+	content: "\e190";
+}
+.note-editor .glyphicon-sound-5-1::before {
+	content: "\e191";
+}
+.note-editor .glyphicon-sound-6-1::before {
+	content: "\e192";
+}
+.note-editor .glyphicon-sound-7-1::before {
+	content: "\e193";
+}
+.note-editor .glyphicon-copyright-mark::before {
+	content: "\e194";
+}
+.note-editor .glyphicon-registration-mark::before {
+	content: "\e195";
+}
+.note-editor .glyphicon-cloud-download::before {
+	content: "\e197";
+}
+.note-editor .glyphicon-cloud-upload::before {
+	content: "\e198";
+}
+.note-editor .glyphicon-tree-conifer::before {
+	content: "\e199";
+}
+.note-editor .glyphicon-tree-deciduous::before {
+	content: "\e200";
+}
+.note-editor .caret {
+	border-width: 4px 4px 0px; border-style: solid solid dotted; border-color: rgb(0, 0, 0) transparent currentColor; width: 0px; height: 0px; margin-left: 2px; vertical-align: middle; display: inline-block;
+}
+.note-editor .dropdown {
+	position: relative;
+}
+.note-editor .dropdown-toggle:focus {
+	outline: 0px;
+}
+.note-editor .dropdown-menu {
+	list-style: none; margin: 2px 0px 0px; padding: 5px 0px; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.15); border-image: none; left: 0px; top: 100%; font-size: 14px; float: left; display: none; position: absolute; z-index: 1000; min-width: 160px; box-shadow: 0px 6px 12px rgba(0,0,0,0.175); background-clip: padding-box; background-color: rgb(255, 255, 255); -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.note-editor .dropdown-menu.pull-right {
+	left: auto; right: 0px;
+}
+.note-editor .dropdown-menu .divider {
+	margin: 9px 0px; height: 1px; overflow: hidden; background-color: rgb(229, 229, 229);
+}
+.note-editor .dropdown-menu > li > a {
+	padding: 3px 20px; color: rgb(51, 51, 51); line-height: 1.4285; clear: both; font-weight: normal; display: block; white-space: nowrap;
+}
+.note-editor .dropdown-menu > li > a:hover {
+	color: rgb(38, 38, 38); text-decoration: none; background-color: rgb(245, 245, 245);
+}
+.note-editor .dropdown-menu > li > a:focus {
+	color: rgb(38, 38, 38); text-decoration: none; background-color: rgb(245, 245, 245);
+}
+.note-editor .dropdown-menu > .active > a {
+	outline: 0px; color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(66, 139, 202);
+}
+.note-editor .dropdown-menu > .active > a:hover {
+	outline: 0px; color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(66, 139, 202);
+}
+.note-editor .dropdown-menu > .active > a:focus {
+	outline: 0px; color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(66, 139, 202);
+}
+.note-editor .dropdown-menu > .disabled > a {
+	color: rgb(153, 153, 153);
+}
+.note-editor .dropdown-menu > .disabled > a:hover {
+	color: rgb(153, 153, 153);
+}
+.note-editor .dropdown-menu > .disabled > a:focus {
+	color: rgb(153, 153, 153);
+}
+.note-editor .dropdown-menu > .disabled > a:hover {
+	text-decoration: none; cursor: not-allowed; background-image: none; background-color: transparent;
+}
+.note-editor .dropdown-menu > .disabled > a:focus {
+	text-decoration: none; cursor: not-allowed; background-image: none; background-color: transparent;
+}
+.note-editor .open > .dropdown-menu {
+	display: block;
+}
+.note-editor .open > a {
+	outline: 0px;
+}
+.note-editor .dropdown-header {
+	padding: 3px 20px; color: rgb(153, 153, 153); line-height: 1.4285; font-size: 12px; display: block;
+}
+.note-editor .dropdown-backdrop {
+	left: 0px; top: 0px; right: 0px; bottom: 0px; position: fixed; z-index: 990;
+}
+.note-editor .pull-right > .dropdown-menu {
+	left: auto; right: 0px;
+}
+.note-editor .dropup .caret {
+	border-top-color: currentColor; border-bottom-color: rgb(0, 0, 0); border-top-width: 0px; border-bottom-width: 4px; border-top-style: dotted; border-bottom-style: solid; content: "";
+}
+.note-editor .navbar-fixed-bottom .dropdown .caret {
+	border-top-color: currentColor; border-bottom-color: rgb(0, 0, 0); border-top-width: 0px; border-bottom-width: 4px; border-top-style: dotted; border-bottom-style: solid; content: "";
+}
+.note-editor .dropup .dropdown-menu {
+	top: auto; bottom: 100%; margin-bottom: 1px;
+}
+.note-editor .navbar-fixed-bottom .dropdown .dropdown-menu {
+	top: auto; bottom: 100%; margin-bottom: 1px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-right .dropdown-menu {
+	left: auto; right: 0px;
+}
+}
+.btn-default .note-editor .caret {
+	border-top-color: rgb(51, 51, 51);
+}
+.btn-primary .note-editor .caret {
+	border-top-color: rgb(255, 255, 255);
+}
+.btn-success .note-editor .caret {
+	border-top-color: rgb(255, 255, 255);
+}
+.btn-warning .note-editor .caret {
+	border-top-color: rgb(255, 255, 255);
+}
+.btn-danger .note-editor .caret {
+	border-top-color: rgb(255, 255, 255);
+}
+.btn-info .note-editor .caret {
+	border-top-color: rgb(255, 255, 255);
+}
+.note-editor .dropup .btn-default .caret {
+	border-bottom-color: rgb(51, 51, 51);
+}
+.note-editor .dropup .btn-primary .caret {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .dropup .btn-success .caret {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .dropup .btn-warning .caret {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .dropup .btn-danger .caret {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .dropup .btn-info .caret {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .btn-group {
+	vertical-align: middle; display: inline-block; position: relative;
+}
+.note-editor .btn-group-vertical {
+	vertical-align: middle; display: inline-block; position: relative;
+}
+.note-editor .btn-group > .btn {
+	float: left; position: relative;
+}
+.note-editor .btn-group-vertical > .btn {
+	float: left; position: relative;
+}
+.note-editor .btn-group > .btn:hover {
+	z-index: 2;
+}
+.note-editor .btn-group-vertical > .btn:hover {
+	z-index: 2;
+}
+.note-editor .btn-group > .btn:focus {
+	z-index: 2;
+}
+.note-editor .btn-group-vertical > .btn:focus {
+	z-index: 2;
+}
+.note-editor .btn-group > .btn:active {
+	z-index: 2;
+}
+.note-editor .btn-group-vertical > .btn:active {
+	z-index: 2;
+}
+.note-editor .btn-group > .btn.active {
+	z-index: 2;
+}
+.note-editor .btn-group-vertical > .btn.active {
+	z-index: 2;
+}
+.note-editor .btn-group > .btn:focus {
+	
+}
+.note-editor .btn-group-vertical > .btn:focus {
+	
+}
+.note-editor .btn-group .btn + .btn {
+	margin-left: -1px;
+}
+.note-editor .btn-group .btn + .btn-group {
+	margin-left: -1px;
+}
+.note-editor .btn-group .btn-group + .btn {
+	margin-left: -1px;
+}
+.note-editor .btn-group .btn-group + .btn-group {
+	margin-left: -1px;
+}
+.note-editor .btn-toolbar::before {
+	display: table; content: " ";
+}
+.note-editor .btn-toolbar::after {
+	display: table; content: " ";
+}
+.note-editor .btn-toolbar::after {
+	clear: both;
+}
+.note-editor .btn-toolbar::before {
+	display: table; content: " ";
+}
+.note-editor .btn-toolbar::after {
+	display: table; content: " ";
+}
+.note-editor .btn-toolbar::after {
+	clear: both;
+}
+.note-editor .btn-toolbar .btn-group {
+	float: left;
+}
+.note-editor .btn-toolbar > .btn + .btn {
+	margin-left: 5px;
+}
+.note-editor .btn-toolbar > .btn-group + .btn {
+	margin-left: 5px;
+}
+.note-editor .btn-toolbar > .btn + .btn-group {
+	margin-left: 5px;
+}
+.note-editor .btn-toolbar > .btn-group + .btn-group {
+	margin-left: 5px;
+}
+.note-editor .btn-group > :not(:first-child):not(.dropdown-toggle):not(:last-child).btn {
+	border-radius: 0px;
+}
+.note-editor .btn-group > :first-child.btn {
+	margin-left: 0px;
+}
+.note-editor .btn-group > :first-child:not(.dropdown-toggle):not(:last-child).btn {
+	border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.note-editor .btn-group > :last-child:not(:first-child).btn {
+	border-top-left-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor .btn-group > :not(:first-child).dropdown-toggle {
+	border-top-left-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor .btn-group > .btn-group {
+	float: left;
+}
+.note-editor .btn-group > :not(:first-child):not(:last-child).btn-group > .btn {
+	border-radius: 0px;
+}
+.note-editor .btn-group > :first-child.btn-group > :last-child.btn {
+	border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.note-editor .btn-group > :first-child.btn-group > .dropdown-toggle {
+	border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.note-editor .btn-group > :last-child.btn-group > :first-child.btn {
+	border-top-left-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor .btn-group .dropdown-toggle:active {
+	outline: 0px;
+}
+.note-editor .btn-group.open .dropdown-toggle {
+	outline: 0px;
+}
+.note-editor .btn-group-xs > .btn {
+	padding: 1px 5px; border-radius: 3px; line-height: 1.5; font-size: 12px;
+}
+.note-editor .btn-group-sm > .btn {
+	padding: 5px 10px; border-radius: 3px; line-height: 1.5; font-size: 12px;
+}
+.note-editor .btn-group-lg > .btn {
+	padding: 10px 16px; border-radius: 6px; line-height: 1.33; font-size: 18px;
+}
+.note-editor .btn-group > .btn + .dropdown-toggle {
+	padding-right: 5px; padding-left: 5px;
+}
+.note-editor .btn-group > .btn-lg + .dropdown-toggle {
+	padding-right: 12px; padding-left: 12px;
+}
+.note-editor .btn-group.open .dropdown-toggle {
+	box-shadow: inset 0px 3px 5px rgba(0,0,0,0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.note-editor .btn .caret {
+	margin-left: 0px;
+}
+.note-editor .btn-lg .caret {
+	border-width: 5px 5px 0px;
+}
+.note-editor .dropup .btn-lg .caret {
+	border-width: 0px 5px 5px;
+}
+.note-editor .btn-group-vertical > .btn {
+	width: 100%; float: none; display: block; max-width: 100%;
+}
+.note-editor .btn-group-vertical > .btn-group {
+	width: 100%; float: none; display: block; max-width: 100%;
+}
+.note-editor .btn-group-vertical > .btn-group::before {
+	display: table; content: " ";
+}
+.note-editor .btn-group-vertical > .btn-group::after {
+	display: table; content: " ";
+}
+.note-editor .btn-group-vertical > .btn-group::after {
+	clear: both;
+}
+.note-editor .btn-group-vertical > .btn-group::before {
+	display: table; content: " ";
+}
+.note-editor .btn-group-vertical > .btn-group::after {
+	display: table; content: " ";
+}
+.note-editor .btn-group-vertical > .btn-group::after {
+	clear: both;
+}
+.note-editor .btn-group-vertical > .btn-group > .btn {
+	float: none;
+}
+.note-editor .btn-group-vertical > .btn + .btn {
+	margin-top: -1px; margin-left: 0px;
+}
+.note-editor .btn-group-vertical > .btn + .btn-group {
+	margin-top: -1px; margin-left: 0px;
+}
+.note-editor .btn-group-vertical > .btn-group + .btn {
+	margin-top: -1px; margin-left: 0px;
+}
+.note-editor .btn-group-vertical > .btn-group + .btn-group {
+	margin-top: -1px; margin-left: 0px;
+}
+.note-editor .btn-group-vertical > :not(:first-child):not(:last-child).btn {
+	border-radius: 0px;
+}
+.note-editor .btn-group-vertical > :first-child:not(:last-child).btn {
+	border-top-right-radius: 4px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor .btn-group-vertical > :last-child:not(:first-child).btn {
+	border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 4px;
+}
+.note-editor .btn-group-vertical > :not(:first-child):not(:last-child).btn-group > .btn {
+	border-radius: 0px;
+}
+.note-editor .btn-group-vertical > :first-child.btn-group > :last-child.btn {
+	border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor .btn-group-vertical > :first-child.btn-group > .dropdown-toggle {
+	border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor .btn-group-vertical > :last-child.btn-group > :first-child.btn {
+	border-top-left-radius: 0px; border-top-right-radius: 0px;
+}
+.note-editor .btn-group-justified {
+	width: 100%; display: table; border-collapse: separate; table-layout: fixed;
+}
+.note-editor .btn-group-justified .btn {
+	width: 1%; float: none; display: table-cell;
+}
+.note-editor [data-toggle='buttons'] > .btn > input[type='radio'] {
+	display: none;
+}
+.note-editor [data-toggle='buttons'] > .btn > input[type='checkbox'] {
+	display: none;
+}
+.note-editor .input-group {
+	display: table; border-collapse: separate; position: relative;
+}
+.note-editor .input-group.col {
+	padding-right: 0px; padding-left: 0px; float: none;
+}
+.note-editor .input-group .form-control {
+	width: 100%; margin-bottom: 0px;
+}
+.note-editor .input-group-lg > .form-control {
+	padding: 10px 16px; border-radius: 6px; height: 45px; line-height: 1.33; font-size: 18px;
+}
+.note-editor .input-group-lg > .input-group-addon {
+	padding: 10px 16px; border-radius: 6px; height: 45px; line-height: 1.33; font-size: 18px;
+}
+.note-editor .input-group-lg > .input-group-btn > .btn {
+	padding: 10px 16px; border-radius: 6px; height: 45px; line-height: 1.33; font-size: 18px;
+}
+select.note-editor .input-group-lg > .form-control {
+	height: 45px; line-height: 45px;
+}
+select.note-editor .input-group-lg > .input-group-addon {
+	height: 45px; line-height: 45px;
+}
+select.note-editor .input-group-lg > .input-group-btn > .btn {
+	height: 45px; line-height: 45px;
+}
+textarea.note-editor .input-group-lg > .form-control {
+	height: auto;
+}
+textarea.note-editor .input-group-lg > .input-group-addon {
+	height: auto;
+}
+textarea.note-editor .input-group-lg > .input-group-btn > .btn {
+	height: auto;
+}
+.note-editor .input-group-sm > .form-control {
+	padding: 5px 10px; border-radius: 3px; height: 30px; line-height: 1.5; font-size: 12px;
+}
+.note-editor .input-group-sm > .input-group-addon {
+	padding: 5px 10px; border-radius: 3px; height: 30px; line-height: 1.5; font-size: 12px;
+}
+.note-editor .input-group-sm > .input-group-btn > .btn {
+	padding: 5px 10px; border-radius: 3px; height: 30px; line-height: 1.5; font-size: 12px;
+}
+select.note-editor .input-group-sm > .form-control {
+	height: 30px; line-height: 30px;
+}
+select.note-editor .input-group-sm > .input-group-addon {
+	height: 30px; line-height: 30px;
+}
+select.note-editor .input-group-sm > .input-group-btn > .btn {
+	height: 30px; line-height: 30px;
+}
+textarea.note-editor .input-group-sm > .form-control {
+	height: auto;
+}
+textarea.note-editor .input-group-sm > .input-group-addon {
+	height: auto;
+}
+textarea.note-editor .input-group-sm > .input-group-btn > .btn {
+	height: auto;
+}
+.note-editor .input-group-addon {
+	display: table-cell;
+}
+.note-editor .input-group-btn {
+	display: table-cell;
+}
+.note-editor .input-group .form-control {
+	display: table-cell;
+}
+.note-editor :not(:first-child):not(:last-child).input-group-addon {
+	border-radius: 0px;
+}
+.note-editor :not(:first-child):not(:last-child).input-group-btn {
+	border-radius: 0px;
+}
+.note-editor .input-group :not(:first-child):not(:last-child).form-control {
+	border-radius: 0px;
+}
+.note-editor .input-group-addon {
+	width: 1%; vertical-align: middle; white-space: nowrap;
+}
+.note-editor .input-group-btn {
+	width: 1%; vertical-align: middle; white-space: nowrap;
+}
+.note-editor .input-group-addon {
+	padding: 6px 12px; border-radius: 4px; border: 1px solid rgb(204, 204, 204); border-image: none; text-align: center; color: rgb(85, 85, 85); line-height: 1; font-size: 14px; font-weight: normal; background-color: rgb(238, 238, 238);
+}
+.note-editor .input-group-addon.input-sm {
+	padding: 5px 10px; border-radius: 3px; font-size: 12px;
+}
+.note-editor .input-group-addon.input-lg {
+	padding: 10px 16px; border-radius: 6px; font-size: 18px;
+}
+.note-editor .input-group-addon input[type='radio'] {
+	margin-top: 0px;
+}
+.note-editor .input-group-addon input[type='checkbox'] {
+	margin-top: 0px;
+}
+.note-editor .input-group :first-child.form-control {
+	border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.note-editor :first-child.input-group-addon {
+	border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.note-editor :first-child.input-group-btn > .btn {
+	border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.note-editor :first-child.input-group-btn > .dropdown-toggle {
+	border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.note-editor :last-child.input-group-btn > :not(:last-child):not(.dropdown-toggle).btn {
+	border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.note-editor :first-child.input-group-addon {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .input-group :last-child.form-control {
+	border-top-left-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor :last-child.input-group-addon {
+	border-top-left-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor :last-child.input-group-btn > .btn {
+	border-top-left-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor :last-child.input-group-btn > .dropdown-toggle {
+	border-top-left-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor :first-child.input-group-btn > :not(:first-child).btn {
+	border-top-left-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor :last-child.input-group-addon {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .input-group-btn {
+	white-space: nowrap; position: relative;
+}
+.note-editor :first-child.input-group-btn > .btn {
+	margin-right: -1px;
+}
+.note-editor :last-child.input-group-btn > .btn {
+	margin-left: -1px;
+}
+.note-editor .input-group-btn > .btn {
+	position: relative;
+}
+.note-editor .input-group-btn > .btn + .btn {
+	margin-left: -4px;
+}
+.note-editor .input-group-btn > .btn:hover {
+	z-index: 2;
+}
+.note-editor .input-group-btn > .btn:active {
+	z-index: 2;
+}
+.note-editor .nav {
+	list-style: none; padding-left: 0px; margin-bottom: 0px;
+}
+.note-editor .nav::before {
+	display: table; content: " ";
+}
+.note-editor .nav::after {
+	display: table; content: " ";
+}
+.note-editor .nav::after {
+	clear: both;
+}
+.note-editor .nav::before {
+	display: table; content: " ";
+}
+.note-editor .nav::after {
+	display: table; content: " ";
+}
+.note-editor .nav::after {
+	clear: both;
+}
+.note-editor .nav > li {
+	display: block; position: relative;
+}
+.note-editor .nav > li > a {
+	padding: 10px 15px; display: block; position: relative;
+}
+.note-editor .nav > li > a:hover {
+	text-decoration: none; background-color: rgb(238, 238, 238);
+}
+.note-editor .nav > li > a:focus {
+	text-decoration: none; background-color: rgb(238, 238, 238);
+}
+.note-editor .nav > li.disabled > a {
+	color: rgb(153, 153, 153);
+}
+.note-editor .nav > li.disabled > a:hover {
+	color: rgb(153, 153, 153); text-decoration: none; cursor: not-allowed; background-color: transparent;
+}
+.note-editor .nav > li.disabled > a:focus {
+	color: rgb(153, 153, 153); text-decoration: none; cursor: not-allowed; background-color: transparent;
+}
+.note-editor .nav .open > a {
+	border-color: rgb(66, 139, 202); background-color: rgb(238, 238, 238);
+}
+.note-editor .nav .open > a:hover {
+	border-color: rgb(66, 139, 202); background-color: rgb(238, 238, 238);
+}
+.note-editor .nav .open > a:focus {
+	border-color: rgb(66, 139, 202); background-color: rgb(238, 238, 238);
+}
+.note-editor .nav .open > a .caret {
+	border-top-color: rgb(42, 100, 150); border-bottom-color: rgb(42, 100, 150);
+}
+.note-editor .nav .open > a:hover .caret {
+	border-top-color: rgb(42, 100, 150); border-bottom-color: rgb(42, 100, 150);
+}
+.note-editor .nav .open > a:focus .caret {
+	border-top-color: rgb(42, 100, 150); border-bottom-color: rgb(42, 100, 150);
+}
+.note-editor .nav .nav-divider {
+	margin: 9px 0px; height: 1px; overflow: hidden; background-color: rgb(229, 229, 229);
+}
+.note-editor .nav > li > a > img {
+	max-width: none;
+}
+.note-editor .nav-tabs {
+	border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.note-editor .nav-tabs > li {
+	margin-bottom: -1px; float: left;
+}
+.note-editor .nav-tabs > li > a {
+	border-radius: 4px 4px 0px 0px; border: 1px solid transparent; border-image: none; line-height: 1.4285; margin-right: 2px;
+}
+.note-editor .nav-tabs > li > a:hover {
+	border-color: rgb(238, 238, 238) rgb(238, 238, 238) rgb(221, 221, 221);
+}
+.note-editor .nav-tabs > li.active > a {
+	border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; border-image: none; color: rgb(85, 85, 85); cursor: default; background-color: rgb(255, 255, 255);
+}
+.note-editor .nav-tabs > li.active > a:hover {
+	border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; border-image: none; color: rgb(85, 85, 85); cursor: default; background-color: rgb(255, 255, 255);
+}
+.note-editor .nav-tabs > li.active > a:focus {
+	border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; border-image: none; color: rgb(85, 85, 85); cursor: default; background-color: rgb(255, 255, 255);
+}
+.note-editor .nav-tabs.nav-justified {
+	width: 100%; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .nav-tabs.nav-justified > li {
+	float: none;
+}
+.note-editor .nav-tabs.nav-justified > li > a {
+	text-align: center; margin-bottom: 5px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .nav-tabs.nav-justified > li {
+	width: 1%; display: table-cell;
+}
+.note-editor .nav-tabs.nav-justified > li > a {
+	margin-bottom: 0px;
+}
+}
+.note-editor .nav-tabs.nav-justified > li > a {
+	border-radius: 4px; margin-right: 0px;
+}
+.note-editor .nav-tabs.nav-justified > .active > a {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .nav-tabs.nav-justified > .active > a:hover {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .nav-tabs.nav-justified > .active > a:focus {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+@media all and (min-width:768px)
+{
+.note-editor .nav-tabs.nav-justified > li > a {
+	border-radius: 4px 4px 0px 0px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.note-editor .nav-tabs.nav-justified > .active > a {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .nav-tabs.nav-justified > .active > a:hover {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .nav-tabs.nav-justified > .active > a:focus {
+	border-bottom-color: rgb(255, 255, 255);
+}
+}
+.note-editor .nav-pills > li {
+	float: left;
+}
+.note-editor .nav-pills > li > a {
+	border-radius: 4px;
+}
+.note-editor .nav-pills > li + li {
+	margin-left: 2px;
+}
+.note-editor .nav-pills > li.active > a {
+	color: rgb(255, 255, 255); background-color: rgb(66, 139, 202);
+}
+.note-editor .nav-pills > li.active > a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(66, 139, 202);
+}
+.note-editor .nav-pills > li.active > a:focus {
+	color: rgb(255, 255, 255); background-color: rgb(66, 139, 202);
+}
+.note-editor .nav-pills > li.active > a .caret {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .nav-pills > li.active > a:hover .caret {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .nav-pills > li.active > a:focus .caret {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .nav-stacked > li {
+	float: none;
+}
+.note-editor .nav-stacked > li + li {
+	margin-top: 2px; margin-left: 0px;
+}
+.note-editor .nav-justified {
+	width: 100%;
+}
+.note-editor .nav-justified > li {
+	float: none;
+}
+.note-editor .nav-justified > li > a {
+	text-align: center; margin-bottom: 5px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .nav-justified > li {
+	width: 1%; display: table-cell;
+}
+.note-editor .nav-justified > li > a {
+	margin-bottom: 0px;
+}
+}
+.note-editor .nav-tabs-justified {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .nav-tabs-justified > li > a {
+	border-radius: 4px; margin-right: 0px;
+}
+.note-editor .nav-tabs-justified > .active > a {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .nav-tabs-justified > .active > a:hover {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.note-editor .nav-tabs-justified > .active > a:focus {
+	border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+@media all and (min-width:768px)
+{
+.note-editor .nav-tabs-justified > li > a {
+	border-radius: 4px 4px 0px 0px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.note-editor .nav-tabs-justified > .active > a {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .nav-tabs-justified > .active > a:hover {
+	border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .nav-tabs-justified > .active > a:focus {
+	border-bottom-color: rgb(255, 255, 255);
+}
+}
+.note-editor .tab-content > .tab-pane {
+	display: none;
+}
+.note-editor .tab-content > .active {
+	display: block;
+}
+.note-editor .nav .caret {
+	border-top-color: rgb(66, 139, 202); border-bottom-color: rgb(66, 139, 202);
+}
+.note-editor .nav a:hover .caret {
+	border-top-color: rgb(42, 100, 150); border-bottom-color: rgb(42, 100, 150);
+}
+.note-editor .nav-tabs .dropdown-menu {
+	margin-top: -1px; border-top-left-radius: 0px; border-top-right-radius: 0px;
+}
+.note-editor .navbar {
+	border: 1px solid transparent; border-image: none; margin-bottom: 20px; position: relative; z-index: 1000; min-height: 50px;
+}
+.note-editor .navbar::before {
+	display: table; content: " ";
+}
+.note-editor .navbar::after {
+	display: table; content: " ";
+}
+.note-editor .navbar::after {
+	clear: both;
+}
+.note-editor .navbar::before {
+	display: table; content: " ";
+}
+.note-editor .navbar::after {
+	display: table; content: " ";
+}
+.note-editor .navbar::after {
+	clear: both;
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar {
+	border-radius: 4px;
+}
+}
+.note-editor .navbar-header::before {
+	display: table; content: " ";
+}
+.note-editor .navbar-header::after {
+	display: table; content: " ";
+}
+.note-editor .navbar-header::after {
+	clear: both;
+}
+.note-editor .navbar-header::before {
+	display: table; content: " ";
+}
+.note-editor .navbar-header::after {
+	display: table; content: " ";
+}
+.note-editor .navbar-header::after {
+	clear: both;
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-header {
+	float: left;
+}
+}
+.note-editor .navbar-collapse {
+	padding-right: 15px; padding-left: 15px; border-top-color: transparent; border-top-width: 1px; border-top-style: solid; -ms-overflow-x: visible; max-height: 340px; box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1); -webkit-overflow-scrolling: touch;
+}
+.note-editor .navbar-collapse::before {
+	display: table; content: " ";
+}
+.note-editor .navbar-collapse::after {
+	display: table; content: " ";
+}
+.note-editor .navbar-collapse::after {
+	clear: both;
+}
+.note-editor .navbar-collapse::before {
+	display: table; content: " ";
+}
+.note-editor .navbar-collapse::after {
+	display: table; content: " ";
+}
+.note-editor .navbar-collapse::after {
+	clear: both;
+}
+.note-editor .navbar-collapse.in {
+	-ms-overflow-y: auto;
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-collapse {
+	width: auto; border-top-color: currentColor; border-top-width: 0px; border-top-style: none; box-shadow: none;
+}
+.note-editor .navbar-collapse.collapse {
+	height: auto !important; overflow: visible !important; padding-bottom: 0px; display: block !important;
+}
+.note-editor .navbar-collapse.in {
+	-ms-overflow-y: visible;
+}
+.note-editor .navbar-collapse :first-child.navbar-nav.navbar-left {
+	margin-left: -15px;
+}
+.note-editor .navbar-collapse :last-child.navbar-nav.navbar-right {
+	margin-right: -15px;
+}
+.note-editor .navbar-collapse :last-child.navbar-text {
+	margin-right: 0px;
+}
+}
+.note-editor .container > .navbar-header {
+	margin-right: -15px; margin-left: -15px;
+}
+.note-editor .container > .navbar-collapse {
+	margin-right: -15px; margin-left: -15px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .container > .navbar-header {
+	margin-right: 0px; margin-left: 0px;
+}
+.note-editor .container > .navbar-collapse {
+	margin-right: 0px; margin-left: 0px;
+}
+}
+.note-editor .navbar-static-top {
+	border-width: 0px 0px 1px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-static-top {
+	border-radius: 0px;
+}
+}
+.note-editor .navbar-fixed-top {
+	border-width: 0px 0px 1px; left: 0px; right: 0px; position: fixed;
+}
+.note-editor .navbar-fixed-bottom {
+	border-width: 0px 0px 1px; left: 0px; right: 0px; position: fixed;
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-fixed-top {
+	border-radius: 0px;
+}
+.note-editor .navbar-fixed-bottom {
+	border-radius: 0px;
+}
+}
+.note-editor .navbar-fixed-top {
+	top: 0px; z-index: 1030;
+}
+.note-editor .navbar-fixed-bottom {
+	bottom: 0px; margin-bottom: 0px;
+}
+.note-editor .navbar-brand {
+	padding: 15px; line-height: 20px; font-size: 18px; float: left;
+}
+.note-editor .navbar-brand:hover {
+	text-decoration: none;
+}
+.note-editor .navbar-brand:focus {
+	text-decoration: none;
+}
+@media all and (min-width:768px)
+{
+.navbar > .container .note-editor .navbar-brand {
+	margin-left: -15px;
+}
+}
+.note-editor .navbar-toggle {
+	padding: 9px 10px; border-radius: 4px; border: 1px solid transparent; border-image: none; margin-top: 8px; margin-right: 15px; margin-bottom: 8px; float: right; position: relative; background-color: transparent;
+}
+.note-editor .navbar-toggle .icon-bar {
+	border-radius: 1px; width: 22px; height: 2px; display: block;
+}
+.note-editor .navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-toggle {
+	display: none;
+}
+}
+.note-editor .navbar-nav {
+	margin: 7.5px -15px;
+}
+.note-editor .navbar-nav > li > a {
+	line-height: 20px; padding-top: 10px; padding-bottom: 10px;
+}
+@media all and (max-width:767px)
+{
+.note-editor .navbar-nav .open .dropdown-menu {
+	border: 0px currentColor; border-image: none; width: auto; margin-top: 0px; float: none; position: static; box-shadow: none; background-color: transparent;
+}
+.note-editor .navbar-nav .open .dropdown-menu > li > a {
+	padding: 5px 15px 5px 25px;
+}
+.note-editor .navbar-nav .open .dropdown-menu .dropdown-header {
+	padding: 5px 15px 5px 25px;
+}
+.note-editor .navbar-nav .open .dropdown-menu > li > a {
+	line-height: 20px;
+}
+.note-editor .navbar-nav .open .dropdown-menu > li > a:hover {
+	background-image: none;
+}
+.note-editor .navbar-nav .open .dropdown-menu > li > a:focus {
+	background-image: none;
+}
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-nav {
+	margin: 0px; float: left;
+}
+.note-editor .navbar-nav > li {
+	float: left;
+}
+.note-editor .navbar-nav > li > a {
+	padding-top: 15px; padding-bottom: 15px;
+}
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-left {
+	float: left !important;
+}
+.note-editor .navbar-right {
+	float: right !important;
+}
+}
+.note-editor .navbar-form {
+	margin: 8px -15px; padding: 10px 15px; border-top-color: transparent; border-bottom-color: transparent; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1), 0px 1px 0px rgba(255,255,255,0.1); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-form .form-group {
+	margin-bottom: 0px; vertical-align: middle; display: inline-block;
+}
+.note-editor .navbar-form .form-control {
+	display: inline-block;
+}
+.note-editor .navbar-form .radio {
+	padding-left: 0px; margin-top: 0px; margin-bottom: 0px; display: inline-block;
+}
+.note-editor .navbar-form .checkbox {
+	padding-left: 0px; margin-top: 0px; margin-bottom: 0px; display: inline-block;
+}
+.note-editor .navbar-form .radio input[type='radio'] {
+	margin-left: 0px; float: none;
+}
+.note-editor .navbar-form .checkbox input[type='checkbox'] {
+	margin-left: 0px; float: none;
+}
+}
+@media all and (max-width:767px)
+{
+.note-editor .navbar-form .form-group {
+	margin-bottom: 5px;
+}
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-form {
+	border: 0px currentColor; border-image: none; width: auto; padding-top: 0px; padding-bottom: 0px; margin-right: 0px; margin-left: 0px; box-shadow: none; -webkit-box-shadow: none;
+}
+}
+.note-editor .navbar-nav > li > .dropdown-menu {
+	margin-top: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px;
+}
+.note-editor .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+	border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;
+}
+.note-editor .navbar-nav.pull-right > li > .dropdown-menu {
+	left: auto; right: 0px;
+}
+.note-editor .navbar-nav > li > .dropdown-menu.pull-right {
+	left: auto; right: 0px;
+}
+.note-editor .navbar-btn {
+	margin-top: 8px; margin-bottom: 8px;
+}
+.note-editor .navbar-text {
+	margin-top: 15px; margin-bottom: 15px; float: left;
+}
+@media all and (min-width:768px)
+{
+.note-editor .navbar-text {
+	margin-right: 15px; margin-left: 15px;
+}
+}
+.note-editor .navbar-default {
+	border-color: rgb(231, 231, 231); background-color: rgb(248, 248, 248);
+}
+.note-editor .navbar-default .navbar-brand {
+	color: rgb(119, 119, 119);
+}
+.note-editor .navbar-default .navbar-brand:hover {
+	color: rgb(94, 94, 94); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-brand:focus {
+	color: rgb(94, 94, 94); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-text {
+	color: rgb(119, 119, 119);
+}
+.note-editor .navbar-default .navbar-nav > li > a {
+	color: rgb(119, 119, 119);
+}
+.note-editor .navbar-default .navbar-nav > li > a:hover {
+	color: rgb(51, 51, 51); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-nav > li > a:focus {
+	color: rgb(51, 51, 51); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-nav > .active > a {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav > .active > a:hover {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav > .active > a:focus {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav > .disabled > a {
+	color: rgb(204, 204, 204); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-nav > .disabled > a:hover {
+	color: rgb(204, 204, 204); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-nav > .disabled > a:focus {
+	color: rgb(204, 204, 204); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-toggle {
+	border-color: rgb(221, 221, 221);
+}
+.note-editor .navbar-default .navbar-toggle:hover {
+	background-color: rgb(221, 221, 221);
+}
+.note-editor .navbar-default .navbar-toggle:focus {
+	background-color: rgb(221, 221, 221);
+}
+.note-editor .navbar-default .navbar-toggle .icon-bar {
+	background-color: rgb(204, 204, 204);
+}
+.note-editor .navbar-default .navbar-collapse {
+	border-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-form {
+	border-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav > .dropdown > a:hover .caret {
+	border-top-color: rgb(51, 51, 51); border-bottom-color: rgb(51, 51, 51);
+}
+.note-editor .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+	border-top-color: rgb(51, 51, 51); border-bottom-color: rgb(51, 51, 51);
+}
+.note-editor .navbar-default .navbar-nav > .open > a {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav > .open > a:hover {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav > .open > a:focus {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav > .open > a .caret {
+	border-top-color: rgb(85, 85, 85); border-bottom-color: rgb(85, 85, 85);
+}
+.note-editor .navbar-default .navbar-nav > .open > a:hover .caret {
+	border-top-color: rgb(85, 85, 85); border-bottom-color: rgb(85, 85, 85);
+}
+.note-editor .navbar-default .navbar-nav > .open > a:focus .caret {
+	border-top-color: rgb(85, 85, 85); border-bottom-color: rgb(85, 85, 85);
+}
+.note-editor .navbar-default .navbar-nav > .dropdown > a .caret {
+	border-top-color: rgb(119, 119, 119); border-bottom-color: rgb(119, 119, 119);
+}
+@media all and (max-width:767px)
+{
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: rgb(119, 119, 119);
+}
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+	color: rgb(51, 51, 51); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: rgb(51, 51, 51); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > .active > a {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+	color: rgb(85, 85, 85); background-color: rgb(231, 231, 231);
+}
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a {
+	color: rgb(204, 204, 204); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover {
+	color: rgb(204, 204, 204); background-color: transparent;
+}
+.note-editor .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+	color: rgb(204, 204, 204); background-color: transparent;
+}
+}
+.note-editor .navbar-default .navbar-link {
+	color: rgb(119, 119, 119);
+}
+.note-editor .navbar-default .navbar-link:hover {
+	color: rgb(51, 51, 51);
+}
+.note-editor .navbar-inverse {
+	border-color: rgb(8, 8, 8); background-color: rgb(34, 34, 34);
+}
+.note-editor .navbar-inverse .navbar-brand {
+	color: rgb(153, 153, 153);
+}
+.note-editor .navbar-inverse .navbar-brand:hover {
+	color: rgb(255, 255, 255); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-brand:focus {
+	color: rgb(255, 255, 255); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-text {
+	color: rgb(153, 153, 153);
+}
+.note-editor .navbar-inverse .navbar-nav > li > a {
+	color: rgb(153, 153, 153);
+}
+.note-editor .navbar-inverse .navbar-nav > li > a:hover {
+	color: rgb(255, 255, 255); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-nav > li > a:focus {
+	color: rgb(255, 255, 255); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-nav > .active > a {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav > .active > a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav > .active > a:focus {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav > .disabled > a {
+	color: rgb(68, 68, 68); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-nav > .disabled > a:hover {
+	color: rgb(68, 68, 68); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-nav > .disabled > a:focus {
+	color: rgb(68, 68, 68); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-toggle {
+	border-color: rgb(51, 51, 51);
+}
+.note-editor .navbar-inverse .navbar-toggle:hover {
+	background-color: rgb(51, 51, 51);
+}
+.note-editor .navbar-inverse .navbar-toggle:focus {
+	background-color: rgb(51, 51, 51);
+}
+.note-editor .navbar-inverse .navbar-toggle .icon-bar {
+	background-color: rgb(255, 255, 255);
+}
+.note-editor .navbar-inverse .navbar-collapse {
+	border-color: rgb(16, 16, 16);
+}
+.note-editor .navbar-inverse .navbar-form {
+	border-color: rgb(16, 16, 16);
+}
+.note-editor .navbar-inverse .navbar-nav > .open > a {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav > .open > a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav > .open > a:focus {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .navbar-inverse .navbar-nav > .dropdown > a .caret {
+	border-top-color: rgb(153, 153, 153); border-bottom-color: rgb(153, 153, 153);
+}
+.note-editor .navbar-inverse .navbar-nav > .open > a .caret {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .navbar-inverse .navbar-nav > .open > a:hover .caret {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);
+}
+.note-editor .navbar-inverse .navbar-nav > .open > a:focus .caret {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);
+}
+@media all and (max-width:767px)
+{
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+	border-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+	color: rgb(153, 153, 153);
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+	color: rgb(255, 255, 255); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: rgb(255, 255, 255); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+	color: rgb(255, 255, 255); background-color: rgb(8, 8, 8);
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a {
+	color: rgb(68, 68, 68); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover {
+	color: rgb(68, 68, 68); background-color: transparent;
+}
+.note-editor .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+	color: rgb(68, 68, 68); background-color: transparent;
+}
+}
+.note-editor .navbar-inverse .navbar-link {
+	color: rgb(153, 153, 153);
+}
+.note-editor .navbar-inverse .navbar-link:hover {
+	color: rgb(255, 255, 255);
+}
+.note-editor .breadcrumb {
+	list-style: none; padding: 8px 15px; border-radius: 4px; margin-bottom: 20px; background-color: rgb(245, 245, 245);
+}
+.note-editor .breadcrumb > li {
+	display: inline-block;
+}
+.note-editor .breadcrumb > li + li::before {
+	padding: 0px 5px; color: rgb(204, 204, 204); content: "/\00a0";
+}
+.note-editor .breadcrumb > .active {
+	color: rgb(153, 153, 153);
+}
+.note-editor .pagination {
+	margin: 20px 0px; border-radius: 4px; padding-left: 0px; display: inline-block;
+}
+.note-editor .pagination > li {
+	display: inline;
+}
+.note-editor .pagination > li > a {
+	padding: 6px 12px; border: 1px solid rgb(221, 221, 221); border-image: none; line-height: 1.4285; text-decoration: none; margin-left: -1px; float: left; position: relative; background-color: rgb(255, 255, 255);
+}
+.note-editor .pagination > li > span {
+	padding: 6px 12px; border: 1px solid rgb(221, 221, 221); border-image: none; line-height: 1.4285; text-decoration: none; margin-left: -1px; float: left; position: relative; background-color: rgb(255, 255, 255);
+}
+.note-editor .pagination > li:first-child > a {
+	margin-left: 0px; border-top-left-radius: 4px; border-bottom-left-radius: 4px;
+}
+.note-editor .pagination > li:first-child > span {
+	margin-left: 0px; border-top-left-radius: 4px; border-bottom-left-radius: 4px;
+}
+.note-editor .pagination > li:last-child > a {
+	border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+}
+.note-editor .pagination > li:last-child > span {
+	border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+}
+.note-editor .pagination > li > a:hover {
+	background-color: rgb(238, 238, 238);
+}
+.note-editor .pagination > li > span:hover {
+	background-color: rgb(238, 238, 238);
+}
+.note-editor .pagination > li > a:focus {
+	background-color: rgb(238, 238, 238);
+}
+.note-editor .pagination > li > span:focus {
+	background-color: rgb(238, 238, 238);
+}
+.note-editor .pagination > .active > a {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; cursor: default; background-color: rgb(66, 139, 202);
+}
+.note-editor .pagination > .active > span {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; cursor: default; background-color: rgb(66, 139, 202);
+}
+.note-editor .pagination > .active > a:hover {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; cursor: default; background-color: rgb(66, 139, 202);
+}
+.note-editor .pagination > .active > span:hover {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; cursor: default; background-color: rgb(66, 139, 202);
+}
+.note-editor .pagination > .active > a:focus {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; cursor: default; background-color: rgb(66, 139, 202);
+}
+.note-editor .pagination > .active > span:focus {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; cursor: default; background-color: rgb(66, 139, 202);
+}
+.note-editor .pagination > .disabled > span {
+	border-color: rgb(221, 221, 221); color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pagination > .disabled > span:hover {
+	border-color: rgb(221, 221, 221); color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pagination > .disabled > span:focus {
+	border-color: rgb(221, 221, 221); color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pagination > .disabled > a {
+	border-color: rgb(221, 221, 221); color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pagination > .disabled > a:hover {
+	border-color: rgb(221, 221, 221); color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pagination > .disabled > a:focus {
+	border-color: rgb(221, 221, 221); color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pagination-lg > li > a {
+	padding: 10px 16px; font-size: 18px;
+}
+.note-editor .pagination-lg > li > span {
+	padding: 10px 16px; font-size: 18px;
+}
+.note-editor .pagination-lg > li:first-child > a {
+	border-top-left-radius: 6px; border-bottom-left-radius: 6px;
+}
+.note-editor .pagination-lg > li:first-child > span {
+	border-top-left-radius: 6px; border-bottom-left-radius: 6px;
+}
+.note-editor .pagination-lg > li:last-child > a {
+	border-top-right-radius: 6px; border-bottom-right-radius: 6px;
+}
+.note-editor .pagination-lg > li:last-child > span {
+	border-top-right-radius: 6px; border-bottom-right-radius: 6px;
+}
+.note-editor .pagination-sm > li > a {
+	padding: 5px 10px; font-size: 12px;
+}
+.note-editor .pagination-sm > li > span {
+	padding: 5px 10px; font-size: 12px;
+}
+.note-editor .pagination-sm > li:first-child > a {
+	border-top-left-radius: 3px; border-bottom-left-radius: 3px;
+}
+.note-editor .pagination-sm > li:first-child > span {
+	border-top-left-radius: 3px; border-bottom-left-radius: 3px;
+}
+.note-editor .pagination-sm > li:last-child > a {
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+}
+.note-editor .pagination-sm > li:last-child > span {
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+}
+.note-editor .pager {
+	list-style: none; margin: 20px 0px; text-align: center; padding-left: 0px;
+}
+.note-editor .pager::before {
+	display: table; content: " ";
+}
+.note-editor .pager::after {
+	display: table; content: " ";
+}
+.note-editor .pager::after {
+	clear: both;
+}
+.note-editor .pager::before {
+	display: table; content: " ";
+}
+.note-editor .pager::after {
+	display: table; content: " ";
+}
+.note-editor .pager::after {
+	clear: both;
+}
+.note-editor .pager li {
+	display: inline;
+}
+.note-editor .pager li > a {
+	padding: 5px 14px; border-radius: 15px; border: 1px solid rgb(221, 221, 221); border-image: none; display: inline-block; background-color: rgb(255, 255, 255);
+}
+.note-editor .pager li > span {
+	padding: 5px 14px; border-radius: 15px; border: 1px solid rgb(221, 221, 221); border-image: none; display: inline-block; background-color: rgb(255, 255, 255);
+}
+.note-editor .pager li > a:hover {
+	text-decoration: none; background-color: rgb(238, 238, 238);
+}
+.note-editor .pager li > a:focus {
+	text-decoration: none; background-color: rgb(238, 238, 238);
+}
+.note-editor .pager .next > a {
+	float: right;
+}
+.note-editor .pager .next > span {
+	float: right;
+}
+.note-editor .pager .previous > a {
+	float: left;
+}
+.note-editor .pager .previous > span {
+	float: left;
+}
+.note-editor .pager .disabled > a {
+	color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pager .disabled > a:hover {
+	color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pager .disabled > a:focus {
+	color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .pager .disabled > span {
+	color: rgb(153, 153, 153); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.note-editor .label {
+	padding: 0.2em 0.6em 0.3em; border-radius: 0.25em; text-align: center; color: rgb(255, 255, 255); line-height: 1; font-size: 75%; font-weight: bold; vertical-align: baseline; display: inline; white-space: nowrap;
+}
+.note-editor [href].label:hover {
+	color: rgb(255, 255, 255); text-decoration: none; cursor: pointer;
+}
+.note-editor [href].label:focus {
+	color: rgb(255, 255, 255); text-decoration: none; cursor: pointer;
+}
+.note-editor :empty.label {
+	display: none;
+}
+.note-editor .label-default {
+	background-color: rgb(153, 153, 153);
+}
+.note-editor [href].label-default:hover {
+	background-color: rgb(128, 128, 128);
+}
+.note-editor [href].label-default:focus {
+	background-color: rgb(128, 128, 128);
+}
+.note-editor .label-primary {
+	background-color: rgb(66, 139, 202);
+}
+.note-editor [href].label-primary:hover {
+	background-color: rgb(48, 113, 169);
+}
+.note-editor [href].label-primary:focus {
+	background-color: rgb(48, 113, 169);
+}
+.note-editor .label-success {
+	background-color: rgb(92, 184, 92);
+}
+.note-editor [href].label-success:hover {
+	background-color: rgb(68, 157, 68);
+}
+.note-editor [href].label-success:focus {
+	background-color: rgb(68, 157, 68);
+}
+.note-editor .label-info {
+	background-color: rgb(91, 192, 222);
+}
+.note-editor [href].label-info:hover {
+	background-color: rgb(49, 176, 213);
+}
+.note-editor [href].label-info:focus {
+	background-color: rgb(49, 176, 213);
+}
+.note-editor .label-warning {
+	background-color: rgb(240, 173, 78);
+}
+.note-editor [href].label-warning:hover {
+	background-color: rgb(236, 151, 31);
+}
+.note-editor [href].label-warning:focus {
+	background-color: rgb(236, 151, 31);
+}
+.note-editor .label-danger {
+	background-color: rgb(217, 83, 79);
+}
+.note-editor [href].label-danger:hover {
+	background-color: rgb(201, 48, 44);
+}
+.note-editor [href].label-danger:focus {
+	background-color: rgb(201, 48, 44);
+}
+.note-editor .badge {
+	padding: 3px 7px; border-radius: 10px; text-align: center; color: rgb(255, 255, 255); line-height: 1; font-size: 12px; font-weight: bold; vertical-align: baseline; display: inline-block; white-space: nowrap; min-width: 10px; background-color: rgb(153, 153, 153);
+}
+.note-editor :empty.badge {
+	display: none;
+}
+.note-editor a.badge:hover {
+	color: rgb(255, 255, 255); text-decoration: none; cursor: pointer;
+}
+.note-editor a.badge:focus {
+	color: rgb(255, 255, 255); text-decoration: none; cursor: pointer;
+}
+.note-editor .btn .badge {
+	top: -1px; position: relative;
+}
+.note-editor a.list-group-item.active > .badge {
+	color: rgb(66, 139, 202); background-color: rgb(255, 255, 255);
+}
+.note-editor .nav-pills > .active > a > .badge {
+	color: rgb(66, 139, 202); background-color: rgb(255, 255, 255);
+}
+.note-editor .nav-pills > li > a > .badge {
+	margin-left: 3px;
+}
+.note-editor .jumbotron {
+	padding: 30px; color: inherit; line-height: 2.1428; font-size: 21px; font-weight: 200; margin-bottom: 30px; background-color: rgb(238, 238, 238);
+}
+.note-editor .jumbotron h1 {
+	color: inherit; line-height: 1;
+}
+.note-editor .jumbotron p {
+	line-height: 1.4;
+}
+.container .note-editor .jumbotron {
+	border-radius: 6px;
+}
+@media screen and (min-width:768px)
+{
+.note-editor .jumbotron {
+	padding-top: 48px; padding-bottom: 48px;
+}
+.container .note-editor .jumbotron {
+	padding-right: 60px; padding-left: 60px;
+}
+.note-editor .jumbotron h1 {
+	font-size: 63px;
+}
+}
+.note-editor .thumbnail {
+	padding: 4px; border-radius: 4px; border: 1px solid rgb(221, 221, 221); transition:0.2s ease-in-out; border-image: none; height: auto; line-height: 1.4285; margin-bottom: 20px; display: block; max-width: 100%; background-color: rgb(255, 255, 255); -webkit-transition: all 0.2s ease-in-out;
+}
+.note-editor .thumbnail > img {
+	height: auto; display: block; max-width: 100%;
+}
+.note-editor a.thumbnail:hover {
+	border-color: rgb(66, 139, 202);
+}
+.note-editor a.thumbnail:focus {
+	border-color: rgb(66, 139, 202);
+}
+.note-editor a.thumbnail.active {
+	border-color: rgb(66, 139, 202);
+}
+.note-editor .thumbnail > img {
+	margin-right: auto; margin-left: auto;
+}
+.note-editor .thumbnail .caption {
+	padding: 9px; color: rgb(51, 51, 51);
+}
+.note-editor .alert {
+	padding: 15px; border-radius: 4px; border: 1px solid transparent; border-image: none; margin-bottom: 20px;
+}
+.note-editor .alert h4 {
+	color: inherit; margin-top: 0px;
+}
+.note-editor .alert .alert-link {
+	font-weight: bold;
+}
+.note-editor .alert > p {
+	margin-bottom: 0px;
+}
+.note-editor .alert > ul {
+	margin-bottom: 0px;
+}
+.note-editor .alert > p + p {
+	margin-top: 5px;
+}
+.note-editor .alert-dismissable {
+	padding-right: 35px;
+}
+.note-editor .alert-dismissable .close {
+	top: -2px; right: -21px; color: inherit; position: relative;
+}
+.note-editor .alert-success {
+	border-color: rgb(214, 233, 198); color: rgb(70, 136, 71); background-color: rgb(223, 240, 216);
+}
+.note-editor .alert-success hr {
+	border-top-color: rgb(201, 226, 179);
+}
+.note-editor .alert-success .alert-link {
+	color: rgb(53, 102, 53);
+}
+.note-editor .alert-info {
+	border-color: rgb(188, 232, 241); color: rgb(58, 135, 173); background-color: rgb(217, 237, 247);
+}
+.note-editor .alert-info hr {
+	border-top-color: rgb(166, 225, 236);
+}
+.note-editor .alert-info .alert-link {
+	color: rgb(45, 105, 135);
+}
+.note-editor .alert-warning {
+	border-color: rgb(250, 235, 204); color: rgb(192, 152, 83); background-color: rgb(252, 248, 227);
+}
+.note-editor .alert-warning hr {
+	border-top-color: rgb(247, 225, 181);
+}
+.note-editor .alert-warning .alert-link {
+	color: rgb(164, 126, 60);
+}
+.note-editor .alert-danger {
+	border-color: rgb(235, 204, 209); color: rgb(185, 74, 72); background-color: rgb(242, 222, 222);
+}
+.note-editor .alert-danger hr {
+	border-top-color: rgb(228, 185, 192);
+}
+.note-editor .alert-danger .alert-link {
+	color: rgb(149, 59, 57);
+}
+.note-editor .progress {
+	border-radius: 4px; height: 20px; overflow: hidden; margin-bottom: 20px; box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1); background-color: rgb(245, 245, 245); -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.note-editor .progress-bar {
+	transition:width 0.6s; width: 0%; height: 100%; text-align: center; color: rgb(255, 255, 255); line-height: 20px; font-size: 12px; float: left; box-shadow: inset 0px -1px 0px rgba(0,0,0,0.15); background-color: rgb(66, 139, 202); -webkit-transition: width 0.6s ease; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+.note-editor .progress-striped .progress-bar {
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-size: 40px 40px;
+}
+.note-editor .progress.active .progress-bar {
+	animation:progress-bar-stripes 2s linear infinite; -webkit-animation: progress-bar-stripes 2s linear infinite; -moz-animation: progress-bar-stripes 2s linear infinite; -o-animation: progress-bar-stripes 2s linear infinite;
+}
+.note-editor .progress-bar-success {
+	background-color: rgb(92, 184, 92);
+}
+.progress-striped .note-editor .progress-bar-success {
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.note-editor .progress-bar-info {
+	background-color: rgb(91, 192, 222);
+}
+.progress-striped .note-editor .progress-bar-info {
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.note-editor .progress-bar-warning {
+	background-color: rgb(240, 173, 78);
+}
+.progress-striped .note-editor .progress-bar-warning {
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.note-editor .progress-bar-danger {
+	background-color: rgb(217, 83, 79);
+}
+.progress-striped .note-editor .progress-bar-danger {
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.note-editor .media {
+	overflow: hidden; -ms-zoom: 1;
+}
+.note-editor .media-body {
+	overflow: hidden; -ms-zoom: 1;
+}
+.note-editor .media {
+	margin-top: 15px;
+}
+.note-editor .media .media {
+	margin-top: 15px;
+}
+.note-editor :first-child.media {
+	margin-top: 0px;
+}
+.note-editor .media-object {
+	display: block;
+}
+.note-editor .media-heading {
+	margin: 0px 0px 5px;
+}
+.note-editor .media > .pull-left {
+	margin-right: 10px;
+}
+.note-editor .media > .pull-right {
+	margin-left: 10px;
+}
+.note-editor .media-list {
+	list-style: none; padding-left: 0px;
+}
+.note-editor .list-group {
+	padding-left: 0px; margin-bottom: 20px;
+}
+.note-editor .list-group-item {
+	padding: 10px 15px; border: 1px solid rgb(221, 221, 221); border-image: none; margin-bottom: -1px; display: block; position: relative; background-color: rgb(255, 255, 255);
+}
+.note-editor :first-child.list-group-item {
+	border-top-left-radius: 4px; border-top-right-radius: 4px;
+}
+.note-editor :last-child.list-group-item {
+	margin-bottom: 0px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;
+}
+.note-editor .list-group-item > .badge {
+	float: right;
+}
+.note-editor .list-group-item > .badge + .badge {
+	margin-right: 5px;
+}
+.note-editor a.list-group-item {
+	color: rgb(85, 85, 85);
+}
+.note-editor a.list-group-item .list-group-item-heading {
+	color: rgb(51, 51, 51);
+}
+.note-editor a.list-group-item:hover {
+	text-decoration: none; background-color: rgb(245, 245, 245);
+}
+.note-editor a.list-group-item:focus {
+	text-decoration: none; background-color: rgb(245, 245, 245);
+}
+.note-editor a.list-group-item.active {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; background-color: rgb(66, 139, 202);
+}
+.note-editor a.list-group-item.active:hover {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; background-color: rgb(66, 139, 202);
+}
+.note-editor a.list-group-item.active:focus {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); z-index: 2; background-color: rgb(66, 139, 202);
+}
+.note-editor a.list-group-item.active .list-group-item-heading {
+	color: inherit;
+}
+.note-editor a.list-group-item.active:hover .list-group-item-heading {
+	color: inherit;
+}
+.note-editor a.list-group-item.active:focus .list-group-item-heading {
+	color: inherit;
+}
+.note-editor a.list-group-item.active .list-group-item-text {
+	color: rgb(225, 237, 247);
+}
+.note-editor a.list-group-item.active:hover .list-group-item-text {
+	color: rgb(225, 237, 247);
+}
+.note-editor a.list-group-item.active:focus .list-group-item-text {
+	color: rgb(225, 237, 247);
+}
+.note-editor .list-group-item-heading {
+	margin-top: 0px; margin-bottom: 5px;
+}
+.note-editor .list-group-item-text {
+	line-height: 1.3; margin-bottom: 0px;
+}
+.note-editor .panel {
+	border-radius: 4px; border: 1px solid transparent; border-image: none; margin-bottom: 20px; box-shadow: 0px 1px 1px rgba(0,0,0,0.05); background-color: rgb(255, 255, 255); -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.note-editor .panel-body {
+	padding: 15px;
+}
+.note-editor .panel-body::before {
+	display: table; content: " ";
+}
+.note-editor .panel-body::after {
+	display: table; content: " ";
+}
+.note-editor .panel-body::after {
+	clear: both;
+}
+.note-editor .panel-body::before {
+	display: table; content: " ";
+}
+.note-editor .panel-body::after {
+	display: table; content: " ";
+}
+.note-editor .panel-body::after {
+	clear: both;
+}
+.note-editor .panel > .list-group {
+	margin-bottom: 0px;
+}
+.note-editor .panel > .list-group .list-group-item {
+	border-width: 1px 0px;
+}
+.note-editor .panel > .list-group :first-child.list-group-item {
+	border-top-left-radius: 0px; border-top-right-radius: 0px;
+}
+.note-editor .panel > .list-group :last-child.list-group-item {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel-heading + .list-group :first-child.list-group-item {
+	border-top-width: 0px;
+}
+.note-editor .panel > .table {
+	margin-bottom: 0px;
+}
+.note-editor .panel > .table-responsive {
+	margin-bottom: 0px;
+}
+.note-editor .panel > .panel-body + .table {
+	border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .panel > .panel-body + .table-responsive {
+	border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .panel > .table-bordered {
+	border: 0px currentColor; border-image: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered {
+	border: 0px currentColor; border-image: none;
+}
+.note-editor .panel > .table-bordered > thead > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > thead > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-bordered > tbody > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-bordered > tfoot > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-bordered > thead > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > thead > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-bordered > tbody > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-bordered > tfoot > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.note-editor .panel > .table-bordered > thead > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > thead > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-bordered > tbody > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-bordered > tfoot > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-bordered > thead > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > thead > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-bordered > tbody > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-bordered > tfoot > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.note-editor .panel > .table-bordered > thead > tr:last-child > th {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > thead > tr:last-child > th {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-bordered > tbody > tr:last-child > th {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-bordered > tfoot > tr:last-child > th {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-bordered > thead > tr:last-child > td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > thead > tr:last-child > td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-bordered > tbody > tr:last-child > td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-bordered > tfoot > tr:last-child > td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel-heading {
+	padding: 10px 15px; border-bottom-color: transparent; border-bottom-width: 1px; border-bottom-style: solid; border-top-left-radius: 3px; border-top-right-radius: 3px;
+}
+.note-editor .panel-title {
+	font-size: 16px; margin-top: 0px; margin-bottom: 0px;
+}
+.note-editor .panel-title > a {
+	color: inherit;
+}
+.note-editor .panel-footer {
+	padding: 10px 15px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: rgb(245, 245, 245);
+}
+.note-editor .panel-group .panel {
+	border-radius: 4px; overflow: hidden; margin-bottom: 0px;
+}
+.note-editor .panel-group .panel + .panel {
+	margin-top: 5px;
+}
+.note-editor .panel-group .panel-heading {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.note-editor .panel-group .panel-heading + .panel-collapse .panel-body {
+	border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.note-editor .panel-group .panel-footer {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.note-editor .panel-group .panel-footer + .panel-collapse .panel-body {
+	border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.note-editor .panel-default {
+	border-color: rgb(221, 221, 221);
+}
+.note-editor .panel-default > .panel-heading {
+	border-color: rgb(221, 221, 221); color: rgb(51, 51, 51); background-color: rgb(245, 245, 245);
+}
+.note-editor .panel-default > .panel-heading + .panel-collapse .panel-body {
+	border-top-color: rgb(221, 221, 221);
+}
+.note-editor .panel-default > .panel-footer + .panel-collapse .panel-body {
+	border-bottom-color: rgb(221, 221, 221);
+}
+.note-editor .panel-primary {
+	border-color: rgb(66, 139, 202);
+}
+.note-editor .panel-primary > .panel-heading {
+	border-color: rgb(66, 139, 202); color: rgb(255, 255, 255); background-color: rgb(66, 139, 202);
+}
+.note-editor .panel-primary > .panel-heading + .panel-collapse .panel-body {
+	border-top-color: rgb(66, 139, 202);
+}
+.note-editor .panel-primary > .panel-footer + .panel-collapse .panel-body {
+	border-bottom-color: rgb(66, 139, 202);
+}
+.note-editor .panel-success {
+	border-color: rgb(214, 233, 198);
+}
+.note-editor .panel-success > .panel-heading {
+	border-color: rgb(214, 233, 198); color: rgb(70, 136, 71); background-color: rgb(223, 240, 216);
+}
+.note-editor .panel-success > .panel-heading + .panel-collapse .panel-body {
+	border-top-color: rgb(214, 233, 198);
+}
+.note-editor .panel-success > .panel-footer + .panel-collapse .panel-body {
+	border-bottom-color: rgb(214, 233, 198);
+}
+.note-editor .panel-warning {
+	border-color: rgb(250, 235, 204);
+}
+.note-editor .panel-warning > .panel-heading {
+	border-color: rgb(250, 235, 204); color: rgb(192, 152, 83); background-color: rgb(252, 248, 227);
+}
+.note-editor .panel-warning > .panel-heading + .panel-collapse .panel-body {
+	border-top-color: rgb(250, 235, 204);
+}
+.note-editor .panel-warning > .panel-footer + .panel-collapse .panel-body {
+	border-bottom-color: rgb(250, 235, 204);
+}
+.note-editor .panel-danger {
+	border-color: rgb(235, 204, 209);
+}
+.note-editor .panel-danger > .panel-heading {
+	border-color: rgb(235, 204, 209); color: rgb(185, 74, 72); background-color: rgb(242, 222, 222);
+}
+.note-editor .panel-danger > .panel-heading + .panel-collapse .panel-body {
+	border-top-color: rgb(235, 204, 209);
+}
+.note-editor .panel-danger > .panel-footer + .panel-collapse .panel-body {
+	border-bottom-color: rgb(235, 204, 209);
+}
+.note-editor .panel-info {
+	border-color: rgb(188, 232, 241);
+}
+.note-editor .panel-info > .panel-heading {
+	border-color: rgb(188, 232, 241); color: rgb(58, 135, 173); background-color: rgb(217, 237, 247);
+}
+.note-editor .panel-info > .panel-heading + .panel-collapse .panel-body {
+	border-top-color: rgb(188, 232, 241);
+}
+.note-editor .panel-info > .panel-footer + .panel-collapse .panel-body {
+	border-bottom-color: rgb(188, 232, 241);
+}
+.note-editor .well {
+	padding: 19px; border-radius: 4px; border: 1px solid rgb(227, 227, 227); border-image: none; margin-bottom: 20px; min-height: 20px; box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05); background-color: rgb(245, 245, 245); -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.note-editor .well blockquote {
+	border-color: rgba(0, 0, 0, 0.15);
+}
+.note-editor .well-lg {
+	padding: 24px; border-radius: 6px;
+}
+.note-editor .well-sm {
+	padding: 9px; border-radius: 3px;
+}
+.note-editor .close {
+	color: rgb(0, 0, 0); line-height: 1; font-size: 21px; font-weight: bold; float: right; opacity: 0.2; text-shadow: 0px 1px 0px #ffffff;
+}
+.note-editor .close:hover {
+	color: rgb(0, 0, 0); text-decoration: none; cursor: pointer; opacity: 0.5;
+}
+.note-editor .close:focus {
+	color: rgb(0, 0, 0); text-decoration: none; cursor: pointer; opacity: 0.5;
+}
+button.note-editor .close {
+	background: none; padding: 0px; border: 0px currentColor; border-image: none; cursor: pointer; -webkit-appearance: none;
+}
+.modal-open {
+	overflow: hidden;
+}
+.modal {
+	left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: auto; display: none; position: fixed; z-index: 1040; -ms-overflow-y: scroll;
+}
+.modal.fade .modal-dialog {
+	transition:transform 0.3s ease-out; transform: translate(0px, -25%); -webkit-transition: -webkit-transform 0.3s ease-out; -webkit-transform: translate(0, -25%); -moz-transition: -moz-transform 0.3s ease-out; -o-transition: -o-transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+	transform: translate(0px, 0px); -webkit-transform: translate(0, 0);
+}
+.modal-dialog {
+	padding: 10px; width: auto; margin-right: auto; margin-left: auto; z-index: 1050;
+}
+.modal-content {
+	border-radius: 6px; border: 1px solid rgba(0, 0, 0, 0.2); border-image: none; position: relative; box-shadow: 0px 3px 9px rgba(0,0,0,0.5); background-clip: padding-box; background-color: rgb(255, 255, 255); -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+.modal-backdrop {
+	left: 0px; top: 0px; right: 0px; bottom: 0px; position: fixed; z-index: 1030; background-color: rgb(0, 0, 0);
+}
+.modal-backdrop.fade {
+	opacity: 0;
+}
+.modal-backdrop.in {
+	opacity: 0.5;
+}
+.modal-header {
+	padding: 15px; border-bottom-color: rgb(229, 229, 229); border-bottom-width: 1px; border-bottom-style: solid; min-height: 16.42px;
+}
+.modal-header .close {
+	margin-top: -2px;
+}
+.modal-title {
+	margin: 0px; line-height: 1.4285;
+}
+.modal-body {
+	padding: 20px; position: relative;
+}
+.modal-footer {
+	padding: 19px 20px 20px; text-align: right; margin-top: 15px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid;
+}
+.modal-footer::before {
+	display: table; content: " ";
+}
+.modal-footer::after {
+	display: table; content: " ";
+}
+.modal-footer::after {
+	clear: both;
+}
+.modal-footer::before {
+	display: table; content: " ";
+}
+.modal-footer::after {
+	display: table; content: " ";
+}
+.modal-footer::after {
+	clear: both;
+}
+.modal-footer .btn + .btn {
+	margin-bottom: 0px; margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+	margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+	margin-left: 0px;
+}
+@media screen and (min-width:768px)
+{
+.modal-dialog {
+	width: 600px; padding-top: 30px; padding-bottom: 30px;
+}
+.modal-content {
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.5); -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+}
+.tooltip {
+	line-height: 1.4; font-size: 12px; display: block; visibility: visible; position: absolute; z-index: 1030; opacity: 0;
+}
+.tooltip.in {
+	opacity: 0.9;
+}
+.tooltip.top {
+	padding: 5px 0px; margin-top: -3px;
+}
+.tooltip.right {
+	padding: 0px 5px; margin-left: 3px;
+}
+.tooltip.bottom {
+	padding: 5px 0px; margin-top: 3px;
+}
+.tooltip.left {
+	padding: 0px 5px; margin-left: -3px;
+}
+.tooltip-inner {
+	padding: 3px 8px; border-radius: 4px; text-align: center; color: rgb(255, 255, 255); text-decoration: none; max-width: 200px; background-color: rgb(0, 0, 0);
+}
+.tooltip-arrow {
+	border-style: solid; border-color: transparent; width: 0px; height: 0px; position: absolute;
+}
+.tooltip.top .tooltip-arrow {
+	border-width: 5px 5px 0px; left: 50%; bottom: 0px; margin-left: -5px; border-top-color: rgb(0, 0, 0);
+}
+.tooltip.top-left .tooltip-arrow {
+	border-width: 5px 5px 0px; left: 5px; bottom: 0px; border-top-color: rgb(0, 0, 0);
+}
+.tooltip.top-right .tooltip-arrow {
+	border-width: 5px 5px 0px; right: 5px; bottom: 0px; border-top-color: rgb(0, 0, 0);
+}
+.tooltip.right .tooltip-arrow {
+	border-width: 5px 5px 5px 0px; left: 0px; top: 50%; margin-top: -5px; border-right-color: rgb(0, 0, 0);
+}
+.tooltip.left .tooltip-arrow {
+	border-width: 5px 0px 5px 5px; top: 50%; right: 0px; margin-top: -5px; border-left-color: rgb(0, 0, 0);
+}
+.tooltip.bottom .tooltip-arrow {
+	border-width: 0px 5px 5px; left: 50%; top: 0px; margin-left: -5px; border-bottom-color: rgb(0, 0, 0);
+}
+.tooltip.bottom-left .tooltip-arrow {
+	border-width: 0px 5px 5px; left: 5px; top: 0px; border-bottom-color: rgb(0, 0, 0);
+}
+.tooltip.bottom-right .tooltip-arrow {
+	border-width: 0px 5px 5px; top: 0px; right: 5px; border-bottom-color: rgb(0, 0, 0);
+}
+.popover {
+	padding: 1px; border-radius: 6px; border: 1px solid rgba(0, 0, 0, 0.2); border-image: none; left: 0px; top: 0px; text-align: left; display: none; white-space: normal; position: absolute; z-index: 1010; max-width: 276px; box-shadow: 0px 5px 10px rgba(0,0,0,0.2); background-clip: padding-box; background-color: rgb(255, 255, 255); -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.popover.top {
+	margin-top: -10px;
+}
+.popover.right {
+	margin-left: 10px;
+}
+.popover.bottom {
+	margin-top: 10px;
+}
+.popover.left {
+	margin-left: -10px;
+}
+.popover-title {
+	margin: 0px; padding: 8px 14px; border-radius: 5px 5px 0px 0px; line-height: 18px; font-size: 14px; font-weight: normal; border-bottom-color: rgb(235, 235, 235); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(247, 247, 247);
+}
+.popover-content {
+	padding: 9px 14px;
+}
+.popover .arrow {
+	border-style: solid; border-color: transparent; width: 0px; height: 0px; display: block; position: absolute;
+}
+.popover .arrow::after {
+	border-style: solid; border-color: transparent; width: 0px; height: 0px; display: block; position: absolute;
+}
+.popover .arrow {
+	border-width: 11px;
+}
+.popover .arrow::after {
+	border-width: 10px; content: "";
+}
+.popover.top .arrow {
+	left: 50%; bottom: -11px; margin-left: -11px; border-top-color: rgba(0, 0, 0, 0.25); border-bottom-width: 0px;
+}
+.popover.top .arrow::after {
+	bottom: 1px; margin-left: -10px; border-top-color: rgb(255, 255, 255); border-bottom-width: 0px; content: " ";
+}
+.popover.right .arrow {
+	left: -11px; top: 50%; margin-top: -11px; border-right-color: rgba(0, 0, 0, 0.25); border-left-width: 0px;
+}
+.popover.right .arrow::after {
+	left: 1px; bottom: -10px; border-right-color: rgb(255, 255, 255); border-left-width: 0px; content: " ";
+}
+.popover.bottom .arrow {
+	left: 50%; top: -11px; margin-left: -11px; border-bottom-color: rgba(0, 0, 0, 0.25); border-top-width: 0px;
+}
+.popover.bottom .arrow::after {
+	top: 1px; margin-left: -10px; border-bottom-color: rgb(255, 255, 255); border-top-width: 0px; content: " ";
+}
+.popover.left .arrow {
+	top: 50%; right: -11px; margin-top: -11px; border-left-color: rgba(0, 0, 0, 0.25); border-right-width: 0px;
+}
+.popover.left .arrow::after {
+	right: 1px; bottom: -10px; border-left-color: rgb(255, 255, 255); border-right-width: 0px; content: " ";
+}
+.carousel {
+	position: relative;
+}
+.carousel-inner {
+	width: 100%; overflow: hidden; position: relative;
+}
+.carousel-inner > .item {
+	transition:left 0.6s ease-in-out; display: none; position: relative; -webkit-transition: 0.6s ease-in-out left;
+}
+.carousel-inner > .item > img {
+	height: auto; line-height: 1; display: block; max-width: 100%;
+}
+.carousel-inner > .item > a > img {
+	height: auto; line-height: 1; display: block; max-width: 100%;
+}
+.carousel-inner > .active {
+	display: block;
+}
+.carousel-inner > .next {
+	display: block;
+}
+.carousel-inner > .prev {
+	display: block;
+}
+.carousel-inner > .active {
+	left: 0px;
+}
+.carousel-inner > .next {
+	top: 0px; width: 100%; position: absolute;
+}
+.carousel-inner > .prev {
+	top: 0px; width: 100%; position: absolute;
+}
+.carousel-inner > .next {
+	left: 100%;
+}
+.carousel-inner > .prev {
+	left: -100%;
+}
+.carousel-inner > .next.left {
+	left: 0px;
+}
+.carousel-inner > .prev.right {
+	left: 0px;
+}
+.carousel-inner > .active.left {
+	left: -100%;
+}
+.carousel-inner > .active.right {
+	left: 100%;
+}
+.carousel-control {
+	left: 0px; top: 0px; width: 15%; text-align: center; bottom: 0px; color: rgb(255, 255, 255); font-size: 20px; position: absolute; opacity: 0.5; text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+}
+.carousel-control.left {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%); background-repeat: repeat-x;
+}
+.carousel-control.right {
+	left: auto; right: 0px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%); background-repeat: repeat-x;
+}
+.carousel-control:hover {
+	color: rgb(255, 255, 255); text-decoration: none; opacity: 0.9;
+}
+.carousel-control:focus {
+	color: rgb(255, 255, 255); text-decoration: none; opacity: 0.9;
+}
+.carousel-control .icon-prev {
+	top: 50%; display: inline-block; position: absolute; z-index: 5;
+}
+.carousel-control .icon-next {
+	top: 50%; display: inline-block; position: absolute; z-index: 5;
+}
+.carousel-control .glyphicon-chevron-left {
+	top: 50%; display: inline-block; position: absolute; z-index: 5;
+}
+.carousel-control .glyphicon-chevron-right {
+	top: 50%; display: inline-block; position: absolute; z-index: 5;
+}
+.carousel-control .icon-prev {
+	left: 50%;
+}
+.carousel-control .glyphicon-chevron-left {
+	left: 50%;
+}
+.carousel-control .icon-next {
+	right: 50%;
+}
+.carousel-control .glyphicon-chevron-right {
+	right: 50%;
+}
+.carousel-control .icon-prev {
+	width: 20px; height: 20px; font-family: serif; margin-top: -10px; margin-left: -10px;
+}
+.carousel-control .icon-next {
+	width: 20px; height: 20px; font-family: serif; margin-top: -10px; margin-left: -10px;
+}
+.carousel-control .icon-prev::before {
+	content: "\2039";
+}
+.carousel-control .icon-next::before {
+	content: "\203a";
+}
+.carousel-indicators {
+	list-style: none; left: 50%; width: 60%; text-align: center; bottom: 10px; padding-left: 0px; margin-left: -30%; position: absolute; z-index: 15;
+}
+.carousel-indicators li {
+	margin: 1px; border-radius: 10px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 10px; height: 10px; text-indent: -999px; display: inline-block; cursor: pointer;
+}
+.carousel-indicators .active {
+	margin: 0px; width: 12px; height: 12px; background-color: rgb(255, 255, 255);
+}
+.carousel-caption {
+	left: 15%; text-align: center; right: 15%; bottom: 20px; color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px; position: absolute; z-index: 10; text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+}
+.carousel-caption .btn {
+	text-shadow: none;
+}
+@media screen and (min-width:768px)
+{
+.carousel-control .glyphicons-chevron-left {
+	width: 30px; height: 30px; font-size: 30px; margin-top: -15px; margin-left: -15px;
+}
+.carousel-control .glyphicons-chevron-right {
+	width: 30px; height: 30px; font-size: 30px; margin-top: -15px; margin-left: -15px;
+}
+.carousel-control .icon-prev {
+	width: 30px; height: 30px; font-size: 30px; margin-top: -15px; margin-left: -15px;
+}
+.carousel-control .icon-next {
+	width: 30px; height: 30px; font-size: 30px; margin-top: -15px; margin-left: -15px;
+}
+.carousel-caption {
+	left: 20%; right: 20%; padding-bottom: 30px;
+}
+.carousel-indicators {
+	bottom: 20px;
+}
+}
+.clearfix::before {
+	display: table; content: " ";
+}
+.clearfix::after {
+	display: table; content: " ";
+}
+.clearfix::after {
+	clear: both;
+}
+.center-block {
+	margin-right: auto; margin-left: auto; display: block;
+}
+.pull-right {
+	float: right !important;
+}
+.pull-left {
+	float: left !important;
+}
+.hide {
+	display: none !important;
+}
+.show {
+	display: block !important;
+}
+.invisible {
+	visibility: hidden;
+}
+.text-hide {
+	font: 0px/0 a; border: 0px currentColor; border-image: none; color: transparent; font-size-adjust: none; font-stretch: normal; text-shadow: none; background-color: transparent;
+}
+.hidden {
+	display: none !important; visibility: hidden !important;
+}
+.affix {
+	position: fixed;
+}
+.visible-xs {
+	display: none !important;
+}
+tr.visible-xs {
+	display: none !important;
+}
+th.visible-xs {
+	display: none !important;
+}
+td.visible-xs {
+	display: none !important;
+}
+@media all and (max-width:767px)
+{
+.visible-xs {
+	display: block !important;
+}
+tr.visible-xs {
+	display: table-row !important;
+}
+th.visible-xs {
+	display: table-cell !important;
+}
+td.visible-xs {
+	display: table-cell !important;
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+.visible-xs.visible-sm {
+	display: block !important;
+}
+tr.visible-xs.visible-sm {
+	display: table-row !important;
+}
+th.visible-xs.visible-sm {
+	display: table-cell !important;
+}
+td.visible-xs.visible-sm {
+	display: table-cell !important;
+}
+}
+@media all and (max-width:1199px) and (min-width:992px)
+{
+.visible-xs.visible-md {
+	display: block !important;
+}
+tr.visible-xs.visible-md {
+	display: table-row !important;
+}
+th.visible-xs.visible-md {
+	display: table-cell !important;
+}
+td.visible-xs.visible-md {
+	display: table-cell !important;
+}
+}
+@media all and (min-width:1200px)
+{
+.visible-xs.visible-lg {
+	display: block !important;
+}
+tr.visible-xs.visible-lg {
+	display: table-row !important;
+}
+th.visible-xs.visible-lg {
+	display: table-cell !important;
+}
+td.visible-xs.visible-lg {
+	display: table-cell !important;
+}
+}
+.visible-sm {
+	display: none !important;
+}
+tr.visible-sm {
+	display: none !important;
+}
+th.visible-sm {
+	display: none !important;
+}
+td.visible-sm {
+	display: none !important;
+}
+@media all and (max-width:767px)
+{
+.visible-sm.visible-xs {
+	display: block !important;
+}
+tr.visible-sm.visible-xs {
+	display: table-row !important;
+}
+th.visible-sm.visible-xs {
+	display: table-cell !important;
+}
+td.visible-sm.visible-xs {
+	display: table-cell !important;
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+.visible-sm {
+	display: block !important;
+}
+tr.visible-sm {
+	display: table-row !important;
+}
+th.visible-sm {
+	display: table-cell !important;
+}
+td.visible-sm {
+	display: table-cell !important;
+}
+}
+@media all and (max-width:1199px) and (min-width:992px)
+{
+.visible-sm.visible-md {
+	display: block !important;
+}
+tr.visible-sm.visible-md {
+	display: table-row !important;
+}
+th.visible-sm.visible-md {
+	display: table-cell !important;
+}
+td.visible-sm.visible-md {
+	display: table-cell !important;
+}
+}
+@media all and (min-width:1200px)
+{
+.visible-sm.visible-lg {
+	display: block !important;
+}
+tr.visible-sm.visible-lg {
+	display: table-row !important;
+}
+th.visible-sm.visible-lg {
+	display: table-cell !important;
+}
+td.visible-sm.visible-lg {
+	display: table-cell !important;
+}
+}
+.visible-md {
+	display: none !important;
+}
+tr.visible-md {
+	display: none !important;
+}
+th.visible-md {
+	display: none !important;
+}
+td.visible-md {
+	display: none !important;
+}
+@media all and (max-width:767px)
+{
+.visible-md.visible-xs {
+	display: block !important;
+}
+tr.visible-md.visible-xs {
+	display: table-row !important;
+}
+th.visible-md.visible-xs {
+	display: table-cell !important;
+}
+td.visible-md.visible-xs {
+	display: table-cell !important;
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+.visible-md.visible-sm {
+	display: block !important;
+}
+tr.visible-md.visible-sm {
+	display: table-row !important;
+}
+th.visible-md.visible-sm {
+	display: table-cell !important;
+}
+td.visible-md.visible-sm {
+	display: table-cell !important;
+}
+}
+@media all and (max-width:1199px) and (min-width:992px)
+{
+.visible-md {
+	display: block !important;
+}
+tr.visible-md {
+	display: table-row !important;
+}
+th.visible-md {
+	display: table-cell !important;
+}
+td.visible-md {
+	display: table-cell !important;
+}
+}
+@media all and (min-width:1200px)
+{
+.visible-md.visible-lg {
+	display: block !important;
+}
+tr.visible-md.visible-lg {
+	display: table-row !important;
+}
+th.visible-md.visible-lg {
+	display: table-cell !important;
+}
+td.visible-md.visible-lg {
+	display: table-cell !important;
+}
+}
+.visible-lg {
+	display: none !important;
+}
+tr.visible-lg {
+	display: none !important;
+}
+th.visible-lg {
+	display: none !important;
+}
+td.visible-lg {
+	display: none !important;
+}
+@media all and (max-width:767px)
+{
+.visible-lg.visible-xs {
+	display: block !important;
+}
+tr.visible-lg.visible-xs {
+	display: table-row !important;
+}
+th.visible-lg.visible-xs {
+	display: table-cell !important;
+}
+td.visible-lg.visible-xs {
+	display: table-cell !important;
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+.visible-lg.visible-sm {
+	display: block !important;
+}
+tr.visible-lg.visible-sm {
+	display: table-row !important;
+}
+th.visible-lg.visible-sm {
+	display: table-cell !important;
+}
+td.visible-lg.visible-sm {
+	display: table-cell !important;
+}
+}
+@media all and (max-width:1199px) and (min-width:992px)
+{
+.visible-lg.visible-md {
+	display: block !important;
+}
+tr.visible-lg.visible-md {
+	display: table-row !important;
+}
+th.visible-lg.visible-md {
+	display: table-cell !important;
+}
+td.visible-lg.visible-md {
+	display: table-cell !important;
+}
+}
+@media all and (min-width:1200px)
+{
+.visible-lg {
+	display: block !important;
+}
+tr.visible-lg {
+	display: table-row !important;
+}
+th.visible-lg {
+	display: table-cell !important;
+}
+td.visible-lg {
+	display: table-cell !important;
+}
+}
+.hidden-xs {
+	display: block !important;
+}
+tr.hidden-xs {
+	display: table-row !important;
+}
+th.hidden-xs {
+	display: table-cell !important;
+}
+td.hidden-xs {
+	display: table-cell !important;
+}
+@media all and (max-width:767px)
+{
+.hidden-xs {
+	display: none !important;
+}
+tr.hidden-xs {
+	display: none !important;
+}
+th.hidden-xs {
+	display: none !important;
+}
+td.hidden-xs {
+	display: none !important;
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+.hidden-xs.hidden-sm {
+	display: none !important;
+}
+tr.hidden-xs.hidden-sm {
+	display: none !important;
+}
+th.hidden-xs.hidden-sm {
+	display: none !important;
+}
+td.hidden-xs.hidden-sm {
+	display: none !important;
+}
+}
+@media all and (max-width:1199px) and (min-width:992px)
+{
+.hidden-xs.hidden-md {
+	display: none !important;
+}
+tr.hidden-xs.hidden-md {
+	display: none !important;
+}
+th.hidden-xs.hidden-md {
+	display: none !important;
+}
+td.hidden-xs.hidden-md {
+	display: none !important;
+}
+}
+@media all and (min-width:1200px)
+{
+.hidden-xs.hidden-lg {
+	display: none !important;
+}
+tr.hidden-xs.hidden-lg {
+	display: none !important;
+}
+th.hidden-xs.hidden-lg {
+	display: none !important;
+}
+td.hidden-xs.hidden-lg {
+	display: none !important;
+}
+}
+.hidden-sm {
+	display: block !important;
+}
+tr.hidden-sm {
+	display: table-row !important;
+}
+th.hidden-sm {
+	display: table-cell !important;
+}
+td.hidden-sm {
+	display: table-cell !important;
+}
+@media all and (max-width:767px)
+{
+.hidden-sm.hidden-xs {
+	display: none !important;
+}
+tr.hidden-sm.hidden-xs {
+	display: none !important;
+}
+th.hidden-sm.hidden-xs {
+	display: none !important;
+}
+td.hidden-sm.hidden-xs {
+	display: none !important;
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+.hidden-sm {
+	display: none !important;
+}
+tr.hidden-sm {
+	display: none !important;
+}
+th.hidden-sm {
+	display: none !important;
+}
+td.hidden-sm {
+	display: none !important;
+}
+}
+@media all and (max-width:1199px) and (min-width:992px)
+{
+.hidden-sm.hidden-md {
+	display: none !important;
+}
+tr.hidden-sm.hidden-md {
+	display: none !important;
+}
+th.hidden-sm.hidden-md {
+	display: none !important;
+}
+td.hidden-sm.hidden-md {
+	display: none !important;
+}
+}
+@media all and (min-width:1200px)
+{
+.hidden-sm.hidden-lg {
+	display: none !important;
+}
+tr.hidden-sm.hidden-lg {
+	display: none !important;
+}
+th.hidden-sm.hidden-lg {
+	display: none !important;
+}
+td.hidden-sm.hidden-lg {
+	display: none !important;
+}
+}
+.hidden-md {
+	display: block !important;
+}
+tr.hidden-md {
+	display: table-row !important;
+}
+th.hidden-md {
+	display: table-cell !important;
+}
+td.hidden-md {
+	display: table-cell !important;
+}
+@media all and (max-width:767px)
+{
+.hidden-md.hidden-xs {
+	display: none !important;
+}
+tr.hidden-md.hidden-xs {
+	display: none !important;
+}
+th.hidden-md.hidden-xs {
+	display: none !important;
+}
+td.hidden-md.hidden-xs {
+	display: none !important;
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+.hidden-md.hidden-sm {
+	display: none !important;
+}
+tr.hidden-md.hidden-sm {
+	display: none !important;
+}
+th.hidden-md.hidden-sm {
+	display: none !important;
+}
+td.hidden-md.hidden-sm {
+	display: none !important;
+}
+}
+@media all and (max-width:1199px) and (min-width:992px)
+{
+.hidden-md {
+	display: none !important;
+}
+tr.hidden-md {
+	display: none !important;
+}
+th.hidden-md {
+	display: none !important;
+}
+td.hidden-md {
+	display: none !important;
+}
+}
+@media all and (min-width:1200px)
+{
+.hidden-md.hidden-lg {
+	display: none !important;
+}
+tr.hidden-md.hidden-lg {
+	display: none !important;
+}
+th.hidden-md.hidden-lg {
+	display: none !important;
+}
+td.hidden-md.hidden-lg {
+	display: none !important;
+}
+}
+.hidden-lg {
+	display: block !important;
+}
+tr.hidden-lg {
+	display: table-row !important;
+}
+th.hidden-lg {
+	display: table-cell !important;
+}
+td.hidden-lg {
+	display: table-cell !important;
+}
+@media all and (max-width:767px)
+{
+.hidden-lg.hidden-xs {
+	display: none !important;
+}
+tr.hidden-lg.hidden-xs {
+	display: none !important;
+}
+th.hidden-lg.hidden-xs {
+	display: none !important;
+}
+td.hidden-lg.hidden-xs {
+	display: none !important;
+}
+}
+@media all and (max-width:991px) and (min-width:768px)
+{
+.hidden-lg.hidden-sm {
+	display: none !important;
+}
+tr.hidden-lg.hidden-sm {
+	display: none !important;
+}
+th.hidden-lg.hidden-sm {
+	display: none !important;
+}
+td.hidden-lg.hidden-sm {
+	display: none !important;
+}
+}
+@media all and (max-width:1199px) and (min-width:992px)
+{
+.hidden-lg.hidden-md {
+	display: none !important;
+}
+tr.hidden-lg.hidden-md {
+	display: none !important;
+}
+th.hidden-lg.hidden-md {
+	display: none !important;
+}
+td.hidden-lg.hidden-md {
+	display: none !important;
+}
+}
+@media all and (min-width:1200px)
+{
+.hidden-lg {
+	display: none !important;
+}
+tr.hidden-lg {
+	display: none !important;
+}
+th.hidden-lg {
+	display: none !important;
+}
+td.hidden-lg {
+	display: none !important;
+}
+}
+.visible-print {
+	display: none !important;
+}
+tr.visible-print {
+	display: none !important;
+}
+th.visible-print {
+	display: none !important;
+}
+td.visible-print {
+	display: none !important;
+}
+@media print
+{
+.visible-print {
+	display: block !important;
+}
+tr.visible-print {
+	display: table-row !important;
+}
+th.visible-print {
+	display: table-cell !important;
+}
+td.visible-print {
+	display: table-cell !important;
+}
+.hidden-print {
+	display: none !important;
+}
+tr.hidden-print {
+	display: none !important;
+}
+th.hidden-print {
+	display: none !important;
+}
+td.hidden-print {
+	display: none !important;
+}
+}

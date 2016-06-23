@@ -12,3 +12,10 @@ D:\GitRepo\YuanQuan\YuanQuan\IDAL\bin\Debug\Model.pdb
 D:\GitRepo\YuanQuan\YuanQuan\IDAL\obj\Debug\DALInterface.csprojResolveAssemblyReference.cache
 D:\GitRepo\YuanQuan\YuanQuan\IDAL\obj\Debug\IDAL.dll
 D:\GitRepo\YuanQuan\YuanQuan\IDAL\obj\Debug\IDAL.pdb
+F:\code\yuanquan\YuanQuan\IDAL\bin\Debug\IDAL.dll
+F:\code\yuanquan\YuanQuan\IDAL\bin\Debug\IDAL.pdb
+F:\code\yuanquan\YuanQuan\IDAL\bin\Debug\Model.dll
+F:\code\yuanquan\YuanQuan\IDAL\bin\Debug\Model.pdb
+F:\code\yuanquan\YuanQuan\IDAL\obj\Debug\DALInterface.csprojResolveAssemblyReference.cache
+F:\code\yuanquan\YuanQuan\IDAL\obj\Debug\IDAL.dll
+F:\code\yuanquan\YuanQuan\IDAL\obj\Debug\IDAL.pdb

@@ -1,0 +1,7 @@
+F:\code\yuanquan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.csprojResolveAssemblyReference.cache
+F:\code\yuanquan\YuanQuan\PublicHelp\bin\Debug\PublicHelp.dll
+F:\code\yuanquan\YuanQuan\PublicHelp\bin\Debug\PublicHelp.pdb
+F:\code\yuanquan\YuanQuan\PublicHelp\bin\Debug\Model.dll
+F:\code\yuanquan\YuanQuan\PublicHelp\bin\Debug\Model.pdb
+F:\code\yuanquan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.dll
+F:\code\yuanquan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.pdb
