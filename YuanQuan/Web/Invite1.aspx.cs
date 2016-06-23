@@ -13,9 +13,18 @@ namespace Web
 {
     public partial class Invite : System.Web.UI.Page
     {
+        private static enterprise enterprise;
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            if (!IsPostBack)
+            {
+                enterprise = (enterprise)Session["enterprise"];
+                if (enterprise == null)
+                {
+                    Response.Redirect("404.html", false);
+                    return;
+                }
+            }
         }
 
       protected void Next_Click(object sender, EventArgs e)
@@ -30,6 +39,12 @@ namespace Web
 
             Response.Redirect("./Invite2.aspx", false);//防止Response.End 方法终止页的执行
         }
+
+      public string getEntership()
+      {
+          return enterprise.e_id.ToString();
+      }
+
        
     }
 }

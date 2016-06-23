@@ -2070,7 +2070,7 @@
 					</span>
 				</div>
 				<small>
-					<a href="http://www.oxcoder.com/cooper/index.html">
+					<a href="ManageChallenge.aspx">
 						<i class="imoon imoon-arrow-left2"></i>
 						返回
 					</a>

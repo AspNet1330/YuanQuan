@@ -22,6 +22,11 @@ rel="stylesheet"> <LINK href="企业%20挑战管理_files/summernote-bs3.css" re
 <![endif]--> 
 <META name="GENERATOR" content="MSHTML 11.00.10586.306"></HEAD> 
 <BODY>
+       <SCRIPT type="text/javascript">
+           window.onload = function () {
+               document.getElementById("enterprise").innerHTML = "<%=getEntership()%>";
+        }
+</SCRIPT>
 <DIV class="navbar navbar-default navbar-fixed-top" onload="validateSession()">
 <DIV class="container">
 <DIV class="navbar-header"><BUTTON class="navbar-toggle collapsed" type="button" 
@@ -37,11 +42,10 @@ href="http://www.oxcoder.com/cooper/oxcoder_corp_index.html">首页</A></LI>
   <LI><A 
   href="http://www.oxcoder.com/cooper/recommended/talent/index.html">人才推荐</A></LI>
   <LI class="active"><A 
-  href="http://www.oxcoder.com/cooper/index.html">挑战管理</A></LI></UL>
+  href="ManageChalenge.aspx">挑战管理</A></LI></UL>
 <UL class="nav navbar-nav navbar-right">
   <LI class="dropdown"><A class="dropdown-toggle" href="javascript:;" 
-  data-toggle="dropdown"><SPAN class="text">																															
-  									北京交通大学																					 </SPAN>						 <B class="caret"></B>
+  data-toggle="dropdown"><SPAN class="text" id="enterprise">	</SPAN>						 <B class="caret"></B>
   					 </A>
   <UL class="dropdown-menu">
     <LI><A 
@@ -77,7 +81,7 @@ href="./Invite1.aspx">
 <DIV class="panel-body">
 <DIV class="row"><!-- new start-->																	 
 <DIV class="col-md-5">
-<H2 style="margin: 12px 0px 2px;"><A href="./Filter.aspx">[<%# Eval("cha_level").ToString().Substring(0,2)%>]<%# Eval("cha_type")%>工程师</A>
+<H2 style="margin: 12px 0px 2px;"><A href="./Filter.aspx?id=<%#Eval("cha_id")%>">[<%# Eval("cha_level").ToString().Substring(0,2)%>]<%# Eval("cha_type")%>工程师</A>
 																		 </H2>
 <DIV style="width: 280px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><SMALL 
 class="text-muted">[<%# Eval("cha_date").ToString().Substring(0,9)%>]																																								

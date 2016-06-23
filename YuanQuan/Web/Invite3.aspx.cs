@@ -28,19 +28,20 @@ namespace Web
                 }
                 int challengeId = int.Parse(id);
                 challenge = ServiceFactory.createChallengeService().getChallengeByChallengeId(challengeId);
-                enterprise = new enterprise();
-                enterprise.e_id = 1;
                 if (challenge==null)
                 {
                     Response.Redirect("404.html", false);
                     return;
                 }
 
-                HttpCookie cc = new HttpCookie("challenge");
-                cc["enterprise"] = enterprise.e_id.ToString();
-                cc["type"] = challenge.cha_type;
-                cc["level"] = challenge.cha_level;
-                Response.Cookies.Add(cc);
+                enterprise = (enterprise)Session["enterprise"];
+                if (enterprise == null)
+                {
+                    Response.Redirect("404.html", false);
+                    return;
+                }
+
+                email_subject_id.Text = getMailHeader();
             }
         }
 
@@ -56,9 +57,22 @@ namespace Web
             return a;
         }
 
+        public string getMailContext()
+        {
+            return "您好：&lt;br&gt;我们非常高兴的通知您，通过了我们的简历筛选，为了评估您的真实编程能力，我们准备了[职位]的在线编程挑战，希望您能完成！&lt;br&gt;点击下面的链接进入在线编程挑战: :&lt;br&gt;[链接]。&lt;br&gt;以下是您的登录信息:&lt;br&gt;用户名：[用户名]&lt;br&gt;密码[密码]&lt;br&gt;感谢您的配合！&lt;br&gt;&lt;br&gt;[公司名]&lt;br&gt;[时间]";
+        }
+
+        public string getMailHeader()
+        {
+            return "[北京交通大学信息安全科技公司]-在线笔试邀请函";
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string mail = Request.QueryString["user_emails"];
+            string mail = this.TextBox1.Text;
+            string[] a = mail.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+
         }
     }
 }

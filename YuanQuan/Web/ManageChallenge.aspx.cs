@@ -18,17 +18,21 @@ namespace Web
         static IChallengeService cs;
         static IChallengeProblemService cps;
         static IProblemService ps;
-        private static enterprise cpy = new enterprise();
+        private static enterprise enterprise;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                cpy.e_id = 1;
+                enterprise = (enterprise)Session["enterprise"];
+                if (enterprise == null)
+                {
+                    Response.Redirect("404.html", false);
+                    return;
+                }
                 
             }
             bindChallengeReapter();
-
         }
 
 
@@ -37,7 +41,7 @@ namespace Web
             cs = ServiceFactory.createChallengeService();
             cps = ServiceFactory.createChallengeProblemService();
             ps = ServiceFactory.createProblemService();
-            List<challenge> challenges = cs.getChallengesByEnterprise(cpy.e_id);
+            List<challenge> challenges = cs.getChallengesByEnterprise(enterprise.e_id);
 
             ChallengesRepeater.DataSource = challenges;
             ChallengesRepeater.DataBind();
@@ -66,5 +70,11 @@ namespace Web
                   
             }
         }
+
+        public string getEntership()
+        {
+            return enterprise.e_id.ToString();
+        }
+
     }
 }

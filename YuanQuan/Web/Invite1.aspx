@@ -75,7 +75,11 @@
 <body onload="">
 	
 	
-
+    <SCRIPT type="text/javascript">
+        window.onload = function () {
+            document.getElementById("enterprise").innerHTML = "<%=getEntership()%>";
+        }
+</SCRIPT>
 
 
 
@@ -109,13 +113,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="text">
-							
-								
-								
-								
-									北京交通大学信息安全科技公司
-								
+						<span class="text" id="enterprise">				
 							
 						</span>
 						<b class="caret"></b>

@@ -29,9 +29,13 @@ namespace Web
                 }
                 int challengeId = int.Parse(id);
                 challenge = ServiceFactory.createChallengeService().getChallengeByChallengeId(challengeId);
-                enterprise = new enterprise();
-                enterprise.e_id = 1;
                 if (challenge == null)
+                {
+                    Response.Redirect("404.html", false);
+                    return;
+                }
+                enterprise = (enterprise)Session["enterprise"];
+                if (enterprise == null)
                 {
                     Response.Redirect("404.html", false);
                     return;
