@@ -80,6 +80,7 @@
     <Property Name="e_pwd" Type="varchar" MaxLength="255" />
     <Property Name="e_chanum" Type="int" />
     <Property Name="e_currency" Type="int" />
+    <Property Name="e_name" Type="varchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="problem">
     <Key>

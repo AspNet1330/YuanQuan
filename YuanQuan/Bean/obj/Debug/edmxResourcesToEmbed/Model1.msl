@@ -76,6 +76,7 @@
           <ScalarProperty Name="e_pwd" ColumnName="e_pwd" />
           <ScalarProperty Name="e_chanum" ColumnName="e_chanum" />
           <ScalarProperty Name="e_currency" ColumnName="e_currency" />
+          <ScalarProperty Name="e_name" ColumnName="e_name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
