@@ -34,3 +34,5 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debu
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\obj\Debug\DAL.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debug\PublicHelp.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DAL\bin\Debug\PublicHelp.pdb

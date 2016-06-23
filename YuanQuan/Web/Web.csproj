@@ -69,6 +69,7 @@
     <Content Include="CSS\summernote-bs3.css" />
     <Content Include="CSS\summernote.css" />
     <Content Include="Filter.aspx" />
+    <Content Include="ImgVerify.aspx" />
     <Content Include="Invite1.aspx" />
     <Content Include="Invite2.aspx" />
     <Content Include="Invite3.aspx" />
@@ -93,6 +94,7 @@
     <Content Include="Picture\otherimg_6.png" />
     <Content Include="Picture\pic.gif" />
     <Content Include="Picture\wlogo_sm.png" />
+    <Content Include="Register.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -215,6 +217,32 @@
     <Content Include="猿圈 新建挑战邀请3_files\wlogo_sm.png" />
     <Content Include="猿圈 新建挑战邀请3_files\zmUtil.js" />
     <Content Include="404.html" />
+    <Content Include="猿圈 注册_files\01.png" />
+    <Content Include="猿圈 注册_files\46494ae6150141d2892e9db492f870fd.jpg" />
+    <Content Include="猿圈 注册_files\bootstrap-filestyle.js" />
+    <Content Include="猿圈 注册_files\bootstrap-select.min.css" />
+    <Content Include="猿圈 注册_files\bootstrap-select.min.js" />
+    <Content Include="猿圈 注册_files\bootstrap-switch.min.css" />
+    <Content Include="猿圈 注册_files\bootstrap-switch.min.js" />
+    <Content Include="猿圈 注册_files\bootstrap.min.css" />
+    <Content Include="猿圈 注册_files\bootstrap.min.js" />
+    <Content Include="猿圈 注册_files\bootstrapValidator.min.css" />
+    <Content Include="猿圈 注册_files\bootstrapValidator.min.js" />
+    <Content Include="猿圈 注册_files\bootstrapValidator_zh_CN.js" />
+    <Content Include="猿圈 注册_files\font-awesome.min.css" />
+    <Content Include="猿圈 注册_files\jquery-1.11.0.min.js" />
+    <Content Include="猿圈 注册_files\jquery-confirm.min.css" />
+    <Content Include="猿圈 注册_files\jquery-confirm.min.js" />
+    <Content Include="猿圈 注册_files\jquery.sparkline.min.js" />
+    <Content Include="猿圈 注册_files\pic.gif" />
+    <Content Include="猿圈 注册_files\script.js" />
+    <Content Include="猿圈 注册_files\signin.css" />
+    <Content Include="猿圈 注册_files\style.css" />
+    <Content Include="猿圈 注册_files\style_new.css" />
+    <Content Include="猿圈 注册_files\summernote-bs3.css" />
+    <Content Include="猿圈 注册_files\summernote.css" />
+    <Content Include="猿圈 注册_files\summernote.min.js" />
+    <Content Include="猿圈 注册_files\wlogo.png" />
     <Content Include="页面找不到了_files\bootstrap-select.min.css" />
     <Content Include="页面找不到了_files\bootstrap-switch.min.css" />
     <Content Include="页面找不到了_files\bootstrap.min.css" />
@@ -240,6 +268,13 @@
     </Compile>
     <Compile Include="Filter.aspx.designer.cs">
       <DependentUpon>Filter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImgVerify.aspx.cs">
+      <DependentUpon>ImgVerify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImgVerify.aspx.designer.cs">
+      <DependentUpon>ImgVerify.aspx</DependentUpon>
     </Compile>
     <Compile Include="Invite1.aspx.cs">
       <DependentUpon>Invite1.aspx</DependentUpon>
@@ -270,6 +305,13 @@
       <DependentUpon>ManageChallenge.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -285,6 +327,8 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="猿圈 注册_files\core.php" />
+    <Content Include="猿圈 注册_files\z_stat.php" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bean\Model.csproj">

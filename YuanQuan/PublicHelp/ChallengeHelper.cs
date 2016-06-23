@@ -18,6 +18,8 @@ namespace PublicHelp
             string[] b = new string[7] {"Java","Android","ios","C语言(beta)","C++(beta)","php(beta)","Python(beta)"};
             return a[level] + b[type] + "工程师";
         }
+
+
     }
 
    

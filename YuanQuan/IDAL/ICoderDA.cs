@@ -12,7 +12,7 @@ namespace DALInterface
         coder getCoderByID(int id);
         coder getCoderByObject(coder c);
         List<coder> getCoders();
-        void insert(coder a);
+        Boolean insert(coder a);
         void update(coder a);
         void delete(int id);
     }
