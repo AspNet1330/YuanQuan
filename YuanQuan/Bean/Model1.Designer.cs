@@ -1360,6 +1360,30 @@ namespace Model
         private Nullable<global::System.Int32> _e_currency;
         partial void One_currencyChanging(Nullable<global::System.Int32> value);
         partial void One_currencyChanged();
+    
+        /// <summary>
+        /// 没有元数据文档可用。
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String e_name
+        {
+            get
+            {
+                return _e_name;
+            }
+            set
+            {
+                One_nameChanging(value);
+                ReportPropertyChanging("e_name");
+                _e_name = StructuralObject.SetValidValue(value, true, "e_name");
+                ReportPropertyChanged("e_name");
+                One_nameChanged();
+            }
+        }
+        private global::System.String _e_name;
+        partial void One_nameChanging(global::System.String value);
+        partial void One_nameChanged();
 
         #endregion
 
