@@ -27,6 +27,5 @@ F:\code\yuanquan\YuanQuan\Bean\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dl
 F:\code\yuanquan\YuanQuan\Bean\bin\Debug\EntityFramework.xml
 F:\code\yuanquan\YuanQuan\Bean\bin\Debug\zh-Hans\EntityFramework.resources.dll
 F:\code\yuanquan\YuanQuan\Bean\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
-F:\code\yuanquan\YuanQuan\Bean\obj\Debug\Model.csprojResolveAssemblyReference.cache
 F:\code\yuanquan\YuanQuan\Bean\obj\Debug\Model.dll
 F:\code\yuanquan\YuanQuan\Bean\obj\Debug\Model.pdb

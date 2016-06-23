@@ -21,6 +21,9 @@ namespace Web
                 //ICoderService cs = ServiceFactory.createCoderService();
                 //List<coder> coders = cs.getTopCoder();
                 //this.Label1.Text = coders[0].c_name;
+                enterprise enterprise = new enterprise();
+                enterprise.e_id = 1;
+                Session["enterprise"]=enterprise;
             }
         }
 

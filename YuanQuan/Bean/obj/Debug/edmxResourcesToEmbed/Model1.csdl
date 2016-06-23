@@ -80,7 +80,6 @@
     <Property Name="e_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
     <Property Name="e_chanum" Type="Int32" />
     <Property Name="e_currency" Type="Int32" />
-    <Property Name="e_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="problem">
     <Key>
