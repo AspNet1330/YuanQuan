@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using Model;
 using BLLFactory;
 using BLLInterface;
+using PublicHelp;
 
 namespace Web
 {
@@ -72,7 +73,10 @@ namespace Web
             string mail = this.TextBox1.Text;
             string[] a = mail.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
 
-
+            for (int i = 0; i < a.Length; i++)
+            {
+                CoderChallengeHelper.senChallengeEmail(a[i],getMailContext(),getMailHeader());
+            }
         }
     }
 }
