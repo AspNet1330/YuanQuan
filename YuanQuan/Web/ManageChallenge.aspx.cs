@@ -11,12 +11,6 @@ using PublicHelp;
 
 namespace Web
 {
-    public class ChallengeInfo:Attribute
-    {
-        public challenge challenge;
-        public string name;
-        public List<problem> ps;
-    }
     
     public partial class ManageChallenge : System.Web.UI.Page
     {
@@ -24,7 +18,6 @@ namespace Web
         static IChallengeService cs;
         static IChallengeProblemService cps;
         static IProblemService ps;
-        static List<ChallengeInfo> cInfos = new List<ChallengeInfo>();
         private static enterprise cpy = new enterprise();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -32,8 +25,9 @@ namespace Web
             if (!IsPostBack)
             {
                 cpy.e_id = 1;
-                bindChallengeReapter();
+                
             }
+            bindChallengeReapter();
 
         }
 
@@ -45,32 +39,32 @@ namespace Web
             ps = ServiceFactory.createProblemService();
             List<challenge> challenges = cs.getChallengesByEnterprise(cpy.e_id);
 
-            for (int i = 0; i < challenges.Count; i++)
-            {
-                cInfos.Add(getChallengeInfo(challenges.ElementAt(i)));
-            }
-
-            ChallengesRepeater.DataSource = cInfos;
+            ChallengesRepeater.DataSource = challenges;
             ChallengesRepeater.DataBind();
-
-            
         }
 
-        ChallengeInfo getChallengeInfo(challenge c)
+        protected void ChallengesRepeater_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-            ChallengeInfo cInfo = new ChallengeInfo();
-            cInfo.challenge = c;
-            cInfo.name = ChallengeHelper.getChallengeName(c.cha_type,c.cha_level);
-            List<cha_problems> cPros = cps.getProblemByChallengeId(c.cha_id);
-            List<problem> pros = new List<problem>();
-            for (int i = 0; i < cPros.Count;i++ )
+              if ((e.Item.ItemType == ListItemType.Item )||(e.Item.ItemType == ListItemType.AlternatingItem))
             {
-                cha_problems cp = cPros.ElementAt(i);
-                pros.Add(ps.getProblemById(cp.p_id));
-            } 
-            cInfo.ps = pros;
-            
-            return cInfo;
+
+                TextBox hf = (TextBox)e.Item.FindControl("TextBox1");
+                string id = hf.Text;
+                int challengeId = int.Parse(id);
+                  
+                  Repeater rp = (Repeater)e.Item.FindControl("ProblemReapter");
+                  List<cha_problems> cha_problems = ServiceFactory.createChallengeProblemService().getProblemByChallengeId(challengeId);
+                  List<problem> problems = new List<problem>();
+
+                  for (int i = 0; i < cha_problems.Count; i++)
+                  {
+                      problems.Add(ServiceFactory.createProblemService().getProblemById(cha_problems.ElementAt(i).p_id));
+                  }
+                  rp.DataSource = problems;
+                  rp.DataBind();
+
+                  
+            }
         }
     }
 }

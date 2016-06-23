@@ -1985,15 +1985,13 @@
     </style>
 </head>
 <body>
-	
-	
-
-
-
-
-
-
-
+	<SCRIPT type="text/javascript">
+	    window.onload = function () {
+	        var a = "<%=getChallName()%>";
+	        document.getElementById("enterName").innerHTML = a;
+	        document.getElementById("chaTime").innerHTML="<%=getDate()%>";
+	       }
+</SCRIPT>
 <div class="navbar navbar-default navbar-fixed-top" onload="validateSession()">
 	<div class="container">
 		<div class="navbar-header">
@@ -2015,7 +2013,7 @@
 					<a href="http://www.oxcoder.com/cooper/recommended/talent/index.html">人才推荐</a>
 				</li>
 				<li class="active">
-					<a href="http://www.oxcoder.com/cooper/index.html">挑战管理</a>
+					<a href="./ManagementChallenge.aspx">挑战管理</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -2056,11 +2054,13 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="col-xs-12 col-no-left-padding">
-					<h1 class="pull-left">[初级]Java工程师</h1>
+
+                    <div class="pull-left" name="enterName" id="enterName"  style="font-size:25px"></div>
 					
+					<form id="form1" runat="server">
+						<asp:Button style="margin-top: 20px;" class="btn btn-new1 pull-right" ID="CloseButton" runat="server" Text="关闭该挑战" OnClick="CloseButton_Click"></asp:Button>
 						
-						
-							<button class="btn btn-new1 pull-right" onclick="closeRecruit(&#39;3164&#39;)" style="margin-top: 20px;">关闭该挑战</button>
+					</form>		
 						
 					
 				</div>
@@ -2078,17 +2078,16 @@
 			</div>
 			<div class="col-md-12">
 				<div class="challenge-simple-desc">
-					<span class="desc-label">发起时间：2016.05.10</span>
+					<span class="desc-label" id="chaTime"></span>
 					<span class="desc-label">接受挑战：21</span>
 					<span class="desc-label">完成挑战：0</span>
 					<span class="desc-label">所选项目： 
 						
-						
-							二分查找算法&nbsp;&nbsp;
-						
-							汉诺塔问题&nbsp;&nbsp;
-						
-							工厂模式&nbsp;&nbsp;
+						<asp:Repeater ID="ProblemRepeater" runat="server">
+                            <ItemTemplate>
+                                <%# Eval("p_title")%>&nbsp;&nbsp;
+                            </ItemTemplate>
+						</asp:Repeater>
 						
 					</span>
 				</div>

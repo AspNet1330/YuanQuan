@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Model;
+using PublicHelp;
 using BLLInterface;
 using BLLFactory;
 
@@ -20,9 +21,9 @@ namespace Web
       protected void Next_Click(object sender, EventArgs e)
         {
             challenge c = new challenge();
-            c.cha_level = level_id.Value;
+            c.cha_level = ChallengeHelper.getChallengeLevel(level_id.Value);
             c.cha_public = int.Parse(public_id.Value);
-            c.cha_type = directions_id.Value;
+            c.cha_type = ChallengeHelper.getChallengeType(directions_id.Value);
             c.cha_date = DateTime.Now;
 
             Session["challenge"] = c;

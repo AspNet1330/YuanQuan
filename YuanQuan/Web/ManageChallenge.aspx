@@ -62,13 +62,14 @@ href="http://www.oxcoder.com/security_logout">注销</A></LI></UL></LI></UL></DI
 											 
 <H2 class="h2-tab"><A href="http://www.oxcoder.com/cooper/index.html">进行中的挑战</A>
 											 </H2>
-<H2 class="h2-tab"><A class="off" href="http://www.oxcoder.com/cooper/index.html?isHistory=true">挑战历史</A>
+<H2 class="h2-tab"><A class="off" href="./Filter.aspx">挑战历史</A>
 											 </H2><A class="btn btn-new1 pull-right" style="margin-top: 20px;" 
 href="./Invite1.aspx">
 												新增挑战邀请											 </A>										 </SECTION><!-- /.page-header -->
 										 
 <DIV id="content">
-<asp:Repeater ID="ChallengesRepeater" runat="server">
+     <form id="form1" runat="server">
+<asp:Repeater ID="ChallengesRepeater" runat="server"  OnItemDataBound="ChallengesRepeater_ItemDataBound">
     <ItemTemplate>
 <DIV class="row">
 <DIV class="col-md-12">
@@ -76,13 +77,17 @@ href="./Invite1.aspx">
 <DIV class="panel-body">
 <DIV class="row"><!-- new start-->																	 
 <DIV class="col-md-5">
-<H2 style="margin: 12px 0px 2px;"><A href="./Filter.aspx">[初级]Java工程师</A>
+<H2 style="margin: 12px 0px 2px;"><A href="./Filter.aspx">[<%# Eval("cha_level").ToString().Substring(0,2)%>]<%# Eval("cha_type")%>工程师</A>
 																		 </H2>
 <DIV style="width: 280px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><SMALL 
-class="text-muted">[2016.05.10]																																								
-																					 二分查找算法&nbsp;																				
-																					汉诺塔问题&nbsp;																				
-																					工厂模式&nbsp;																																							</SMALL>
+class="text-muted">[<%# Eval("cha_date").ToString().Substring(0,9)%>]																																								
+    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Eval("cha_id")%>' style="display:none"></asp:TextBox>
+    <asp:Repeater runat="server" EnableViewState="false" ID="ProblemReapter">
+        <ItemTemplate>
+            <%# Eval("p_title") %>
+        </ItemTemplate>
+    </asp:Repeater>
+    																																						</SMALL>
 																		 </DIV><!-- <p class="text-muted" style="padding: 0;margin: 0;">2015/01/12</p> -->
 																	 </DIV>
 <DIV class="col-md-2">
@@ -95,15 +100,16 @@ class="text-muted">[2016.05.10]
 <UL class="list-unstyled" style="margin: 20px 0px;">
   <LI><SPAN class="red">0.0</SPAN>																				%已合格
   																			 </LI></UL></DIV>
-<DIV class="col-md-3"><A class="btn btn-new1" href="Filter.aspx">
+<DIV class="col-md-3"><A class="btn btn-new1" href="Filter.aspx?id=<%#Eval("cha_id")%>">
 																			去筛选																		 </A>																		
-																			 <A class="btn btn-new1" style="margin: 16px 5px;" href="./Invite3.aspx">
+																			 <A class="btn btn-new1" style="margin: 16px 5px;" href="./Invite3.aspx?id=<%#Eval("cha_id")%>">
 																				邀请																			 </A>																		
 																	 </DIV><!-- new end-->																 </DIV><!-- /.row -->
 															 </DIV><!-- /.panel-footer -->														 </DIV><!-- /.panel -->
 													 </DIV></DIV>
     </ItemTemplate>
 </asp:Repeater>
+         </form>
 <!-- /.row -->											     
 <UL class="pagination">
   <LI class="disabled"><A aria-label="Previous"><SPAN 
