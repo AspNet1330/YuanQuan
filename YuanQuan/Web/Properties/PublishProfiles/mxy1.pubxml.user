@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BLL.dll">
+      <publishTime>06/14/2016 20:20:14</publishTime>
+    </File>
+    <File Include="bin/BLLFactory.dll">
+      <publishTime>06/14/2016 20:20:15</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>06/14/2016 20:20:14</publishTime>
+    </File>
+    <File Include="bin/DALFactory.dll">
+      <publishTime>06/14/2016 20:20:14</publishTime>
+    </File>
+    <File Include="bin/IBLL.dll">
+      <publishTime>06/14/2016 20:20:14</publishTime>
+    </File>
+    <File Include="bin/IDAL.dll">
+      <publishTime>06/14/2016 20:20:13</publishTime>
+    </File>
+    <File Include="bin/Model.dll">
+      <publishTime>06/14/2016 20:20:13</publishTime>
+    </File>
+    <File Include="bin/Web.dll">
+      <publishTime>06/14/2016 20:20:15</publishTime>
+    </File>
+    <File Include="CoderRecommend.aspx">
+      <publishTime>06/08/2016 11:06:40</publishTime>
+    </File>
+    <File Include="CSS/bootstrap-select.min.css">
+      <publishTime>04/22/2016 10:17:54</publishTime>
+    </File>
+    <File Include="CSS/bootstrap-switch.min.css">
+      <publishTime>04/22/2016 10:17:54</publishTime>
+    </File>
+    <File Include="CSS/bootstrap.min.css">
+      <publishTime>04/22/2016 10:17:54</publishTime>
+    </File>
+    <File Include="CSS/font-awesome.min.css">
+      <publishTime>04/22/2016 10:17:54</publishTime>
+    </File>
+    <File Include="CSS/jquery-confirm.min.css">
+      <publishTime>06/12/2016 17:46:49</publishTime>
+    </File>
+    <File Include="CSS/style%281%29.css">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="CSS/style.css">
+      <publishTime>04/22/2016 10:17:54</publishTime>
+    </File>
+    <File Include="CSS/style_new.css">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="CSS/summernote-bs3.css">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="CSS/summernote.css">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/bootstrap-filestyle.js">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/bootstrap-select.min.js">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/bootstrap-switch.min.js">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/bootstrap.min.js">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/bootstrapValidator.min.js">
+      <publishTime>06/12/2016 17:47:09</publishTime>
+    </File>
+    <File Include="JS/canvas2image.js">
+      <publishTime>06/12/2016 17:47:09</publishTime>
+    </File>
+    <File Include="JS/chart.min.js">
+      <publishTime>06/12/2016 17:47:09</publishTime>
+    </File>
+    <File Include="JS/jquery-1.11.0.min.js">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/jquery-1.4.2.flp.js">
+      <publishTime>04/22/2016 10:17:56</publishTime>
+    </File>
+    <File Include="JS/jquery-confirm.min.js">
+      <publishTime>06/12/2016 17:47:09</publishTime>
+    </File>
+    <File Include="JS/jquery.base64.js">
+      <publishTime>06/12/2016 17:47:09</publishTime>
+    </File>
+    <File Include="JS/jquery.sparkline.min.js">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/script.js">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/summernote.min.js">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="JS/user_center.js">
+      <publishTime>06/12/2016 17:47:09</publishTime>
+    </File>
+    <File Include="JS/zmUtil.js">
+      <publishTime>06/12/2016 17:47:06</publishTime>
+    </File>
+    <File Include="Other/core.php">
+      <publishTime>06/07/2016 20:52:56</publishTime>
+    </File>
+    <File Include="Other/kf.php">
+      <publishTime>06/07/2016 20:52:56</publishTime>
+    </File>
+    <File Include="Other/kf_ivt_new.php">
+      <publishTime>06/07/2016 20:52:56</publishTime>
+    </File>
+    <File Include="Other/sendacc.jsp">
+      <publishTime>06/07/2016 20:52:56</publishTime>
+    </File>
+    <File Include="Other/stat.php">
+      <publishTime>06/07/2016 20:52:56</publishTime>
+    </File>
+    <File Include="Other/z_stat.php">
+      <publishTime>06/07/2016 20:52:57</publishTime>
+    </File>
+    <File Include="Picture/android.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/c.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/clickbtn_11.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/clickbtn_182.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/closebtn_3.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/commonbg_4.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/java.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/otherimg_6.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/pic.gif">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Picture/wlogo_sm.png">
+      <publishTime>04/22/2016 10:17:55</publishTime>
+    </File>
+    <File Include="Report.aspx">
+      <publishTime>06/14/2016 16:11:58</publishTime>
+    </File>
+    <File Include="SelectCombo.aspx">
+      <publishTime>06/08/2016 13:50:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/14/2016 20:20:16</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>06/03/2016 18:11:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

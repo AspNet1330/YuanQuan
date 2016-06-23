@@ -12,6 +12,7 @@ namespace DALInterface
         coder getCoderByID(int id);
         coder getCoderByObject(coder c);
         List<coder> getCoders();
+        List<coder> getCodersof(String skill);
         void insert(coder a);
         void update(coder a);
         void delete(int id);

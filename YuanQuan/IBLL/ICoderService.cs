@@ -9,6 +9,7 @@ namespace BLLInterface
 {
     public interface ICoderService
     {
-        List<coder> getTopCoder();
+        //List<coder> getTopCoder();
+        List<coder> getTopCoderof(String skill);
     }
 }

@@ -18,9 +18,9 @@ namespace Web
             //this.Label1.Text = "today is" + DateTime.Today.Millisecond;
             if (!IsPostBack)
             {
-                ICoderService cs = ServiceFactory.createCoderService();
-                List<coder> coders = cs.getTopCoder();
-                this.Label1.Text = coders[0].c_name;
+                //ICoderService cs = ServiceFactory.createCoderService();
+                //List<coder> coders = cs.getTopCoder();
+                //this.Label1.Text = coders[0].c_name;
             }
         }
 
