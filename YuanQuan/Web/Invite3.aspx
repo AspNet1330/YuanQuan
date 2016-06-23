@@ -92,7 +92,12 @@
 <body>
 	
 	
-
+<SCRIPT type="text/javascript">
+    window.onload = function () {
+        var a = "<%=getChallName()%>"; 
+        document.getElementById("enterName").innerHTML = a;
+        }
+</SCRIPT>
 
 
 
@@ -139,9 +144,8 @@
 						<span class="text">
 							
 								
+								<%#Response.Cookies["challenge"]["enterprise"] %>
 								
-								
-									北京交通大学信息安全科技公司
 								
 							
 						</span>
@@ -172,7 +176,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
-				<h2 class="h2-tab">[中级]Android工程师-邀请挑战</h2>
+                <div class="h2-tab" name="enterName" id="enterName"  style="font-size:25px"></div>
 				<p class="text-muted">您可以邀请其他渠道获取的人才到猿圈，通过挑战来识别他们的能力。</p>
 				<p style="color:#4A90E2">猿圈小提示：每邀请一位人才将会扣除1个猿民币。</p>
 				<button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
@@ -184,10 +188,7 @@
 						<input type="email" name="user_emails" class="form-control" placeholder="多个邮件地址请用&#39;,&#39;分隔" data-bv-field="user_emails">
 						<span class="text-muted">
 							邮件将会单独发送给多个候选人。候选人很多？您可以使用下方的批量上传功能
-							<!--  
-							<a href="javascript:void(0);" onclick="change1()" target="_blank" class="pull-right">下载其他渠道导入模板</a>
-							-->
-							<!--  <a href="javascript:void(0);" onclick="change1()">批量上传</a>-->
+		
 						</span>
 					</div>
 					<span class="help-block has-error" id="hint_user_emails"><small class="help-block" data-bv-validator="emailAddress" data-bv-for="user_emails" data-bv-result="NOT_VALIDATED" style="display: none;">请输入正确的邮箱格式</small><small class="help-block" data-bv-validator="notEmpty" data-bv-for="user_emails" data-bv-result="NOT_VALIDATED" style="display: none;">请输入正确的邮箱格式，多个邮件地址请用','分隔</small></span>

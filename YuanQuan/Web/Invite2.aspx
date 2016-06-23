@@ -178,14 +178,8 @@
                                                                        
 																		<div class="col-md-12" style="min-height: 68px;">
 																			<ul class="companyTags">
-																				
-																				
-																					
-														
-																					
-																						<li><%# Eval("p_detail")%></li>
-																					
-																				
+                                                                                <li><%# Eval("p_detail")%></li>
+                                                                                <li><%# Eval("p_type")%></li>
 																			</ul>
 																			<div class="row">
 																				<div class="col-sm-4">
@@ -410,14 +404,8 @@
                                                                        
 																		<div class="col-md-12" style="min-height: 68px;">
 																			<ul class="companyTags">
-																				
-																				
-																					
-														
-																					
-																						<li><%# Eval("p_detail")%></li>
-																					
-																				
+																				<li><%# Eval("p_detail")%></li>
+                                                                                <li><%# Eval("p_type")%></li>
 																			</ul>
 																			<div class="row">
 																				<div class="col-sm-4">
