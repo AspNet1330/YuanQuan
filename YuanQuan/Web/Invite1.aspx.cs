@@ -34,6 +34,7 @@ namespace Web
             c.cha_public = int.Parse(public_id.Value);
             c.cha_type = ChallengeHelper.getChallengeType(directions_id.Value);
             c.cha_date = DateTime.Now;
+            c.e_id = enterprise.e_id;
 
             Session["challenge"] = c;
 

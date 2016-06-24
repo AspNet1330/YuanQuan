@@ -27,6 +27,20 @@ namespace DAL
             return challenge;
         }
 
+       public  List<challenge> getChallengeByState(int state)
+        {
+            List<challenge> challenge = new List<challenge>();
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                var query = from c in yq.challenge
+                            where c.cha_state == state
+                            select c;
+                foreach (var item in query)
+                    challenge.Add(item);
+            }
+            return challenge;
+        }
+
         public challenge getChallengeById(int challengeId)
         {
             yuanquanEntities yq = new yuanquanEntities();
@@ -50,6 +64,7 @@ namespace DAL
             cha.e_id = challenge.e_id;
             cha.cha_level = challenge.cha_level;
             cha.cha_public = challenge.cha_public;
+            cha.cha_state = challenge.cha_state;
             yq.SaveChanges();
         }
 

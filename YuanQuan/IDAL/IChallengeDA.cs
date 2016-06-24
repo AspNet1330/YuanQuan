@@ -18,5 +18,7 @@ namespace DALInterface
         void updateChallenge(challenge challenge);
 
         void deleteChallengeById(int challengeId);
+
+        List<challenge> getChallengeByState(int state);
     }
 }
