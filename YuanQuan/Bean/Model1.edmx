@@ -41,6 +41,7 @@
           <Property Name="cha_level" Type="varchar" MaxLength="255" />
           <Property Name="cha_public" Type="int" />
           <Property Name="cha_date" Type="date" />
+          <Property Name="cha_state" Type="int" />
         </EntityType>
         <EntityType Name="coder">
           <Key>
@@ -66,6 +67,7 @@
           <Property Name="grade" Type="int" />
           <Property Name="usetime" Type="int" />
           <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="c_account" Type="varchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="combo">
           <Key>
@@ -85,6 +87,7 @@
           <Property Name="e_pwd" Type="varchar" MaxLength="255" />
           <Property Name="e_chanum" Type="int" />
           <Property Name="e_currency" Type="int" />
+          <Property Name="e_name" Type="varchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="problem">
           <Key>
@@ -138,6 +141,7 @@
           <Property Name="cha_level" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
           <Property Name="cha_public" Type="Int32" />
           <Property Name="cha_date" Type="DateTime" Precision="0" />
+          <Property Name="cha_state" Type="Int32" />
         </EntityType>
         <EntityType Name="coder">
           <Key>
@@ -163,6 +167,7 @@
           <Property Name="grade" Type="Int32" />
           <Property Name="usetime" Type="Int32" />
           <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="c_account" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
         </EntityType>
         <EntityType Name="combo">
           <Key>
@@ -182,6 +187,7 @@
           <Property Name="e_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
           <Property Name="e_chanum" Type="Int32" />
           <Property Name="e_currency" Type="Int32" />
+          <Property Name="e_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
         </EntityType>
         <EntityType Name="problem">
           <Key>
@@ -227,6 +233,7 @@
                 <ScalarProperty Name="cha_level" ColumnName="cha_level" />
                 <ScalarProperty Name="cha_public" ColumnName="cha_public" />
                 <ScalarProperty Name="cha_date" ColumnName="cha_date" />
+                <ScalarProperty Name="cha_state" ColumnName="cha_state" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -254,6 +261,7 @@
                 <ScalarProperty Name="grade" ColumnName="grade" />
                 <ScalarProperty Name="usetime" ColumnName="usetime" />
                 <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="c_account" ColumnName="c_account" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -275,6 +283,7 @@
                 <ScalarProperty Name="e_pwd" ColumnName="e_pwd" />
                 <ScalarProperty Name="e_chanum" ColumnName="e_chanum" />
                 <ScalarProperty Name="e_currency" ColumnName="e_currency" />
+                <ScalarProperty Name="e_name" ColumnName="e_name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
