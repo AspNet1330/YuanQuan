@@ -13,7 +13,7 @@ namespace PublicHelp
         {
             int type = int.Parse(challengeType);
             type--;
-            string[] b = new string[7] {"Java","Android","ios","C语言(beta)","C++(beta)","php(beta)","Python(beta)"};
+            string[] b = new string[7] { "Java", "Android", "ios", "C语言(beta)", "C++(beta)", "php(beta)", "Python(beta)" };
             return b[type];
         }
 
@@ -22,11 +22,8 @@ namespace PublicHelp
             int level = int.Parse(challengeLevel);
             level = (level + 1) / 2 - 1;
             string[] a = new string[3] { "初级", "中级", "高级" };
-            return a[level] + challengeLevel;
+            return a[level];
         }
 
     }
-
-   
-
 }

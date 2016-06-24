@@ -18,5 +18,7 @@ namespace BLLInterface
         List<challenge> getChallengesByEnterprise(int enterpeiseId);
 
         challenge getChallengeByChallengeId(int challengeId);
+
+        List<challenge> getChallengeByState(int state, int enterpriseId);
     }
 }

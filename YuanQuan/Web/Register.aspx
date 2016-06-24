@@ -258,7 +258,11 @@ body {
 	            if (regWay == 1) {
 	            var login_vcode = $("#login_vcode").val();
 	            var login_capcha = $("#login_capha").val();
+<<<<<<< HEAD
                 if(login_vcode != )
+=======
+                if()
+>>>>>>> c8e33be1622bec7d8c489f07779acd5144a5017b
 	            var login_password = $("#login_password").val();
                 var login_mobile = $("#login_mobile").val();
 	            $.ajax({

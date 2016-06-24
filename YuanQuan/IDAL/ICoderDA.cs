@@ -10,10 +10,12 @@ namespace DALInterface
     public interface ICoderDA
     {
         coder getCoderByID(int id);
+
+        coder getCoderByAccount(String account);
         coder getCoderByObject(coder c);
         List<coder> getCoders();
+        int insert(coder a);
         List<coder> getCodersof(String skill);
-        void insert(coder a);
         void update(coder a);
         void delete(int id);
     }

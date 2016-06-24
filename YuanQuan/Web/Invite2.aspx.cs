@@ -39,6 +39,7 @@ namespace Web
                     return;
                 }
                 IProblemService ps = ServiceFactory.createProblemService();
+                this.EnterpriseName.Text = enterprise.e_name;
                 getRandomProblem();  
 
             }
@@ -157,13 +158,6 @@ namespace Web
                 cps.saveChallengeProblem(chaPro);
             }
         }
-
-        public string getEntership()
-        {
-            return enterprise.e_id.ToString();
-        }
-
-
 
 
     }

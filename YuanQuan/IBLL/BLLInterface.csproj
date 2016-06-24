@@ -45,6 +45,7 @@
     <Compile Include="ICoderChallengeService.cs" />
     <Compile Include="ICoderService.cs" />
     <Compile Include="IProblemService.cs" />
+    <Compile Include="IRegisterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

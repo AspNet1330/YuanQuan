@@ -23,6 +23,7 @@ namespace Web
                 //this.Label1.Text = coders[0].c_name;
                 enterprise enterprise = new enterprise();
                 enterprise.e_id = 1;
+                enterprise.e_name = "刀奈特小组";
                 Session["enterprise"]=enterprise;
             }
         }

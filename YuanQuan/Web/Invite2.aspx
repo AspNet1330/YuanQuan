@@ -32,28 +32,8 @@
 </style>
 <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
 <body>
-	
-	
-       <SCRIPT type="text/javascript">
-           window.onload = function () {
-               document.getElementById("enterprise").innerHTML = "<%=getEntership()%>";
-        }
-</SCRIPT>
-
-
-
-
-
 
     <form id="form1" runat="server">
-	
-	
-
-
-
-
-
-
 
 <div class="navbar navbar-default navbar-fixed-top" onload="validateSession()">
 	<div class="container">
@@ -83,6 +63,7 @@
 				<li class="dropdown">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
 						<span class="text" id="enterprise">
+<asp:Label ID="EnterpriseName" runat="server" Text="Label"></asp:Label>
 						</span>
 						<b class="caret"></b>
 					</a>
@@ -446,66 +427,6 @@
 
 
 
-
-<div class="panel-user">
-	<div class="panel-heading">
-		<div class="panel-title">
-			<div class="media">
-				<a class="pull-left">
-					<img src="./猿圈 新增挑战邀请_files/d36f528c-e62f-41c8-b2b9-8240e46a098f.jpg" class="media-object">
-				</a>
-				<div class="media-body">
-					<h4 class="media-heading">
-						<!-- <span class="welcome">Hello</span> -->
-						<span>123			</h4>
-					<span class="text-muted">
-						<small>
-							上次登录日期:
-							<br>
-							2016-06-18 21:11:37
-						</small>
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="panel panel-outline panel-no-padding hidden-xs">
-	<div class="panel-body">
-		<div class="stat-block stat-danger">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-bell"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">今日接受挑战人数</div>
-			</div>
-		</div>
-		<div class="stat-block stat-success">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-bar-chart-o"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">今日通过挑战人数</div>
-			</div>
-		</div>
-		<div class="stat-block stat-primary">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-tachometer"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">共帮您找到的人才</div>
-			</div>
-		</div>
-	</div>
-	<!-- /.panel-body -->
-</div>
-<!-- /.panel -->
 </div>
 					</div>
 					<!-- /.row -->
