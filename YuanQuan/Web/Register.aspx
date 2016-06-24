@@ -4,9 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<base href=".">
+<base href="."/>
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="BootstrapStyler">
@@ -134,7 +134,7 @@ body {
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-inbox"></i></span> <input type="text" id="login-password" name="key" class="form-control" placeholder="请输入短信验证码" data-bv-field="key"> <span class="input-group-btn"> <asp:button id="btn_send_sms" class="btn btn-primary" style="margin-right: -38px;" onclick="sendm()" runat="server" Text="获取验证码"/>
+																<span class="input-group-addon"><i class="fa fa-inbox"></i></span> <input type="text" id="login-vcode" name="key" class="form-control" placeholder="请输入短信验证码" data-bv-field="key"> <span class="input-group-btn"> <button id="btn_send_sms" class="btn btn-primary" style="margin-right: -38px;" onclick="sendm()" >获取验证码</button>
 																</span>
 															</div>
 															<small id="hint3" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="key" data-bv-result="NOT_VALIDATED" style="display: none;">请输入短信验证码</small></small>
@@ -173,8 +173,8 @@ body {
 												
 													
 													
-														<li id="li-person" class="active"><a href="http://www.oxcoder.com/#j2-profile" data-toggle="pill">我是企业</a></li>
-														<li id="li-work"><a href="http://www.oxcoder.com/#j2-home" data-toggle="pill">我是开发者</a></li>
+														<li id="li-person" class="active"><a runat = "server" href="http://www.oxcoder.com/#j2-profile" data-toggle="pill">我是企业</a></li>
+														<li id="li-work"><a runat ="server" href="http://www.oxcoder.com/#j2-home" data-toggle="pill">我是开发者</a></li>
 													
 												
 
@@ -188,7 +188,7 @@ body {
 												</span>
 											</div>
 											<div class="col-xs-12">
-												<asp:button type="submit" runat="server" class="btn btn-primary btn-lg" style="margin-left: 20px; border-radius: 3px;" Text="注册"/>
+												<button type="submit"  class="btn btn-primary btn-lg" style="margin-left: 20px; border-radius: 3px;" onclick="register()">注册</button>
 											</div>
 											<div class="col-xs-12"></div>
 										</form>
@@ -247,6 +247,51 @@ body {
 	
 	<script type="text/javascript" src="./猿圈 注册_files/jquery-confirm.min.js"></script>
 	<script type="text/javascript">
+
+	    var vcode;
+	    function register() {
+	        var regWay = $("#regWay").val();
+	        var regType = $("#regType").val();
+	        $.post("sendSms.aspx/SendVSMS", {
+	            "phone": $("#login-mobile").val(),
+	        }, function (res) {
+	            if (regWay == 1) {
+	            var login_vcode = $("#login_vcode").val();
+	            var login_capcha = $("#login_capha").val();
+                if(login_vcode != )
+	            var login_password = $("#login_password").val();
+                var login_mobile = $("#login_mobile").val();
+	            $.ajax({
+	                type: "post",
+	                contentType: "aplication/json",
+	                url: "Register.aspx/GetValue",
+	                data: {
+	                    regType: regType, login_mobile: login_mobile, login_capha: login_capha,
+	                    login_password: login_password, login_vcode: login_vcode
+	                },
+	                success: function (res) {
+	                    if (res == 1) {
+	                        alert("图片验证码错误");
+	                    }
+	                    if (res == 2) {
+	                        alert("短信验证码错误");
+	                    }
+	                }
+	            }
+	        } else {
+	            var login_email = $("#login_email").var();
+	            var login_password = $("#login_password").var();
+	            $.ajax({
+	                type: "post",
+	                contentType: "aplication/json",
+	                url: "Register.aspx/GetMailValue",
+	                data: {
+	                    regType: regType, login_email: login_email,
+	                    login_password: login_password
+	                }
+	            });
+	        }
+	    });
 	    $(document)
 				.ready(
 						function () {
@@ -384,12 +429,11 @@ body {
 	        if (bootstrapValidator.isValidField('phone')
 					&& bootstrapValidator.isValidField('capcha')) {
 	            $("#btn_send_sms").addClass("disabled");
-	            $.post("sendSms.aspx?t=" + Math.random(), {
+	            $.post("sendSms.aspx/SendVSMS", {
 	                "phone": $("#login-mobile").val(),
-	                "capcha": $("#login-capcha").val()
 	            }, function (res) {
 
-	                if (!res.su) {
+	                if (!res.b) {
 	                    resetVerify();
 	                    if (typeof (res.time) != "undefined") {
 	                        seSendDown(res.time);
@@ -398,10 +442,11 @@ body {
 	                    }
 	                } else {
 	                    seSendDown(60);
+	                    vode = res.s;
 	                }
 	                $.alert({
 	                    title: "提示",
-	                    content: res.msg,
+	                    content: "异常",
 	                    confirmButton: "确定",
 	                    confirm: function () {
 	                        /* location.href = data.url; */
@@ -421,7 +466,9 @@ body {
 	        var d = new Date();
 	        var src = "ImgVerify.aspx?date=" + d.getTime();
 	        $("#img_verify").attr("src", src);
-	
+	        var vcode = '<%=Session["randStr"] %>';
+
+	        
 	    }
 	    function seSendDown(reSendSmsCountDown) {
 	        $("#btn_send_sms").addClass("disabled");
