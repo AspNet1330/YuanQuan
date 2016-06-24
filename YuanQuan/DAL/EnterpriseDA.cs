@@ -22,5 +22,46 @@ namespace DAL
             }
             return enterprises;
         }
+
+        public enterprise getEnterpriseByID(int id)
+        {
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                enterprise target = new enterprise();
+                target = yq.enterprise.FirstOrDefault(e => e.e_id == id);
+                return target;
+            }
+        }
+
+        public enterprise getEnterpriseByObject(string name)
+        {
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                enterprise epname = new enterprise();
+                epname = yq.enterprise.FirstOrDefault(e => e.e_account == name);
+                return epname;
+            }
+        }
+
+        public void delete(int id)
+        {
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                enterprise de = new enterprise();
+                de = yq.enterprise.SingleOrDefault(e => e.e_id == id);
+                yq.enterprise.DeleteObject(de);
+                yq.SaveChanges();
+            }
+        }
+
+        public enterprise getEnterpriseByAccount(string account)
+        {
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                enterprise enterprisename = new enterprise();
+                enterprisename = yq.enterprise.FirstOrDefault(e => e.e_account == account);
+                return enterprisename;
+            }
+        }
     }
 }

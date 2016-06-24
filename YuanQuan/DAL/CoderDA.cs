@@ -46,5 +46,25 @@ namespace DAL
         public void insert(coder a) { }
         public void update(coder a) { }
         public void delete(int id) { }
+
+        public coder getCoderByObject(string name)
+        {
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                coder codername = new coder();
+                codername = yq.coder.FirstOrDefault(c => c.c_account == name);
+                return codername;
+            }
+        }
+
+        public coder getCoderByAccount(string account)
+        {
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                coder codername = new coder();
+                codername = yq.coder.FirstOrDefault(c => c.c_account == account);
+                return codername;
+            }
+        }
     }
 }

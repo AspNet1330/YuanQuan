@@ -2,4 +2,3 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\ViewModel\bin\Debug\ViewModel.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\ViewModel\bin\Debug\ViewModel.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\ViewModel\obj\Debug\ViewModel.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\ViewModel\obj\Debug\ViewModel.pdb
-D:\GitRepo\YQ\YuanQuan\YuanQuan\ViewModel\obj\Debug\ViewModel.csprojResolveAssemblyReference.cache

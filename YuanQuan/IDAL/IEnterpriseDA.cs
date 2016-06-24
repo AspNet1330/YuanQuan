@@ -10,5 +10,9 @@ namespace DALInterface
     public interface IEnterpriseDA
     {
         List<enterprise> getEnterprises();
+        enterprise getEnterpriseByID(int id);
+        enterprise getEnterpriseByObject(string name);
+        void delete(int id);
+        enterprise getEnterpriseByAccount(string account);
     }
 }

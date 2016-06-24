@@ -51,5 +51,23 @@ namespace DALFactory
             IEnterpriseDA da = new EnterpriseDA();
             return da;
         }
+
+        public static IAdminDA CreateAdminDA()
+        {
+            IAdminDA da = new AdminDA();
+            return da;
+        }
+
+        public static ICoderDA CreateCoderDA()
+        {
+            ICoderDA dc = new CoderDA();
+            return dc;
+        }
+
+        public static IEnterpriseDA CreateEnterpriseDA()
+        {
+            IEnterpriseDA de = new EnterpriseDA();
+            return de;
+        }
     }
 }

@@ -189,17 +189,17 @@
 
                             <a href="http://localhost:52775/CoderRecommend.aspx?skill=Java" class="btn btn-order ">Java</a>
 
-                            <a href="http://www.oxcoder.com/cooper/recommended/talent/index.html?direction=2" class="btn btn-order ">Android</a>
+                            <a href="http://localhost:52775/CoderRecommend.aspx?skill=Android" class="btn btn-order ">Android</a>
 
-                            <a href="http://www.oxcoder.com/cooper/recommended/talent/index.html?direction=3" class="btn btn-order ">iOS</a>
+                            <a href="http://localhost:52775/CoderRecommend.aspx?skill=IOS" class="btn btn-order ">iOS</a>
 
-                            <a href="http://www.oxcoder.com/cooper/recommended/talent/index.html?direction=4" class="btn btn-order ">C语言(beta)</a>
+                            <a href="http://localhost:52775/CoderRecommend.aspx?skill=C" class="btn btn-order ">C语言(beta)</a>
 
-                            <a href="http://www.oxcoder.com/cooper/recommended/talent/index.html?direction=5" class="btn btn-order ">C++(beta)</a>
+                            <a href="http://localhost:52775/CoderRecommend.aspx?skill=C++" class="btn btn-order ">C++(beta)</a>
 
-                            <a href="http://www.oxcoder.com/cooper/recommended/talent/index.html?direction=6" class="btn btn-order ">php(beta)</a>
+                            <a href="http://localhost:52775/CoderRecommend.aspx?skill=PHP" class="btn btn-order ">php(beta)</a>
 
-                            <a href="http://www.oxcoder.com/cooper/recommended/talent/index.html?direction=7" class="btn btn-order ">Python(beta)</a>
+                            <a href="http://localhost:52775/CoderRecommend.aspx?skill=Python" class="btn btn-order ">Python(beta)</a>
 
                             <div class="pull-right">
                                 <div style="display: inline-block; vertical-align: top;">

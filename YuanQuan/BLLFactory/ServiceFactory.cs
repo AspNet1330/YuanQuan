@@ -45,5 +45,23 @@ namespace BLLFactory
             IDisplayService ps = new DisplayService();
             return ps;
         }
+
+        public static IAdminBL CreateAdminBL()
+        {
+            IAdminBL bl = new AdminBL();
+            return bl;
+        }
+
+        public static ICoderBL CreateCoderBL()
+        {
+            ICoderBL bc = new CoderBL();
+            return bc;
+        }
+
+        public static IEnterpriseBL CreateEnterpriseBL()
+        {
+            IEnterpriseBL de = new EnterpriseBL();
+            return de;
+        }
     }
 }

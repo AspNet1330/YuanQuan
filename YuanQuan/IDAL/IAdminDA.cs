@@ -10,10 +10,12 @@ namespace DALInterface
     public interface IAdminDA
     {
         admin getAdminByID(int id);
-        admin getAdminByObject(admin a);
+        //admin getAdminByObject(admin a);更改了接口
+        admin getAdminByObject(string name);
         List<admin> getAdmins();
         void insert(admin a);
         void update(admin a);
         void delete(int id);
+
     }
 }

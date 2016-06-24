@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminBL.cs" />
     <Compile Include="ChallengeService.cs" />
     <Compile Include="ChallengeProblemService.cs" />
+    <Compile Include="CoderBL.cs" />
     <Compile Include="CoderChallengeService.cs" />
     <Compile Include="CoderService.cs" />
     <Compile Include="DisplayService.cs" />
+    <Compile Include="EnterpriseBL.cs" />
     <Compile Include="ProblemService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
