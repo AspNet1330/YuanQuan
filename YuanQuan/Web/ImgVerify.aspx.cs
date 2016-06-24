@@ -7,11 +7,16 @@ using System.Web.UI.WebControls;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
+using System.Web.SessionState;
 
 namespace Web
 {
+
+   
+
     public partial class ImgVerify : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Response.AppendHeader("pragma", "no-cache");
@@ -21,7 +26,9 @@ namespace Web
             Random rand = new Random();
 
             //获取随机字符
-            static string str = GetRandString(4);
+            string str = GetRandString(4);
+            Session["randStr"] = str;
+            
 
             //创建画板
             Bitmap image = new Bitmap(80, 26);

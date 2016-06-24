@@ -193,10 +193,14 @@
     <Content Include="Picture\wlogo_sm.png" />
 <<<<<<< HEAD
     <Content Include="Register.aspx" />
+<<<<<<< HEAD
 =======
     <Content Include="Report.aspx" />
     <Content Include="SelectCombo.aspx" />
 >>>>>>> master
+=======
+    <Content Include="sendSms.aspx" />
+>>>>>>> e1d4b2dd78458ba8c0f8caf6d6ed28157cfe8a13
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -443,6 +447,12 @@
     <Compile Include="SelectCombo.aspx.designer.cs">
       <DependentUpon>SelectCombo.aspx</DependentUpon>
 >>>>>>> master
+    </Compile>
+    <Compile Include="sendSms.aspx.cs">
+      <DependentUpon>sendSms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sendSms.aspx.designer.cs">
+      <DependentUpon>sendSms.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
