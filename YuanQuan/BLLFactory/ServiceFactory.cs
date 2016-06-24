@@ -10,6 +10,11 @@ namespace BLLFactory
 {
     public class ServiceFactory
     {
+        public static IRegisterService createRegisterService() {
+            IRegisterService rs = new RegisterService();
+            return rs;
+        }
+
         public static ICoderService createCoderService()
         {
             ICoderService cs = new CoderService();

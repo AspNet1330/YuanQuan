@@ -30,10 +30,12 @@ namespace Web
       protected void Next_Click(object sender, EventArgs e)
         {
             challenge c = new challenge();
-            c.cha_level = ChallengeHelper.getChallengeLevel(level_id.Value);
+            c.cha_level = level_id.Value;
             c.cha_public = int.Parse(public_id.Value);
             c.cha_type = ChallengeHelper.getChallengeType(directions_id.Value);
             c.cha_date = DateTime.Now;
+            c.e_id = enterprise.e_id;
+            c.cha_state = 1;
 
             Session["challenge"] = c;
 
@@ -42,7 +44,7 @@ namespace Web
 
       public string getEntership()
       {
-          return enterprise.e_id.ToString();
+          return enterprise.e_name.ToString();
       }
 
        

@@ -19,6 +19,10 @@ namespace DALInterface
 
         void deleteChallengeById(int challengeId);
 
+<<<<<<< HEAD
         List<challenge> getChanllenges(); 
+=======
+        List<challenge> getChallengeByState(int state,int enterpriseId);
+>>>>>>> 4ae25bc518cac5890903c823d30b31b11ac55dbb
     }
 }

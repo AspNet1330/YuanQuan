@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DALInterface;
 using Model;
+<<<<<<< HEAD
 
 namespace DAL
 {
@@ -62,6 +63,24 @@ namespace DAL
                 enterprisename = yq.enterprise.FirstOrDefault(e => e.e_account == account);
                 return enterprisename;
             }
+=======
+using PublicHelp;
+
+namespace DAL
+{
+    public  class EnterpriseDA : IEnterpriseDA
+    {
+
+
+        public Boolean insert(enterprise e) {
+            yuanquanEntities yq = new yuanquanEntities();
+            Boolean exist = CoderDA.exist(e.e_account);
+            if (exist) {
+                yq.enterprise.AddObject(e);
+                yq.SaveChanges();
+            }
+            return false;
+>>>>>>> 4ae25bc518cac5890903c823d30b31b11ac55dbb
         }
     }
 }

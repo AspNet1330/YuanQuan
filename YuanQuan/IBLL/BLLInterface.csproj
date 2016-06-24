@@ -49,6 +49,7 @@
     <Compile Include="IDisplayService.cs" />
     <Compile Include="IEnterpriseBL.cs" />
     <Compile Include="IProblemService.cs" />
+    <Compile Include="IRegisterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

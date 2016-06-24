@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Filter.aspx.cs" Inherits="Web.Filter" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" enableEventValidation="false" CodeBehind="Filter.aspx.cs" Inherits="Web.Filter" %>
 
 <!DOCTYPE html>
 <!-- saved from url=(0079)http://www.oxcoder.com/cooper/screening/user/screening_list.html?recruitId=3164 -->
@@ -1985,13 +1985,6 @@
     </style>
 </head>
 <body>
-	<SCRIPT type="text/javascript">
-	    window.onload = function () {
-	        var a = "<%=getChallName()%>";
-	        document.getElementById("enterName").innerHTML = a;
-	        document.getElementById("chaTime").innerHTML="<%=getDate()%>";
-	       }
-</SCRIPT>
 <div class="navbar navbar-default navbar-fixed-top" onload="validateSession()">
 	<div class="container">
 		<div class="navbar-header">
@@ -2013,20 +2006,14 @@
 					<a href="http://www.oxcoder.com/cooper/recommended/talent/index.html">人才推荐</a>
 				</li>
 				<li class="active">
-					<a href="./ManagementChallenge.aspx">挑战管理</a>
+					<a href="ManageChallenge.aspx">挑战管理</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="text">
-							
-								
-								
-								
-									北京交通大学
-								
-							
+						<span class="text"  id="entership">
+                              <asp:Label ID="EntersipName" runat="server" Text="Label"></asp:Label>
 						</span>
 						<b class="caret"></b>
 					</a>
@@ -2050,17 +2037,21 @@
 	</div>
 </div>
 
+
+    <form id="form1" runat="server">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="col-xs-12 col-no-left-padding">
 
-                    <div class="pull-left" name="enterName" id="enterName"  style="font-size:25px"></div>
+                    <div class="pull-left" name="enterName" id="enterName"  style="font-size:25px">
+                    <asp:Label ID="ChallengeName" runat="server" Text="Label"></asp:Label>
+                    </div>
 					
-					<form id="form1" runat="server">
+					
 						<asp:Button style="margin-top: 20px;" class="btn btn-new1 pull-right" ID="CloseButton" runat="server" Text="关闭该挑战" OnClick="CloseButton_Click"></asp:Button>
 						
-					</form>		
+				
 						
 					
 				</div>
@@ -2078,9 +2069,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="challenge-simple-desc">
-					<span class="desc-label" id="chaTime"></span>
-					<span class="desc-label">接受挑战：21</span>
-					<span class="desc-label">完成挑战：0</span>
+					<span class="desc-label"> <asp:Label ID="ChallengeTime" runat="server" Text="Label"></asp:Label>  </span>
+					<span class="desc-label">接受挑战： <asp:Label ID="CoderNumber" runat="server" Text="0"></asp:Label></span>
+					<span class="desc-label">完成挑战：<asp:Label ID="UnfinishNumber" runat="server" Text="0"></asp:Label></span>
 					<span class="desc-label">所选项目： 
 						
 						<asp:Repeater ID="ProblemRepeater" runat="server">
@@ -2095,19 +2086,21 @@
 			<div class="col-md-12">
 				<section id="middle">
 					<h2 class="h2-tab">
-						<a href="javascript:changeState(-1)" class="on">全部（21） </a>
+                       <asp:LinkButton ID="TotalCoderLink" runat="server" class="on" OnClick="TotalCoderLink_Click">全部（<asp:Label ID="TotalCoder" runat="server" Text="0"></asp:Label>） </asp:LinkButton>
 					</h2>
 					<h2 class="h2-tab">
-						<a href="javascript:changeState(0)" class="off">未完成（21） </a>
+                      <asp:LinkButton ID="SomeCoderLink" runat="server" class="off" OnClick="SomeCoderLink_Click1">未完成（<asp:Label ID="Unstart" runat="server" Text="Label"></asp:Label>） </asp:LinkButton>
 					</h2>
 					<h2 class="h2-tab">
-						<a href="javascript:changeState(1)" class="off">推荐（0） </a>
+<asp:LinkButton ID="RecommandButton" runat="server" class="off"> 推荐（<asp:Label ID="RecomandNumber" runat="server" Text="0"></asp:Label>） </asp:LinkButton>
 					</h2>
 					<h2 class="h2-tab">
-						<a href="javascript:changeState(2)" class="off">合格（0） </a>
+<asp:LinkButton ID="UpperButton" runat="server" class="off" OnClick="UpperButton_Click">合格（<asp:Label ID="UpperNumber" runat="server" Text="Label"></asp:Label>）</asp:LinkButton>
+						
 					</h2>
 					<h2 class="h2-tab">
-						<a href="javascript:changeState(3)" class="off">不合格（0） </a>
+<asp:LinkButton ID="LowerButton" runat="server" class="off" OnClick="LowerButton_Click">不合格（<asp:Label ID="LowerNumber" runat="server" Text="Label"></asp:Label>）</asp:LinkButton>
+						
 					</h2>
 				</section>
 			</div>
@@ -2119,77 +2112,46 @@
 					<div class="pull-right">
 						<div style="display: inline-block; vertical-align: top;">
 							<div class="input-group" style="width: 200px">
-								<input class="form-control" id="id_searchName" value="" placeholder="姓名、邮箱">
-								<span class="input-group-btn">
-									<a href="javascript:changeSearchName()" class="btn">
-										<i class="fa fa-search"></i>
-									</a>
-								</span>
+<asp:TextBox class="form-control" id="id_searchName"  placeholder="姓名、邮箱" runat="server"></asp:TextBox>
+<span class="input-group-addon" class="btn" style="cursor: pointer;" >
+<asp:LinkButton ID="SearchButton" runat="server" OnClick="SearchButton_Click">搜索</asp:LinkButton>
+	</span>							
 							</div>
 						</div>
 					</div>
 				</section>
 			</div>
 			<div class="col-md-12">
+                
 				<table class="table table-hover">
 					<thead>
 						<tr>
 							<th>序号</th>
 							<th>姓名</th>
-							<th>开始时间</th>
-							<th>挑战结果</th>
 							<th>得分</th>
 							<th>耗时</th>
 							<th>网站身价</th>
-							<th>状态</th>
 							<th>操作</th>
 						</tr>
 					</thead>
 					<tbody>
-						
-							<tr>
-								<td>1 </td>
+						<asp:Repeater ID="CoderReapter" runat="server" OnItemDataBound="CoderItemBound">
+                            <ItemTemplate>
+                                <tr>
+                                    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Eval("c_id")%>' style="display:none"></asp:TextBox>
+								<td><asp:Label runat="server" ID="Number" Text="Label"></asp:Label> </td>
 								<td>
-									1191579842@qq.com
-									
-										
-											
-											
-										
-								</td>
-								<td>未开始</td>
-								<td>
-									
-										
-										
-										
-										
-										
-										
-											<span class="label label-warning">未完成</span>
-										
-									
+									<%#Eval("c_name") %>
+
 								</td>
 								<td>
-									
-									0
+									<asp:Label runat="server" ID="Grade" Text="Label"></asp:Label>
 								</td>
 								<td>
-									
-									未完成挑战
+                                    <asp:Label runat="server" ID="UsingTime"  Text="Label"></asp:Label>
 								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
+								<td><%#Eval("c_value") %>元</td>
+								
 								<td>
 											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=121538" class="btn btn-sm btn-new1">查看报告详情</a>
                                             <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=121538" class="btn btn-sm btn-warning">收藏</a> 
@@ -2203,421 +2165,15 @@
                                             
 								</td>
 							</tr>
+                            </ItemTemplate>
+						</asp:Repeater>
+							
 						
-							<tr>
-								<td>2 </td>
-								<td>
-									981309084@qq.com
-									
-										
-											
-											
-										
-								</td>
-								<td>未开始</td>
-								<td>
-									
-										
-										
-										
-										
-										
-										
-											<span class="label label-warning">未完成</span>
-										
-									
-								</td>
-								<td>
-									
-									0
-								</td>
-								<td>
-									
-									未完成挑战
-								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
-								<td>
-											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=119601" class="btn btn-sm btn-new1">查看报告详情</a>
-                                            <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=119601" class="btn btn-sm btn-warning">收藏</a> 
-                                            <a href="javascript:forward_email(119601)" class="btn btn-sm btn-info">转发</a>
-                                            <a href="javascript:not_accept_email(119601)" class="btn btn-sm btn-danger">不合适</a>
-                                            -->
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#resend" onclick="set_id(119601)"><i class="fa fa-mail-forward"></i>转发报告</button>
-                                            
-												<button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#reject" onclick="set_id(119601)">不合适</button>
-											
-                                            
-								</td>
-							</tr>
-						
-							<tr>
-								<td>3 </td>
-								<td>
-									binghandeyoulan@163.com
-									
-										
-											
-											
-												<span class="pull-right badge badge-info">新接受</span>
-											
-										
-								</td>
-								<td>未开始</td>
-								<td>
-									
-										
-										
-										
-										
-										
-										
-											<span class="label label-warning">未完成</span>
-										
-									
-								</td>
-								<td>
-									
-									0
-								</td>
-								<td>
-									
-									未完成挑战
-								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
-								<td>
-											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=121537" class="btn btn-sm btn-new1">查看报告详情</a>
-                                            <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=121537" class="btn btn-sm btn-warning">收藏</a> 
-                                            <a href="javascript:forward_email(121537)" class="btn btn-sm btn-info">转发</a>
-                                            <a href="javascript:not_accept_email(121537)" class="btn btn-sm btn-danger">不合适</a>
-                                            -->
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#resend" onclick="set_id(121537)"><i class="fa fa-mail-forward"></i>转发报告</button>
-                                            
-												<button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#reject" onclick="set_id(121537)">不合适</button>
-											
-                                            
-								</td>
-							</tr>
-						
-							<tr>
-								<td>4 </td>
-								<td>
-									binghandeyoulan@163.com
-									
-										
-											
-											
-												<span class="pull-right badge badge-info">新接受</span>
-											
-										
-								</td>
-								<td>未开始</td>
-								<td>
-									
-										
-										
-										
-										
-										
-										
-											<span class="label label-warning">未完成</span>
-										
-									
-								</td>
-								<td>
-									
-									0
-								</td>
-								<td>
-									
-									未完成挑战
-								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
-								<td>
-											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=121535" class="btn btn-sm btn-new1">查看报告详情</a>
-                                            <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=121535" class="btn btn-sm btn-warning">收藏</a> 
-                                            <a href="javascript:forward_email(121535)" class="btn btn-sm btn-info">转发</a>
-                                            <a href="javascript:not_accept_email(121535)" class="btn btn-sm btn-danger">不合适</a>
-                                            -->
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#resend" onclick="set_id(121535)"><i class="fa fa-mail-forward"></i>转发报告</button>
-                                            
-												<button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#reject" onclick="set_id(121535)">不合适</button>
-											
-                                            
-								</td>
-							</tr>
-						
-							<tr>
-								<td>5 </td>
-								<td>
-									714570221@qq.com
-									
-										
-											
-											
-												<span class="pull-right badge badge-info">新接受</span>
-											
-										
-								</td>
-								<td>未开始</td>
-								<td>
-									
-										
-										
-										
-										
-										
-										
-											<span class="label label-warning">未完成</span>
-										
-									
-								</td>
-								<td>
-									
-									0
-								</td>
-								<td>
-									
-									未完成挑战
-								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
-								<td>
-											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=119602" class="btn btn-sm btn-new1">查看报告详情</a>
-                                            <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=119602" class="btn btn-sm btn-warning">收藏</a> 
-                                            <a href="javascript:forward_email(119602)" class="btn btn-sm btn-info">转发</a>
-                                            <a href="javascript:not_accept_email(119602)" class="btn btn-sm btn-danger">不合适</a>
-                                            -->
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#resend" onclick="set_id(119602)"><i class="fa fa-mail-forward"></i>转发报告</button>
-                                            
-												<button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#reject" onclick="set_id(119602)">不合适</button>
-											
-                                            
-								</td>
-							</tr>
-						
-							<tr>
-								<td>6 </td>
-								<td>
-									2210124969@qq.com
-									
-										
-											
-											
-												<span class="pull-right badge badge-info">新接受</span>
-											
-										
-								</td>
-								<td>未开始</td>
-								<td>
-									
-										
-										
-										
-										
-										
-										
-											<span class="label label-warning">未完成</span>
-										
-									
-								</td>
-								<td>
-									
-									0
-								</td>
-								<td>
-									
-									未完成挑战
-								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
-								<td>
-											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=119600" class="btn btn-sm btn-new1">查看报告详情</a>
-                                            <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=119600" class="btn btn-sm btn-warning">收藏</a> 
-                                            <a href="javascript:forward_email(119600)" class="btn btn-sm btn-info">转发</a>
-                                            <a href="javascript:not_accept_email(119600)" class="btn btn-sm btn-danger">不合适</a>
-                                            -->
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#resend" onclick="set_id(119600)"><i class="fa fa-mail-forward"></i>转发报告</button>
-                                            
-												<button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#reject" onclick="set_id(119600)">不合适</button>
-											
-                                            
-								</td>
-							</tr>
-						
-							<tr>
-								<td>7 </td>
-								<td>
-									474660954@qq.com
-									
-										
-											
-											
-												<span class="pull-right badge badge-info">新接受</span>
-											
-										
-								</td>
-								<td>未开始</td>
-								<td>
-									
-										
-										
-										
-										
-										
-										
-											<span class="label label-warning">未完成</span>
-										
-									
-								</td>
-								<td>
-									
-									0
-								</td>
-								<td>
-									
-									未完成挑战
-								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
-								<td>
-											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=119599" class="btn btn-sm btn-new1">查看报告详情</a>
-                                            <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=119599" class="btn btn-sm btn-warning">收藏</a> 
-                                            <a href="javascript:forward_email(119599)" class="btn btn-sm btn-info">转发</a>
-                                            <a href="javascript:not_accept_email(119599)" class="btn btn-sm btn-danger">不合适</a>
-                                            -->
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#resend" onclick="set_id(119599)"><i class="fa fa-mail-forward"></i>转发报告</button>
-                                            
-												<button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#reject" onclick="set_id(119599)">不合适</button>
-											
-                                            
-								</td>
-							</tr>
-						
-							<tr>
-								<td>8 </td>
-								<td>
-									1099738512@qq.com
-									
-										
-											
-											
-												<span class="pull-right badge badge-info">新接受</span>
-											
-										
-								</td>
-								<td>未开始</td>
-								<td>
-									
-										
-										
-										
-										
-										
-										
-											<span class="label label-warning">未完成</span>
-										
-									
-								</td>
-								<td>
-									
-									0
-								</td>
-								<td>
-									
-									未完成挑战
-								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
-								<td>
-											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=119598" class="btn btn-sm btn-new1">查看报告详情</a>
-                                            <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=119598" class="btn btn-sm btn-warning">收藏</a> 
-                                            <a href="javascript:forward_email(119598)" class="btn btn-sm btn-info">转发</a>
-                                            <a href="javascript:not_accept_email(119598)" class="btn btn-sm btn-danger">不合适</a>
-                                            -->
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#resend" onclick="set_id(119598)"><i class="fa fa-mail-forward"></i>转发报告</button>
-                                            
-												<button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#reject" onclick="set_id(119598)">不合适</button>
-											
-                                            
-								</td>
-							</tr>
 						
 					</tbody>
 				</table>
-			</div>
+			    
+            </div>
 			<form id="screening_form" action="http://www.oxcoder.com/cooper/screening/user/screening_list.html">
 				<input type="hidden" id="hid_recruitId" name="recruitId" value="3164">
 				<input type="hidden" id="hid_searchName" name="searchName" value="">
@@ -2631,84 +2187,25 @@
   
 
 <ul class="pagination">
-	
-	
-	
-	
-		
 			<li class="disabled">
 		      <a aria-label="Previous">
 		        <span aria-hidden="true">«</span>
 		      </a>
 		    </li>
-		
-		
-	
-	
-	
-		
-			
-				<li class="active"><a>1</a></li>
-			
-			
-		
-	
-		
-			
-			
-				<li><a href="javascript:$PageCtrl.pageTurn(2)">2</a></li>
-			
-		
-	
-		
-			
-			
-				<li><a href="javascript:$PageCtrl.pageTurn(3)">3</a></li>
-			
-		
-	
-	
-	
-	
-		
-		
+				<li class="active"><a>1</a></li>		
 			<li>
-		      <a href="javascript:$PageCtrl.pageTurn(2)" aria-label="Next">
+		      <a aria-label="Next">
 		        <span aria-hidden="true">»</span>
 		      </a>
 		    </li>
-		
-	
-	
-	
-	
-	<li class="disabled"><a>共21条 3页</a></li>
+	<li class="disabled"><a>共<asp:Label ID="TotalNumber" runat="server" Text="Label"></asp:Label>条 1页</a></li>
 </ul>
 
 		</div>
 		<!-- /.row -->
 	</div>
-	<!-- /.container -->
-	<footer id="footer">
-		<!-- <div class="container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <ul class="list-inline">
-                            <li>&copy; <a href="index.html">Intersect</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6">
-                        <ul class="list-inline social-network">
-                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github-square"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!-- /.row -->
-		<!-- </div> -->
-		<!-- /.container -->
-	</footer>
+	</form>
+        
 	
 	<div class="modal fade modal-new" id="resend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

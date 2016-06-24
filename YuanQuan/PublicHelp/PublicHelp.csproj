@@ -48,6 +48,7 @@
     <Compile Include="ChallengeHelper.cs" />
     <Compile Include="CoderChallengeHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendSMSHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bean\Model.csproj">

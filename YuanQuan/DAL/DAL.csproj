@@ -64,6 +64,10 @@
       <Project>{9644cb57-a039-4a68-a64f-7efb8ed2cdb8}</Project>
       <Name>DALInterface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PublicHelp\PublicHelp.csproj">
+      <Project>{c55640c6-5d2b-41a7-88ee-09421e793e75}</Project>
+      <Name>PublicHelp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

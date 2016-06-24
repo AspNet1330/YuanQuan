@@ -15,6 +15,7 @@ namespace Web
     {
         int maxProblem = 3;
         private static List<problem> problems = new List<problem>();
+        private static List<problem> searchProblems = new List<problem>();
         private static List<problem> chooseProblems = new List<problem>();
         private static enterprise enterprise;
         static int cID;
@@ -39,6 +40,7 @@ namespace Web
                     return;
                 }
                 IProblemService ps = ServiceFactory.createProblemService();
+                this.EnterpriseName.Text = enterprise.e_name;
                 getRandomProblem();  
 
             }
@@ -158,12 +160,29 @@ namespace Web
             }
         }
 
-        public string getEntership()
+        protected void SearchButton_Click(object sender, EventArgs e)
         {
-            return enterprise.e_id.ToString();
+            searchProblems.Clear();
+            string seachInfo = challenges_word_id.Text;
+            if (seachInfo == "" || seachInfo == null)
+            {
+                AllProblemRepeater.DataSource = problems;
+                AllProblemRepeater.DataBind();
+                return;
+            }
+
+            for (int i = 0; i < problems.Count; i++)
+            {
+                if(problems.ElementAt(i).p_title.IndexOf(seachInfo)!=-1||
+                    problems.ElementAt(i).p_type.IndexOf(seachInfo)!=-1||
+                    problems.ElementAt(i).p_detail.IndexOf(seachInfo) != -1)
+                {
+                    searchProblems.Add(problems.ElementAt(i));
+                }
+            }
+            AllProblemRepeater.DataSource = searchProblems;
+            AllProblemRepeater.DataBind();
         }
-
-
 
 
     }
