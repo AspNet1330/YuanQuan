@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sendSms.aspx.cs" Inherits="Web.sendSms" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SendSMS.aspx.cs" Inherits="Web.SendSMS" %>
 
 <!DOCTYPE html>
 

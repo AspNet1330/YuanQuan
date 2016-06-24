@@ -95,6 +95,7 @@
     <Content Include="Picture\pic.gif" />
     <Content Include="Picture\wlogo_sm.png" />
     <Content Include="Register.aspx" />
+    <Content Include="sendSms.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -311,6 +312,12 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sendSms.aspx.cs">
+      <DependentUpon>sendSms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sendSms.aspx.designer.cs">
+      <DependentUpon>sendSms.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
