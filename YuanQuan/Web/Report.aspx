@@ -138,7 +138,7 @@
 			<div class="col-md-12" id="print">
 				<section id="middle">
 					<h3>
-						蔡龙的挑战报告
+						挑战报告
 						
 						
 						

@@ -40,10 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminBL.cs" />
     <Compile Include="ChallengeService.cs" />
     <Compile Include="ChallengeProblemService.cs" />
+    <Compile Include="CoderBL.cs" />
     <Compile Include="CoderChallengeService.cs" />
     <Compile Include="CoderService.cs" />
+    <Compile Include="DisplayService.cs" />
+    <Compile Include="EnterpriseBL.cs" />
     <Compile Include="ProblemService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterService.cs" />
@@ -64,6 +68,10 @@
     <ProjectReference Include="..\IDAL\DALInterface.csproj">
       <Project>{9644cb57-a039-4a68-a64f-7efb8ed2cdb8}</Project>
       <Name>DALInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{e487effd-d912-45cd-8483-697a056b23f3}</Project>
+      <Name>ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

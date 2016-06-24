@@ -91,14 +91,22 @@ namespace Web
                     coder.c_account = a[i];
                     coder.c_pwd=a[i];
                     coder.c_name = a[i];
+                    coder.c_value = 0;
+                    coder.c_skill = challenge.cha_type;
                     coder.c_id = cs.insert(coder);
+                }
+                else
+                {
+                    coder_cha ccha = ccs.getCoderChaByCoderCha(coder.c_id,challenge.cha_id);
+                    if (ccha != null)
+                        return;
                 }
                 coder_cha cc = new coder_cha();
                 cc.c_id = coder.c_id;
                 cc.usetime = -1;
                 cc.c_account = a[i];
                 cc.cha_id = challenge.cha_id;
-                cc.grade = -1;
+                cc.grade = 0;
                 ccs.saveCoderChallenge(cc);
                 CoderChallengeHelper.senChallengeEmail(a[i], getMailHeader(), getMailContext(a[i]));
             }

@@ -31,5 +31,12 @@ namespace BLL
             List<coder_cha> coderChallenges = ccda.getCoderByChallengeId(challengeId);
             return coderChallenges;
         }
+
+        public coder_cha getCoderChaByCoderCha(int coderId, int challengeId)
+        {
+            ICoder_chaDA ccda = DAFactory.createCoderChallengeDA();
+            coder_cha coderChallenge = ccda.getCoderChaByCoderCha(coderId,challengeId);
+            return coderChallenge;
+        }
     }
 }

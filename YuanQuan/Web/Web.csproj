@@ -58,6 +58,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Content Include="AddAdmin.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminMain.aspx" />
+    <Content Include="CoderFirst.aspx" />
+>>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
     <Content Include="CoderRecommend.aspx" />
     <Content Include="CSS\bootstrap-select.min.css" />
     <Content Include="CSS\bootstrap-switch.min.css" />
@@ -68,6 +75,75 @@
     <Content Include="CSS\style_new.css" />
     <Content Include="CSS\summernote-bs3.css" />
     <Content Include="CSS\summernote.css" />
+<<<<<<< HEAD
+=======
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站.html" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\ace.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\adapter.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\base64.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\bootstrap-theme.min.css" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\bootstrap.min.css" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\bootstrap.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\changyan.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\c_cpp.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\ext-language_tools.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\hm.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\icp-tips.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jquery-ui.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jquery.layout-latest.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jquery.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jquery.zclip.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jstorage.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\main.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\mode-c_cpp.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_01.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_02.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_03.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_04.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_05.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_06.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_07.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_08.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_09.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_10.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_11.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_12.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_13.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_14.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_15.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_16.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_17.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_18.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_19.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_20.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_21.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_22.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_23.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_24.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\pic42_null.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\render-pc.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\runcode.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\saved_resource.html" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\start.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\swfupload.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\swfupload.swf" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\text.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\theme-monokai.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\version-v3.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\wechat-bind.js" />
+    <Content Include="DelAdmin.aspx" />
+    <Content Include="DelPerson.aspx" />
+    <Content Include="DelQiye.aspx" />
+    <Content Include="JS\ace.js" />
+    <Content Include="JS\all.min.js" />
+    <Content Include="JS\api-coding-page.js" />
+    <Content Include="JS\api-iframe.js" />
+    <Content Include="JS\avalon.draggable.js" />
+    <Content Include="JS\avalon.json.js" />
+    <Content Include="JS\avalon.min.js" />
+    <Content Include="JS\avalon.resizable.js" />
+    <Content Include="JS\avalon.store.js" />
+>>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
     <Content Include="Filter.aspx" />
     <Content Include="ImgVerify.aspx" />
     <Content Include="Invite1.aspx" />
@@ -83,6 +159,9 @@
     <Content Include="JS\script.js" />
     <Content Include="JS\summernote.min.js" />
     <Content Include="JS\zmUtil.js" />
+    <Content Include="MainContent.aspx" />
+    <Content Include="MainMenu.aspx" />
+    <Content Include="MainTitle.aspx" />
     <Content Include="ManageChallenge.aspx" />
     <Content Include="Picture\android.png" />
     <Content Include="Picture\c.png" />
@@ -98,13 +177,15 @@
 <<<<<<< HEAD
 =======
     <Content Include="Report.aspx" />
+    <Content Include="SearchAdmin.aspx" />
+    <Content Include="SearchPerson.aspx" />
+    <Content Include="SearchQiye.aspx" />
     <Content Include="SelectCombo.aspx" />
 >>>>>>> c8e33be1622bec7d8c489f07779acd5144a5017b
     <Content Include="sendSms.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="WebForm1.aspx" />
     <Content Include="企业 挑战管理_files\bootstrap-select.min.css" />
     <Content Include="企业 挑战管理_files\bootstrap-switch.min.css" />
     <Content Include="企业 挑战管理_files\bootstrap.min.css" />
@@ -223,6 +304,32 @@
     <Content Include="猿圈 新建挑战邀请3_files\wlogo_sm.png" />
     <Content Include="猿圈 新建挑战邀请3_files\zmUtil.js" />
     <Content Include="404.html" />
+    <Content Include="猿圈 登录_files\01.png" />
+    <Content Include="猿圈 登录_files\bootstrap-filestyle.js" />
+    <Content Include="猿圈 登录_files\bootstrap-select.min.css" />
+    <Content Include="猿圈 登录_files\bootstrap-select.min.js" />
+    <Content Include="猿圈 登录_files\bootstrap-switch.min.css" />
+    <Content Include="猿圈 登录_files\bootstrap-switch.min.js" />
+    <Content Include="猿圈 登录_files\bootstrap.min.css" />
+    <Content Include="猿圈 登录_files\bootstrap.min.js" />
+    <Content Include="猿圈 登录_files\bootstrapValidator.min.css" />
+    <Content Include="猿圈 登录_files\bootstrapValidator.min.js" />
+    <Content Include="猿圈 登录_files\bootstrapValidator_zh_CN.js" />
+    <Content Include="猿圈 登录_files\font-awesome.min.css" />
+    <Content Include="猿圈 登录_files\jquery-1.11.0.min.js" />
+    <Content Include="猿圈 登录_files\jquery.js" />
+    <Content Include="猿圈 登录_files\jquery.min.js" />
+    <Content Include="猿圈 登录_files\jquery.sparkline.min.js" />
+    <Content Include="猿圈 登录_files\pic.gif" />
+    <Content Include="猿圈 登录_files\script.js" />
+    <Content Include="猿圈 登录_files\signin.css" />
+    <Content Include="猿圈 登录_files\style.css" />
+    <Content Include="猿圈 登录_files\style_new.css" />
+    <Content Include="猿圈 登录_files\summernote-bs3.css" />
+    <Content Include="猿圈 登录_files\summernote.css" />
+    <Content Include="猿圈 登录_files\summernote.min.js" />
+    <Content Include="猿圈 登录_files\title.PNG" />
+    <Content Include="猿圈 登录_files\wlogo.png" />
     <Content Include="猿圈 注册_files\01.png" />
     <Content Include="猿圈 注册_files\46494ae6150141d2892e9db492f870fd.jpg" />
     <Content Include="猿圈 注册_files\bootstrap-filestyle.js" />
@@ -261,6 +368,37 @@
     <Content Include="页面找不到了_files\wlogo_sm.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Compile Include="AddAdmin.aspx.cs">
+      <DependentUpon>AddAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAdmin.aspx.designer.cs">
+      <DependentUpon>AddAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMain.aspx.cs">
+      <DependentUpon>AdminMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMain.aspx.designer.cs">
+      <DependentUpon>AdminMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoderFirst.aspx.cs">
+      <DependentUpon>CoderFirst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoderFirst.aspx.designer.cs">
+      <DependentUpon>CoderFirst.aspx</DependentUpon>
+    </Compile>
+>>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
     <Compile Include="CoderRecommend.aspx.cs">
       <DependentUpon>CoderRecommend.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -268,6 +406,37 @@
     <Compile Include="CoderRecommend.aspx.designer.cs">
       <DependentUpon>CoderRecommend.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Coding.aspx.cs">
+      <DependentUpon>Coding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coding.aspx.designer.cs">
+      <DependentUpon>Coding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DelAdmin.aspx.cs">
+      <DependentUpon>DelAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DelAdmin.aspx.designer.cs">
+      <DependentUpon>DelAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DelPerson.aspx.cs">
+      <DependentUpon>DelPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DelPerson.aspx.designer.cs">
+      <DependentUpon>DelPerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DelQiye.aspx.cs">
+      <DependentUpon>DelQiye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DelQiye.aspx.designer.cs">
+      <DependentUpon>DelQiye.aspx</DependentUpon>
+    </Compile>
+>>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
     <Compile Include="Filter.aspx.cs">
       <DependentUpon>Filter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -303,6 +472,27 @@
     <Compile Include="Invite3.aspx.designer.cs">
       <DependentUpon>Invite3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MainContent.aspx.cs">
+      <DependentUpon>MainContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainContent.aspx.designer.cs">
+      <DependentUpon>MainContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainTitle.aspx.cs">
+      <DependentUpon>MainTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainTitle.aspx.designer.cs">
+      <DependentUpon>MainTitle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ManageChallenge.aspx.cs">
       <DependentUpon>ManageChallenge.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -328,8 +518,34 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="sendSms.aspx.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>
+=======
+    <Compile Include="SearchAdmin.aspx.cs">
+      <DependentUpon>SearchAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchAdmin.aspx.designer.cs">
+      <DependentUpon>SearchAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPerson.aspx.cs">
+      <DependentUpon>SearchPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchPerson.aspx.designer.cs">
+      <DependentUpon>SearchPerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchQiye.aspx.cs">
+      <DependentUpon>SearchQiye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchQiye.aspx.designer.cs">
+      <DependentUpon>SearchQiye.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCombo.aspx.cs">
+      <DependentUpon>SelectCombo.aspx</DependentUpon>
+>>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="sendSms.aspx.designer.cs">
@@ -341,13 +557,6 @@
     </Compile>
     <Compile Include="sendSms.aspx.designer.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -357,6 +566,8 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="猿圈 登录_files\core.php" />
+    <Content Include="猿圈 登录_files\z_stat.php" />
     <Content Include="猿圈 注册_files\core.php" />
     <Content Include="猿圈 注册_files\z_stat.php" />
   </ItemGroup>
@@ -377,9 +588,16 @@
       <Project>{c55640c6-5d2b-41a7-88ee-09421e793e75}</Project>
       <Name>PublicHelp</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{e487effd-d912-45cd-8483-697a056b23f3}</Project>
+      <Name>ViewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="后台页面\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -26,6 +26,15 @@ namespace DAL
         public void insert(admin a) { }
         public void update(admin a) { }
         public void delete(int id) { }
-        
+        public admin getAdminByObject(string name)
+        {
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                admin adminname = new admin();
+                adminname = yq.admin.FirstOrDefault(a => a.a_account == name);
+                return adminname;
+            }
+        }
+
     }
 }

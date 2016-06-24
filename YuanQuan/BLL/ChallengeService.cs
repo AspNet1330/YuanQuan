@@ -44,6 +44,14 @@ namespace BLL
             return challenge;
         }
 
+
+        public List<challenge> getAllChanllenges()
+        {
+            IChallengeDA challengeDA = DAFactory.createChallengeDA();
+            List<challenge> challenges = challengeDA.getChanllenges();
+            return challenges;
+        }
+
         public List<challenge> getChallengeByState(int state, int enterpriseId)
         {
             IChallengeDA cda = DAFactory.createChallengeDA();

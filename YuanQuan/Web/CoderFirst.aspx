@@ -200,18 +200,22 @@
 					<a href="javascript:void(0)" onclick="onSelectChange(this,2)" class="btn btn-order ">薪资</a>
 				</section>
 			</div>
-			<div class="col-md-12" id="cplb_main" scrollpagination="enabled">
-				
+
+            <%--=================================================--%>
+            <div class="col-md-12" id="cplb_main" scrollpagination="enabled">
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                
 					<div class="col-xs-12 col-md-4 col-lg-3">
 						<section id="Section2">
 							<div class="panel panel-default shadow-effect">
 								<div class="col-xs-12 panel-header">
 									<div class="pull-left">
 										<h4 class="line-control">
-											<a href="http://www.oxcoder.com/user/view_recruit_detail.html?recruitId=3046">[高级]iOS工程师</a>
+											<a href="http://www.oxcoder.com/user/view_recruit_detail.html?recruitId=3046"><%#((ViewModel.CoderFirstVM)Container.DataItem).m_cha_title%></a>
 										</h4>
 										<h4 class="line-control" style="min-height:18px;">
-											<a href="http://www.oxcoder.com/user/cooper_info.html?cooperId=2404">世纪创兴（北京）科技有限公司</a>
+											<a href="http://www.oxcoder.com/user/cooper_info.html?cooperId=2404"><%#((ViewModel.CoderFirstVM)Container.DataItem).m_ename%></a>
 										</h4>
 									</div>
 									<div class="pull-right client-info hidden-md">
@@ -220,7 +224,7 @@
 										</span>
 									</div>
 									
-										<span class="hot-tag">推荐</span>
+										<%--<span class="hot-tag">推荐</span>--%>
 									
 								</div>
 	
@@ -243,7 +247,7 @@
 												
 											</ul>
 										</li>
-										<li>试题数量：2</li>
+										<li>试题数量：3</li>
 										<li>
 											挑战难度：
 											
@@ -281,8 +285,10 @@
 							</div>
 						</section>
 					</div>
-				
+                </ItemTemplate>
+            </asp:Repeater>
 			</div>
+            <%--=======================================================--%>
 		</div>
 		<!-- /.row -->
 	</div>

@@ -11,12 +11,18 @@ namespace DALInterface
     {
         coder getCoderByID(int id);
 
+        //coder getCoderByObject(coder c);
+        coder getCoderByObject(string name);
+
+
         coder getCoderByAccount(String account);
         coder getCoderByObject(coder c);
+
         List<coder> getCoders();
         int insert(coder a);
         List<coder> getCodersof(String skill);
         void update(coder a);
         void delete(int id);
+      
     }
 }

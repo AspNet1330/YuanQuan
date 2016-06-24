@@ -19,14 +19,14 @@ namespace PublicHelp
             try
             {
                 string senderServerIp = "123.125.50.133";
+                
                 string fromMailAddress = "18813091071@163.com";
-                string mailUsername = "猿圈";
+                string mailUsername = "18813091071";
                 string mailPassword = "6681888shanliang"; //发送邮箱的密码（）
                 string mailPort = "25";
 
                 MyEmail email = new MyEmail(senderServerIp, strto, fromMailAddress, strSubject, strBody, mailUsername, mailPassword, mailPort, false, false);
                 email.Send();
-
             }
             catch (Exception ex)
             {

@@ -21,7 +21,7 @@ namespace BLL
         public Boolean registerCoder(coder c) {
             ICoderDA ic = DAFactory.createCoder();
             int operate = ic.insert(c);
-            if(c.c_id==null)
+            if(c.c_id==0)
                 return false;
             return true;
         }

@@ -37,7 +37,7 @@ href="http://www.oxcoder.com/cooper/oxcoder_corp_index.html">首页</A></LI>
   <LI><A 
   href="http://www.oxcoder.com/cooper/recommended/talent/index.html">人才推荐</A></LI>
   <LI class="active"><A 
-  href="ManageChalenge.aspx">挑战管理</A></LI></UL>
+  href="ManageChallenge.aspx">挑战管理</A></LI></UL>
 <UL class="nav navbar-nav navbar-right">
   <LI class="dropdown"><A class="dropdown-toggle" href="javascript:;" 
   data-toggle="dropdown"><SPAN class="text" id="enterprise">	<asp:Label ID="EnterpriseName" runat="server" Text="Label"></asp:Label> </SPAN>						 <B class="caret"></B>
@@ -101,18 +101,22 @@ class="text-muted">[<%# Eval("cha_date").ToString().Substring(0,9)%>]
 																	 </DIV>
 <DIV class="col-md-2">
 <UL class="list-unstyled" style="margin: 7px 0px;">
-  <LI><SPAN class="badge badge-info">19</SPAN>																				 个新接受
+  <LI><SPAN class="badge badge-info"><asp:Label runat="server" ID="TotalNumber" Text="0"></asp:Label></SPAN>																				 个接受
   																			 </LI>
-  <LI><SPAN class="badge badge-danger">0</SPAN>																				 个新完成
+  <LI><SPAN class="badge badge-danger"><asp:Label runat="server" ID="FinishNumber" Text="0"></asp:Label></SPAN>																				 个完成
   																			 </LI></UL></DIV>
 <DIV class="col-md-2">
 <UL class="list-unstyled" style="margin: 20px 0px;">
-  <LI><SPAN class="red">0.0</SPAN>																				%已合格
+  <LI><SPAN class="red"><asp:Label runat="server" ID="Percent" Text="0.0"></asp:Label></SPAN>																				%已合格
   																			 </LI></UL></DIV>
-<DIV class="col-md-3"><A class="btn btn-new1" href="Filter.aspx?id=<%#Eval("cha_id")%>">
-																			去筛选																		 </A>																		
-																			 <A class="btn btn-new1" style="margin: 16px 5px;" href="./Invite3.aspx?id=<%#Eval("cha_id")%>">
-																				邀请																			 </A>																		
+<DIV class="col-md-3">
+    <br />
+    <A  href="Filter.aspx?id=<%#Eval("cha_id")%>">
+        <asp:Label class="btn btn-new1"  runat="server" ID="TurnFilter" Text="去筛选"></asp:Label>
+        
+    <A  style="margin: 16px 5px;" href="./Invite3.aspx?id=<%#Eval("cha_id")%>">
+	<asp:Label class="btn btn-new1" runat="server" ID="TurnInvite" Text="邀请	"></asp:Label>
+        </A>																		
 																	 </DIV><!-- new end-->																 </DIV><!-- /.row -->
 															 </DIV><!-- /.panel-footer -->														 </DIV><!-- /.panel -->
 													 </DIV></DIV>

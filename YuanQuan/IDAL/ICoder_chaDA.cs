@@ -13,6 +13,8 @@ namespace DALInterface
 
         coder_cha getCoderChallengeById(int id);
 
+        coder_cha getCoderChaByCoderCha(int coderId,int challengeId);
+
         void saveCoderChallenge(coder_cha coderChallenge);
 
         void updateCoderChallenge(coder_cha coderChallenge);
