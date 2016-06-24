@@ -16,7 +16,6 @@ F:\code\yuanquan\YuanQuan\IBLL\bin\Debug\Model.pdb
 F:\code\yuanquan\YuanQuan\IBLL\obj\Debug\BLLInterface.csprojResolveAssemblyReference.cache
 F:\code\yuanquan\YuanQuan\IBLL\obj\Debug\IBLL.dll
 F:\code\yuanquan\YuanQuan\IBLL\obj\Debug\IBLL.pdb
-<<<<<<< HEAD
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\IBLL\bin\Debug\IBLL.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\IBLL\bin\Debug\IBLL.pdb
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\IBLL\bin\Debug\Model.dll
@@ -24,7 +23,6 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\IBLL\bin\Deb
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\IBLL\obj\Debug\BLLInterface.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.pdb
-=======
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\bin\Debug\IBLL.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\bin\Debug\IBLL.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\bin\Debug\Model.dll
@@ -32,4 +30,3 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\bin\Debug\Model.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\obj\Debug\BLLInterface.csprojResolveAssemblyReference.cache
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.pdb
->>>>>>> master

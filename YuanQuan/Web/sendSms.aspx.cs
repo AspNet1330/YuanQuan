@@ -28,7 +28,7 @@ namespace Web
 
         private Res SendVSMS() {
             string phone = Request.Form["phone"].ToArray()[0].ToString();
-            vcode = GetRandString(6);
+            string vcode = GetRandString(6);
        //     Session["vcode"] = vcode;
             string msg = "Hello,你的验证码是" + vcode;
             if (SendSMSHelper.SendMsg(phone, msg))

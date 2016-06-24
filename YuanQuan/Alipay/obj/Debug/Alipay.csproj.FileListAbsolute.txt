@@ -1,1 +1,2 @@
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Alipay\obj\Debug\Alipay.csprojResolveAssemblyReference.cache
+F:\code\yuanquan\YuanQuan\Alipay\obj\Debug\Alipay.csprojResolveAssemblyReference.cache

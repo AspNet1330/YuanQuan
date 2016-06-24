@@ -31,7 +31,6 @@ F:\code\yuanquan\YuanQuan\DALFactory\bin\Debug\Model.pdb
 F:\code\yuanquan\YuanQuan\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
 F:\code\yuanquan\YuanQuan\DALFactory\obj\Debug\DALFactory.dll
 F:\code\yuanquan\YuanQuan\DALFactory\obj\Debug\DALFactory.pdb
-<<<<<<< HEAD
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DALFactory\bin\Debug\DALFactory.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DALFactory\bin\Debug\DALFactory.pdb
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DALFactory\bin\Debug\DAL.dll
@@ -43,7 +42,6 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DALFactory\b
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DALFactory\obj\Debug\DALFactory.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\DALFactory\obj\Debug\DALFactory.pdb
-=======
 D:\GitRepo\YQ\YuanQuan\YuanQuan\DALFactory\bin\Debug\DALFactory.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\DALFactory\bin\Debug\DALFactory.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\DALFactory\bin\Debug\DAL.dll
@@ -55,4 +53,3 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\DALFactory\bin\Debug\Model.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
 D:\GitRepo\YQ\YuanQuan\YuanQuan\DALFactory\obj\Debug\DALFactory.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\DALFactory\obj\Debug\DALFactory.pdb
->>>>>>> master

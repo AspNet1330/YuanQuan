@@ -191,16 +191,10 @@
     <Content Include="Picture\Storm.png" />
     <Content Include="Picture\waiting.gif" />
     <Content Include="Picture\wlogo_sm.png" />
-<<<<<<< HEAD
     <Content Include="Register.aspx" />
-<<<<<<< HEAD
-=======
     <Content Include="Report.aspx" />
     <Content Include="SelectCombo.aspx" />
->>>>>>> master
-=======
     <Content Include="sendSms.aspx" />
->>>>>>> e1d4b2dd78458ba8c0f8caf6d6ed28157cfe8a13
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -425,14 +419,13 @@
       <DependentUpon>ManageChallenge.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-=======
+    </Compile>
     <Compile Include="Report.aspx.cs">
       <DependentUpon>Report.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -446,10 +439,10 @@
     </Compile>
     <Compile Include="SelectCombo.aspx.designer.cs">
       <DependentUpon>SelectCombo.aspx</DependentUpon>
->>>>>>> master
     </Compile>
     <Compile Include="sendSms.aspx.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="sendSms.aspx.designer.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>

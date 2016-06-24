@@ -29,7 +29,6 @@ F:\code\yuanquan\YuanQuan\Bean\bin\Debug\zh-Hans\EntityFramework.resources.dll
 F:\code\yuanquan\YuanQuan\Bean\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
 F:\code\yuanquan\YuanQuan\Bean\obj\Debug\Model.dll
 F:\code\yuanquan\YuanQuan\Bean\obj\Debug\Model.pdb
-<<<<<<< HEAD
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\bin\Debug\Model.dll.config
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\bin\Debug\Model.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\bin\Debug\Model.pdb
@@ -41,7 +40,6 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\bin\Deb
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\obj\Debug\Model.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\obj\Debug\Model.pdb
-=======
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\bin\Debug\Model.dll.config
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\bin\Debug\Model.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\bin\Debug\Model.pdb
@@ -53,4 +51,3 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\bin\Debug\zh-Hans\Microsoft.QualityTools.Te
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\obj\Debug\Model.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\obj\Debug\Model.pdb
->>>>>>> master
