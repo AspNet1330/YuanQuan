@@ -129,14 +129,7 @@
 <asp:Repeater ID="ProblemRepeater" runat="server" OnItemCommand="ProblemRepeater_ItemCommand">
 
 <ItemTemplate>
-    <%  
-        if(ProblemRepeater.DataSource==null){
-         %>
-
-        <div class="alert alert-info" style="text-align: center" role="alert">
-        <asp:LinkButton CommandName="GetRandomProblem" style="margin-left: 20px;" runat="server">一键出题</asp:LinkButton>
-		</div>
-    <%}else{%>
+    
 														<div class="col-md-4" style="padding-top: 20px">
 															<div class="panel panel-default project">
 																<div class="panel-body" style="padding-bottom: 0;">
@@ -184,7 +177,7 @@
 																</div>
 															</div>
 														</div>
-        <%} %>
+      
 </ItemTemplate>		
     	
 </asp:Repeater>
@@ -212,7 +205,9 @@
 										<div class="pull-right">
 											<div style="display: inline-block; vertical-align: top;">
 												<div class="input-group" style="width: 200px;">
-													<input id="challenges_word_id" name="" value="" class="form-control" placeholder="请输入试题关键词"> <span class="input-group-addon" style="cursor: pointer;" onclick="searchChallenges()"> <i class="fa fa-search"></i>
+<asp:TextBox  runat="server" id="challenges_word_id" name="" value="" class="form-control" placeholder="请输入试题关键词"></asp:TextBox>
+                                                  <span class="input-group-addon"  style="cursor: pointer;" > 
+<asp:LinkButton ID="SearchButton" runat="server" OnClick="SearchButton_Click">搜索</asp:LinkButton>                                                         
 													</span>
 												</div>
 											</div>

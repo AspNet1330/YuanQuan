@@ -15,5 +15,7 @@ namespace BLLInterface
 
         List<coder_cha> getCodersByChallengeId(int challengeId);
 
+        coder_cha getCoderChaByCoderCha(int coderId, int challengeId);
+
     }
 }

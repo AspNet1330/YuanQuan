@@ -29,6 +29,17 @@ namespace DAL
             return coderChas;
         }
 
+        public coder_cha getCoderChaByCoderCha(int coderId, int challengeId)
+        {
+            yuanquanEntities yq = new yuanquanEntities();
+            if (!yq.coder_cha.Any(c => c.c_id == coderId && c.cha_id == challengeId))
+            {
+                return null;
+            }
+            var coderChallenge = yq.coder_cha.Single(c => c.c_id== coderId && c.cha_id==challengeId);
+            return coderChallenge;
+        }
+
         public coder_cha getCoderChallengeById(int id)
         {
             yuanquanEntities yq = new yuanquanEntities();
