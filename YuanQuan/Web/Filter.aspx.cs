@@ -98,5 +98,10 @@ namespace Web
             this.TotalCoder.Text = coders.Count.ToString();
             this.TotalNumber.Text = coders.Count.ToString();
         }
+
+        protected void CoderItemBound(object sender, RepeaterItemEventArgs e)
+        {
+
+        }
     }
 }

@@ -20,8 +20,10 @@ namespace BLL
 
         public Boolean registerCoder(coder c) {
             ICoderDA ic = DAFactory.createCoder();
-            Boolean operate = ic.insert(c);
-            return operate;
+            int operate = ic.insert(c);
+            if(c.c_id==null)
+                return false;
+            return true;
         }
     }
 }

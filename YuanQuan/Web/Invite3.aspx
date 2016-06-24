@@ -94,7 +94,7 @@
 	
 <SCRIPT type="text/javascript">
     window.onload = function () {
-        document.getElementById("mailContext").innerHTML = "<%=getMailContext()%>";
+        document.getElementById("mailContext").innerHTML = '<%=getMailContext("邮箱")%>';
         }
 </SCRIPT>
 

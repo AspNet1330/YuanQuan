@@ -2126,46 +2126,32 @@
 							<th>序号</th>
 							<th>姓名</th>
 							<th>开始时间</th>
-							<th>挑战结果</th>
 							<th>得分</th>
 							<th>耗时</th>
 							<th>网站身价</th>
-							<th>状态</th>
 							<th>操作</th>
 						</tr>
 					</thead>
 					<tbody>
-						<asp:Repeater ID="CoderReapter" runat="server">
+						<asp:Repeater ID="CoderReapter" runat="server" OnItemDataBound="CoderItemBound">
                             <ItemTemplate>
                                 <tr>
 								<td>1 </td>
 								<td>
-									<%#Eval("c_account") %>
+									<%#Eval("c_name") %>
 
 								</td>
-								<td>未开始</td>
-								<td>									
-											<span class="label label-warning">未完成</span>
+								<td><asp:Label runat="server" ID="StartTime" Text="Label"></asp:Label>
+                                    未开始</td>
+								<td>
+									0<asp:Label runat="server" ID="Grade" Text="Label"></asp:Label>
 								</td>
 								<td>
-									
-									0
-								</td>
-								<td>
+                                    <asp:Label runat="server" ID="UsingTime"  Text="Label"></asp:Label>
 									未完成挑战
 								</td>
-								<td>3500元</td>
-								<td>
-									
-										
-										
-											<span class="label label-success">已查看联系方式</span>
-										
-										
-										
-										
-									
-								</td>
+								<td><%#Eval("c_value") %>元</td>
+								
 								<td>
 											<a href="http://www.oxcoder.com/cooper/screening/user/view_report.html?userRecruitId=121538" class="btn btn-sm btn-new1">查看报告详情</a>
                                             <!-- <a href="cooper/screening/user/view_report.html?userRecruitId=121538" class="btn btn-sm btn-warning">收藏</a> 

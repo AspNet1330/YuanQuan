@@ -13,9 +13,26 @@ namespace DAL
     {
         public coder getCoderByID(int id){
             coder acoder = new coder();
-            using(yuanquanEntities yq = new yuanquanEntities()){
-                acoder = yq.coder.Single(c => c.c_id == id);
+            yuanquanEntities yq = new yuanquanEntities();
+            if (!yq.coder.Any(c => c.c_id == id))
+            {
+                return null;
             }
+            acoder = yq.coder.Single(c => c.c_id == id);
+          
+            return acoder;
+        }
+
+        public coder getCoderByAccount(String account)
+        {
+            coder acoder = new coder();
+            yuanquanEntities yq = new yuanquanEntities();
+            if (!yq.coder.Any(c => c.c_account == account))
+            {
+                return null;
+            }
+            acoder = yq.coder.Single(c => c.c_account == account);
+            
             return acoder;
         }
 
@@ -36,15 +53,14 @@ namespace DAL
             return coders;
         }
 
-        public Boolean insert(coder a) {
+        public int insert(coder a) {
             yuanquanEntities yq = new yuanquanEntities();
-            Boolean exist = CoderDA.exist(a.c_account);
-            if (exist) { 
+            //Boolean exist = CoderDA.exist(a.c_account);
+            //if (exist) { 
                 yq.coder.AddObject(a);
                 yq.SaveChanges();
-                return true;
-            }
-            return false;
+            //}
+            return a.c_id;
         
         }
         public static Boolean exist(String account)

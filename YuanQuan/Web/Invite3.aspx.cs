@@ -55,10 +55,10 @@ namespace Web
             return "[" + ChallengeHelper.getChallengeLevel(challenge.cha_level) + "]" + challenge.cha_type + "工程师";
         }
 
-        public string getMailContext()
+        public string getMailContext(string mail)
         {
             return "您好：&lt;br&gt;我们非常高兴的通知您，通过了我们的简历筛选，为了评估您的真实编程能力，我们准备了[" + 
-                getPosition() + "]的在线编程挑战，希望您能完成！&lt;br&gt;点击下面的链接进入在线编程挑战: :&lt;br&gt;[链接]。&lt;br&gt;以下是您的登录信息:&lt;br&gt;用户名：[用户名]&lt;br&gt;密码[密码]&lt;br&gt;感谢您的配合！&lt;br&gt;&lt;br&gt;[" 
+                getPosition() + "]的在线编程挑战，希望您能完成！&lt;br&gt;点击下面的链接进入在线编程挑战: :&lt;br&gt;[链接]。&lt;br&gt;以下是您的登录信息:&lt;br&gt;用户名：["+mail+"]&lt;br&gt;密码["+mail+"]&lt;br&gt;感谢您的配合！&lt;br&gt;&lt;br&gt;[" 
                 + enterprise.e_name + "]&lt;br&gt;[" + DateTime.Now+"]";
         }
 
@@ -80,16 +80,27 @@ namespace Web
             string mail = this.TextBox1.Text;
             string[] a = mail.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
             ICoderChallengeService ccs = ServiceFactory.createCoderChallengeService();
+            ICoderService cs = ServiceFactory.createCoderService();
 
             for (int i = 0; i < a.Length; i++)
             {
+                coder coder = cs.getCoderByAccount(a[i]);
+                if (coder == null)
+                {
+                    coder = new coder();
+                    coder.c_account = a[i];
+                    coder.c_pwd=a[i];
+                    coder.c_name = a[i];
+                    coder.c_id = cs.insert(coder);
+                }
                 coder_cha cc = new coder_cha();
+                cc.c_id = coder.c_id;
+                cc.usetime = -1;
                 cc.c_account = a[i];
                 cc.cha_id = challenge.cha_id;
-                cc.grade = 0;
+                cc.grade = -1;
                 ccs.saveCoderChallenge(cc);
-
-                CoderChallengeHelper.senChallengeEmail(a[i], getMailHeader(), getMailContext());
+                CoderChallengeHelper.senChallengeEmail(a[i], getMailHeader(), getMailContext(a[i]));
             }
         }
     }

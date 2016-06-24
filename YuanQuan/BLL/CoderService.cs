@@ -33,5 +33,18 @@ namespace BLL
             ICoderDA coderDA = DAFactory.createCoderDA();
             return coderDA.getCoderByID(id);
         }
+
+        public coder getCoderByAccount(String account)
+        {
+            ICoderDA coderDA = DAFactory.createCoderDA();
+            return coderDA.getCoderByAccount(account);
+        }
+
+
+        public int insert(coder a)
+        {
+            ICoderDA coderDA = DAFactory.createCoderDA();
+            return coderDA.insert(a);
+        }
     }
 }
