@@ -160,7 +160,7 @@ namespace Web
 
         public string getEntership()
         {
-            return enterprise.e_id.ToString();
+            return enterprise.e_name.ToString();
         }
 
 

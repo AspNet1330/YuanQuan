@@ -22,7 +22,7 @@ namespace PublicHelp
             int level = int.Parse(challengeLevel);
             level = (level + 1) / 2 - 1;
             string[] a = new string[3] { "初级", "中级", "高级" };
-            return a[level] + challengeLevel;
+            return a[level];
         }
 
     }

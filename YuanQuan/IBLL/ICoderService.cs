@@ -11,5 +11,7 @@ namespace BLLInterface
     {
         //List<coder> getTopCoder();
         List<coder> getTopCoderof(String skill);
+
+        coder getCoderByID(int id);
     }
 }

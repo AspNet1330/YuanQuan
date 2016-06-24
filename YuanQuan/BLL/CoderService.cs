@@ -26,5 +26,12 @@ namespace BLL
             List<coder> coders = (skill.Equals("All"))?(coderDA.getCoders()) : (coderDA.getCodersof(skill));
             return coders;
         }
+
+
+        public coder getCoderByID(int id)
+        {
+            ICoderDA coderDA = DAFactory.createCoderDA();
+            return coderDA.getCoderByID(id);
+        }
     }
 }

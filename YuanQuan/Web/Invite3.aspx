@@ -94,9 +94,6 @@
 	
 <SCRIPT type="text/javascript">
     window.onload = function () {
-        var a = "<%=getChallName()%>"; 
-        document.getElementById("enterName").innerHTML = a;
-        document.getElementById("enterprise").innerHTML = "<%=getEntership()%>";
         document.getElementById("mailContext").innerHTML = "<%=getMailContext()%>";
         }
 </SCRIPT>
@@ -143,7 +140,8 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="text" id="enterprise">							
+						<span class="text" id="enterprise">	
+                            	<asp:Label ID="EnterpriseName" runat="server" Text="Label"></asp:Label>					
 						</span>
 						<b class="caret"></b>
 					</a>
@@ -172,7 +170,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
-                <div class="h2-tab" name="enterName" id="enterName"  style="font-size:25px"></div>
+                <div class="h2-tab" name="enterName" id="enterName"  style="font-size:25px">
+<asp:Label ID="ChallengeName" runat="server" Text="Label"></asp:Label>
+                </div>
 				<p class="text-muted">您可以邀请其他渠道获取的人才到猿圈，通过挑战来识别他们的能力。</p>
 				<p style="color:#4A90E2">猿圈小提示：每邀请一位人才将会扣除1个猿民币。</p>
 				<button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
@@ -181,12 +181,8 @@
 						<label>
 							<span class="grey">输入邮箱地址(剩余猿民币：<span id="su_resume_span_view_id">10</span>)</span>
 						</label>
-                       <asp:TextBox type="email" name="user_emails" ID="TextBox1" runat="server" class="form-control" placeholder="多个邮件地址请用&#39;,&#39;分隔" data-bv-field="user_emails"></asp:TextBox>
+                       <asp:TextBox  name="user_emails" ID="TextBox1" runat="server" class="form-control" placeholder="多个邮件地址请用&#39;,&#39;分隔" data-bv-field="user_emails"></asp:TextBox>
 						
-						<span class="text-muted">
-							邮件将会单独发送给多个候选人。候选人很多？您可以使用下方的批量上传功能
-		
-						</span>
 					</div>
 					<span class="help-block has-error" id="hint_user_emails"><small class="help-block" data-bv-validator="emailAddress" data-bv-for="user_emails" data-bv-result="NOT_VALIDATED" style="display: none;">请输入正确的邮箱格式</small><small class="help-block" data-bv-validator="notEmpty" data-bv-for="user_emails" data-bv-result="NOT_VALIDATED" style="display: none;">请输入正确的邮箱格式，多个邮件地址请用','分隔</small></span>
 					
@@ -236,64 +232,6 @@
 
 
 
-<div class="panel-user">
-	<div class="panel-heading">
-		<div class="panel-title">
-			<div class="media">
-				
-				<div class="media-body">
-					<h4 class="media-heading">
-						<!-- <span class="welcome">Hello</span> -->
-						<span>北京交通大学信息安全科技公司</span>
-					</h4>
-					<span class="text-muted">
-						<small>
-							上次登录日期:
-							<br>
-							2016-04-22 10:16:54
-						</small>
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="panel panel-outline panel-no-padding hidden-xs">
-	<div class="panel-body">
-		<div class="stat-block stat-danger">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-bell"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">今日接受挑战人数</div>
-			</div>
-		</div>
-		<div class="stat-block stat-success">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-bar-chart-o"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">今日通过挑战人数</div>
-			</div>
-		</div>
-		<div class="stat-block stat-primary">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-tachometer"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">共帮您找到的人才</div>
-			</div>
-		</div>
-	</div>
-	<!-- /.panel-body -->
-</div>
-<!-- /.panel -->
 </div>
 		</div>
 		<!-- /.row -->

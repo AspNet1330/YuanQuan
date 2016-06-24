@@ -27,13 +27,13 @@ namespace DAL
             return challenge;
         }
 
-       public  List<challenge> getChallengeByState(int state)
+       public  List<challenge> getChallengeByState(int state,int enterpriseId)
         {
             List<challenge> challenge = new List<challenge>();
             using (yuanquanEntities yq = new yuanquanEntities())
             {
                 var query = from c in yq.challenge
-                            where c.cha_state == state
+                            where c.cha_state == state && c.e_id == enterpriseId
                             select c;
                 foreach (var item in query)
                     challenge.Add(item);
@@ -77,5 +77,7 @@ namespace DAL
             yq.challenge.DeleteObject(challenge);
             yq.SaveChanges();
         }
+
+
     }
 }

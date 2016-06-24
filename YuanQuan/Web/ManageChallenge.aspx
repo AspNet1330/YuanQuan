@@ -22,11 +22,6 @@ rel="stylesheet"> <LINK href="企业%20挑战管理_files/summernote-bs3.css" re
 <![endif]--> 
 <META name="GENERATOR" content="MSHTML 11.00.10586.306"></HEAD> 
 <BODY>
-       <SCRIPT type="text/javascript">
-           window.onload = function () {
-               document.getElementById("enterprise").innerHTML = "<%=getEntership()%>";
-        }
-</SCRIPT>
 <DIV class="navbar navbar-default navbar-fixed-top" onload="validateSession()">
 <DIV class="container">
 <DIV class="navbar-header"><BUTTON class="navbar-toggle collapsed" type="button" 
@@ -45,7 +40,7 @@ href="http://www.oxcoder.com/cooper/oxcoder_corp_index.html">首页</A></LI>
   href="ManageChalenge.aspx">挑战管理</A></LI></UL>
 <UL class="nav navbar-nav navbar-right">
   <LI class="dropdown"><A class="dropdown-toggle" href="javascript:;" 
-  data-toggle="dropdown"><SPAN class="text" id="enterprise">	</SPAN>						 <B class="caret"></B>
+  data-toggle="dropdown"><SPAN class="text" id="enterprise">	<asp:Label ID="EnterpriseName" runat="server" Text="Label"></asp:Label> </SPAN>						 <B class="caret"></B>
   					 </A>
   <UL class="dropdown-menu">
     <LI><A 
@@ -62,17 +57,23 @@ href="http://www.oxcoder.com/security_logout">注销</A></LI></UL></LI></UL></DI
 <DIV id="content">
 <DIV class="row">
 <DIV class="col-md-9">
+    <form id="form1" runat="server">
 <DIV class="container-fluid"><SECTION><SECTION id="middle"><INPUT id="isHistory_id" type="hidden" value="false">
 											 
-<H2 class="h2-tab"><A href="http://www.oxcoder.com/cooper/index.html">进行中的挑战</A>
+<H2 class="h2-tab">
+<asp:LinkButton ID="InChallenge" runat="server" OnClick="InChallenge_Click">进行中的挑战</asp:LinkButton>
 											 </H2>
-<H2 class="h2-tab"><A class="off" href="./Filter.aspx">挑战历史</A>
-											 </H2><A class="btn btn-new1 pull-right" style="margin-top: 20px;" 
+<H2 class="h2-tab"><asp:LinkButton class="off" ID="ChallengeHis" runat="server" OnClick="ChallengeHis_Click">挑战历史</asp:LinkButton>
+											 </H2>
+    <A class="btn btn-new1 pull-right" style="margin-top: 20px;" 
 href="./Invite1.aspx">
 												新增挑战邀请											 </A>										 </SECTION><!-- /.page-header -->
 										 
 <DIV id="content">
-     <form id="form1" runat="server">
+     
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+      </asp:ScriptManager>
+<asp:UpdatePanel ID="UpdatePanel1" runat="server"><ContentTemplate>
 <asp:Repeater ID="ChallengesRepeater" runat="server"  OnItemDataBound="ChallengesRepeater_ItemDataBound">
     <ItemTemplate>
 <DIV class="row">
@@ -81,7 +82,11 @@ href="./Invite1.aspx">
 <DIV class="panel-body">
 <DIV class="row"><!-- new start-->																	 
 <DIV class="col-md-5">
-<H2 style="margin: 12px 0px 2px;"><A href="./Filter.aspx?id=<%#Eval("cha_id")%>">[<%# Eval("cha_level").ToString().Substring(0,2)%>]<%# Eval("cha_type")%>工程师</A>
+<H2 style="margin: 12px 0px 2px;">
+    
+    <A href="./Filter.aspx?id=<%#Eval("cha_id")%>">
+<asp:Label runat="server" Text="Label"  ID="ChallengeName"></asp:Label>
+            </A>
 																		 </H2>
 <DIV style="width: 280px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><SMALL 
 class="text-muted">[<%# Eval("cha_date").ToString().Substring(0,9)%>]																																								
@@ -113,7 +118,10 @@ class="text-muted">[<%# Eval("cha_date").ToString().Substring(0,9)%>]
 													 </DIV></DIV>
     </ItemTemplate>
 </asp:Repeater>
-         </form>
+         
+    </ContentTemplate>
+    </asp:UpdatePanel>
+
 <!-- /.row -->											     
 <UL class="pagination">
   <LI class="disabled"><A aria-label="Previous"><SPAN 
@@ -121,7 +129,7 @@ class="text-muted">[<%# Eval("cha_date").ToString().Substring(0,9)%>]
   <LI class="active"><A>1</A></LI>																	 
   <LI class="disabled"><A aria-label="Next"><SPAN aria-hidden="true">»</SPAN>		  
        </A>		     </LI>									 
-  <LI class="disabled"><A>共1条 1页</A></LI> </UL></DIV><!-- /#content -->
+  <LI class="disabled"><A>共<asp:Label ID="TotalChallenge" runat="server" Text="Label"></asp:Label>条 1页</A></LI> </UL></DIV></form>
 									 </SECTION></DIV><!-- /.container-fluid  -->							 </DIV>
 <DIV class="col-md-3 profile-info" id="profile_info_div"></DIV></DIV><!-- /.row -->
 					 </DIV><!-- /#content -->				 </SECTION></DIV></DIV><!-- /.row -->	 </DIV><!-- /.container -->

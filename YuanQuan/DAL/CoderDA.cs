@@ -10,7 +10,11 @@ namespace DAL
 {
     public class CoderDA : ICoderDA
     {
-        public coder getCoderByID(int id) {return null;}
+        public coder getCoderByID(int id) {
+            yuanquanEntities yq = new yuanquanEntities();
+            var coder = yq.coder.Single(c => c.c_id == id);
+            return coder;
+        }
         public coder getCoderByObject(coder c) { return null; }
         //获取所有程序员对象，按身价降序排列
         public List<coder> getCoders()
