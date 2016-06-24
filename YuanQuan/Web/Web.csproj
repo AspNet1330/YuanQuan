@@ -58,13 +58,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Content Include="AddAdmin.aspx" />
     <Content Include="AdminLogin.aspx" />
     <Content Include="AdminMain.aspx" />
     <Content Include="CoderFirst.aspx" />
->>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
     <Content Include="CoderRecommend.aspx" />
     <Content Include="CSS\bootstrap-select.min.css" />
     <Content Include="CSS\bootstrap-switch.min.css" />
@@ -75,8 +72,6 @@
     <Content Include="CSS\style_new.css" />
     <Content Include="CSS\summernote-bs3.css" />
     <Content Include="CSS\summernote.css" />
-<<<<<<< HEAD
-=======
     <Content Include="c在线编译器,c语言在线解释器,在线编程网站.html" />
     <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\ace.js" />
     <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\adapter.min.js" />
@@ -143,7 +138,6 @@
     <Content Include="JS\avalon.min.js" />
     <Content Include="JS\avalon.resizable.js" />
     <Content Include="JS\avalon.store.js" />
->>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
     <Content Include="Filter.aspx" />
     <Content Include="ImgVerify.aspx" />
     <Content Include="Invite1.aspx" />
@@ -174,14 +168,11 @@
     <Content Include="Picture\pic.gif" />
     <Content Include="Picture\wlogo_sm.png" />
     <Content Include="Register.aspx" />
-<<<<<<< HEAD
-=======
     <Content Include="Report.aspx" />
     <Content Include="SearchAdmin.aspx" />
     <Content Include="SearchPerson.aspx" />
     <Content Include="SearchQiye.aspx" />
     <Content Include="SelectCombo.aspx" />
->>>>>>> c8e33be1622bec7d8c489f07779acd5144a5017b
     <Content Include="sendSms.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -368,8 +359,6 @@
     <Content Include="页面找不到了_files\wlogo_sm.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Compile Include="AddAdmin.aspx.cs">
       <DependentUpon>AddAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -398,7 +387,6 @@
     <Compile Include="CoderFirst.aspx.designer.cs">
       <DependentUpon>CoderFirst.aspx</DependentUpon>
     </Compile>
->>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
     <Compile Include="CoderRecommend.aspx.cs">
       <DependentUpon>CoderRecommend.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -406,8 +394,6 @@
     <Compile Include="CoderRecommend.aspx.designer.cs">
       <DependentUpon>CoderRecommend.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Include="Coding.aspx.cs">
       <DependentUpon>Coding.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -436,7 +422,6 @@
     <Compile Include="DelQiye.aspx.designer.cs">
       <DependentUpon>DelQiye.aspx</DependentUpon>
     </Compile>
->>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
     <Compile Include="Filter.aspx.cs">
       <DependentUpon>Filter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -503,8 +488,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-<<<<<<< HEAD
-=======
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
@@ -512,16 +495,8 @@
     </Compile>
     <Compile Include="Report.aspx.cs">
       <DependentUpon>Report.aspx</DependentUpon>
->>>>>>> c8e33be1622bec7d8c489f07779acd5144a5017b
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-<<<<<<< HEAD
-    <Compile Include="sendSms.aspx.cs">
-      <DependentUpon>sendSms.aspx</DependentUpon>
-=======
     <Compile Include="SearchAdmin.aspx.cs">
       <DependentUpon>SearchAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -545,15 +520,10 @@
     </Compile>
     <Compile Include="SelectCombo.aspx.cs">
       <DependentUpon>SelectCombo.aspx</DependentUpon>
->>>>>>> 0cce2e74328a910e9d5f812fb411f1e6df535b5d
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="sendSms.aspx.designer.cs">
-      <DependentUpon>sendSms.aspx</DependentUpon>
     </Compile>
     <Compile Include="sendSms.aspx.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="sendSms.aspx.designer.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>

@@ -1,12 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Web.Register" %>
 
 <!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://www.oxcoder.com:80/">--><base href=".">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<base href="."/>
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="BootstrapStyler">
@@ -90,6 +88,7 @@ body {
 <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
 
 <body>
+    <form  runat="server" method="post" id="defaultForm" class="form-horizontal bv-form" novalidate="novalidate">
 	<div class="container" style="margin-top: 100px;">
 		<div class="row">
 			<div class="col-md-8 col-md-push-2 col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2">
@@ -110,14 +109,16 @@ body {
 											<li id="li-mobile" class="active"><a href="http://www.oxcoder.com/#mobile" data-toggle="pill" style="">手机号码注册</a></li>
 											<li id="li-email" class=""><a href="http://www.oxcoder.com/#email" data-toggle="pill" style="">邮箱注册</a></li>
 										</ul>
-										<form runat = "server" action="javascript:void(0);" method="post" id="defaultForm" class="form-horizontal bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+										
 											<input type="hidden" id="regType" name="regType" value="2"> <input type="hidden" id="regWay" name="regWay" value="1">
 											<div id="myTabContent" class="tab-content">
 												<div class="tab-pane fade in active" id="mobile">
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="imoon imoon-mobile2"></i></span> <input type="text" id="login-mobile" name="phone" class="form-control" placeholder="请输入常用手机号码" data-bv-field="phone">
+																<span class="input-group-addon"><i class="imoon imoon-mobile2"></i></span>
+                                                                 <asp:textbox  id="loginmobile" runat="server" name="phone" class="form-control" placeholder="请输入常用手机号码" data-bv-field="phone" runat="server"/>
+
 															</div>
 															<small id="hint1" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">请输入手机号码</small><small class="help-block" data-bv-validator="phone" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">请输入正确的联系方式</small></small>
 														</div>
@@ -125,7 +126,9 @@ body {
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-eye"></i></span> <input type="text" id="login-capcha" name="capcha" class="form-control" placeholder="请证明你不是机器人" data-bv-field="capcha"> <span class="input-group-btn"> <a href="javascript:void(0);" title="点击刷新" style="margin-right: -38px;"><asp:Image id="img_verify"  onclick="resetVerify()"  ImageUrl ="ImgVerify.aspx" runat="server" width="95px" height="35px"/></a>
+																<span class="input-group-addon"><i class="fa fa-eye"></i></span> <asp:TextBox runat="server" type="text" id="logincapcha" name="capcha" class="form-control" placeholder="请证明你不是机器人" data-bv-field="capcha"/>
+                                                                 <span class="input-group-btn"> <a href="javascript:void(0);" title="点击刷新" style="margin-right: -38px;">
+                                                                     <img id="img_verify" src="ImgVerify.aspx" width="95px" height="35px" onclick="resetVerify()"/></a>
 																</span>
 															</div>
 															<small id="hint8" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="capcha" data-bv-result="NOT_VALIDATED" style="display: none;">请输入验证码</small></small>
@@ -134,7 +137,7 @@ body {
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-inbox"></i></span> <input type="text" id="login-vcode" name="key" class="form-control" placeholder="请输入短信验证码" data-bv-field="key"> <span class="input-group-btn"> <button id="btn_send_sms" class="btn btn-primary" style="margin-right: -38px;" onclick="sendm()" >获取验证码</button>
+																<span class="input-group-addon"><i class="fa fa-inbox"></i></span> <asp:textbox type="text" id="logincode" name="key" class="form-control" placeholder="请输入短信验证码" runat="server" data-bv-field="key"/> <span class="input-group-btn"> <asp:button id="btn_send_sms" class="btn btn-primary" style="margin-right: -38px;" Text="获取验证码" runat="server" OnClick="btn_send_sms_Click"/>
 																</span>
 															</div>
 															<small id="hint3" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="key" data-bv-result="NOT_VALIDATED" style="display: none;">请输入短信验证码</small></small>
@@ -143,9 +146,25 @@ body {
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-key"></i></span> <input type="password" id="login-password" name="password_phone" class="form-control" placeholder="请输入密码">
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server"  type="password" id="loginpassword" name="password_phone" class="form-control" placeholder="请输入密码"/>
 															</div>
 															<small id="hint4"></small>
+														</div>
+													</div>
+                                                    						<div class="form-group">
+														<div class="col-xs-12">
+															<div class="input-group" runat="server" id ="espertise">
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:dropdownlist runat="server"   id="loginespertise"  class="form-control" placeholder="请选择专长" OnSelectedIndexChanged="loginespertise_SelectedIndexChanged"/>
+															</div>
+															<small id="hint5"></small>
+														</div>
+													</div>
+                                                    						<div class="form-group">
+														<div class="col-xs-12">
+															<div class="input-group" runat="server"  id="lname">
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server"  id="loginname"  class="form-control" placeholder="请输入姓名"/>
+															</div>
+															<small id="hint6"></small>
 														</div>
 													</div>
 												</div>
@@ -153,7 +172,7 @@ body {
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-envelope"></i></span> <input type="text" id="login-email" name="email" class="form-control" placeholder="请输入常用邮箱地址" data-bv-field="email">
+																<span class="input-group-addon"><i class="fa fa-envelope"></i></span> <asp:textbox type="text" runat="server" id="loginemail" name="email" class="form-control" placeholder="请输入常用邮箱地址" data-bv-field="email"/>
 															</div>
 															<small id="hint5" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">请输入邮箱地址</small></small>
 														</div>
@@ -162,19 +181,37 @@ body {
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-key"></i></span> <input type="password" id="login-password" name="password" class="form-control" placeholder="请输入密码" data-bv-field="password">
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server" type="password" id="loginpassword1" name="password" class="form-control" placeholder="请输入密码" data-bv-field="password"/>
 															</div>
 															<small id="hint6" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">请输入密码</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">密码应大于6位，小于30位</small></small>
 														</div>
 													</div>
+                                                     <div class="form-group">
+														<div class="col-xs-12">
+															<div class="input-group"  runat="server" id="skill">
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:dropdownlist runat="server"   id="loginskill"  class="form-control" placeholder="请选择专长" OnSelectedIndexChanged="loginskill_SelectedIndexChanged"/>
+															</div>
+															<small id="hint7"></small>
+														</div>
+													</div>
+                                                    						<div class="form-group">
+														<div class="col-xs-12">
+															<div class="input-group" runat="server" id="name1">
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server"  id="loginname1"  class="form-control" placeholder="请输入姓名"/>
+															</div>
+															<small id="hint8"></small>
+														</div>
+													</div>
+												</div>
 												</div>
 											</div>
+                                           
 											<ul class="nav nav-pills nav-justified" style="margin: 10px 0 20px 10px;">
 												
 													
 													
-														<li id="li-person" class="active"><a runat = "server" href="http://www.oxcoder.com/#j2-profile" data-toggle="pill">我是企业</a></li>
-														<li id="li-work"><a runat ="server" href="http://www.oxcoder.com/#j2-home" data-toggle="pill">我是开发者</a></li>
+														<li id="li-person" class="active"><a href="http://www.oxcoder.com/#j2-profile" data-toggle="pill">我是企业</a></li>
+														<li id="li-work"><a href="http://www.oxcoder.com/#j2-home" data-toggle="pill">我是开发者</a></li>
 													
 												
 
@@ -187,11 +224,12 @@ body {
 												</label> <small id="hint7" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="check" data-bv-result="NOT_VALIDATED" style="display: none;">请同意用户协议</small></small> <span class="help-block has-error" id="hint2" style=""> <small class="help-block"><s:property value="errinfo"></s:property></small>
 												</span>
 											</div>
-											<div class="col-xs-12">
-												<button type="submit"  class="btn btn-primary btn-lg" style="margin-left: 20px; border-radius: 3px;" onclick="register()">注册</button>
+											
+                                    <div class="col-xs-12">
+												<asp:button  runat="server"  ID="Regester" class="btn btn-primary btn-lg" style="margin-left: 20px; border-radius: 3px;" Text= "注册" OnClick="Regester_Click" />
 											</div>
 											<div class="col-xs-12"></div>
-										</form>
+									
 									</div>
 									<!-- /.panel-body -->
 									<div class="panel-body col-md-6">
@@ -217,7 +255,7 @@ body {
 
 		</div>
 		<!-- /.row -->
-	</div>
+	</form>
 	<!-- /.container -->
 	<!-- /.container -->
 	<footer class="col-md-12 footer-log">
@@ -248,54 +286,21 @@ body {
 	<script type="text/javascript" src="./猿圈 注册_files/jquery-confirm.min.js"></script>
 	<script type="text/javascript">
 
-	    var vcode;
-	    function register() {
-	        var regWay = $("#regWay").val();
-	        var regType = $("#regType").val();
-	        $.post("sendSms.aspx/SendVSMS", {
-	            "phone": $("#login-mobile").val(),
-	        }, function (res) {
-	            if (regWay == 1) {
-	            var login_vcode = $("#login_vcode").val();
-	            var login_capcha = $("#login_capha").val();
-<<<<<<< HEAD
-                if(login_vcode != )
-=======
-                if()
->>>>>>> c8e33be1622bec7d8c489f07779acd5144a5017b
-	            var login_password = $("#login_password").val();
-                var login_mobile = $("#login_mobile").val();
-	            $.ajax({
-	                type: "post",
-	                contentType: "aplication/json",
-	                url: "Register.aspx/GetValue",
-	                data: {
-	                    regType: regType, login_mobile: login_mobile, login_capha: login_capha,
-	                    login_password: login_password, login_vcode: login_vcode
-	                },
-	                success: function (res) {
-	                    if (res == 1) {
-	                        alert("图片验证码错误");
-	                    }
-	                    if (res == 2) {
-	                        alert("短信验证码错误");
-	                    }
-	                }
-	            }
-	        } else {
-	            var login_email = $("#login_email").var();
-	            var login_password = $("#login_password").var();
-	            $.ajax({
-	                type: "post",
-	                contentType: "aplication/json",
-	                url: "Register.aspx/GetMailValue",
-	                data: {
-	                    regType: regType, login_email: login_email,
-	                    login_password: login_password
-	                }
-	            });
-	        }
-	    });
+	    $(function () {
+	        $.ajax({
+
+	            type: "POST",
+
+	            url: "Register.aspx/GetValue",
+
+	            data: {regType:$("#regType").val(),
+	                regWay:$("#regWay").val()
+	            },
+	            
+	            dataType: "json"
+	        })
+	    })
+
 	    $(document)
 				.ready(
 						function () {
@@ -310,6 +315,9 @@ body {
 						    });
 						    $("#li-email").click(function () {
 						        $("#regWay").val(2);
+						    });
+						    $.post("Register.aspx/GetValue", {
+						        regType: $("#regType").val()
 						    });
 						    $('#defaultForm')
 									.bootstrapValidator(
@@ -433,11 +441,12 @@ body {
 	        if (bootstrapValidator.isValidField('phone')
 					&& bootstrapValidator.isValidField('capcha')) {
 	            $("#btn_send_sms").addClass("disabled");
-	            $.post("sendSms.aspx/SendVSMS", {
+	            $.post("send_sms.html", {
 	                "phone": $("#login-mobile").val(),
+	                "capcha": $("#login-capcha").val()
 	            }, function (res) {
 
-	                if (!res.b) {
+	                if (!res.su) {
 	                    resetVerify();
 	                    if (typeof (res.time) != "undefined") {
 	                        seSendDown(res.time);
@@ -446,11 +455,10 @@ body {
 	                    }
 	                } else {
 	                    seSendDown(60);
-	                    vode = res.s;
 	                }
 	                $.alert({
 	                    title: "提示",
-	                    content: "异常",
+	                    content: res.msg,
 	                    confirmButton: "确定",
 	                    confirm: function () {
 	                        /* location.href = data.url; */
@@ -470,9 +478,6 @@ body {
 	        var d = new Date();
 	        var src = "ImgVerify.aspx?date=" + d.getTime();
 	        $("#img_verify").attr("src", src);
-	        var vcode = '<%=Session["randStr"] %>';
-
-	        
 	    }
 	    function seSendDown(reSendSmsCountDown) {
 	        $("#btn_send_sms").addClass("disabled");

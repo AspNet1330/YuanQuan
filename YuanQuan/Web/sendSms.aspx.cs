@@ -4,20 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-<<<<<<< HEAD
-
-namespace Web
-{
-    public partial class sendSms : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            string phone = Request.Form["phone"];   
-   
-=======
-using PublicHelp;
-using System.Web.SessionState;
-
 namespace Web
 {
 
@@ -66,7 +52,6 @@ namespace Web
             }
 
             return str;
->>>>>>> c8e33be1622bec7d8c489f07779acd5144a5017b
         }
     }
 }
