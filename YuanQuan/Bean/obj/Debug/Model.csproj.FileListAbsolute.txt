@@ -37,7 +37,6 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\bin\Deb
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\bin\Debug\EntityFramework.xml
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
-D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\obj\Debug\Model.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Bean\obj\Debug\Model.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\bin\Debug\Model.dll.config

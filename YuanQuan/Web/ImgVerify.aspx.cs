@@ -17,6 +17,13 @@ namespace Web
     public partial class ImgVerify : System.Web.UI.Page
     {
 
+        public static string str;
+
+        public static string getRand() {
+            return str;
+        }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Response.AppendHeader("pragma", "no-cache");
@@ -26,7 +33,7 @@ namespace Web
             Random rand = new Random();
 
             //获取随机字符
-            string str = GetRandString(4);
+            str= GetRandString(4);
             Session["randStr"] = str;
             
 

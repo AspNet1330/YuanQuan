@@ -22,3 +22,27 @@ F:\code\yuanquan\YuanQuan\Web\bin\DALFactory.pdb
 F:\code\yuanquan\YuanQuan\Web\bin\DAL.pdb
 F:\code\yuanquan\YuanQuan\Web\obj\Debug\Web.dll
 F:\code\yuanquan\YuanQuan\Web\obj\Debug\Web.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\Web.dll.config
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\Web.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\Web.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\BLLFactory.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\IBLL.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\Model.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\PublicHelp.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\ViewModel.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\BLL.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\IDAL.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\DALFactory.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\DAL.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\Model.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\BLLFactory.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\IBLL.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\PublicHelp.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\ViewModel.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\BLL.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\IDAL.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\DALFactory.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\DAL.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\obj\Debug\Web.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\obj\Debug\Web.pdb

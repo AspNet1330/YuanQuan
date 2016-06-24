@@ -524,6 +524,7 @@
     </Compile>
     <Compile Include="sendSms.aspx.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="sendSms.aspx.designer.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>

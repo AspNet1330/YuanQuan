@@ -74,3 +74,5 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.pdb
 F:\code\yuanquan\YuanQuan\BLLFactory\bin\Debug\ViewModel.dll
 F:\code\yuanquan\YuanQuan\BLLFactory\bin\Debug\ViewModel.pdb
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\bin\Debug\ViewModel.dll
+D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\bin\Debug\ViewModel.pdb
