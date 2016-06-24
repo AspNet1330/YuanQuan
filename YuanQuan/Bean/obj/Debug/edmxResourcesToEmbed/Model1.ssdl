@@ -36,6 +36,7 @@
     <Property Name="cha_level" Type="varchar" MaxLength="255" />
     <Property Name="cha_public" Type="int" />
     <Property Name="cha_date" Type="date" />
+    <Property Name="cha_state" Type="int" />
   </EntityType>
   <EntityType Name="coder">
     <Key>
@@ -61,6 +62,7 @@
     <Property Name="grade" Type="int" />
     <Property Name="usetime" Type="int" />
     <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="c_account" Type="varchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="combo">
     <Key>
@@ -80,6 +82,7 @@
     <Property Name="e_pwd" Type="varchar" MaxLength="255" />
     <Property Name="e_chanum" Type="int" />
     <Property Name="e_currency" Type="int" />
+    <Property Name="e_name" Type="varchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="problem">
     <Key>

@@ -652,6 +652,30 @@ namespace Model
         private Nullable<global::System.DateTime> _cha_date;
         partial void Oncha_dateChanging(Nullable<global::System.DateTime> value);
         partial void Oncha_dateChanged();
+    
+        /// <summary>
+        /// 没有元数据文档可用。
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> cha_state
+        {
+            get
+            {
+                return _cha_state;
+            }
+            set
+            {
+                Oncha_stateChanging(value);
+                ReportPropertyChanging("cha_state");
+                _cha_state = StructuralObject.SetValidValue(value, "cha_state");
+                ReportPropertyChanged("cha_state");
+                Oncha_stateChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _cha_state;
+        partial void Oncha_stateChanging(Nullable<global::System.Int32> value);
+        partial void Oncha_stateChanged();
 
         #endregion
 
@@ -1080,6 +1104,30 @@ namespace Model
         private global::System.Int32 _id;
         partial void OnidChanging(global::System.Int32 value);
         partial void OnidChanged();
+    
+        /// <summary>
+        /// 没有元数据文档可用。
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String c_account
+        {
+            get
+            {
+                return _c_account;
+            }
+            set
+            {
+                Onc_accountChanging(value);
+                ReportPropertyChanging("c_account");
+                _c_account = StructuralObject.SetValidValue(value, true, "c_account");
+                ReportPropertyChanged("c_account");
+                Onc_accountChanged();
+            }
+        }
+        private global::System.String _c_account;
+        partial void Onc_accountChanging(global::System.String value);
+        partial void Onc_accountChanged();
 
         #endregion
 
@@ -1360,6 +1408,30 @@ namespace Model
         private Nullable<global::System.Int32> _e_currency;
         partial void One_currencyChanging(Nullable<global::System.Int32> value);
         partial void One_currencyChanged();
+    
+        /// <summary>
+        /// 没有元数据文档可用。
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String e_name
+        {
+            get
+            {
+                return _e_name;
+            }
+            set
+            {
+                One_nameChanging(value);
+                ReportPropertyChanging("e_name");
+                _e_name = StructuralObject.SetValidValue(value, true, "e_name");
+                ReportPropertyChanged("e_name");
+                One_nameChanged();
+            }
+        }
+        private global::System.String _e_name;
+        partial void One_nameChanging(global::System.String value);
+        partial void One_nameChanged();
 
         #endregion
 

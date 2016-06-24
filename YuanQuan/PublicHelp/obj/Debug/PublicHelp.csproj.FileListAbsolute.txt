@@ -5,3 +5,10 @@ F:\code\yuanquan\YuanQuan\PublicHelp\bin\Debug\Model.pdb
 F:\code\yuanquan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.csprojResolveAssemblyReference.cache
 F:\code\yuanquan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.dll
 F:\code\yuanquan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\PublicHelp\bin\Debug\PublicHelp.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\PublicHelp\bin\Debug\PublicHelp.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\PublicHelp\bin\Debug\Model.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\PublicHelp\bin\Debug\Model.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.csprojResolveAssemblyReference.cache
+D:\GitRepo\YQ\YuanQuan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\PublicHelp\obj\Debug\PublicHelp.pdb
