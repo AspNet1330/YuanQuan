@@ -39,5 +39,11 @@ namespace BLLFactory
             IProblemService ps = new ProblemService();
             return ps;
         }
+
+        public static IDisplayService createDisplayService()
+        {
+            IDisplayService ps = new DisplayService();
+            return ps;
+        }
     }
 }

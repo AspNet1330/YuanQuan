@@ -443,6 +443,10 @@
       <Project>{c55640c6-5d2b-41a7-88ee-09421e793e75}</Project>
       <Name>PublicHelp</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{e487effd-d912-45cd-8483-697a056b23f3}</Project>
+      <Name>ViewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

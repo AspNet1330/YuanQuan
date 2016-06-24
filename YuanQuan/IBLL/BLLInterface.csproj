@@ -44,6 +44,7 @@
     <Compile Include="IChallengeProblemService.cs" />
     <Compile Include="ICoderChallengeService.cs" />
     <Compile Include="ICoderService.cs" />
+    <Compile Include="IDisplayService.cs" />
     <Compile Include="IProblemService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,6 +52,10 @@
     <ProjectReference Include="..\Bean\Model.csproj">
       <Project>{df90736f-f641-4d48-b2b0-44dd0613771c}</Project>
       <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{e487effd-d912-45cd-8483-697a056b23f3}</Project>
+      <Name>ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

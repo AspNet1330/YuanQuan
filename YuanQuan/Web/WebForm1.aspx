@@ -15,6 +15,7 @@
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Button" />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
      </form>
 </body>
 </html>

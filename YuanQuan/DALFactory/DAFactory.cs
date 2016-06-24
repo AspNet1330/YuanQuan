@@ -45,5 +45,11 @@ namespace DALFactory
             IProblemDA problemDA = new ProblemDA();
             return problemDA;
         }
+
+        public static IEnterpriseDA createEnterpriseDA()
+        {
+            IEnterpriseDA da = new EnterpriseDA();
+            return da;
+        }
     }
 }

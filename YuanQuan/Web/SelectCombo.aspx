@@ -260,7 +260,7 @@
                                                                 <li id="l4_5"><span style="color: red;"><i class="fa fa-times"></i></span></li>
                                                             </ul>
                                                             <div class="sign-up">
-                                                                <a href="http://www.oxcoder.com/cooper/pay/invoice_info.html?payPackagesId=5">选择此方案</a>
+                                                                <a href="https://one.teegon.com/buy/createorder?id=d4df24ca69172860f477c6decc88a72b">选择此方案</a>
                                                             </div>
                                                         </div>
 
@@ -283,7 +283,7 @@
                                                                 <li id="l4_6"><span style="color: red;"><i class="fa fa-times"></i></span></li>
                                                             </ul>
                                                             <div class="sign-up">
-                                                                <a href="http://www.oxcoder.com/cooper/pay/invoice_info.html?payPackagesId=6">选择此方案</a>
+                                                                <a href="https://one.teegon.com/buy/createorder?id=d4df24ca69172860f477c6decc88a72b">选择此方案</a>
                                                             </div>
                                                         </div>
 
@@ -306,7 +306,7 @@
                                                                 <li id="l4_7">专业技术人才猎头服务</li>
                                                             </ul>
                                                             <div class="sign-up">
-                                                                <a href="http://www.oxcoder.com/cooper/pay/invoice_info.html?payPackagesId=7">选择此方案</a>
+                                                                <a href="https://one.teegon.com/buy/createorder?id=d4df24ca69172860f477c6decc88a72b">选择此方案</a>
                                                             </div>
                                                         </div>
 

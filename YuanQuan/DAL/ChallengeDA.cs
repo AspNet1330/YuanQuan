@@ -62,5 +62,19 @@ namespace DAL
             yq.challenge.DeleteObject(challenge);
             yq.SaveChanges();
         }
+
+        //获取所有挑战
+        public List<challenge> getChanllenges()
+        {
+            List<challenge> challenges = new List<challenge>();
+            using (yuanquanEntities yq = new yuanquanEntities())
+            {
+                var query = from c in yq.challenge
+                            select c;
+                foreach (var item in query)
+                    challenges.Add(item);
+            }
+            return challenges;
+        } 
     }
 }

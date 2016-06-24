@@ -65,7 +65,9 @@
     <Content Include="notify_url.aspx" />
     <Content Include="readme.txt" />
     <Content Include="return_url.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="app_code\AlipayConfig.cs" />
