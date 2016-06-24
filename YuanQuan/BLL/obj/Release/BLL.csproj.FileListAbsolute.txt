@@ -1,0 +1,15 @@
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\BLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\BLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\DALFactory.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\IBLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\IDAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\DAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\Model.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\DALFactory.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\IBLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\IDAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLL\bin\Release\DAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Release\BLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\BLL\obj\Release\BLL.pdb

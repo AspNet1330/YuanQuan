@@ -11,12 +11,6 @@ using PublicHelp;
 
 namespace Web
 {
-    public class ChallengeInfo:Attribute
-    {
-        public challenge challenge;
-        public string name;
-        public List<problem> ps;
-    }
     
     public partial class ManageChallenge : System.Web.UI.Page
     {
@@ -24,53 +18,79 @@ namespace Web
         static IChallengeService cs;
         static IChallengeProblemService cps;
         static IProblemService ps;
-        static List<ChallengeInfo> cInfos = new List<ChallengeInfo>();
-        private static enterprise cpy = new enterprise();
+        private static enterprise enterprise;
+        static List<challenge> challenges;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                cpy.e_id = 1;
+                enterprise = (enterprise)Session["enterprise"];
+                if (enterprise == null)
+                {
+                    Response.Redirect("404.html", false);
+                    return;
+                }
+                cs = ServiceFactory.createChallengeService();
+                cps = ServiceFactory.createChallengeProblemService();
+                ps = ServiceFactory.createProblemService();
+
+                this.EnterpriseName.Text = enterprise.e_name;
                 bindChallengeReapter();
             }
-
         }
 
 
         void bindChallengeReapter()
         {
-            cs = ServiceFactory.createChallengeService();
-            cps = ServiceFactory.createChallengeProblemService();
-            ps = ServiceFactory.createProblemService();
-            List<challenge> challenges = cs.getChallengesByEnterprise(cpy.e_id);
-
-            for (int i = 0; i < challenges.Count; i++)
-            {
-                cInfos.Add(getChallengeInfo(challenges.ElementAt(i)));
-            }
-
-            ChallengesRepeater.DataSource = cInfos;
+            
+            challenges = cs.getChallengeByState(1,enterprise.e_id);
+            ChallengesRepeater.DataSource = challenges;
             ChallengesRepeater.DataBind();
-
-            
+            this.TotalChallenge.Text = challenges.Count.ToString();
         }
 
-        ChallengeInfo getChallengeInfo(challenge c)
+        protected void ChallengesRepeater_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-            ChallengeInfo cInfo = new ChallengeInfo();
-            cInfo.challenge = c;
-            cInfo.name = ChallengeHelper.getChallengeName(c.cha_type,c.cha_level);
-            List<cha_problems> cPros = cps.getProblemByChallengeId(c.cha_id);
-            List<problem> pros = new List<problem>();
-            for (int i = 0; i < cPros.Count;i++ )
+            if ((e.Item.ItemType == ListItemType.Item) || (e.Item.ItemType == ListItemType.AlternatingItem))
             {
-                cha_problems cp = cPros.ElementAt(i);
-                pros.Add(ps.getProblemById(cp.p_id));
-            } 
-            cInfo.ps = pros;
-            
-            return cInfo;
+
+                TextBox hf = (TextBox)e.Item.FindControl("TextBox1");
+                string id = hf.Text;
+                int challengeId = int.Parse(id);
+                Repeater rp = (Repeater)e.Item.FindControl("ProblemReapter");
+
+                challenge  challenge=ServiceFactory.createChallengeService().getChallengeByChallengeId(challengeId);
+                List<cha_problems> cha_problems = ServiceFactory.createChallengeProblemService().getProblemByChallengeId(challengeId);
+                List<problem> problems = new List<problem>();
+
+                for (int i = 0; i < cha_problems.Count; i++)
+                {
+                    problems.Add(ServiceFactory.createProblemService().getProblemById(cha_problems.ElementAt(i).p_id));
+                }
+                rp.DataSource = problems;
+                rp.DataBind();
+
+
+                Label cName = (Label)e.Item.FindControl("ChallengeName");
+                cName.Text = "[" + ChallengeHelper.getChallengeLevel(challenge.cha_level) + "]" + challenge.cha_type + "工程师";
+            }
         }
+
+        protected void ChallengeHis_Click(object sender, EventArgs e)
+        {
+            challenges = cs.getChallengeByState(0, enterprise.e_id);
+            ChallengesRepeater.DataSource = challenges;
+            ChallengesRepeater.DataBind();
+            this.TotalChallenge.Text = challenges.Count.ToString();
+        }
+
+        protected void InChallenge_Click(object sender, EventArgs e)
+        {
+            bindChallengeReapter();
+        }
+
+        
+
     }
 }

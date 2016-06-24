@@ -1,0 +1,7 @@
+D:\GitRepo\YuanQuan\YuanQuan\IDAL\bin\Release\IDAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\IDAL\bin\Release\IDAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\IDAL\bin\Release\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\IDAL\bin\Release\Model.pdb
+D:\GitRepo\YuanQuan\YuanQuan\IDAL\obj\Release\DALInterface.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\IDAL\obj\Release\IDAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\IDAL\obj\Release\IDAL.pdb

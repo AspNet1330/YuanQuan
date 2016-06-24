@@ -36,6 +36,7 @@ F:\code\yuanquan\YuanQuan\BLLFactory\bin\Debug\DAL.pdb
 F:\code\yuanquan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.csprojResolveAssemblyReference.cache
 F:\code\yuanquan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.dll
 F:\code\yuanquan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.pdb
+<<<<<<< HEAD
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLLFactory.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLLFactory.pdb
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLL.dll
@@ -53,3 +54,22 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\b
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.pdb
+=======
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLLFactory.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLLFactory.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\IBLL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\Model.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DALFactory.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\IDAL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DAL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\BLL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\IBLL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\Model.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DALFactory.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\IDAL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DAL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.csprojResolveAssemblyReference.cache
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.pdb
+>>>>>>> master

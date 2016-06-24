@@ -28,6 +28,7 @@
           <ScalarProperty Name="cha_level" ColumnName="cha_level" />
           <ScalarProperty Name="cha_public" ColumnName="cha_public" />
           <ScalarProperty Name="cha_date" ColumnName="cha_date" />
+          <ScalarProperty Name="cha_state" ColumnName="cha_state" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -55,6 +56,7 @@
           <ScalarProperty Name="grade" ColumnName="grade" />
           <ScalarProperty Name="usetime" ColumnName="usetime" />
           <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="c_account" ColumnName="c_account" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -76,6 +78,7 @@
           <ScalarProperty Name="e_pwd" ColumnName="e_pwd" />
           <ScalarProperty Name="e_chanum" ColumnName="e_chanum" />
           <ScalarProperty Name="e_currency" ColumnName="e_currency" />
+          <ScalarProperty Name="e_name" ColumnName="e_name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

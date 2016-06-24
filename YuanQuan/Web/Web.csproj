@@ -58,16 +58,86 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CoderFirst.aspx" />
     <Content Include="CoderRecommend.aspx" />
+    <Content Include="Coding.aspx" />
+    <Content Include="codingPage.html" />
+    <Content Include="CSS\ace.css" />
     <Content Include="CSS\bootstrap-select.min.css" />
     <Content Include="CSS\bootstrap-switch.min.css" />
+    <Content Include="CSS\bootstrap.css" />
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\font-awesome.min.css" />
+    <Content Include="CSS\jquery-confirm.min.css" />
+    <Content Include="CSS\new.min.css" />
     <Content Include="CSS\style%281%29.css" />
     <Content Include="CSS\style.css" />
     <Content Include="CSS\style_new.css" />
     <Content Include="CSS\summernote-bs3.css" />
     <Content Include="CSS\summernote.css" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站.html" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\ace.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\adapter.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\base64.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\bootstrap-theme.min.css" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\bootstrap.min.css" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\bootstrap.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\changyan.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\c_cpp.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\ext-language_tools.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\hm.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\icp-tips.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jquery-ui.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jquery.layout-latest.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jquery.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jquery.zclip.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\jstorage.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\main.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\mode-c_cpp.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_01.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_02.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_03.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_04.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_05.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_06.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_07.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_08.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_09.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_10.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_11.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_12.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_13.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_14.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_15.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_16.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_17.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_18.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_19.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_20.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_21.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_22.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_23.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\new_face_24.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\pic42_null.gif" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\render-pc.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\runcode.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\saved_resource.html" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\start.min.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\swfupload.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\swfupload.swf" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\text.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\theme-monokai.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\version-v3.js" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\wechat-bind.js" />
+    <Content Include="JS\ace.js" />
+    <Content Include="JS\all.min.js" />
+    <Content Include="JS\api-coding-page.js" />
+    <Content Include="JS\api-iframe.js" />
+    <Content Include="JS\avalon.draggable.js" />
+    <Content Include="JS\avalon.json.js" />
+    <Content Include="JS\avalon.min.js" />
+    <Content Include="JS\avalon.resizable.js" />
+    <Content Include="JS\avalon.store.js" />
     <Content Include="Filter.aspx" />
     <Content Include="ImgVerify.aspx" />
     <Content Include="Invite1.aspx" />
@@ -77,11 +147,35 @@
     <Content Include="JS\bootstrap-select.min.js" />
     <Content Include="JS\bootstrap-switch.min.js" />
     <Content Include="JS\bootstrap.min.js" />
+    <Content Include="JS\bootstrapValidator.min.js" />
+    <Content Include="JS\browser-match.js" />
+    <Content Include="JS\canvas2image.js" />
+    <Content Include="JS\chart.min.js" />
+    <Content Include="JS\codingConstant.js" />
+    <Content Include="JS\codingStatistics.js" />
+    <Content Include="JS\codingUI.js" />
+    <Content Include="JS\cometd.js" />
+    <Content Include="JS\cometd.min.js" />
+    <Content Include="JS\ext-language_tools.js" />
     <Content Include="JS\jquery-1.11.0.min.js" />
     <Content Include="JS\jquery-1.4.2.flp.js" />
+    <Content Include="JS\jquery-2.1.4.js" />
+    <Content Include="JS\jquery-2.1.4.min.js" />
+    <Content Include="JS\jquery-confirm.min.js" />
+    <Content Include="JS\jquery.base64.js" />
+    <Content Include="JS\jquery.cityselect.js" />
+    <Content Include="JS\jquery.cometd%281%29.js" />
+    <Content Include="JS\jquery.cometd.js" />
     <Content Include="JS\jquery.sparkline.min.js" />
+    <Content Include="JS\json2.js" />
+    <Content Include="JS\mode-java.js" />
+    <Content Include="JS\ox-statistics.js" />
     <Content Include="JS\script.js" />
+    <Content Include="JS\scrollpagination.js" />
     <Content Include="JS\summernote.min.js" />
+    <Content Include="JS\theme-idle_fingers.js" />
+    <Content Include="JS\user_center.js" />
+    <Content Include="JS\zmUtil.js" />
     <Content Include="JS\zmUtil.js" />
     <Content Include="ManageChallenge.aspx" />
     <Content Include="Picture\android.png" />
@@ -89,12 +183,20 @@
     <Content Include="Picture\clickbtn_11.png" />
     <Content Include="Picture\clickbtn_182.png" />
     <Content Include="Picture\closebtn_3.png" />
+    <Content Include="Picture\code22.png" />
     <Content Include="Picture\commonbg_4.png" />
     <Content Include="Picture\java.png" />
     <Content Include="Picture\otherimg_6.png" />
     <Content Include="Picture\pic.gif" />
+    <Content Include="Picture\Storm.png" />
+    <Content Include="Picture\waiting.gif" />
     <Content Include="Picture\wlogo_sm.png" />
+<<<<<<< HEAD
     <Content Include="Register.aspx" />
+=======
+    <Content Include="Report.aspx" />
+    <Content Include="SelectCombo.aspx" />
+>>>>>>> master
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -255,12 +357,26 @@
     <Content Include="页面找不到了_files\wlogo_sm.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoderFirst.aspx.cs">
+      <DependentUpon>CoderFirst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoderFirst.aspx.designer.cs">
+      <DependentUpon>CoderFirst.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CoderRecommend.aspx.cs">
       <DependentUpon>CoderRecommend.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CoderRecommend.aspx.designer.cs">
       <DependentUpon>CoderRecommend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coding.aspx.cs">
+      <DependentUpon>Coding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coding.aspx.designer.cs">
+      <DependentUpon>Coding.aspx</DependentUpon>
     </Compile>
     <Compile Include="Filter.aspx.cs">
       <DependentUpon>Filter.aspx</DependentUpon>
@@ -305,12 +421,28 @@
       <DependentUpon>ManageChallenge.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+=======
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCombo.aspx.cs">
+      <DependentUpon>SelectCombo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectCombo.aspx.designer.cs">
+      <DependentUpon>SelectCombo.aspx</DependentUpon>
+>>>>>>> master
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -321,6 +453,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Other\core.php" />
+    <Content Include="Other\kf.php" />
+    <Content Include="Other\kf_ivt_new.php" />
+    <Content Include="Other\sendacc.jsp" />
+    <Content Include="Other\stat.php" />
+    <Content Include="Other\z_stat.php" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\cookie" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\core.php" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\cyqWg8E9J" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\saved_resource" />
+    <Content Include="c在线编译器,c语言在线解释器,在线编程网站_files\stat.php" />
+    <None Include="Properties\PublishProfiles\mxy1.pubxml" />
+    <None Include="Properties\PublishProfiles\mxy2.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

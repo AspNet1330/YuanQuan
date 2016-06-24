@@ -12,11 +12,26 @@ namespace BLL
 {
     public class CoderService : ICoderService
     {
-        public List<coder> getTopCoder()
+        private List<coder> getTopCoder()
         {
             ICoderDA coderDA = DAFactory.createCoderDA();
             List<coder> coders = coderDA.getCoders();
             return coders;
+        }
+
+        public List<coder> getTopCoderof(String skill)
+        {
+           
+            ICoderDA coderDA = DAFactory.createCoderDA();
+            List<coder> coders = (skill.Equals("All"))?(coderDA.getCoders()) : (coderDA.getCodersof(skill));
+            return coders;
+        }
+
+
+        public coder getCoderByID(int id)
+        {
+            ICoderDA coderDA = DAFactory.createCoderDA();
+            return coderDA.getCoderByID(id);
         }
     }
 }

@@ -18,9 +18,13 @@ namespace Web
             //this.Label1.Text = "today is" + DateTime.Today.Millisecond;
             if (!IsPostBack)
             {
-                ICoderService cs = ServiceFactory.createCoderService();
-                List<coder> coders = cs.getTopCoder();
-                this.Label1.Text = coders[0].c_name;
+                //ICoderService cs = ServiceFactory.createCoderService();
+                //List<coder> coders = cs.getTopCoder();
+                //this.Label1.Text = coders[0].c_name;
+                enterprise enterprise = new enterprise();
+                enterprise.e_id = 1;
+                enterprise.e_name = "刀奈特小组";
+                Session["enterprise"]=enterprise;
             }
         }
 

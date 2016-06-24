@@ -92,7 +92,11 @@
 <body>
 	
 	
-
+<SCRIPT type="text/javascript">
+    window.onload = function () {
+        document.getElementById("mailContext").innerHTML = "<%=getMailContext()%>";
+        }
+</SCRIPT>
 
 
 
@@ -136,14 +140,8 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="text">
-							
-								
-								
-								
-									北京交通大学信息安全科技公司
-								
-							
+						<span class="text" id="enterprise">	
+                            	<asp:Label ID="EnterpriseName" runat="server" Text="Label"></asp:Label>					
 						</span>
 						<b class="caret"></b>
 					</a>
@@ -172,7 +170,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
-				<h2 class="h2-tab">[中级]Android工程师-邀请挑战</h2>
+                <div class="h2-tab" name="enterName" id="enterName"  style="font-size:25px">
+<asp:Label ID="ChallengeName" runat="server" Text="Label"></asp:Label>
+                </div>
 				<p class="text-muted">您可以邀请其他渠道获取的人才到猿圈，通过挑战来识别他们的能力。</p>
 				<p style="color:#4A90E2">猿圈小提示：每邀请一位人才将会扣除1个猿民币。</p>
 				<button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
@@ -181,56 +181,13 @@
 						<label>
 							<span class="grey">输入邮箱地址(剩余猿民币：<span id="su_resume_span_view_id">10</span>)</span>
 						</label>
-						<input type="email" name="user_emails" class="form-control" placeholder="多个邮件地址请用&#39;,&#39;分隔" data-bv-field="user_emails">
-						<span class="text-muted">
-							邮件将会单独发送给多个候选人。候选人很多？您可以使用下方的批量上传功能
-							<!--  
-							<a href="javascript:void(0);" onclick="change1()" target="_blank" class="pull-right">下载其他渠道导入模板</a>
-							-->
-							<!--  <a href="javascript:void(0);" onclick="change1()">批量上传</a>-->
-						</span>
+                       <asp:TextBox  name="user_emails" ID="TextBox1" runat="server" class="form-control" placeholder="多个邮件地址请用&#39;,&#39;分隔" data-bv-field="user_emails"></asp:TextBox>
+						
 					</div>
 					<span class="help-block has-error" id="hint_user_emails"><small class="help-block" data-bv-validator="emailAddress" data-bv-for="user_emails" data-bv-result="NOT_VALIDATED" style="display: none;">请输入正确的邮箱格式</small><small class="help-block" data-bv-validator="notEmpty" data-bv-for="user_emails" data-bv-result="NOT_VALIDATED" style="display: none;">请输入正确的邮箱格式，多个邮件地址请用','分隔</small></span>
-					<div class="form-group" id="two" style="display: none;">
-						<label>
-							<span class="grey">批量上传邮箱</span>
-						</label>
-						<a href="http://www.oxcoder.com/sys/img/batch-invite-example.xls" target="_blank" class="pull-right">下载其他渠道导入模板</a>
-						<span class="file-input file-input-new">
-<div class="kv-upload-progress hide"></div>
-<div class="input-group ">
-   <div tabindex="-1" class="form-control file-caption  kv-fileinput-caption">
-   <span class="file-caption-ellipsis">…</span>
-   <div class="file-caption-name"></div>
-</div>
-   <div class="input-group-btn">
-       
-       <button type="button" title="取消进行中的上传" class="hide btn btn-default fileinput-cancel fileinput-cancel-button"><i class="glyphicon glyphicon-ban-circle"></i> 取消</button>
-       
-       <div class="btn btn-primary btn-file"> <i class="glyphicon glyphicon-folder-open"></i> &nbsp;选择文件 <input name="emailFile" onchange="modify_hide_logo(this)" id="corp-pic" type="file" accept="" data-bv-field="emailFile"></div>
-   </div>
-</div></span>
-						<span class="text-muted">
-							不想导入？
-							<a href="javascript:void(0);" onclick="change2()">输入邮箱</a>
-						</span>
-						<span class="help-block has-error" id="hint_emailFile"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="emailFile" data-bv-result="NOT_VALIDATED" style="display: none;">请上传邮箱文件</small></span>
-					</div>
 					
-					<div>
-						<div style="display: inline-block;" onclick="change1_new(&#39;zhilian&#39;)">
-							<em id="zhilian" class="ex-totop2" style="display: none;"></em>
-							<a class="btn btn-info" style="margin-right:10px;">上传智联简历</a>
-						</div>
-						<div style="display: inline-block;" onclick="change1_new(&#39;51job&#39;)">
-							<em id="51job" class="ex-totop2" style="display: none;"></em>
-							<a class="btn btn-info" style="margin-right:10px;">上传前程无忧简历</a>
-						</div>
-						<div style="display: inline-block;" onclick="change1_new(&#39;other&#39;)">
-							<em id="other" class="ex-totop2" style="display: none;"></em>
-							<a class="btn btn-info">上传其他渠道简历</a>
-						</div>
-					</div>
+					
+					
           
 					<div>
 						<div class="alert alert-success alert-dismissible" style="display: none;" role="alert" id="msg_tip">
@@ -250,7 +207,7 @@
 								<span class="grey">邮件主题</span>
 							</label>
 						</div>
-						<input id="email_subject_id" readonly="" type="text" name="email_subject" class="form-control" value="[北京交通大学信息安全科技公司]-在线笔试邀请函" data-bv-field="email_subject">
+                        <asp:TextBox ID="email_subject_id" name="email_subject" class="form-control" data-bv-field="email_subject" readonly="" type="text" runat="server"></asp:TextBox>
 						<!-- <span class="text-danger" id="error1" style="display:none;">请输入公司简称</span> -->
 						<span class="help-block has-error" id="hint_email_subject"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="email_subject" data-bv-result="NOT_VALIDATED" style="display: none;">请输入邮件主题</small></span>
 					</div>
@@ -258,7 +215,8 @@
 						<label>
 							<span class="grey">邮件内容</span>
 						</label>
-						<textarea readonly="" name="email_content" rows="9" class="form-control" data-bv-field="email_content">您好：&lt;br&gt;我们非常高兴的通知您，通过了我们的简历筛选，为了评估您的真实编程能力，我们准备了[职位]的在线编程挑战，希望您能完成！&lt;br&gt;点击下面的链接进入在线编程挑战: :&lt;br&gt;[链接]。&lt;br&gt;以下是您的登录信息:&lt;br&gt;用户名：[用户名]&lt;br&gt;密码[密码]&lt;br&gt;感谢您的配合！&lt;br&gt;&lt;br&gt;[公司名]&lt;br&gt;[时间]</textarea>
+						<textarea readonly="" id="mailContext" name="email_content" rows="9" class="form-control" data-bv-field="email_content">
+                            </textarea>
 						<span class="help-block has-error" id="hint_email_content"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="email_content" data-bv-result="NOT_VALIDATED" style="display: none;">请输入邮件内容</small></span>
 					</div>
 					<div>
@@ -266,7 +224,7 @@
 					</div>
 					<div class="form-group form-actions pull-right">
                          <asp:Button ID="Button1" runat="server" Text="邀请" class="btn btn-new1" OnClick="Button1_Click"/>
-						<a href="http://www.oxcoder.com/cooper/index.html" class="btn btn-default" style="margin-left:10px;">返回</a>
+						<a href="./ManageChallenge.aspx" class="btn btn-default" style="margin-left:10px;">返回</a>
 					</div>
 			</div>
 			<div class="col-md-3 profile-info" id="profile_info_div">
@@ -274,64 +232,6 @@
 
 
 
-<div class="panel-user">
-	<div class="panel-heading">
-		<div class="panel-title">
-			<div class="media">
-				
-				<div class="media-body">
-					<h4 class="media-heading">
-						<!-- <span class="welcome">Hello</span> -->
-						<span>北京交通大学信息安全科技公司</span>
-					</h4>
-					<span class="text-muted">
-						<small>
-							上次登录日期:
-							<br>
-							2016-04-22 10:16:54
-						</small>
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="panel panel-outline panel-no-padding hidden-xs">
-	<div class="panel-body">
-		<div class="stat-block stat-danger">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-bell"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">今日接受挑战人数</div>
-			</div>
-		</div>
-		<div class="stat-block stat-success">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-bar-chart-o"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">今日通过挑战人数</div>
-			</div>
-		</div>
-		<div class="stat-block stat-primary">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-tachometer"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">共帮您找到的人才</div>
-			</div>
-		</div>
-	</div>
-	<!-- /.panel-body -->
-</div>
-<!-- /.panel -->
 </div>
 		</div>
 		<!-- /.row -->

@@ -1,0 +1,9 @@
+D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Release\DAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Release\DAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Release\IDAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Release\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Release\Model.pdb
+D:\GitRepo\YuanQuan\YuanQuan\DAL\bin\Release\IDAL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Release\DAL.dll
+D:\GitRepo\YuanQuan\YuanQuan\DAL\obj\Release\DAL.pdb

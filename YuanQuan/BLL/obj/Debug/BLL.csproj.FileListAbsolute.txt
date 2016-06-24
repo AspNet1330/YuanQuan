@@ -32,6 +32,7 @@ F:\code\yuanquan\YuanQuan\BLL\bin\Debug\DAL.pdb
 F:\code\yuanquan\YuanQuan\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 F:\code\yuanquan\YuanQuan\BLL\obj\Debug\BLL.dll
 F:\code\yuanquan\YuanQuan\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLL\bin\Debug\BLL.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLL\bin\Debug\BLL.pdb
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLL\bin\Debug\DALFactory.dll
@@ -47,3 +48,20 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLL\bin\Debu
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.pdb
+=======
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\BLL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\BLL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\DALFactory.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\IBLL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\IDAL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\Model.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\DAL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\Model.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\DALFactory.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\IBLL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\IDAL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\DAL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.pdb
+>>>>>>> master

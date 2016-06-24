@@ -1,0 +1,7 @@
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Release\IBLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Release\IBLL.pdb
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Release\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\bin\Release\Model.pdb
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\obj\Release\BLLInterface.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\obj\Release\IBLL.dll
+D:\GitRepo\YuanQuan\YuanQuan\IBLL\obj\Release\IBLL.pdb

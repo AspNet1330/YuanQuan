@@ -52,6 +52,7 @@ F:\code\yuanquan\YuanQuan\Web\obj\Debug\Web.dll
 F:\code\yuanquan\YuanQuan\Web\obj\Debug\Web.pdb
 F:\code\yuanquan\YuanQuan\Web\bin\PublicHelp.dll
 F:\code\yuanquan\YuanQuan\Web\bin\PublicHelp.pdb
+<<<<<<< HEAD
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\Web.dll.config
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\Web.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\Web.pdb
@@ -74,3 +75,26 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\bin\DAL.
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\obj\Debug\Web.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\Web\obj\Debug\Web.pdb
+=======
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\Web.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\Web.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\BLLFactory.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\IBLL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\Model.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\PublicHelp.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\BLL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\DALFactory.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\IDAL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\DAL.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\Model.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\BLLFactory.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\IBLL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\PublicHelp.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\BLL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\DALFactory.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\IDAL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\bin\DAL.pdb
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\obj\Debug\Web.dll
+D:\GitRepo\YQ\YuanQuan\YuanQuan\Web\obj\Debug\Web.pdb
+>>>>>>> master

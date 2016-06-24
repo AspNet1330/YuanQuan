@@ -36,6 +36,7 @@
     <Property Name="cha_level" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
     <Property Name="cha_public" Type="Int32" />
     <Property Name="cha_date" Type="DateTime" Precision="0" />
+    <Property Name="cha_state" Type="Int32" />
   </EntityType>
   <EntityType Name="coder">
     <Key>
@@ -61,6 +62,7 @@
     <Property Name="grade" Type="Int32" />
     <Property Name="usetime" Type="Int32" />
     <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="c_account" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="combo">
     <Key>
@@ -80,6 +82,7 @@
     <Property Name="e_pwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
     <Property Name="e_chanum" Type="Int32" />
     <Property Name="e_currency" Type="Int32" />
+    <Property Name="e_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="problem">
     <Key>

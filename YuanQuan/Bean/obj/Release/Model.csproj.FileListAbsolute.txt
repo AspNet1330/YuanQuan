@@ -1,0 +1,11 @@
+D:\GitRepo\YuanQuan\YuanQuan\Bean\bin\Release\Model.dll.config
+D:\GitRepo\YuanQuan\YuanQuan\Bean\bin\Release\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\Bean\bin\Release\Model.pdb
+D:\GitRepo\YuanQuan\YuanQuan\Bean\bin\Release\EntityFramework.dll
+D:\GitRepo\YuanQuan\YuanQuan\Bean\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+D:\GitRepo\YuanQuan\YuanQuan\Bean\bin\Release\EntityFramework.xml
+D:\GitRepo\YuanQuan\YuanQuan\Bean\bin\Release\zh-Hans\EntityFramework.resources.dll
+D:\GitRepo\YuanQuan\YuanQuan\Bean\bin\Release\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\GitRepo\YuanQuan\YuanQuan\Bean\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\GitRepo\YuanQuan\YuanQuan\Bean\obj\Release\Model.dll
+D:\GitRepo\YuanQuan\YuanQuan\Bean\obj\Release\Model.pdb

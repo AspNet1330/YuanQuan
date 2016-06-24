@@ -14,17 +14,21 @@ namespace Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
+            //if (!IsPostBack)
+            //{
+            //    ICoderService cs = ServiceFactory.createCoderService();
+            //    List<coder> coders = cs.getTopCoderof("All");
+            //    this.Repeater1.DataSource = coders;
+            //    this.DataBind();
+            //}
+            //else
+            //{
+                String skill = Request.QueryString["skill"];
                 ICoderService cs = ServiceFactory.createCoderService();
-                List<coder> coders = cs.getTopCoder();
+                List<coder> coders = cs.getTopCoderof(skill);
                 this.Repeater1.DataSource = coders;
                 this.DataBind();
-                //this.Label_Name.Text = coders[0].c_name;
-                //this.Label_Value.Text = "" + coders[0].c_value;
-            }
-            
-
+            //}
         }
     }
 }

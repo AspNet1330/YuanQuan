@@ -213,6 +213,7 @@ a:visited {
 .panel-user .panel-title .media-heading > span {
   display: block;
   font-size: 1em;
+    width: 563px;
 }
 .panel-user .panel-body {
   padding: 20px 0 !important;

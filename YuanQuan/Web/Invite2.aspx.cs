@@ -16,6 +16,8 @@ namespace Web
         int maxProblem = 3;
         private static List<problem> problems = new List<problem>();
         private static List<problem> chooseProblems = new List<problem>();
+        private static enterprise enterprise;
+        static int cID;
         IProblemService ps = ServiceFactory.createProblemService();
         int rdnum = 0;
         private static challenge challenge;
@@ -30,8 +32,15 @@ namespace Web
                     Response.Redirect("./Invite1.aspx", false);
                     return;
                 }
+                enterprise = (enterprise)Session["enterprise"];
+                if (enterprise == null)
+                {
+                    Response.Redirect("404.html", false);
+                    return;
+                }
                 IProblemService ps = ServiceFactory.createProblemService();
                 getRandomProblem();  
+
             }
         }
 
@@ -129,16 +138,15 @@ namespace Web
 
         protected void SaveNxtButton_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("./Invite3.aspx", false); 
+            IChallengeService challengeService = ServiceFactory.createChallengeService();
+            cID = challengeService.saveChallenge(challenge);
+            Response.Redirect("./Invite3.aspx?id="+cID, false); 
             Thread chaProThread = new Thread(saveChaPro);
             chaProThread.Start();
         }
 
         void saveChaPro()
         {
-            IChallengeService challengeService = ServiceFactory.createChallengeService();
-            int cID = challengeService.saveChallenge(challenge);
-
             IChallengeProblemService cps = ServiceFactory.createChallengeProblemService();
             cps.deleteChaProByChallengeId(cID);
             for (int i = 0; i < chooseProblems.Count; i++)
@@ -149,6 +157,12 @@ namespace Web
                 cps.saveChallengeProblem(chaPro);
             }
         }
+
+        public string getEntership()
+        {
+            return enterprise.e_name.ToString();
+        }
+
 
 
 

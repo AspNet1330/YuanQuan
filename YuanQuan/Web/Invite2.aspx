@@ -34,7 +34,11 @@
 <body>
 	
 	
-
+       <SCRIPT type="text/javascript">
+           window.onload = function () {
+               document.getElementById("enterprise").innerHTML = "<%=getEntership()%>";
+        }
+</SCRIPT>
 
 
 
@@ -78,14 +82,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="text">
-							
-								
-								
-								
-									123
-								
-							
+						<span class="text" id="enterprise">
 						</span>
 						<b class="caret"></b>
 					</a>
@@ -178,14 +175,8 @@
                                                                        
 																		<div class="col-md-12" style="min-height: 68px;">
 																			<ul class="companyTags">
-																				
-																				
-																					
-														
-																					
-																						<li><%# Eval("p_detail")%></li>
-																					
-																				
+                                                                                <li><%# Eval("p_detail")%></li>
+                                                                                <li><%# Eval("p_type")%></li>
 																			</ul>
 																			<div class="row">
 																				<div class="col-sm-4">
@@ -410,14 +401,8 @@
                                                                        
 																		<div class="col-md-12" style="min-height: 68px;">
 																			<ul class="companyTags">
-																				
-																				
-																					
-														
-																					
-																						<li><%# Eval("p_detail")%></li>
-																					
-																				
+																				<li><%# Eval("p_detail")%></li>
+                                                                                <li><%# Eval("p_type")%></li>
 																			</ul>
 																			<div class="row">
 																				<div class="col-sm-4">
@@ -461,66 +446,6 @@
 
 
 
-
-<div class="panel-user">
-	<div class="panel-heading">
-		<div class="panel-title">
-			<div class="media">
-				<a class="pull-left">
-					<img src="./猿圈 新增挑战邀请_files/d36f528c-e62f-41c8-b2b9-8240e46a098f.jpg" class="media-object">
-				</a>
-				<div class="media-body">
-					<h4 class="media-heading">
-						<!-- <span class="welcome">Hello</span> -->
-						<span>123			</h4>
-					<span class="text-muted">
-						<small>
-							上次登录日期:
-							<br>
-							2016-06-18 21:11:37
-						</small>
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="panel panel-outline panel-no-padding hidden-xs">
-	<div class="panel-body">
-		<div class="stat-block stat-danger">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-bell"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">今日接受挑战人数</div>
-			</div>
-		</div>
-		<div class="stat-block stat-success">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-bar-chart-o"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">今日通过挑战人数</div>
-			</div>
-		</div>
-		<div class="stat-block stat-primary">
-			<div class="icon">
-				<b class="icon-cover"></b>
-				<i class="fa fa-tachometer"></i>
-			</div>
-			<div class="details">
-				<div class="number">0</div>
-				<div class="description">共帮您找到的人才</div>
-			</div>
-		</div>
-	</div>
-	<!-- /.panel-body -->
-</div>
-<!-- /.panel -->
 </div>
 					</div>
 					<!-- /.row -->
