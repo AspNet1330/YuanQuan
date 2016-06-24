@@ -72,3 +72,5 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\bin\Debug\DAL.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.csprojResolveAssemblyReference.cache
 D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\BLLFactory\obj\Debug\BLLFactory.pdb
+F:\code\yuanquan\YuanQuan\BLLFactory\bin\Debug\ViewModel.dll
+F:\code\yuanquan\YuanQuan\BLLFactory\bin\Debug\ViewModel.pdb

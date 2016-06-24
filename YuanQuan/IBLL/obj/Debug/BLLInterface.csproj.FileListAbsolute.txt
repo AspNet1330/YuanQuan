@@ -32,3 +32,5 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\bin\Debug\ViewModel.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\obj\Debug\BLLInterface.csprojResolveAssemblyReference.cache
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\IBLL\obj\Debug\IBLL.pdb
+F:\code\yuanquan\YuanQuan\IBLL\bin\Debug\ViewModel.dll
+F:\code\yuanquan\YuanQuan\IBLL\bin\Debug\ViewModel.pdb

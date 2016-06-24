@@ -103,14 +103,5 @@ namespace DAL
             }
         }
 
-        public coder getCoderByAccount(string account)
-        {
-            using (yuanquanEntities yq = new yuanquanEntities())
-            {
-                coder codername = new coder();
-                codername = yq.coder.FirstOrDefault(c => c.c_account == account);
-                return codername;
-            }
-        }
     }
 }

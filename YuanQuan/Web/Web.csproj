@@ -328,7 +328,6 @@
     <Content Include="猿圈 新建挑战邀请3_files\wlogo_sm.png" />
     <Content Include="猿圈 新建挑战邀请3_files\zmUtil.js" />
     <Content Include="404.html" />
-<<<<<<< HEAD
     <Content Include="猿圈 登录_files\01.png" />
     <Content Include="猿圈 登录_files\bootstrap-filestyle.js" />
     <Content Include="猿圈 登录_files\bootstrap-select.min.css" />
@@ -355,7 +354,6 @@
     <Content Include="猿圈 登录_files\summernote.min.js" />
     <Content Include="猿圈 登录_files\title.PNG" />
     <Content Include="猿圈 登录_files\wlogo.png" />
-=======
     <Content Include="猿圈 注册_files\01.png" />
     <Content Include="猿圈 注册_files\46494ae6150141d2892e9db492f870fd.jpg" />
     <Content Include="猿圈 注册_files\bootstrap-filestyle.js" />
@@ -382,7 +380,6 @@
     <Content Include="猿圈 注册_files\summernote.css" />
     <Content Include="猿圈 注册_files\summernote.min.js" />
     <Content Include="猿圈 注册_files\wlogo.png" />
->>>>>>> 4ae25bc518cac5890903c823d30b31b11ac55dbb
     <Content Include="页面找不到了_files\bootstrap-select.min.css" />
     <Content Include="页面找不到了_files\bootstrap-switch.min.css" />
     <Content Include="页面找不到了_files\bootstrap.min.css" />
@@ -564,8 +561,6 @@
     <Compile Include="SelectCombo.aspx.designer.cs">
       <DependentUpon>SelectCombo.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Include="sendSms.aspx.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -573,14 +568,6 @@
     <Compile Include="sendSms.aspx.designer.cs">
       <DependentUpon>sendSms.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
->>>>>>> 4ae25bc518cac5890903c823d30b31b11ac55dbb
   </ItemGroup>
   <ItemGroup>
     <Content Include="Other\core.php" />
@@ -602,13 +589,10 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-<<<<<<< HEAD
     <Content Include="猿圈 登录_files\core.php" />
     <Content Include="猿圈 登录_files\z_stat.php" />
-=======
     <Content Include="猿圈 注册_files\core.php" />
     <Content Include="猿圈 注册_files\z_stat.php" />
->>>>>>> 4ae25bc518cac5890903c823d30b31b11ac55dbb
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bean\Model.csproj">

@@ -64,3 +64,5 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\bin\Debug\DAL.pdb
 D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\BLL\obj\Debug\BLL.pdb
+F:\code\yuanquan\YuanQuan\BLL\bin\Debug\ViewModel.dll
+F:\code\yuanquan\YuanQuan\BLL\bin\Debug\ViewModel.pdb

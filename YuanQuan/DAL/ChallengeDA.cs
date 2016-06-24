@@ -78,7 +78,7 @@ namespace DAL
             yq.SaveChanges();
         }
 
-<<<<<<< HEAD
+
         //获取所有挑战
         public List<challenge> getChanllenges()
         {
@@ -92,8 +92,5 @@ namespace DAL
             }
             return challenges;
         } 
-=======
-
->>>>>>> 4ae25bc518cac5890903c823d30b31b11ac55dbb
     }
 }
