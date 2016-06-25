@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Web.Register" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Regist.aspx.cs" Inherits="Web.Regist" %>
 
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -83,15 +83,12 @@ body {
 
 .col-xs-12 {
 	padding-left: 0;
-        top: 7px;
-        left: -51px;
-        margin-bottom: 0px;
-    }
+}
 </style>
 <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
 
 <body>
-    <form  runat="server"  class="form-horizontal bv-form" novalidate="novalidate">
+    <form  runat="server" >
 	<asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click"></asp:Button>
         <div class="container" style="margin-top: 100px;">
 		<div class="row">
@@ -109,27 +106,20 @@ body {
 							<div class="panel panel-outline panel-no-padding" style="border: none;">
 								<div id="signin" class="panel-collapse collapse in">
 									<div class="panel-body col-md-6">
-										<ul class="nav nav-line nav-justified" runat="server" style="margin: 0 0 20px 10px;" >
-											<li id="li-mobile"  class="active"><a href="#mobile" data-toggle="pill" style="">手机号码注册</a></li>
-											<li id="li-email"  class=""><a href="#email" data-toggle="pill" style="">邮箱注册</a></li>
-                                                               
-
+										<ul class="nav nav-line nav-justified" style="margin: 0 0 20px 10px;">
+											<li id="li-mobile" class="active"><a href="http://www.oxcoder.com/#mobile" data-toggle="pill" style="">手机号码注册</a></li>
+											<li id="li-email" class=""><a href="http://www.oxcoder.com/#email" data-toggle="pill" style="">邮箱注册</a></li>
 										</ul>
-										<div  style="margin-top:60px;">
-                                            </div>
-
+										
 											<input type="hidden" id="regType" name="regType" value="2"> <input type="hidden" id="regWay" name="regWay" value="1">
-											
-                                                <div  id="myTabContent" class="tab-content"" >
-                                                  
-                                                   
+											<div id="myTabContent" class="tab-content">
 												<div class="tab-pane fade in active" id="mobile">
-                                              
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
 																<span class="input-group-addon"><i class="imoon imoon-mobile2"></i></span>
-                                                                  <asp:textbox  id="loginmobile" runat="server" name="phone" class="form-control" placeholder="请输入常用手机号码" data-bv-field="phone" runat="server" OnTextChanged="loginmobile_TextChanged"/>
+                                                                 <asp:textbox  id="loginmobile" runat="server" name="phone" class="form-control" placeholder="请输入常用手机号码" data-bv-field="phone" runat="server"/>
+
 															</div>
 															<small id="hint1" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">请输入手机号码</small><small class="help-block" data-bv-validator="phone" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">请输入正确的联系方式</small></small>
 														</div>
@@ -139,7 +129,7 @@ body {
 															<div class="input-group">
 																<span class="input-group-addon"><i class="fa fa-eye"></i></span> <asp:TextBox runat="server" type="text" id="logincapcha" name="capcha" class="form-control" placeholder="请证明你不是机器人" data-bv-field="capcha"/>
                                                                  <span class="input-group-btn"> <a href="javascript:void(0);" title="点击刷新" style="margin-right: -38px;">
-                                                                     <img id="img_verify"  src="ImgVerify.aspx" width="95px" height="35px" onclick="resetVerify()"/></a>
+                                                                     <img id="img_verify" src="ImgVerify.aspx" width="95px" height="35px" onclick="resetVerify()"/></a>
 																</span>
 															</div>
 															<small id="hint8" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="capcha" data-bv-result="NOT_VALIDATED" style="display: none;">请输入验证码</small></small>
@@ -148,7 +138,7 @@ body {
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-inbox"></i></span> <asp:textbox OnTextChanged="way1_Click1" AutoPostBack="false" type="text" id="logincode" name="key" class="form-control" placeholder="请输入短信验证码" runat="server" data-bv-field="key"/> <span class="input-group-btn"> <asp:button id="btn_send_sms" class="btn btn-primary" style="margin-right: -38px;" Text="获取验证码" runat="server" OnClick="btn_send_sms_Click"/>
+																<span class="input-group-addon"><i class="fa fa-inbox"></i></span> <asp:textbox type="text" id="logincode" name="key" class="form-control" placeholder="请输入短信验证码" runat="server" data-bv-field="key"/> <span class="input-group-btn"> <asp:button id="btn_send_sms" class="btn btn-primary" style="margin-right: -38px;" Text="获取验证码" runat="server" OnClick="btn_send_sms_Click"/>
 																</span>
 															</div>
 															<small id="hint3" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="key" data-bv-result="NOT_VALIDATED" style="display: none;">请输入短信验证码</small></small>
@@ -157,89 +147,78 @@ body {
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																 <asp:textbox runat="server"  type="password" id="loginpassword" name="password_phone" class="form-control" placeholder="请输入密码"/>
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server"  type="password" id="loginpassword" name="password_phone" class="form-control" placeholder="请输入密码"/>
 															</div>
 															<small id="hint4"></small>
 														</div>
 													</div>
-                                                   <div class="form-group">
+                                                    						<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group" runat="server" id ="espertise">
-                                                                <span class="input-group-addon"><i class="fa fa-envelope"><Label style="margin-left:70px">选择你喜欢的方向</Label></i></span> 
-                                                                
-																<asp:DropDownList AutoPostBack="false" ID="loginespertise" runat="server" OnSelectedIndexChanged="loginespertise_SelectedIndexChanged1" placeholder="请选择专长" /> 
-                                                              
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:dropdownlist runat="server"   id="loginespertise"  class="form-control" placeholder="请选择专长" />
 															</div>
 															<small id="hint5"></small>
 														</div>
 													</div>
-                                                    <div class="form-group">
+                                                    						<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group" runat="server"  id="lname">
-																<span class="input-group-addon"><i class="fa fa-key"> <asp:textbox runat="server"  id="loginname"  class="form-control" placeholder="请输入姓名"/>
-															    </i></span> 
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server"  id="loginname"  class="form-control" placeholder="请输入姓名"/>
 															</div>
 															<small id="hint6"></small>
 														</div>
 													</div>
 												</div>
-                                     
-                                               
 												<div class="tab-pane fade" id="email">
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-envelope"></i></span> <asp:textbox type="text" runat="server" OnTextChanged="way2_Click" id="loginemail" name="email" class="form-control" placeholder="请输入常用邮箱地址" data-bv-field="email"/>
+																<span class="input-group-addon"><i class="fa fa-envelope"></i></span> <asp:textbox type="text" runat="server" id="loginemail" name="email" class="form-control" placeholder="请输入常用邮箱地址" data-bv-field="email"/>
 															</div>
-															<small id="hint15" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">请输入邮箱地址</small></small>
+															<small id="hint5" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">请输入邮箱地址</small></small>
 														</div>
 													</div>
 
 													<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group">
-																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server" type="password" id="loginpassword1" name="password1" class="form-control" placeholder="请输入密码" data-bv-field="password"/>
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server" type="password" id="loginpassword1" name="password" class="form-control" placeholder="请输入密码" data-bv-field="password"/>
 															</div>
-															<small id="hint61" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">请输入密码</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">密码应大于6位，小于30位</small></small>
+															<small id="hint6" class="has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">请输入密码</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">密码应大于6位，小于30位</small></small>
 														</div>
 													</div>
                                                      <div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group"  runat="server" id="skill">
-																<span class="input-group-addon"><i class="fa fa-key"><Label style="margin-left:70px">选择你喜欢的方向</Label></i></span> 
-                                                                
-																<asp:DropDownList AutoPostBack="false" id="loginskill" runat="server" OnSelectedIndexChanged="loginskill_SelectedIndexChanged" placeholder="请选择专长" />  
+																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:dropdownlist runat="server"   id="loginskill"  class="form-control" placeholder="请选择专长" />
 															</div>
-															<small id="hint71"></small>
+															<small id="hint7"></small>
 														</div>
-													
-                                                    	<div class="form-group">
+													</div>
+                                                    						<div class="form-group">
 														<div class="col-xs-12">
 															<div class="input-group" runat="server" id="name1">
 																<span class="input-group-addon"><i class="fa fa-key"></i></span> <asp:textbox runat="server"  id="loginname1"  class="form-control" placeholder="请输入姓名"/>
 															</div>
-															<small id="hint81"></small>
+															<small id="hint8"></small>
 														</div>
 													</div>
 												</div>
-                                                    </div>
-										
-                                                   </div>
-                                            
-											<div>
+												</div>
+											</div>
                                            
-											<ul  class="nav nav-pills nav-justified" style="margin: 10px 0 20px 10px;">
+											<ul class="nav nav-pills nav-justified" style="margin: 10px 0 20px 10px;">
 												
 													
 													
-														<li id="li-person"  class="active"><asp:Button   runat="server"  Text="我是企业" AutoPostBack="false" class="btn btn-primary btn-lg"   OnClick="Unnamed1_Click" /></li>
-														<li id="li-work" ><asp:Button  runat="server" class="btn btn-primary btn-lg" AutoPostBack="false"  Text="我是开发者" OnClick="Unnamed2_Click"/></li>
+														<li id="li-person" class="active"><a href="http://www.oxcoder.com/#j2-profile" data-toggle="pill">我是企业</a></li>
+														<li id="li-work"><a href="http://www.oxcoder.com/#j2-home" data-toggle="pill">我是开发者</a></li>
 													
 												
 
 											</ul>
 
-											<div class="col-xs-12" style="margin-left: 60px;">
+											<div class="col-xs-12" style="margin-left: 20px;">
 												<label> <input type="checkbox" id="agreement" name="check" checked="checked" data-bv-field="check"> <small>我已阅读并同意
 														<a href="http://www.oxcoder.com/oxcoder_license.action" target="_blank">《oxcoder用户协议》</a>
 												</small>
@@ -247,7 +226,7 @@ body {
 												</span>
 											</div>
 											
-                                    <div class="col-xs-12" style="margin-left: 60px;">
+                                    <div class="col-xs-12">
 												<asp:button  runat="server"  ID="Regester" class="btn btn-primary btn-lg" style="margin-left: 20px; border-radius: 3px;" Text= "注册" OnClick="Regester_Click" />
 											</div>
 											<div class="col-xs-12"></div>
@@ -270,7 +249,7 @@ body {
 						</div>
 					</div>
 					<!-- /#content -->
-                       </div>
+
 				</section>
 			</div>
 			<!-- /.col-md-10 -->
@@ -308,7 +287,6 @@ body {
 	<script type="text/javascript" src="./猿圈 注册_files/jquery-confirm.min.js"></script>
 	<script type="text/javascript">
 
-	    
 	    $(document)
 				.ready(
 						function () {
@@ -324,7 +302,7 @@ body {
 						    $("#li-email").click(function () {
 						        $("#regWay").val(2);
 						    });
-						    
+
 						    $('#defaultForm')
 									.bootstrapValidator(
 											{

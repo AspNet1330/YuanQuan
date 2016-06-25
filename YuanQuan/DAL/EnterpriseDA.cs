@@ -64,6 +64,7 @@ namespace DAL
             {
                 yq.enterprise.AddObject(e);
                 yq.SaveChanges();
+                return true;
             }
             return false;
         }

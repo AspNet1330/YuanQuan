@@ -49,3 +49,4 @@ D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\bin\Debug\zh-Hans\EntityFramework.resources
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\obj\Debug\Model.dll
 D:\GitRepo\YQ\YuanQuan\YuanQuan\Bean\obj\Debug\Model.pdb
+F:\code\yuanquan\YuanQuan\Bean\obj\Debug\Model.csprojResolveAssemblyReference.cache

@@ -10,7 +10,7 @@
 namespace Web {
     
     
-    public partial class Register {
+    public partial class Regist {
         
         /// <summary>
         /// Button1 控件。

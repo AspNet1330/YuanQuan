@@ -23,19 +23,21 @@ namespace Web
         public string password;
         public string epertise;
         public string capha;
-        public string reType;
-        public string regWay;
+        public int reType ;
+
         public string email;
-        public string reWay;
+        public int reWay;
         public string name;
      //   public static Boolean b = false;
       
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)   //首次加载时
             {
 
-                loginespertise.AutoPostBack = true;
+              
+                loginespertise.AutoPostBack = false;
 
                 loginespertise.Items.Add("JAVA");
 
@@ -50,7 +52,8 @@ namespace Web
                 loginespertise.Items.Add("PHP");
 
                 loginespertise.Items.Add("PYTHON");
-                loginskill.AutoPostBack = true;
+              
+                loginskill.AutoPostBack = false;
 
                 loginskill.Items.Add("JAVA");
 
@@ -65,60 +68,16 @@ namespace Web
                 loginskill.Items.Add("PHP");
 
                 loginskill.Items.Add("PYTHON");
-               
-
-            }
 
 
-        }
-
-        public void GetValue(string regType,string regWay) {
-            reType = regType;
-            reWay = regWay;
-            if (reWay == "1")
-            {
-                if (reType == "2")
-                {
-                    espertise.Style["Display"] = "None"; 
-
-                    lname.Style["Display"] = "None"; 
-                    
-                }
-                else
-                {
-                    espertise.Style["Display"] = "Block";
-
-                    lname.Style["Display"] = "Block";  
-                  
-                }
-            }
-            else
-            {
-              
-                if (reType == "2")
-                {
-
-                    skill.Style["Display"] = "None"; 
-
-                    name1.Style["Display"] = "None";  
-                }
-                else
-                {
-
-                    skill.Style["Display"] = "Block";
-
-                    name1.Style["Display"] = "Block";  
-                }
-
-
-            }
+            } 
 
         }
 
-        protected  Boolean URegister(String account,String pwd,String name,String espertise)
+        protected Boolean URegister(String account, String pwd, String name, String espertise)
         {
             IRegisterService ir = ServiceFactory.createRegisterService();
-            Boolean r ;
+            Boolean r;
             
                 coder a = new coder();
                 a.c_account = account;
@@ -133,13 +92,14 @@ namespace Web
         }
 
 
-        protected Boolean ERegister(String account, String pwd)
+        protected Boolean ERegister(String account, String pwd,String name)
         {
             IRegisterService ir = ServiceFactory.createRegisterService();
             Boolean r;
             enterprise ep = new enterprise();
             ep.e_account = account;
             ep.e_pwd = pwd;
+            ep.e_name = name;
             r = ir.registerEnterprise(ep);
             return r;
         }
@@ -180,17 +140,10 @@ namespace Web
             return str;
         }
 
-        protected void submitClick(object sender, EventArgs e)
-        {
-           
-           
-           
-
-        }
 
 
 
-        protected void loginespertise_SelectedIndexChanged(object sender, EventArgs e)
+        protected void loginespertise_SelectedIndexChanged1(object sender, EventArgs e)
         {
             epertise = loginespertise.SelectedItem.Text;
         }
@@ -201,42 +154,102 @@ namespace Web
 
         protected void Regester_Click(object sender, EventArgs e)
         {
-            capha = logincapcha.Text;
             Boolean r;
+            if (reWay == 1)
+            {
+                capha = logincapcha.Text;
 
-            lvcode = logincode.Text;
-            vcode = ImgVerify.getRand();
-            if (vcode != lvcode)
-            {
-                logincode.Text = "";
-                return;
-            }
-            if (capha != ImgVerify.getRand())
-            {
-                logincapcha.Text = "";
-                return;
-            }
-            if (reType == "2")
-            {
-                if (regWay == "1") account = loginmobile.Text;
-                else account = loginemail.Text;
-                name = loginname.Text;
+
+                lvcode = logincode.Text;
+
+                //if (vcode != lvcode)
+                //{
+                //    logincode.Text = "";
+                //    return;
+                //}
+                String str = ImgVerify.getRand();
+                if (!capha.ToUpper().Equals(str.ToUpper()))
+                {
+                    logincapcha.Text = "";
+                    //  return;
+                }
+                account = loginmobile.Text;
                 password = loginpassword.Text;
-                r = URegister(account, password, name, epertise);
+                name = loginname.Text;
+                if (reType == 2)
+                {
+                    r = URegister(account, password, name, epertise);
+
+                }
+                else
+                {
+                    r = ERegister(account, password, name);
+                }
             }
+
+
             else
             {
-                if (regWay == "1") account = loginmobile.Text;
-                else account = loginemail.Text;
+                account = loginemail.Text;
                 password = loginpassword1.Text;
                 name = loginname1.Text;
-                r = ERegister(account, password);
+                if (reType == 2)
+                {
+                    r = URegister(account, password, name, epertise);
+
+                }
+                else
+                {
+                    r = ERegister(account, password, name);
+                }
             }
-            if (regWay == "1" && r)
+
+
+
+
+            if (reWay == 2 && r)
             {
                 SendMailHelper.send(account);
             }
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            Button1.Text=loginemail.Text;
+        }
+
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            reType = 1;
+        }
+
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            reType = 2;//kai
+        }
+
+        protected void loginmobile_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void way1_Click1(object sender, EventArgs e)
+        {
+            reWay = 1;//shou
+
+           
+        }
+
+        protected void way2_Click(object sender, EventArgs e)
+        {
+           
+           
+            reWay = 2;
+            
+            
+        }
+
 
     }
 }

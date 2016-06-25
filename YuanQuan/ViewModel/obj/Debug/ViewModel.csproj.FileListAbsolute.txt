@@ -10,3 +10,4 @@ D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\ViewModel\bi
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\ViewModel\bin\Debug\ViewModel.pdb
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\ViewModel\obj\Debug\ViewModel.dll
 D:\Documents\Visual Studio 2013\Projects\yuanquan\YuanQuan\YuanQuan\ViewModel\obj\Debug\ViewModel.pdb
+F:\code\yuanquan\YuanQuan\ViewModel\obj\Debug\ViewModel.csprojResolveAssemblyReference.cache
